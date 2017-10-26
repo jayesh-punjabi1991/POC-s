@@ -1,0 +1,53 @@
+#background{
+    width:100%;
+    height:26vh;
+}
+#mainDiv{
+  position: relative;
+}
+#secondaryDiv{
+   position:absolute;
+   background-color:rgba(0,106,136,0.6);
+   width:100%;
+   height:72%;
+   margin-top:1.5%;
+}
+#COXlogo{
+  height:60px;
+  margin-top: 8%;
+  float: right;
+}
+#textDiv{
+  margin-top: 2.25%;
+}
+#logoDiv{
+  padding-right: 0px;
+}
+#textParentDiv{
+  padding: 0px !important;
+}
+#firstLine{
+  font-family:AvenirMedium;
+  color:#d7eeee;
+  font-size:1.75rem;
+}
+#secondLine1{
+  display:inline-block;
+  font-family:AvenirBoldCn;
+  color:#def4f3;
+  font-size:5rem;
+  margin-left:-0.25%;
+  line-height:0.75;
+}
+#secondLine2{
+  display:inline-block;
+  font-family:AvenirMedium;
+  color:#d1f0ef;
+  font-size:2rem;
+}
+#thirdLine{
+  font-family:AvenirMedium;
+  color:#d7eeee;
+  font-size:1.75rem;
+  line-height:0.75;
+}

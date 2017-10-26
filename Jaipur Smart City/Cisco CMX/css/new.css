@@ -1,0 +1,147 @@
+@charset "utf-8";
+.bighead {
+	font-family: Georgia;
+	font-size: 34px;
+	font-weight: bold;
+	color: #FF0;
+	text-align: center;
+	line-height: 34px;
+	padding-top: 30px;
+	padding-bottom: 5px;
+}
+.socials {
+display:block;
+width:32px;
+height:32px;
+background:url(../img/socials/share.png) no-repeat;
+cursor:pointer;
+position:relative;
+}
+.ttext {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 18px;
+	color: #A4FFFF;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #272727;
+}
+
+
+.nature {
+	display: block;
+	width: 70px;
+	height: 70px;
+	cursor: pointer;
+	position: relative;
+	background:url(../images/wifi.png) no-repeat;
+	
+}
+.nature1 {
+	display: block;
+	width: 70px;
+	height: 70px;
+	cursor: pointer;
+	position: relative;
+	background-image: url(../images/cam.png);
+	background-repeat: no-repeat;	
+}
+
+.socials, .nature, .nature1{
+margin:0 auto;
+}
+
+.socials {
+margin-bottom:0px;
+}
+
+ul.reset,
+ul.reset li {
+display:block;
+list-style:none;
+padding:0;
+margin:0;
+}
+
+ul.reset li {
+position: absolute !important;
+}
+
+ul.reset li a {
+outline:none;
+}
+
+#content {
+	margin-right: auto;
+	margin-bottom: 0;
+	width: 130px;
+	margin-top: 118px;
+	padding-left: 0px;
+}
+#content2 {
+	margin-right: auto;
+	margin-bottom: 0;
+	width: 102px;
+	margin-top: 199px;
+	padding-left: 0px;
+}
+.newbg {
+	background-image: url(../images/main1.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 578px;
+	margin-top: 30px;
+}
+
+a {
+color:#FF9900;
+}
+
+a img {
+border:none;
+}
+.m1 {
+	height: 190px;
+}
+.bg2 {
+	background-color: #161616;
+	background-image: url(../images/road.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	height: 47px;
+}
+.h1new {
+	font-family: Georgia;
+	font-size: 34px;
+	color: #03A8F5;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+.ttext1 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 18px;
+	color: #A4FFFF;
+	
+}
+.bg3 {
+	background-color: #161616;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	background-image: url(../images/bg5.png);
+}
+.fo {
+	font-family: Georgia;
+	font-size: 10px;
+	color: #999;
+}
+.fo1 {
+	font-family: Georgia;
+	font-size: 15px;
+	color: #FF0;
+	text-transform: uppercase;
+	text-align: right;
+	font-weight: bold;
+}

@@ -1,0 +1,50 @@
+/*
+ * SimpleModal Basic Modal Dialog
+ * http://www.ericmmartin.com/projects/simplemodal/
+ * http://code.google.com/p/simplemodal/
+ *
+ * Copyright (c) 2010 Eric Martin - http://ericmmartin.com
+ *
+ * Licensed under the MIT license:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *
+ * Revision: $Id: basic.css 257 2010-07-27 23:06:56Z emartin24 $
+ */
+
+#basic-modal-content {display:none;}
+#basic-modal-content1 {display:none;}
+#basic-modal-content2 {display:none;}
+#basic-modal-content3 {display:none;}
+#basic-modal-content4 {display:none;}
+#basic-modal-content5 {display:none;}
+#basic-modal-content6 {display:none;}
+#basic-modal-content-drillDownData {display:none;}
+/* Overlay */
+#simplemodal-overlay {background-color:#000; cursor:wait;}
+
+/* Container */
+
+#simplemodal-container {height:450px; width:1000px; color:#bbb; background-color:#F9F9F9; border:4px solid #444; padding:12px;}
+#simplemodal-container .simplemodal-data {padding:8px;}
+#simplemodal-container code {background:#141414; border-left:3px solid #65B43D; color:#bbb; display:block; font-size:12px; margin-bottom:12px; padding:4px 6px 6px;}
+#simplemodal-container a {color:#ddd;}
+#simplemodal-container a.modalCloseImg {background:url('x.png') no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer;}
+#simplemodal-container h3 {color:#84b8d9;}
+
+#simplemodal-container2 {text-align:center; height:250px; width:455px; color:#bbb; background-color:#EEf6FD; border:1px solid #444; }
+#simplemodal-container2 .simplemodal-data {}
+#simplemodal-container2 code {background:#141414; border-left:3px solid #65B43D;  display:block; font-size:12px; margin-bottom:12px; padding:4px 6px 6px;}
+#simplemodal-container2 a.modalCloseImg {background:url('x.png') no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer;}
+
+
+#simplemodal-container3 {text-align:left; height:200px; width:400px; color:#000000; background-color:#EEf6FD; border:1px solid #444; }
+#simplemodal-container3 .simplemodal-data {}
+#simplemodal-container3 code {background:#141414; border-left:3px solid #65B43D;  display:block; font-size:12px; margin-bottom:12px; padding:4px 6px 6px;}
+#simplemodal-container3 a.modalCloseImg {background:url('x.png') no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer;}
+
+#simplemodal-container4 {text-align:center; height:600px; width:1000px; color:#bbb; background-color:#EEf6FD; border:1px solid #444; }
+#simplemodal-container4 .simplemodal-data {}
+#simplemodal-container4 code {background:#141414; border-left:3px solid #65B43D;  display:block; font-size:12px; margin-bottom:12px; padding:4px 6px 6px;}
+#simplemodal-container4 a.modalCloseImg {background:url('x.png') no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer;}
+
+

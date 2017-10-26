@@ -1,0 +1,14 @@
+[{
+     "name": "Month",
+     "data": ["Electrical", "Down Tower", "Main Shaft", "Pitch system", "Top Box", "Hub/Blades", "Pitch System", "Down Tower", "High Speed", "Yaw System", "Pitch System", "Down Tower","Pitch System"]
+ }, {
+     "name": "DownTime Cost Impact",
+     "data": [700023, 400023, 360023, 460023, 460056, 480056,500056,520056, 520656, 450023,530656,450023,450023],
+     "type": "column"
+ }, { 
+     "name": "Failure",
+     "data": [1000,50000,100000,150000,200000,250000,300000,350000,400000,450000,500000,550000,600000],
+     "type": "spline"
+ }]
+
+

@@ -1,0 +1,107 @@
+<div class="container" id="mainDiv">
+  <div class="row" id="InvoiceDiv">
+    <div class="col-md-6" id="heading">
+      INVOICE
+      <div id="coxAddress">
+        Cox Communications<br>
+        6205 Peachtree Dunwoody Road<br>
+        Atlanta, GA 30328<br>
+      </div>
+    </div>
+    <div id="printButton">
+      <button (click)="Print()">Print</button>
+    </div>
+  </div>
+  <div class="row" id="secondDiv">
+    <div class="col-md-6" id="billToHeading">
+      Bill To
+      <div id="billTo">
+        {{companyName}}<br>
+        {{companyAddress}}<br>
+        {{cityStateZip}}<br>
+        {{name}}
+      </div>
+    </div>
+    <div class="col-md-6" id="invoiceDetailsDiv">
+      <table id="invoiceDetailsTable">
+        <tbody>
+          <tr>
+            <td id="invoiceDetailsHead">Invoice</td>
+            <td id="invoiceDetailsContent">#{{invoiceNumber}}</td>
+          </tr>
+          <tr>
+            <td id="invoiceDetailsHead">Invoice Date</td>
+            <td id="invoiceDetailsContent">{{this.invoiceDate}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row" id="sponsorshipTable">
+    <table class="table table-bordered">
+      <thead>
+        <th>QTY</th>
+        <th>Description</th>
+        <th>Unit Price</th>
+        <th>Amount</th>
+      </thead>
+      <tbody id="bodyInvoiceDetailsTable">
+        <tr>
+          <td>1</td>
+          <td>2018 Cox Executive Forum Sponsorship</td>
+          <td>$60,000.00</td>
+          <td>$60,000.00</td>
+        </tr>
+        <tr>
+          <td id="customTD" colspan="3">TOTAL</td>
+          <td>$60,000.00</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row" id="paymentOptionsDiv">
+    <div id="paymentOptionsHead">
+      3 Payment Options
+    </div>
+    <div id="paymentOptionsTable">
+      <table class="table table-bordered">
+        <thead>
+          <th>Payment Options</th>
+          <th>Total Due</th>
+          <th>Due Date</th>
+        </thead>
+        <tbody id="bodyPaymentOptionsTable">
+          <tr>
+            <td>Pay in Full 2017</td>
+            <td>$60,000.00</td>
+            <td>12/31/2017</td>
+          </tr>
+          <tr>
+            <td>Pay in Full 2018</td>
+            <td>$60,000.00</td>
+            <td>3/30/2018</td>
+          </tr>
+          <tr>
+            <td rowspan="2" id="customTD1">Installment</td>
+            <td>$30,000.00</td>
+            <td>12/31/2017</td>
+          </tr>
+          <tr>
+            <td>$30,000.00</td>
+            <td>3/30/2018</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  <div class="row" id="remitDiv">
+      <div id="remitHead">Remit Payment to:<div>
+        <div id="remitBody">
+          Cox Communications<br>
+          6205 Peachtree Dunwoody Road<br>
+          Attn: Marcia Sauzek, 6205B.20.123<br>
+          Atlanta, GA 30328
+        </div>
+  </div>
+</div>
+<div>
+</div>

@@ -1,0 +1,143 @@
+<style>
+.Smart-WIFI-Managemen{
+  color:#724a62;
+  transform: translate(0%,0%);
+  margin-left: 12%;
+}
+ul.MenuBarHorizontal li {
+    margin: 3px;
+    padding: 0;   
+    list-style-type: none;      
+    position: relative;
+    text-align: left;
+    cursor: pointer;       
+    float: left;
+    width: 22%;
+    line-height: 20px;
+    }
+</style>
+<script src="api/no_of_visitors_hourly_today.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../css/SmartWifiManagement.css">
+
+<div id="wrapper">
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-image:url('/images/hero-img.png');height:60px;padding: 0 10px;"role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div  class="navbar-brand">
+                    <div id="">
+                <picture>
+                    <a id="menu-toggle"><img src="/images/menu-ico.png" ></a>
+                </picture>
+            </div>
+              <div id="JdaMenu">
+                <picture>
+                    <a ><img src="/images/SmartCityinside.png" ></a>
+                </picture>
+            </div>
+              <div id="ciscoMenu">
+                <picture>
+                    <a ><img src="images/Cisco-Logo_phone_Ipad.png" ></a>
+                </picture>
+              </div>
+                     <div id="genpactMenu">
+                <picture>
+                    <a ><img src="images/Genpact-Logo_phone_Ipad.png" ></a>
+                </picture>
+            </div>
+            </div>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">      
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" >
+        <nav id="spy">
+            <ul class="sidebar-nav nav">
+                <li id="icon">
+                  <div id="custom-iconactive">
+                     <a ui-sref="WifiManagement.BusiestDay"><img src="images/Wifi-ico.png"></a>        
+                </div>
+                </li id="icon">
+                  <div class="Smart-WIFI-Managemen">Smart WIFI Management</div>
+                <li id="icon">
+                       <div id="custom-iconactive">
+                     <a href="#"><img src="images/camera-ico.png"></a>
+                </div>
+                </li>
+                <div class="Smart-WIFI-Managemen">Smart Surveillance</div>
+                   <li id="icon">
+                       <div id="custom-icon">
+                     <a href="#"><img src="images/tourist-ico.png"></a>                  
+                </div>
+                </li>
+                <div class="Smart-WIFI-Managemen">Tourist Experience </div>
+                   <li id="icon">
+                       <div id="custom-icon">
+                     <a href="#"><img src="images/traffic-ico.png"></a>                  
+                </div>
+                </li>
+                <div class="Smart-WIFI-Managemen">Smart Traffic Operations</div>
+                   <li id="icon" >
+                       <div id="custom-icon">
+                     <a href="#"><img src="images/parking-ico.png"></a>                  
+                </div>
+                </li>
+                <div class="Smart-WIFI-Managemen">Parking Management</div>
+                   <li id="icon" >
+                       <div id="custom-icon">
+                     <a href="#"><img src="images/water-ico.png"></a>                  
+                </div>
+                </li>
+                    <div class="Smart-WIFI-Managemen">Water Management</div>
+                <li id="icon">
+                       <div id="custom-icon">
+                     <a href="#"><img src="images/pollution-ico.png"></a>                  
+                </div>
+                </li>
+                <div class="Smart-WIFI-Managemen">Pollution Management</div>
+                <li id="icon">
+                       <div id="custom-icon">
+                     <a href="#"><img src="images/waste-ico.png"></a>
+                </div>
+                </li>
+                <div class="Smart-WIFI-Managemen">Waste Management</div>                
+                  <li id="icon">
+                       <div id="custom-iconDummy ">
+                </div>
+                </li>   
+                    <div class="Smart-WIFI-Managemen"></div>   
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Page content -->
+    <div id="page-content-wrapper">
+       
+        <div class="page-content" style="margin-top:4%">
+
+            <!--BreadCrumb-->
+            <div style="background-color:#2d3345">
+                <ul class="breadcrumb">
+                <li><a id="Home" onclick="location.assign(location.href.substr(0,location.href.indexOf('#')));">Home</a></li>
+                <li><a href="#" style="color: #d5d6da;">Smart Surveillance</a></li>  
+                </ul>
+
+                <!--SubNav Menu-->
+                <ul class="Submenu" style="list-style-type: none;padding-left: 1.5%;padding-bottom: 1.2%">
+                <li id="liVSMUsage" style="float:left;width:22%;"><a ui-sref=".VSMAccessUsageStatistics" class="active" style="font-size:14px !important;padding-bottom:5%;">VSM Access & Usage Statistics</a></li>
+                <li id ="liOperationalStatus" style="float:left;width:20%"><a ui-sref=".OperationalStatus" style="font-size:14px !important;padding-bottom: 5%;">Operational Status</a></li>
+                <li id="liCamHealth" style="float:left;width:20%"><a ui-sref=".AssetHealthMonitoring" style="font-size:14px !important;padding-bottom: 4.7%;">Asset Health Monitoring</a></li>
+                <li id="liAlertManagementDiag"><a ui-sref=".AlertManagementDiagnosis" style="float:left;width:16%;padding-bottom: 1%;font-size: 14px;margin-right: 4%;margin-left: -2%">Alert Management & Diagnosis</a></li>
+                <li id="liSmartParking"><a ui-sref=".SmartparkingAvailabilityMonitor" style="font-size:14px !important;padding-bottom: 1%;">Smart Parking Availability Monitor</a></li>
+                </ul>
+            </div>
+
+            <div ui-view>
+            </div>
+        </div>
+    </div>
+    </div>

@@ -1,0 +1,88 @@
+%!Adobe-FontList 1.13
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AvenirNextLTPro-Bold
+FamilyName:Avenir Next LT Pro
+StyleName:Bold
+MenuName:AvenirNext LT Pro Medium
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Avenir Next LT Pro Bold
+WritingScript:Roman
+OutlineFileName:\AvenirNextLTPro-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:74252
+FileModTime:1144318572
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AvenirNextLTPro-Medium
+FamilyName:Avenir Next LT Pro
+StyleName:Medium
+MenuName:AvenirNext LT Pro Medium
+StyleBits:0
+WeightClass:500
+WidthClass:5
+AngleClass:0
+FullName:Avenir Next LT Pro Medium
+WritingScript:Roman
+OutlineFileName:\AvenirNextLTPro-Medium.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:72516
+FileModTime:1144318640
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AvenirNextLTPro-Regular
+FamilyName:Avenir Next LT Pro
+StyleName:Regular
+MenuName:AvenirNext LT Pro Regular
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Avenir Next LT Pro
+WritingScript:Roman
+OutlineFileName:\AvenirNextLTPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:71460
+FileModTime:1144318636
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Regular
+FamilyName:Minion Pro
+StyleName:Regular
+MenuName:Minion Pro
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Minion Pro
+WritingScript:Roman
+OutlineFileName:\MinionPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:231312
+FileModTime:1348139845
+DesignSize:110
+%EndFont
+

@@ -1,0 +1,40 @@
+For First Screen,
+
+https://overallequipmenteffectiveness-supplychain.run.aws-usw02-pr.ice.predix.io/oee/SiteGeographyDetails
+
+https://overallequipmenteffectiveness-supplychain.run.aws-usw02-pr.ice.predix.io/oee/SiteGeographyDetailsByFilters
+POST object structure is {
+"status" :"AcceptableOEE,AtRisk",
+
+"country" : "United States,Mexico",
+
+"valueStreams" :"Turbine,Rotating"
+
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+For Second Screen,
+Displaying OEE for Value streams ,below is service URL. We get the Availability,Performance,Qulaity rate and OEE for each plant.
+Machine(Asset Number) Performance,Avalability,Quality Rate and OEE is sum of individual Performance,Avalability,Quality Rate and OEE values of each Plant.
+
+  https://overallequipmenteffectiveness-supplychain.run.aws-usw02-pr.ice.predix.io/oee/oeeallvaluestreams
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+For Third Screen,
+To Navigating from map for each site Service Url's are below . We will have 2 filters Site Id and Asset Group which would be passed to the request.The service response contains below values.
+1) Availability,Performance,Qulaity rate and OEE of each plant for each fiscal week.
+2) Yearly  Availability,Performance,Qulaity rate and OEE of each plant
+3) Last 4 weeks Availability,Performance,Qulaity rate and OEE of each plant
+4) Last Week Availability,Performance,Qulaity rate and OEE of each plant
+We have to do sum of all respective parameters to get Site Wise and Asset Group parameter percentages.
+
+	https://overallequipmenteffectiveness-supplychain.run.aws-usw02-pr.ice.predix.io/oee/OeeSiteWiseOeeSummary?siteId=GNV&assetGroupId=GENx EDM - OP50
+	https://overallequipmenteffectiveness-supplychain.run.aws-usw02-pr.ice.predix.io/oee/OeeSiteWiseOeeSummary?siteId=GNV&assetGroupId=M96 Grind
+	https://overallequipmenteffectiveness-supplychain.run.aws-usw02-pr.ice.predix.io/oee/OeeSiteWiseOeeSummary?siteId=GNV&assetGroupId=GE90 Grind
+	https://overallequipmenteffectiveness-supplychain.run.aws-usw02-pr.ice.predix.io/oee/OeeSiteWiseOeeSummary?siteId=GNV&assetGroupId=M91 Grind
+	https://overallequipmenteffectiveness-supplychain.run.aws-usw02-pr.ice.predix.io/oee/OeeSiteWiseOeeSummary?siteId=AUB&assetGroupId=au-magerle002
+	
+-------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,847 @@
+a {
+	color: #666666;
+	font-family: GE Inspira, Arial;
+	
+	text-decoration: none
+}
+
+a:Visited {
+	
+}
+
+a:Active {
+	color: #666666;
+}
+
+a:Hover {
+	
+	font-weight: bold;
+}
+
+.menuActive {
+	background-image: url("../images/rightO.png");
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left: 15px;
+	font-size: 11px;
+	color: #e17009;
+	vertical-align: middle;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.menuDeactive {
+	background-image: url("../images/right.png");
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left: 15px;
+	color: #2e6e9e;
+	cursor: pointer;
+}
+
+body {
+	font-family: GE Inspira;
+	font-size: 10px;
+	color: #909090;
+	margin-top: 0px;
+}
+
+.mainDiv {
+	width: 1050px;
+	vertical-align: top;
+	background-color: #FFFFFF;
+}
+
+.headerImg {
+	background-image: url(content/images/Market-Performance.jpg);
+	text-align: left;
+	background-repeat: no-repeat;
+}
+
+.menuTxt {
+	font-family: GE Inspira;
+	font-size: 13px;
+	color: #FFFFFF;
+	vertical-align: middle;
+}
+
+.dropdownTextBox {
+	background-image: url('');
+	background-repeat: no-repeat;
+	background-position: right;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ACE7ED;
+	/*font-family:GE Inspira, Arial,  helvetica, arial, sans serif;*/
+	font-family: GE Inspira, Arial;
+	padding-left: 0px;
+	width: 195px;
+	readonly: true;
+}
+
+.radioText {
+	font-weight: bold;
+	height: 20px;
+	vertical-align: text-top;
+	color: #000000;
+	font-famliy: GE Inspira;
+	font-size: 12px;
+}
+
+.menuImg {
+	background-image: url('../images/header_height.jpg');
+	text-align: left;
+	height: 17px;
+	color: #FFFFFF;
+	font-family: GE Inspira;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.menuSeparator {
+	background-image: url('../images/Menubar_Divider.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: left;
+	height: 17px;
+}
+
+.footerText {
+	color: #B1B8BE;
+}
+
+.footerTbl {
+	border-top: 1px solid #eeeeee;
+}
+
+.homeTbl {
+	background-color: #FFFFFF;
+}
+
+.homeBlockHeader {
+	border-collapse: collapse;
+	border: 1px solid #9cb5de;
+	background-image: url('../images/Sub-head.png');
+	background-position: top center;
+	background-repeat: repeat-x;
+}
+
+.homeBlockHeader2 {
+	border-collapse: collapse;
+	border: 1px solid #9cb5de;
+}
+
+.menuBlockHeader {
+	border-collapse: collapse;
+	border: 1px solid #9cb5de;
+	background-image: url('../images/Sub-head.png');
+	background-position: top center;
+	background-repeat: repeat-x;
+	width: 205px;
+}
+
+.dd {
+	width: 200px;
+}
+
+.homeToolsHeader {
+	background-image: url('../images/Analytic-Tools.png');
+	background-position: top center;
+	background-repeat: repeat-x;
+}
+
+.homeToolsTbl {
+	background-color: #b373b8;
+	border-collapse: collapse;
+	border: 2px solid #9cb5de;
+	background-image: url('../images/Tools-background.png');
+	background-position: bottom center;
+}
+
+.homeToolsHeadTxt {
+	height: 30px;
+	font-family: GE Inspira;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 12px;
+	color: #3175b4;
+	font-weight: bolder;
+}
+
+.homeToolsTxt {
+	font-family: GE Inspira;
+	color: #FFFFFF;
+	font-size: 11px;
+	text-align: Left;
+	font-weight: bolder;
+}
+
+.homeBlockHeadTxt {
+	height: 25px;
+	font-family: GE Inspira, Arial;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: bolder;
+}
+
+.homeInnerTbl {
+	
+}
+
+.homeInnerTblHeader {
+	
+}
+
+.homeInnerTblHeadTxtLeft {
+	font-family: GE Inspira;
+	color: #3c72B8;
+	font-size: 11px;
+	text-align: Left;
+	font-weight: bold;
+}
+
+.homeInnerTblHeadTxtCenter {
+	font-family: GE Inspira;
+	color: #3c72B8;
+	font-size: 11px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.homeInnerTblHeadGreenTxtCenter {
+	font-family: GE Inspira;
+	color: #FFFFFF;
+	font-size: 11px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.smallBlueTxtLeft {
+	font-family: GE Inspira;
+	color: #3c72B8;
+	font-size: 11px;
+	text-align: Left;
+}
+
+.smallBlueTxtCenter {
+	font-family: GE Inspira;
+	color: #3c72B8;
+	font-size: 11px;
+	text-align: center;
+}
+
+.smallBlueTxtRight {
+	font-family: GE Inspira;
+	color: #3c72B8;
+	font-size: 11px;
+	text-align: right;
+}
+
+.smallRedTxtLeft {
+	font-family: GE Inspira;
+	color: #E39660;
+	font-size: 11px;
+	text-align: Left;
+}
+
+.smallRedTxtCenter {
+	font-family: GE Inspira;
+	color: #E39660;
+	font-size: 11px;
+	text-align: center;
+}
+
+.smallRedTxtRight {
+	font-family: GE Inspira;
+	color: #E39660;
+	font-size: 11px;
+	text-align: right;
+}
+
+.smallBlackGreenTxtCenter {
+	background-color: #D2FD9b;
+	font-family: GE Inspira;
+	color: #666a6d;;
+	font-size: 11px;
+	text-align: center;
+}
+
+.smallBlackTxtLeftBold {
+	font-family: GE Inspira;
+	color: #666a6d;;
+	font-size: 11px;
+	text-align: left;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+.smallBlackTxtLeft {
+	font-family: GE Inspira;
+	color: #666a6d;;
+	font-size: 11px;
+	text-align: left;
+}
+
+.smallBlackTxtCenter {
+	font-family: GE Inspira;
+	color: #000000;
+	font-size: 11px;
+	text-align: center;
+	background-color: transparent;
+	border: 0px solid;
+	outline: none;
+}
+
+.smallBlackTxtLeft {
+	font-family: GE Inspira;
+	color: #000000;
+	font-size: 11px;
+	text-align: left;
+	background-color: transparent;
+	border: 0px solid;
+	outline: none;
+}
+
+.colll {
+	font-family: GE Inspira;
+	color: #000000;
+	font-size: 11px;
+	text-align: center;
+	background-color: transparent;
+	border: 0px solid;
+	outline: none;
+}
+
+.smallBlackTxtCenterNew {
+	font-family: GE Inspira;
+	color: #000000;
+	font-size: 11px;
+	text-align: left;
+	background-color: transparent;
+	border: 0px solid;
+	outline: none;
+}
+
+.smallBlackTxtCenterAhref {
+	font-family: GE Inspira;
+	color: #666a6d;;
+	font-size: 11px;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.smallBlackTxtRight {
+	font-family: GE Inspira;
+	color: #666a6d;;
+	font-size: 11px;
+	text-align: right;
+}
+
+.apacTRStyle {
+	background-color: #8A8A8A;
+	color: #FFFFFF;
+}
+
+.smallWhiteTxtLeft {
+	font-family: GE Inspira;
+	color: #FFFFFF;;
+	font-size: 11px;
+	text-align: left;
+}
+
+.smallWhiteTxtCenter {
+	font-family: GE Inspira;
+	color: #FFFFFF;;
+	font-size: 11px;
+	text-align: center;
+}
+
+.blueButton {
+	font-family: GE Inspira;
+	background-color: #3c72B8;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 11px;
+	font-weight: bold;
+	cursor: pointer;
+	width: 80px;
+	height: 20px;
+	border-collapse: collapse;
+	border: 1px solid #3c72B8;
+	color: #FFFFFF
+}
+
+.blueButton2 {
+	font-family: GE Inspira;
+	background-color: #3c72B8;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 11px;
+	font-weight: bold;
+	cursor: pointer;
+	width: 60px;
+	height: 22px;
+	border-collapse: collapse;
+	border: 1px solid #3c72B8;
+	color: #FFFFFF
+}
+
+.uploadGEDataFileTemplate {
+	font-family: GE Inspira;
+	background-color: #3c72B8;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 11px;
+	font-weight: bold;
+	cursor: pointer;
+	width: 80px;
+	height: 20px;
+	border-collapse: collapse;
+	border: 1px solid #3c72B8;
+	color: #FFFFFF
+}
+
+.uploadGETableTemplate {
+	font-family: GE Inspira;
+	background-color: #3c72B8;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 11px;
+	font-weight: bold;
+	cursor: pointer;
+	width: 80px;
+	height: 20px;
+	border-collapse: collapse;
+	border: 1px solid #3c72B8;
+	color: #FFFFFF
+}
+
+.bigBlueButton {
+	font-family: GE Inspira, Arial;
+	background-color: #3c72B8;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 11px;
+	font-weight: bold;
+	cursor: pointer;
+	width: 120px;
+	height: 20px;
+	border-collapse: collapse;
+	border: 1px solid #3c72B8;
+	color: #FFFFFF
+}
+
+.labelText {
+	font-size: 12px;
+	font-family: GE Inspira;
+	color: #000000;
+}
+
+.seachTbLarge {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ACE7ED;
+	/*font-family:GE Inspira, Arial,  helvetica, arial, sans serif;*/
+	font-family: GE Inspira, Arial;
+	padding-left: 0px;
+	width: 198px;
+}
+
+.prTextBox {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ACE7ED;
+	/*font-family:GE Inspira, Arial,  helvetica, arial, sans serif;*/
+	font-family: GE Inspira, Arial;
+	padding-left: 0px;
+	width: 80px;
+}
+
+.mediumTextBox {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ACE7ED;
+	/*font-family:GE Inspira, Arial,  helvetica, arial, sans serif;*/
+	font-family: GE Inspira, Arial;
+	padding-left: 0px;
+	width: 140px;
+}
+
+.bigTextBox {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ACE7ED;
+	/*font-family:GE Inspira, Arial,  helvetica, arial, sans serif;*/
+	font-family: GE Inspira, Arial;
+	padding-left: 0px;
+	width: 220px;
+}
+
+.veryBigTextBox {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ACE7ED;
+	/*font-family:GE Inspira, Arial,  helvetica, arial, sans serif;*/
+	font-family: GE Inspira, Arial;
+	padding-left: 0px;
+	width: 350px;
+	padding-right: 50px;
+}
+
+.normalTextArea {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ACE7ED;
+	/*font-family:GE Inspira, Arial,  helvetica, arial, sans serif;*/
+	font-family: GE Inspira, Arial;
+	padding-left: 0px;
+	vertical-align: middle;
+}
+
+.aTagForLink {
+	color: #000000;
+	font-style: normal;
+	font-family: GE Inspira, Arial;
+	font-size: 11px;
+	font-weight: bold;
+	font-family: GE Inspira, Arial;
+	text-decoration: underline;
+	text-align: left;
+}
+
+.dropDownWidth {
+	width: 200px;
+}
+
+#backgroundPopup {
+	border-radius: 6px 6px 6px 6px;
+	BORDER-RIGHT: #cecece 1px solid;
+	BORDER-TOP: #cecece 1px solid;
+	DISPLAY: none;
+	Z-INDEX: 1;
+	BACKGROUND: #000000;
+	LEFT: 0px;
+	BORDER-LEFT: #cecece 1px solid;
+	WIDTH: 986px;
+	BORDER-BOTTOM: #cecece 1px solid;
+	POSITION: absolute;
+	TOP: 0px;
+	HEIGHT: 100px;
+	POSITION: absolute;
+}
+
+#popupLogin {
+	border-radius: 6px 6px 6px 6px;
+	BORDER-RIGHT: #cecece 2px solid;
+	PADDING-RIGHT: 12px;
+	BORDER-TOP: #cecece 2px solid;
+	DISPLAY: none;
+	PADDING-LEFT: 12px;
+	FONT-SIZE: 13px;
+	Z-INDEX: 100;
+	BACKGROUND: #ffffff;
+	PADDING-BOTTOM: 12px;
+	BORDER-LEFT: #cecece 2px solid;
+	WIDTH: 230px;
+	PADDING-TOP: 12px;
+	BORDER-BOTTOM: #cecece 2px solid;
+	POSITION: absolute;
+	HEIGHT: 190px
+}
+
+#popupLoginClose {
+	DISPLAY: block;
+	FONT-WEIGHT: 700;
+	FONT-SIZE: 14px;
+	RIGHT: 6px;
+	COLOR: #6fa5fd;
+	LINE-HEIGHT: 14px;
+	POSITION: absolute;
+	TOP: 4px
+}
+
+#popupContact {
+	BORDER-RIGHT: #cecece 2px solid;
+	PADDING-RIGHT: 12px;
+	BORDER-TOP: #cecece 2px solid;
+	DISPLAY: none;
+	PADDING-LEFT: 12px;
+	FONT-SIZE: 13px;
+	Z-INDEX: 100;
+	BACKGROUND: #ffffff;
+	PADDING-BOTTOM: 12px;
+	BORDER-LEFT: #cecece 2px solid;
+	WIDTH: 380px;
+	PADDING-TOP: 12px;
+	BORDER-BOTTOM: #cecece 2px solid;
+	POSITION: absolute;
+	HEIGHT: 250px
+}
+
+#popupContactClose {
+	DISPLAY: block;
+	FONT-WEIGHT: 700;
+	FONT-SIZE: 14px;
+	RIGHT: 6px;
+	COLOR: #6fa5fd;
+	LINE-HEIGHT: 14px;
+	POSITION: absolute;
+	TOP: 4px
+}
+
+#popupFeedbackEditClose {
+	DISPLAY: block;
+	FONT-WEIGHT: 700;
+	FONT-SIZE: 14px;
+	RIGHT: 6px;
+	COLOR: #6fa5fd;
+	LINE-HEIGHT: 14px;
+	POSITION: absolute;
+	TOP: 4px
+}
+
+#popupEditFeedback {
+	BORDER-RIGHT: #cecece 2px solid;
+	PADDING-RIGHT: 12px;
+	BORDER-TOP: #cecece 2px solid;
+	DISPLAY: none;
+	PADDING-LEFT: 12px;
+	FONT-SIZE: 13px;
+	Z-INDEX: 100;
+	BACKGROUND: #ffffff;
+	PADDING-BOTTOM: 12px;
+	BORDER-LEFT: #cecece 2px solid;
+	WIDTH: 380px;
+	PADDING-TOP: 12px;
+	BORDER-BOTTOM: #cecece 2px solid;
+	POSITION: absolute;
+	HEIGHT: 250px
+}
+
+.innerTblHeadTxtLeft {
+	font-family: GE Inspira;
+	color: #FFFFFF;
+	font-size: 11px;
+	text-align: Left;
+	font-weight: bold;
+}
+
+.innerTblHeadTxtCenter {
+	font-family: GE Inspira;
+	color: #FFFFFF;
+	font-size: 11px;
+	text-align: center;
+	font-weight: bold;
+	word-wrap: break-word;
+	word-break: break-all;
+	table-layout: fixed;
+}
+
+.innerTblHeadGreenTxtCenter {
+	background-color: #00FF00;
+	font-family: GE Inspira;
+	color: #FFFFFF;
+	font-size: 11px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.innerTblHeadYellowTxtCenter {
+	background-color: #FFC000;
+	font-family: GE Inspira;
+	color: #FFFFFF;
+	font-size: 11px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.innerTblHeadOrangeTxtCenter {
+	background-color: #FF0000;
+	font-family: GE Inspira;
+	color: #FFFFFF;
+	font-size: 11px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.innerTblHeadRedTxtCenter {
+	background-color: red;
+	font-family: GE Inspira;
+	color: #FFFFFF;
+	font-size: 11px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.failureLogs {
+	font-family: GE Inspira;
+	color: #000000;
+	font-size: 12px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.innerTblHeader {
+	
+}
+
+.seachTbSmall {
+	border: 0px 0px 0px 0px;
+	background-color: #FDE9D9;
+	font-size: 11px;
+}
+
+.innerTblHeader1 {
+	background-color: #ADD8E6;
+}
+
+.innerTblHeader2 {
+	background-color: #FFC000;
+}
+
+.innerTblHeader3 {
+	background-color: #C0C0C0;
+}
+
+.innerTblHeader4 {
+	background-color: #00FFFF;
+}
+
+.innerTblHeader5 {
+	background-color: #808080;
+}
+
+.innerTblHeader6 {
+	background-color: #00FF00;
+}
+
+.tableheaderView {
+	background-color: #D9D9D9;
+	font-size: 10px;
+	font-weight: bold;
+	font-family: GE Inspira;
+	text-decoration: none;
+	line-height: 18px;
+}
+
+.headerB {
+	border-left: 2px;
+}
+
+.dropdown {
+	width: 500px;
+	padding-left: 20px;
+	position: absolute;
+	background: #fff;
+	border: 2px solid #0158D;
+}
+
+#close {
+	background: url('/CHUV/content/images/x.png') no-repeat;
+	width: 25px;
+	height: 29px;
+	display: inline;
+	position: absolute;
+	top: -15px;
+	right: -20px;
+	*right: -16px;
+	cursor: pointer;
+}
+
+.normalTextBox {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ACE7ED;
+	/*font-family:GE Inspira, Arial,  helvetica, arial, sans serif;*/
+	font-family: GE Inspira, Arial;
+	padding-left: 0px;
+	width: 148px;
+}
+
+.dropdownTextBoxes {
+	border-width: 1px;
+	border-color: #C9C9C9(;
+	/*font-family:GE Inspira, Arial,  helvetica, arial, sans serif;*/
+	font-family: GE Inspira, Arial;
+	padding-left: 0px;
+	width: 195px;
+	readonly: true;
+}
+
+.wordWrapClass {
+	padding: 5px;
+	font-weight: bold;
+	white-space: pre;
+	border-right: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	background-color: #8db4e2;
+	text-align: left;
+	vertical-align: bottom;
+	color: #FFFFFF;
+}
+
+.settingHeader {
+	line-height: 20px;
+	background-color: #3C72B8;
+}
+
+a.info {
+	position: relative;
+	z-index: 24;
+}
+
+a.info:hover {
+	z-index: 25;
+}
+
+a.info span {
+	display: none;
+}
+
+a.info:hover span {
+	display: block;
+	position: absolute;
+	top: 2em;
+	left: 2em;
+	width: 15em;
+	padding: 6px;
+	border: 1px solid black;
+	background-color: #eeeeee;
+	color: #000;
+}
+
+.dataTableI {
+	border: 0;
+	border: none;
+	text-align: center;
+	width: 80px;
+	font-size: 10px;
+	background-color: #F1F5F8
+}
+
+.checkboxSizeS {
+	width: 6px;
+	height: 6px;
+	padding: 2px;
+}
+
+.textboxClass {
+	border: 1px solid #FFFFFF;
+	font-family: GE Inspira, Arial;
+	font-size: 11px;
+}
+
+#chuQuestiontableId {
+	scrollbar-3dlight-color: #4E7CBA;
+	scrollbar-arrow-color: #4E7CBA;
+	scrollbar-base-color: #4E7CBA;
+	scrollbar-darkshadow-color: #4E7CBA;
+	scrollbar-face-color: #FFFFFF;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-shadow-color: #FFFFFF;
+	scrollbar-track-color: #FFFFFF;
+	scrollbar-width: 2px !important;
+}

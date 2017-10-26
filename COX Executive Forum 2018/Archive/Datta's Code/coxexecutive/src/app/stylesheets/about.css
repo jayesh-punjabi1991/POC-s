@@ -1,0 +1,81 @@
+#aboutForum{
+  //height:28vh;
+  background-color: #f5fbfb;
+}
+#aboutForumHead{
+  padding-top: 1%;
+  text-align: center;
+  color: black;
+  font-family:AvenirMedium;
+  font-size: 3rem;
+}
+#aboutForumSubHead{
+  text-align: center;
+  color: black;
+  font-family:AvenirMedium;
+  font-size: 1.5rem;
+}
+#aboutForumText{
+  padding:1% 4% 0 4%;
+  text-align: left;
+  color: black;
+  font-family:AvenirRegular;
+  font-size: 2.25rem;
+}
+#aboutSponsorship{
+  padding:1% 4% 0 4%;
+  //height: 44vh;
+  margin-top : -1.5%;	
+  background-color: #423393;
+}
+#aboutSponsorshipHead{
+  font-family: AvenirBoldCn;
+  font-size: 2rem;
+  color:#92d9d6;
+}
+#aboutSponsorshipSubHead{
+  font-family: AvenirMediumCn;
+  font-size: 2.25rem;
+  color:white;
+}
+#aboutSponsorshipContent{
+  padding:1% 0 0 0;
+  font-family: AvenirRegular;
+  font-size: 2.25rem;
+  color:white;
+}
+#aboutSponsorshipButtonText{
+  font-family: AvenirMediumCn;
+  font-size: 1.5rem;
+  color:#92d9d6;
+}
+button, #aboutSponsorshipButton{
+  margin:1% 0 0 0 !important;  
+  font-family: AvenirBoldCn !important;
+  font-size:3rem !important;
+  height:45px !important;
+  width:120px !important;
+  background-color:#d1cf54 !important;
+  color:#004059 !important;
+  cursor:pointer !important;
+  border: none !important;
+}
+.whiteBackground{
+	background-color : white !important;	
+}
+.joinUsButton{
+	background-color : yellow !important;
+	color : black !important;
+}
+.sponsorshipLabel{
+	margin-left : 4%;
+	font-size : 5.25rem;
+	color : #423393;
+}
+@media only screen and (max-width: 320px) {
+.sponsorshipLabel{
+	margin-left : 4%;
+	font-size : 4.25rem;
+	color : #423393;
+}
+}

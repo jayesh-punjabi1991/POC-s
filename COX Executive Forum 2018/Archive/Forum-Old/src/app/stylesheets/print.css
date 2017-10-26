@@ -1,0 +1,8 @@
+#printerLogo{
+  height:100px !important;
+  width:100px !important;
+  filter:brightness(90%);
+}
+#printerText{
+  padding-top:5%;
+}

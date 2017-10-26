@@ -1,0 +1,42 @@
+#acknowledgementDiv{
+  height:72vh;
+  width:100%;
+  background-color: #f5fbfb;
+}
+#acknowledgementHead{
+  padding-top:1%;
+  font-family: AvenirBoldCn;
+  font-size: 2.70rem;
+  color:#004060;
+  text-align: center;
+}
+#acknowledgementSubHead{
+  color:#004059;
+  font-family:AvenirRegular;
+  font-size: 1.75rem;
+  text-align: center;
+}
+#acknowledgementBody{
+  padding-top:4%;
+  text-align: right;
+  font-family:AvenirRegular;
+  font-size:1.5rem;
+  color:#317193;
+}
+#ics{
+  text-align: center;
+}
+#print{
+  text-align: center;
+}
+#auction{
+  text-align: center;
+}
+#calenderLogo{
+  height:100px;
+  width:100px;
+  filter:brightness(90%);
+}
+#icsText{
+  padding-top:5%;
+}

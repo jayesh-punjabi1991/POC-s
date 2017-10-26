@@ -1,0 +1,77 @@
+<!-- Filter Content -->
+<div class="row vs-filter" data-ng-style="oeeAllValueStreamsObj.filter.style">
+    <div class="col s12 m12 l12">
+        <!--<div class="col s3 m4 l5">
+            <select  disabled class="right vs-filter-sort-by" data-ng-model="oeeAllValueStreamsObj.filter.selectedOptions" data-ng-change="update()" data-ng-options="item for item in oeeAllValueStreamsObj.filter.sortByOptions">
+                <option style="display:none" value="">Sort By</option>
+            </select>
+        </div>-->
+        <div class="col s12 m12 l12 view-options" style="padding: 12px; text-align: center; ">
+            <span>
+                <input type="checkbox" name="sortby" 
+                    data-ng-model="oeeAllValueStreamsObj.filter.viewOptionConstrain[0]['isChecked']" 
+                    value="ConstraintsOnly" data-ng-change="toogleResetButton(oeeAllValueStreamsObj.filter.viewOptionConstrain)" 
+                    data-ng-checked="oeeAllValueStreamsObj.filter.viewOptionConstrain[0]['isChecked']"> Constraints Only
+            </span>
+            <span>
+                <input type="checkbox" name="sortby" 
+                    data-ng-model="oeeAllValueStreamsObj.filter.viewOptionConstrain[1]['isChecked']"
+                    value="showThroughput" data-ng-change="toogleResetButton(oeeAllValueStreamsObj.filter.viewOptionConstrain)"
+                    data-ng-checked="oeeAllValueStreamsObj.filter.viewOptionConstrain[1]['isChecked']"> Show Throughput                
+            </span>
+            <span style="padding: 0 10px;">
+                <button id="Applybtn" class="btn btn--primary" type="button" data-ng-disabled="oeeAllValueStreamsObj.filter.applyButton" data-ng-click="applyFilter()">Apply</button>                
+            </span>
+            <span style="padding: 0 10px;">
+                <button id="Resetbtn" class="btn btn--default" type="button" data-ng-disabled="oeeAllValueStreamsObj.filter.resetButton"  data-ng-click="resetFilter()">Reset</button>                
+            </span>
+        </div>
+    </div>
+</div>
+
+<!-- Filter Icon -->
+<div class="row vs-filter-icon" data-ng-style="oeeAllValueStreamsObj.filterIcon.style">
+    <a href="javascript:void(0)" data-ng-click="toogleFilter()">
+        <i class="fa fa-filter" data-ng-hide="oeeAllValueStreamsObj.filter.show" aria-hidden="true"></i>
+        <i class="fa fa-times-circle" data-ng-show="oeeAllValueStreamsObj.filter.show" aria-hidden="true"></i> &nbsp;
+        <span data-ng-bind="oeeAllValueStreamsObj.filter.show ? 'Close' : 'Filters'"></span>
+    </a>
+</div>
+
+<!-- Nav bar (Back & Next) -->
+<div class="row nav--bar">
+    <div class="col s12 m12 l12">
+        <div class="card">
+            <div class="card-content">
+                <div class="col s6 m6 l6 back-btn">
+                    <a ui-sref="dashboard">
+                        <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                        <span>OEE Supply Chain</span>
+                    </a>
+                </div>
+                <div class="col s6 m6 l6 next-btn">
+                    <a ui-sref="oeeSummary">
+                        <span>OEE Summary</span>
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Table-->
+<div class="row value-stream-table">
+    <tree-grid tree-data="tree_data" class="vs-table" on-select="tableHandler(branch)" on-click="setRowColor(branch)" icon-leaf="-" icon-expand="fa fa-chevron-right" icon-collapse="fa fa-chevron-down">
+    </tree-grid>
+</div>
+
+<!-- Back and Next Button -->
+<!--<a ui-sref="dashboard" class="back-btn btn--primary">
+    <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+    <span>OEE Supply Chain</span>
+</a>
+<a ui-sref="oeeSummary" class="next-btn btn--primary">
+    <span>OEE Summary</span>
+    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+</a>-->

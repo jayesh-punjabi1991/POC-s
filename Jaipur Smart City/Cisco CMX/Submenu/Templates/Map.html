@@ -1,0 +1,166 @@
+      <!-- <style type="text/css">
+ .well1 {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #536e87;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
+*, :after, :before {
+    box-sizing: inherit;
+}
+.text-primary {
+    color: white;
+}
+#highcharts-6h73i8p-17 > svg > g.highcharts-legend > g > g > g.highcharts-legend-item.highcharts-scatter-series.highcharts-color-1.highcharts-series-1 > image{
+  height:32px !important;
+  width:32px !important;
+}
+tspan::before{
+content: " ";
+}
+    </style>
+   <div class="well1" style="margin-top:2%;">
+                                <div class="row">
+                                        <div class="col-md-2 col-sm-6 col-xs-12 ">
+                                        <label class="text-primary pull-left" id="text" style="padding-left:5%">
+                                     <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Location
+                            
+                                             </label>
+                                        </div>
+                                        <div class="col-md-2 col-sm-6 col-xs-12">
+                                            
+                                        </div>
+                                        <div class="col-md-2 col-sm-6 col-xs-12">
+                                          <label class="text-primary pull-left" id="text" style="padding-left:5%">
+                                             <i class="fa fa-calendar" ></i>&nbsp;&nbsp;Date
+                                           
+                                             </label>
+                                        </div>
+                            </div>
+                      <div class="row">
+
+                                 <div class="col-md-2 col-sm-6 col-xs-12">
+                              
+                                      <select id="Area" class="ui search selection dropdown" style="height:45px">
+                                      <option selected>Building</option>
+                                   
+                                    </select>
+                                            
+                                 </div>
+                                  <div class="col-md-2 col-sm-6 col-xs-12">
+                                    <select id="Location" class="ui search selection dropdown" style="height:45px">
+                                      <option selected value="0">All</option>
+                                      <option value="16">CiscoCampus</option>
+                                      <option value="44">CiscoLiveLatAm</option>
+                             
+                                    </select>
+                              
+                                            
+                                 </div>
+                                  <div class="col-md-2 col-sm-6 col-xs-12">
+                                <select id="Day" class="ui search selection dropdown" style="height:45px">
+                                      <option selected value="today">Today</option>
+                                      <option value="yesterday">Yesterday</option>
+                                      <option value="this week">This week</option>
+                                    
+                                    </select>
+                                 </div>
+                            </div>
+                                
+                          
+                                   </div>-->
+
+<div class=""  style="padding-top: 11px;padding-left: 0px;padding-right: 0px;padding-bottom: 0px;">
+<div class="row">
+  <div class="col-md-6 col-xs-12 col-sm-12">
+      <div class="panel panel-primary">
+     
+          <div class="panel-heading" id="text">
+               <div class="row">
+            <div class="col-md-8 col-xs-12 col-sm-12">
+                <span class="pull-left"> <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Attractive Places </span>
+            </div>
+           </div>
+          </div>
+          <div class="panel-body">
+               <svg id="container" width="600" height="350" viewBox="7 77 600 350" style="background-image: url('Submenu/images/JDA_MAP.png')" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                  <circle cx="433" cy="231" r="1" stroke="yellow" stroke-width="1" fill="white" place-glow custom-title place-name="MANYAWAS" shop-name="KFC" dis="5" marker-name="place">
+                    <title></title>
+                  </circle>
+                   <circle cx="283" cy="148" r="1" stroke="yellow" stroke-width="1" fill="white" place-glow custom-title place-name="GAJSINGHPURA" shop-name="MC-DONALDs" dis="3" marker-name="place">
+                      <title></title>
+                   </circle>
+                  
+                   <circle cx="285" cy="314" r="1" stroke="yellow" stroke-width="1" fill="white" place-glow custom-title place-name="BADARWAS" shop-name="CHINA TOWN" dis="2" marker-name="place">
+                      <title></title>
+                   </circle>
+                   
+                   <circle cx="368" cy="356" r="1" stroke="yellow" stroke-width="1" fill="white" place-glow custom-title place-name="GANPAT PURA" shop-name="BIZIBEANS" dis="1" marker-name="place">
+                      <title></title>
+                   </circle>
+                   <circle cx="284" cy="113" r="1" stroke="yellow" stroke-width="1" fill="white" place-glow custom-title place-name="NANDKISHORE PURA" shop-name="SHOPPERS STOP" dis="1" marker-name="place">
+                      <title></title>
+                   </circle>
+                </svg> 
+          
+          </div>
+      </div>
+  </div>
+  <div class="col-md-6 col-xs-12 col-sm-12">                    
+      <div class="panel panel-primary">
+          <div class="panel-heading" id="text">
+             <div class="row">
+            <div class="col-md-8 col-xs-12 col-sm-12">
+                  <span class="pull-left"> <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Access Points</span>
+          </div>
+           </div>
+         </div>
+          <div class="panel-body">
+             <svg id="container" width="600" height="350" viewBox="7 77 600 350" style="background-image: url('Submenu/images/JDA_MAP.png')" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                  <filter id="Access">
+                    <feImage xlink:href="Submenu/images/wifi.png"/>
+                  </filter>
+                  <filter id="Faulty">
+                    <feImage xlink:href="Submenu/images/faulty.png"/>
+                  </filter>
+                </defs>
+                <circle cx="368" cy="159" r="4" stroke="green" stroke-width="4" fill="green" ng-mouseover="show_line = true" ng-mouseout="show_line = false" custom-title mac-ip="192.132.87.8" url="http://youtube.com" loc="location1" marker-name="user">
+                <title></title>
+               </circle>   
+               <line x1="368" y1="159" x2="433" y2="234" style="stroke:rgb(255,0,0);stroke-width:2" ng-show="show_line"/>
+               <circle cx="433" cy="234" r="10" style="filter:url(#Access);" >
+                   <title>Access Point 1</title>
+               </circle>
+               <line x1="368" y1="159" x2="283" y2="150" style="stroke:rgb(255,0,0);stroke-width:2" ng-show="show_line"/>
+               <circle cx="283" cy="150" r="10" style="filter:url(#Access);">
+                  <title>Access Point 2</title>
+               </circle>
+               <line x1="368" y1="159" x2="285" y2="316" style="stroke:rgb(255,0,0);stroke-width:2" ng-show="show_line"/>
+               <circle cx="285" cy="316" r="10" style="filter:url(#Access);">
+                  <title>Access Point 3</title>  
+               </circle>
+               <line x1="368" y1="159" x2="368" y2="358" style="stroke:blue;stroke-width:2" ng-show="show_line"/>
+               <circle cx="368" cy="358" r="10" style="filter:url(#Access);">
+                  <title>Access Point 4</title>  
+               </circle>
+               <circle cx="284" cy="115" r="10" style="filter:url(#Faulty);">
+                  <title>Faulty access Point</title>  
+               </circle>
+               <circle cx="380" cy="210" r="4" stroke="red" stroke-width="4" fill="red" place-glow custom-title mac-ip="192.101.56.18" url="http://youtube.com" loc="location1" marker-name="user">
+                 <title></title>
+               </circle>
+               <circle cx="300" cy="170" r="4" stroke="red" stroke-width="4" fill="red" place-glow custom-title mac-ip="192.52.56.18" url="http://youtube.com" loc="location1" marker-name="user">
+                  <title></title>
+               </circle>
+              </svg> 
+          </div>
+      </div>
+  </div>
+</div>
+</div>

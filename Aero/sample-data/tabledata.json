@@ -1,0 +1,47 @@
+[
+    {
+        "LogTime": "11/17/2016 23:52",
+        "ActivityType": "LOGOUT",
+        "Description": "Logged out user admin successfully",
+        "ObjectLocation": "open",
+        "ObjectName": "",
+        "TSNo":"5601253",
+        "ObjectType": "vs_auditLog",
+        "User": "admin",
+        "UserIp": "10.10.10.81"
+    },
+    {
+        "LogTime": "11/17/2016 17:04",
+        "ActivityType": "APPLY_CONFIGURATION",
+        "Description": "Apply Configuration",
+        "ObjectLocation": "open",
+        "ObjectName": "",
+        "TSNo":"5601223",
+        "ObjectType": "vs_auditLog",
+        "User": "admin",
+        "UserIp": "10.10.10.26"
+    },
+   
+    {
+        "LogTime": "11/17/2016 13:49",
+        "ActivityType": "LOGOUT_EXPIRED_SESSION",
+        "Description": "Logging out user admin as session expired",
+        "ObjectLocation": "",
+        "ObjectName": "",
+        "TSNo":"56012903",
+        "ObjectType": "vs_auditLog",
+        "User": "admin",
+        "UserIp": "localhost"
+    },
+    {
+        "LogTime": "11/17/2016 6:05",
+        "ActivityType": "PARTITION_DB",
+        "Description": "creating new partition 437 for partition time 1487289600000 on table EVENT",
+        "ObjectLocation": "",
+        "ObjectName": "",
+        "TSNo":"5601263",
+        "ObjectType": "vs_auditLog",
+        "User": "",
+        "UserIp": "localhost"
+    }
+]

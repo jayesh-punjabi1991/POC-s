@@ -1,0 +1,788 @@
+
+[
+ {
+   "Name": " AlbertHall-02",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " AlbertHall-04",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " AmberFort-04",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " Baghat Singh park-01",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " Baghat Singh park-02",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " HawaMahal-01",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " JalMahal-05",
+   "OperationalStatus": "CRITICAL",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " JalMahal-06",
+   "OperationalStatus": "CRITICAL",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " JantarMantar-02",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " JantarMantar-07",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " JKLoneHospital-02",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " MahilaHospital-02",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " MahilaHospital-04",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " NehruBal-01",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " NehruBal-05",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " NurseryPark-03",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " NurseryPark-07",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " RamNiwasBagh-04",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " RamniwasBagh-15",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " Rose Garden-01",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " Rose Garden-02",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " SciencePark-01",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " SMSHospital-01",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " SMSHospital-02",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " SMSHospital-03",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " SMSHospital-04",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " SMSHospital-05",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": " TechnologyPark-01",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " TechnologyPark-03",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " WoodlandPark-01",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": " WoodlandPark-04",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": "AlbertHall-01",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "AlbertHall-03",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "AmberFort-01",
+   "OperationalStatus": "CRITICAL",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "AmberFort-02",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "AmberFort-03",
+   "OperationalStatus": "CRITICAL",
+   "Model": "cisco_6400"
+ },
+ {
+   "Name": "AmberFort-05",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "AmberFort-06",
+   "OperationalStatus": "CRITICAL",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "AmberFort-08",
+   "OperationalStatus": "CRITICAL",
+   "Model": "cisco_6400"
+ },
+ {
+   "Name": "Baghat Singh park-01",
+   "OperationalStatus": "SOFT_DELETED",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": "Baghat Singh park-02",
+   "OperationalStatus": "SOFT_DELETED",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": "Baghat Singh park-03",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "Baghat Singh park-04",
+   "OperationalStatus": "CRITICAL",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "BaseMaintExit_JDA-03",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6000P"
+ },
+ {
+   "Name": "BaseMent-1_JDA-02",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6000P"
+ },
+ {
+   "Name": "BaseMent-2_JDA-01",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6000P"
+ },
+ {
+   "Name": "BaseMent-2_JDA-12",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6000P"
+ },
+ {
+   "Name": "BaseMentEntry_JDA-06",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6000P"
+ },
+ {
+   "Name": "CrystalCourt-01",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6000P"
+ },
+ {
+   "Name": "CrystalCourt-02",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6000P"
+ },
+ {
+   "Name": "CrystalPalm-01",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6000P"
+ },
+ {
+   "Name": "CrystalPalm-02",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6000P"
+ },
+ {
+   "Name": "DwarakadasPark-01",
+   "OperationalStatus": "SOFT_DELETED",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": "DwarakadasPark-01",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": "DwarakadasPark-02",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "DwarakadasPark-03",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "DwarakadasPark-04",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "DwarakadasPark-05",
+   "OperationalStatus": "SOFT_DELETED",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": "DwarakadasPark-06",
+   "OperationalStatus": "CRITICAL",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": "DwarakadasPark-07",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": "DwarakadasPark-07",
+   "OperationalStatus": "SOFT_DELETED",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": "EvershineTowersPark-01",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6000P"
+ },
+ {
+   "Name": "EvershineTowersPark-02",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6000P"
+ },
+ {
+   "Name": "FirstFloor_JDA-08",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6000P"
+ },
+ {
+   "Name": "FourthFloor_JDA-10",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6000P"
+ },
+ {
+   "Name": "GroundFloorEntry_JDA-04",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6000P"
+ },
+ {
+   "Name": "GroundFloorExit_JDA-05",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6000P"
+ },
+ {
+   "Name": "GroundFloor_JDA-07",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6000P"
+ },
+ {
+   "Name": "GTBzar-01",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6000P"
+ },
+ {
+   "Name": "HawaMahal-02",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "HawaMahal-03",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "HawaMahal-04",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "Inox Parking -3",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6000P"
+ },
+ {
+   "Name": "Inox Parking -4",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6000P"
+ },
+ {
+   "Name": "InoxParking-01",
+   "OperationalStatus": "SOFT_DELETED",
+   "Model": "cisco_6000P"
+ },
+ {
+   "Name": "InoxParking-02",
+   "OperationalStatus": "SOFT_DELETED",
+   "Model": "cisco_6000P"
+ },
+ {
+   "Name": "JaipuraHospital-01",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "Jaipurahospital-02",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "JaipuraHospital-03",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "JaipuraHospital-04",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "JaipuriaHospital-05",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "JaipuriaHospital-06",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "JalMahal-01",
+   "OperationalStatus": "CRITICAL",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "JalMahal-02",
+   "OperationalStatus": "CRITICAL",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "JalMahal-03",
+   "OperationalStatus": "CRITICAL",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "JalMahal-04",
+   "OperationalStatus": "CRITICAL",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "JANAK-MARG-01",
+   "OperationalStatus": "CRITICAL",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": "JANAK-MARG-02",
+   "OperationalStatus": "SOFT_DELETED",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": "JANAK-MARG-03",
+   "OperationalStatus": "CRITICAL",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": "JantarMantar-01",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "JantarMantar-03",
+   "OperationalStatus": "SOFT_DELETED",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "JantarMantar-03",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "JantarMantar-04",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "JantarMantar-05",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "JantarMantar-06",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "JantarMantar-08",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "JantarMantar-09",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "JantarMantar-10",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "JKLoneHospital-01",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "JKLoneHospital-03",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "MahilaHospital-01",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "MahilaHospital-03",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "MahilaHospital-04",
+   "OperationalStatus": "SOFT_DELETED",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": "MahilaHospital-05",
+   "OperationalStatus": "SOFT_DELETED",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": "MGFParking-01",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6000P"
+ },
+ {
+   "Name": "MGFParking-02",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6000P"
+ },
+ {
+   "Name": "NehruBal-02",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "NehruBal-03",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "NehruBal-04",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "NehruBal-06",
+   "OperationalStatus": "SOFT_DELETED",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "NehruBal-06",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "NehruBal-07",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "NOC-01",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "NurseryPark-01",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "NurseryPark-02",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "NurseryPark-04",
+   "OperationalStatus": "SOFT_DELETED",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": "NurseryPark-05",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "NurseryPark-06",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "RamNiwasBagh-01",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "RamNiwasBagh-02",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "RamNiwasBagh-03",
+   "OperationalStatus": "CRITICAL",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "RamNiwasBagh-05",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "RamNiwasBagh-06",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "RamNiwasBagh-07",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "RamNiwasBagh-08",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "RamNiwasBagh-09",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "RamNiwasBagh-10",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "RamniwasBagh-11",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "RamniwasBagh-12",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "RamniwasBagh-13",
+   "OperationalStatus": "CRITICAL",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": "RamniwasBagh-13 New",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": "RamniwasBagh-14",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "RamniwasBagh-16",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "RamniwasBagh-17",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "RamniwasBagh-18",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "Rose Garden 4",
+   "OperationalStatus": "SOFT_DELETED",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": "Rose Garden-03",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "Rose Garden-1New",
+   "OperationalStatus": "SOFT_DELETED",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": "RoseGarden-01",
+   "OperationalStatus": "SOFT_DELETED",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": "RoseGarden-02",
+   "OperationalStatus": "SOFT_DELETED",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": "RoseGarden-03",
+   "OperationalStatus": "SOFT_DELETED",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "SciencePark-02",
+   "OperationalStatus": "SOFT_DELETED",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "SciencePark-02",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "SciencePark-03",
+   "OperationalStatus": "SOFT_DELETED",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": "SciencePark-04",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "SecondFloor_JDA-11",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6000P"
+ },
+ {
+   "Name": "SMSHospital-01",
+   "OperationalStatus": "SOFT_DELETED",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": "TechnologyPark-01",
+   "OperationalStatus": "SOFT_DELETED",
+   "Model": "cisco_6930"
+ },
+ {
+   "Name": "TechnologyPark-02",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "TechnologyPark-04",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "ThirdFloor_JDA-09",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6000P"
+ },
+ {
+   "Name": "WoodlandPark-02",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "WoodlandPark-03",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "ZananaHospital-01",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "ZananaHospital-02",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "ZananaHospital-03",
+   "OperationalStatus": "SOFT_DELETED",
+   "Model": "cisco_6400E"
+ },
+ {
+   "Name": "ZananaHospital-04",
+   "OperationalStatus": "OK",
+   "Model": "cisco_6400E"
+ }
+]

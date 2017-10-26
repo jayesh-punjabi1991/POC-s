@@ -1,0 +1,55 @@
+cox-forum
+  |-cox-forum.component.ts (template contains router-outlet)
+  |-cox-forum.module.ts
+  |-app.routes.ts
+  
+  |-home
+    |-home.component.ts
+    |-home.component.html
+  |-about
+    |-about.component.ts
+    |-about.component.html
+		|-topheader
+			|-topheader.component.ts
+			|-topheader.component.html
+		|-bottomfooter
+			|-bottomfooter.component.ts
+			|-bottomfooter.component.html
+  |-user
+    |-user.component.ts
+    |-user.component.html
+		|-topheader
+			|-topheader.component.ts
+			|-topheader.component.html
+		|-bottomfooter
+			|-bottomfooter.component.ts
+			|-bottomfooter.component.html
+  |-thankyou
+    |-thankyou.component.ts
+    |-thankyou.component.html
+		|-topheader
+			|-topheader.component.ts
+			|-topheader.component.html
+		|-bottomfooter
+			|-bottomfooter.component.ts
+			|-bottomfooter.component.html
+  |-AuctionDonation1
+    |-AuctionDonation1.component.ts
+    |-AuctionDonation1.component.html
+		|-topheader1
+			|-topheader.component.ts
+			|-topheader.component.html
+		|-bottomfooter1
+			|-bottomfooter.component.ts
+			|-bottomfooter.component.html
+  |-AuctionDonation2
+    |-AuctionDonation2.component.ts
+    |-AuctionDonation2.component.html
+		|-topheader1
+			|-topheader.component.ts
+			|-topheader.component.html
+		|-bottomfooter1
+			|-bottomfooter.component.ts
+			|-bottomfooter.component.html
+  
+    

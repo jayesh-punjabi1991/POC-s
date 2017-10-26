@@ -1,0 +1,668 @@
+ 
+ <style>
+.heading1{
+    margin: 0 0 0 70px;
+}
+button.accordion {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    padding: 18px;
+    width: 99.8%;
+    border: 1px solid #b1b1bc;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-left: 0.3%;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+button.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 1100px;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 1100px;
+}
+div.panel1 {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 1100;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 1;
+}
+
+div.panel1.show {
+    opacity: 0;
+    max-height: 1100px;
+}
+button.a:after {
+    content: '\02796';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+button.a.active:after {
+    content: "\02795";
+}
+button.a.active, button.a:hover {
+    background-color: #ffffff;
+}
+button.a {
+    background-color: #ddd;
+    color: #000000;
+    cursor: pointer;
+    padding: 18px;
+    width: 99.8%;
+    border: 1px solid #b1b1bc;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-left: 0.3%;
+}
+
+.striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.table,.table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}
+
+.bordered tr,.table-all tr{border-bottom:1px solid #ddd}
+.striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.table-all tr:nth-child(odd){background-color:#fff}
+.table-all tr:nth-child(even){background-color:#f1f1f1}
+.hoverable tbody tr:hover,.ul.hoverable li:hover{background-color:#ccc}
+.centered tr th,.w3-centered tr td{text-align:center}
+.table td,.table th,.w3-table-all td,.table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
+.table th:first-child,.table td:first-child,.table-all th:first-child,.table-all td:first-child{padding-left:16px}
+.responsive{overflow-x:auto}
+
+/*Desktop*/
+@media screen and (min-width: 769px) and (max-width: 2600px) {
+#PlannedChart{
+  border-right:1px solid #b1b1bc
+}
+#toggle{
+   padding-right:15px;
+}
+#TableActualCost {
+padding-bottom: 10px;
+padding-top:5%;
+padding-left:5%;
+}
+#TablePlannedCost{
+margin-right:5%;
+}
+
+}
+
+/*Ipad*/
+@media screen and (min-width: 700px) and (max-width:768px){
+#ActualChart{
+  border-top:1px solid #b1b1bc;
+  margin-top:4%;
+}
+#ActualChart1{
+  margin-top:4%;
+}
+#toggle{
+   padding-right:15px;
+   margin-left:-3%;
+}
+#TableActualCost {
+padding-top: 20px;
+}
+
+}
+
+/*Mobile*/
+@media screen and (min-width: 0px) and (max-width: 650px) {
+
+#ActualChart{
+  margin-top:4%;
+}
+#ActualChart1{
+  margin-top:4%;
+}
+#PlannedChart{
+  border-bottom:1px solid #b1b1bc;
+}
+.panel1{
+  padding:0 0 !important; 
+}
+#toggle{
+   padding-bottom:10px;
+   padding-top:10px;
+}
+#tableview2{
+  padding-top:0;
+}
+#HeadingForPlannedMaintenance{
+  padding-top: 25px;
+}
+#TablePlannedCost{
+  padding-bottom: 25px;
+}
+#TableActualCost{
+  padding-bottom: 15px;
+}
+#PlannedCostChart{
+  padding-bottom: 12%;
+  border-bottom: 1px #b1b1bc;
+}
+}
+</style>
+
+<px-card style="padding-top:10px;
+    padding-bottom: 0px;
+    padding-left: 15px;background: linear-gradient(#242326,#3b3b3f);
+        border-bottom: 1px solid #bbbbbb;
+    box-shadow: 1px 1px 1px #cec2c2;
+    color: white;">
+    <h4 style="margin-top:0px;margin-bottom:10px;font-size:1.2em">Locomotive ID : {{locomotiveID}} </h4>
+</px-card>
+
+<!--Chart1-->
+<button class="accordion a" style="font-weight: bold;font-family: geInspira;font-size:1.2em;margin-top:1%">Maintenance Cost</button>
+  <div id="responsive">
+<div class="panel1" style="margin-top:1%;margin-left:0.4%;border:1px solid #b1b1bc" >
+
+    
+  <px-card style="background-color:#ffffff;margin-left:0.3%;margin-right:0;margin-bottom:2%;padding-bottom:0px">
+  <div ng-show="spinner=='!running'" ng-hide="spinner=='running'">
+        <px-dropdown-content class="px-dropdown-content" max-cont-character-width="10"
+        extend-dropdown="true" extend-dropdown-by="15"  items='{{data2}}'>
+        </px-dropdown-content>
+     <div class="w3-row" style="margin-top:2%;margin-bottom:2%" >
+          <div class="w3-col l6 m12 s12" id="PlannedChart">
+             <div class="pull-left" id="toggle">
+                    <b> {{view1}} </b>
+                    <i class="fa xyz fa-toggle-off fa-lg" id="toggle1" aria-hidden="true" ng-click="swapView1();">
+                    </i>
+                  </div>
+                    <div ng-show='view=="Chart View"' ng-hide="view=='Data View'" id="PlannedCostChart" > 
+                    <div id="chart1" style="height:400px;width:auto;">
+
+                    </div>
+                </div>
+                        
+           <div id="TablePlannedCost" ng-show='view=="Data View"' ng-hide="view=='Chart View'" style="padding-top:5%;">
+             <h3 style="text-align:center;margin-top:0px" id="HeadingForPlannedMaintenance">Planned Maintenance Cost</h3>
+             <px-data-table  class="data-table" id="mytable" table-data="{{PlannedCost}}" filterable="true"  enable-column-reorder="true" enable-column-resize="true" >
+            <px-data-table-column name="locoId" label="Locomotive ID" sortable filterable>
+            </px-data-table-column>
+            <px-data-table-column name="maintenancDate" label="Maintenance Date" sortable filterable>
+            </px-data-table-column>
+            <px-data-table-column name="ohCost" label="Over Haul Cost" sortable filterable>
+            </px-data-table-column>
+            <px-data-table-column name="rmCost" label="RM Cost" sortable filterable>
+            </px-data-table-column>  
+            <px-data-table-column name="unplannedMCost" label="Unplanned Maintenance Cost" sortable filterable>
+            </px-data-table-column>
+              <px-data-table-column name="proactiveMCost" label="Proactive Maintenace Cost" sortable filterable>
+            </px-data-table-column>       
+            </px-data-table>
+         
+        </div>
+</div>
+            <div class="w3-col l6 m12 s12" id="ActualChart">           
+                
+                <div ng-show='view1=="Chart View"' id="ActualChart1" ng-hide="view1=='Data View'" style="padding-top:2%">
+                    <div id="chart2" style="height:400px;width:auto;">
+                    </div>
+                </div>
+ 
+         <div id="TableActualCost" ng-show='view1=="Data View"' ng-hide="view1=='Chart View'" id="tableview2" >
+          <h3 style="text-align:center;margin-top:0px">Actual Maintenance Cost</h3>
+             <px-data-table  class="data-table" id="mytable" table-data="{{ActualCost}}" filterable="true" enable-column-reorder="true" enable-column-resize="true" >
+            <px-data-table-column name="locoId" label="Locomotive ID" sortable filterable>
+            </px-data-table-column>
+            <px-data-table-column name="maintenancDate" label="Maintenance Date" sortable filterable>
+            </px-data-table-column>
+            <px-data-table-column name="ohActualCost" label="Over Haul Actual Cost" sortable filterable>
+            </px-data-table-column>
+            <px-data-table-column name="rmActualCost" label="RM Actual Cost" sortable filterable>
+            </px-data-table-column>     
+            <px-data-table-column name="unplannedMActCost" label="Unplanned Maintenance Actual Cost" sortable filterable>
+            </px-data-table-column> 
+            <px-data-table-column name="proactiveMActCost" label="Proactive Maintenance Actual Cost" sortable filterable>
+            </px-data-table-column>
+              <px-data-table-column name="savings" label="Savings" sortable filterable>
+            </px-data-table-column>       
+            </px-data-table>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+        <div ng-show="spinner=='running'" ng-hide="spinner=='!running'">
+
+      
+                       <svg version="1.1" id="L4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 50 50" enable-background="new 0 0 0 0" xml:space="preserve" style="padding-left:32%;height:300px;">
+                        <circle fill="#000000" stroke="none" cx="27" cy="20" r="2">
+                          <animate
+                            attributeName="opacity"
+                            dur="1s"
+                            values="0;1;0"
+                            repeatCount="indefinite"
+                            begin="0.1"/>    
+                        </circle>
+                        <circle fill="#000000" stroke="none" cx="37" cy="20" r="2">
+                          <animate
+                            attributeName="opacity"
+                            dur="1s"
+                            values="0;1;0"
+                            repeatCount="indefinite" 
+                            begin="0.2"/>       
+                        </circle>
+                        <circle fill="#000000" stroke="none" cx="47" cy="20" r="2">
+                          <animate
+                            attributeName="opacity"
+                            dur="1s"
+                            values="0;1;0"
+                            repeatCount="indefinite" 
+                            begin="0.3"/>     
+                        </circle>
+                      </svg>
+   
+        </div>
+                </px-card>
+            
+
+    </div>
+  </div>
+
+
+
+<!--Chart2-->
+<button class="accordion" style="font-weight: bold;font-family: geInspira;font-size:1.2em;margin-top:1%">Maintenance Event Tracking
+</button>
+<div class="panel" style="border:1px solid #b1b1bc;margin-top:1%;margin-bottom:2%;margin-left:0.4%">
+    <px-card  style="background-color:#ffffff;margin-left:0.3%;margin-right:0">
+       <div id="chart3" style="height:400px;width:auto;margin-top:2%;margin-bottom:2%">
+ </px-card>
+</div>
+
+<!--Table-->
+<!-- <button class="accordion" style="font-weight: bold;font-family: geInspira;font-size: 25px;margin-top:2%;">Planned Scenario</button>
+<div class="panel" >
+    <px-card  style="background-color:#ffffff;margin-left:0.3%;margin-right:0">
+     <table class="table striped table-all responsive" style="margin-top:2%;margin-left:-2%">
+    <tr>
+      <th>Date</th>
+      <th>Dec-16</th>
+      <th>Dec-17</th>
+      <th>Dec-18</th>
+      <th>Dec-19</th>
+      <th>Dec-20</th>
+      
+    </tr>
+    <tr>
+      <td>Outage#</td>
+      <td>1</td>
+      
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>  
+     
+    </tr>
+    <tr>
+      <td></td>
+      <td>OH</td>
+      <td>RM</td>
+      <td>OH</td>
+      <td>RM</td>
+      <td>OH</td>
+      
+    </tr>
+    <tr>
+      <td>Est outage</td>
+      <td>$ 0.58</td>
+      <td>$ 1.50</td>
+      <td>$ 1.50</td>
+      <td>$ 1.50</td>
+      <td>$ 1.50</td>
+    </tr>
+    <tr>
+      <td>MW hrs</td>
+      <td>15K</td>
+      <td>15K</td>
+       <td>15K</td>
+      <td>15K</td>
+       <td>15K</td>
+      
+    </tr>
+    <tr>
+      <td>Futuristic Failure Pattern---------</td>
+      <td></td>
+      <td></td>
+       <td></td>
+      <td></td>
+       <td></td>
+      
+    </tr>
+    <tr>
+      <td>Engine</td>
+      <td> X</td>
+      <td> X</td>
+       <td> X</td>
+      <td> X</td>
+       <td></td>
+      
+    </tr>
+   <tr>
+      <td>Controls</td>
+      <td> X</td>
+      <td></td>
+       <td> X</td>
+      <td> X</td>
+       <td></td>
+      
+    </tr>
+ <tr>
+      <td>Cooling</td>
+      <td> X</td>
+      <td></td>
+       <td> </td>
+      <td> X</td>
+       <td>X</td>
+      
+    </tr>
+<tr>
+      <td>Trucks</td>
+      <td></td>
+      <td> X</td>
+       <td> X</td>
+      <td></td>
+       <td> X</td>
+      
+    </tr>
+<tr>
+      <td>Brakes</td>
+      <td></td>
+      <td> X</td>
+       <td> X</td>
+      <td></td>
+       <td> X</td>
+    </tr>
+ <tr>
+      <td>Cost of Outage-------------</td>
+      <td></td>
+      <td></td>
+       <td></td>
+      <td></td>
+       <td></td>     
+    </tr>
+    <tr>
+      <td>Engine</td>
+      <td>$ 0.30</td>
+      <td>$ 0.30</td>
+       <td>$ 0.30</td>
+      <td>$ 0.30</td>
+       <td></td>
+      
+    </tr>
+   <tr>
+      <td>Controls</td>
+      <td>$ 0.30</td>
+      <td></td>
+       <td>$ 0.30</td>
+      <td>$ 0.30</td>
+       <td></td>
+      
+    </tr>
+ <tr>
+      <td>Cooling</td>
+      <td>$ 0.30</td>
+      <td></td>
+       <td></td>
+      <td>$ 0.30</td>
+       <td>$ 0.30</td>
+      
+    </tr>
+<tr>
+      <td>Trucks</td>
+      <td></td>
+      <td>$ 0.22</td>
+       <td>$ 0.22</td>
+      <td></td>
+       <td>$ 0.22</td>
+      
+    </tr>
+<tr>
+      <td>Brakes</td>
+      <td></td>
+      <td>$ 0.98</td>
+       <td>$ 0.70</td>
+      <td></td>
+       <td>$ 0.30</td>
+      
+    </tr>
+  </table>
+<hr>
+<table class="table striped table-all">
+    <tr>
+      <th>Overall Cost of Outage</th>
+      <th>$ 0.58</th>
+      <th>$ 1.50</th>
+      <th>$ 1.50</th>
+      <th>$ 1.03</th>
+      <th>$ 1.50</th>
+      
+    </tr>
+</table>
+
+  </px-card> 
+</div>
+<button class="accordion" style="font-weight: bold;font-family: geInspira;font-size: 25px;margin-top:2%;">Actual Scenario</button>
+<div class="panel" style="margin-bottom:2%">
+      <px-card  style="background-color:#ffffff;margin-left:0.3%;margin-right:0">
+     <table class="table striped table-all responsive" style="margin-top:2%;margin-left:-2%">
+    <tr>
+      <th>Date</th>
+      <th>Dec-16</th>
+      <th>Mar-17</th>
+      <th>Dec-17</th>
+      <th>Dec-18</th>
+      <th>Dec-19</th>
+      <th>Dec-20</th>
+      
+    </tr>
+    <tr>
+      <td>Outage#</td>
+      <td>1</td>
+      <td>U/N</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>  
+     
+    </tr>
+    <tr>
+      <td></td>
+      <td>OH</td>
+      <td>Event</td>
+      <td>RM</td>
+      <td>OH</td>
+      <td>RM</td>
+      <td>OH</td>
+      
+    </tr>
+    <tr>
+      <td>Est outage</td>
+      <td>$ 0.58</td>
+      <td></td>
+      <td>$ 1.50</td>
+      <td>$ 1.50</td>
+      <td>$ 1.50</td>
+      <td>$ 1.50</td>
+    </tr>
+    <tr>
+      <td>MW hrs</td>
+      <td>15K</td>
+      <td>20k</td>
+      <td>15K</td>
+       <td>15K</td>
+      <td>15K</td>
+       <td>15K</td>
+      
+    </tr>
+    <tr>
+      <td>Futuristic Failure Pattern---------</td>
+      <td></td>
+      <td></td>
+       <td></td>
+      <td></td>
+       <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Engine</td>
+      <td> X</td>
+      <td></td>
+      <td> X</td>
+       <td> X</td>
+      <td> X</td>
+       <td></td>
+    
+    </tr>
+   <tr>
+      <td>Controls</td>
+      <td> X</td>
+      <td></td>
+       <td> X</td>
+      <td> X</td>
+       <td></td>
+      <td></td>
+    </tr>
+ <tr>
+      <td>Cooling</td>
+      <td></td>
+      <td> X</td>
+      <td>X</td>
+      <td></td>
+       <td> </td>
+      <td> X</td>
+       
+      
+    </tr>
+<tr>
+      <td>Trucks</td>
+      <td></td>
+      <td> X</td>
+       <td> X</td>
+       <td>X</td>
+      <td></td>
+     <td>X</td>
+     
+    </tr>
+<tr>
+      <td>Brakes</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td> X</td>
+       <td> X</td>
+      <td></td>
+      
+    </tr>
+ <tr>
+      <td>Cost of Outage-------------</td>
+      <td></td>
+      <td></td>
+       <td></td>
+      <td></td>
+       <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Engine</td>
+      <td>$ 0.30</td>
+      <td>$ 0.30</td>
+       <td>$ 0.30</td>
+      <td>$ 0.30</td>
+       <td></td>
+      <td></td>
+    </tr>
+   <tr>
+      <td>Controls</td>
+      <td>$ 0.30</td>
+      <td>$ 0.50</td>
+       <td>$ 0.30</td>
+      <td>$ 0.30</td>
+       <td></td>
+      <td></td>
+    </tr>
+ <tr>
+      <td>Cooling</td>
+      <td>$ 0.30</td>
+      <td>$ 0.50</td>
+       <td></td>
+      <td>$ 0.30</td>
+       <td>$ 0.30</td>
+      <td></td>
+    </tr>
+<tr>
+      <td>Trucks</td>
+      <td></td>
+      <td>$ 0.22</td>
+      <td>$ 0.75</td>
+       <td>$ 0.22</td>
+      <td></td>
+       <td>$ 0.22</td>
+      
+    </tr>
+<tr>
+      <td>Brakes</td>
+      <td></td>
+      <td>$ 0.98</td>
+       <td>$ 0.70</td>
+      <td></td>
+       <td>$ 0.30</td>
+      <td></td>
+    </tr>
+  </table>
+<hr>
+<table class="table striped table-all">
+    <tr>
+      <th>Overall Cost of Outage</th>
+      <th>$ 0.58</th>
+      <th>$ 1.25</th>
+      <th>$ 1.50</th>
+      <th>$ 1.50</th>
+      <th>$ 1.03</th>
+      <th>$ 1.50</th>
+      
+    </tr>
+</table>
+      </px-card>
+</div> -->
+
+
+ 
+     
+ 

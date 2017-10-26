@@ -1,0 +1,187 @@
+.GridviewScrollHeader TH, .GridviewScrollHeader TD 
+{ 
+    padding: 5px; 
+    font-weight: bold; 
+    white-space: nowrap; 
+    border-right: 1px solid #FFFFFF; 
+    border-bottom: 1px solid #FFFFFF; 
+    background-color: #8db4e2; 
+    text-align: left; 
+    vertical-align: bottom; 
+    color: #FFFFFF;
+}
+.GridviewScrollHeaderNew TH, .GridviewScrollHeaderNew TD 
+{ 
+    padding: 5px; 
+    font-weight: bold; 
+    white-space: normal; 
+    border-right: 1px solid #FFFFFF; 
+    border-bottom: 1px solid #FFFFFF; 
+    background-color: #8db4e2; 
+    text-align: left; 
+    vertical-align: bottom; 
+    color: #FFFFFF;
+}
+.GridviewScrollItem TD 
+{ 
+    padding: 5px; 
+    white-space: nowrap; 
+    border-right: 1px solid #FFFFFF; 
+    border-bottom: 1px solid #FFFFFF; 
+    color: #000000;
+    
+}
+.GridviewScrollItemCHU TD 
+{ 
+    padding: 5px; 
+    white-space: normal; 
+    border-right: 1px solid #FFFFFF; 
+    border-bottom: 1px solid #FFFFFF; 
+     border: 1px solid #CDCDCD;
+    color: #000000;
+    
+}
+.GridviewScrollItemCHUV TD 
+{ 
+    padding: 5px; 
+    white-space: nowrap; 
+    border-right: 1px solid #FFFFFF; 
+    border-bottom: 1px solid #FFFFFF; 
+     border: 1px solid #CDCDCD;
+    color: #000000;
+    
+}
+
+.GridviewScrollItemG TD 
+{ 
+    padding: 5px; 
+    white-space: nowrap; 
+    border-right: 1px solid #C0C0C0; 
+    border-bottom: 1px solid #C0C0C0; 
+    color: #000000;
+    
+}
+
+.GridviewScrollItemN TD 
+{ 
+    padding: 5px; 
+    white-space: nowrap; 
+    color: #000000;
+    
+}
+.GridviewScrollItemNG TD 
+{ 
+    padding: 5px; 
+    white-space: nowrap; 
+    background-color: #F7F8FD;
+    
+}
+
+
+.GridviewScrollItemNGDispatch TD 
+{ 
+    padding: 5px; 
+    white-space: nowrap; 
+    background-color: #FFC000;
+    
+}
+
+.GridviewScrollItemNGDispatch TD 
+{ 
+    padding: 5px; 
+    white-space: nowrap; 
+   background-color: #B3B3B3;
+	color: #FFFFFF;
+    
+}
+
+
+.GridviewScrollPager  
+{ 
+    border-top: 1px solid #AAAAAA; 
+    background-color: #FFFFFF; 
+} 
+.GridviewScrollPager TD 
+{ 
+    padding-top: 3px; 
+    font-size: 14px; 
+    padding-left: 5px; 
+    padding-right: 5px; 
+} 
+.GridviewScrollPager A 
+{ 
+    color: #666666; 
+}.GridviewScrollPager SPAN
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.GridviewScrollColorItem TD 
+{ 
+    padding: 5px; 
+    white-space: nowrap; 
+    border-right: 1px solid #FFFFFF; 
+    border-bottom: 1px solid #FFFFFF; 
+}
+
+
+.GridviewScrollItem1 TD 
+{ 
+    padding: 5px; 
+    white-space: nowrap; 
+    border-right: 1px solid #FFFFFF; 
+    border-bottom: 1px solid #FFFFFF; 
+    background-color: #ADD8E6; 
+    color: #000000;
+} 
+.GridviewScrollItem2 TD 
+{ 
+    padding: 5px; 
+    white-space: nowrap; 
+    border-right: 1px solid #FFFFFF; 
+    border-bottom: 1px solid #FFFFFF; 
+    background-color: #FFC000; 
+    color: #000000;
+    
+} 
+.GridviewScrollItem3 TD 
+{ 
+    padding: 5px; 
+    white-space: nowrap; 
+    border-right: 1px solid #FFFFFF; 
+    border-bottom: 1px solid #FFFFFF; 
+    background-color: #C0C0C0; 
+    color: #000000;
+    
+}
+.GridviewScrollItem4 TD 
+{ 
+    padding: 5px; 
+    white-space: nowrap; 
+    border-right: 1px solid #FFFFFF; 
+    border-bottom: 1px solid #FFFFFF; 
+    background-color: #00FFFF; 
+    color: #000000;
+    
+} 
+.GridviewScrollItem5 TD 
+{ 
+    padding: 5px; 
+    white-space: nowrap; 
+    border-right: 1px solid #FFFFFF; 
+    border-bottom: 1px solid #FFFFFF; 
+    background-color: #808080; 
+    color: #000000;
+    
+} 
+.GridviewScrollItem6 TD 
+{ 
+    padding: 5px; 
+    white-space: nowrap; 
+    border-right: 1px solid #FFFFFF; 
+    border-bottom: 1px solid #FFFFFF; 
+    background-color: #00FF00; 
+    color: #000000;
+    
+}  

@@ -1,0 +1,44 @@
+/*
+ * SimpleModal Basic Modal Dialog
+ * http://www.ericmmartin.com/projects/simplemodal/
+ * http://code.google.com/p/simplemodal/
+ *
+ * Copyright (c) 2010 Eric Martin - http://ericmmartin.com
+ *
+ * Licensed under the MIT license:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *
+ * Revision: $Id: basic.css 257 2010-07-27 23:06:56Z emartin24 $ basic-modal-netproducts-content
+ */
+#basic-Cavity-Content{display:none;}
+#basic-modal-content {display:none;}
+#basic-modal-netproducts-content {display:none;}
+#editDescBlock {display:none;height:50px;width: 50px;}
+#updateFeedBackissuesForm{display:none;}
+#basic-modal-modalitycontent {display:none;}
+#basic-testingService-Content{display:none;}
+#basic-travel-Content{display:none;}
+.basic{
+ 	color:#FFFFFF;   
+    font: bold 80% 'GE Inspira, Arial',arial,helvetica,sans-serif;   
+    background-color:#3B73B9;  
+    font-size:11px; 
+    border: 1px solid;   
+    border-color: #FFFFFF;   
+    filter:progid:DXImageTransform.Microsoft.Gradient   
+    (GradientType=0,StartColorStr='#3B73B9',EndColorStr='#FBFFFF');   
+}
+
+/* Overlay */
+#simplemodal-overlay {background-color:#000; cursor:wait;}
+
+/* Container */
+#simplemodal-container {height:400px; width:600px; color:#bbb; background-color:#FFFFFF; border:1px solid #444; padding:0px;}
+#simplemodal-container .simplemodal-data {padding:0px;}
+#simplemodal-container code {background:#141414; border-left:3px solid #65B43D;  display:block; font-size:12px; }
+#simplemodal-container a.modalCloseImg {background:url('../images/x.png') no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer;}
+
+#simplemodal-container1 {height:450px; width:900px; color:#bbb; background-color:#FFFFFF; border:1px solid #444; padding:0px;}
+#simplemodal-container1 .simplemodal-data {padding:0px;}
+#simplemodal-container1 code {background:#141414; border-left:3px solid #65B43D;  display:block; font-size:12px; }
+#simplemodal-container1 a.modalCloseImg {background:url('../images/x.png') no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer;}

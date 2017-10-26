@@ -1,0 +1,159 @@
+Dashboard Screen.
+----------------------------
+
+		Table.
+		https://komatsu-eventlocation-service.run.aws-usw02-pr.ice.predix.io/komatsu/getSearchResults?machineList=1,2,3,4,5&affilations=Mountain%20A&startDate=01-Apr-2014&endDate=31-Aug-2015&velocityStart=1&velocityEnd=100&event=event4&occurance=1&hrs=100
+
+
+Maintenance Records Screen. 
+----------------------------
+
+		Maintenance Records Table.
+		https://komatsu-maintenance-service.run.aws-usw02-pr.ice.predix.io/komatsu/maintenance?startDate=26-Apr-2015&endDate=26-Aug-2016&machineList=1%2c2%2c3%2c4%2c5 
+
+		Events History Table.
+		https://komatsu-maintenance-service.run.aws-usw02-pr.ice.predix.io/komatsu/eventHistory?startDate=30-Apr-2015&machineNumber=1 
+		
+		When user selects 2 parameters and click on Compare
+		https://komatsu-maintenance-service.run.aws-usw02-pr.ice.predix.io/komatsu/trendAnalysisComparison?startDate=23-Aug-2014&machineNumber=1&param1=parameter_1&param2=parameter_2
+
+		Click on event row
+		https://komatsu-maintenance-service.run.aws-usw02-pr.ice.predix.io/komatsu/trendAnalysis?startDate=23-Aug-2014&machineNumber=1
+
+
+Individual History Screen. 
+----------------------------
+
+		Maintenance Records Table.
+		https://komatsu-ind-history-service.run.aws-usw02-pr.ice.predix.io/komatsu/maintenanceRecords?startDate=1-Aug-2014&endDate=27-Aug-2014&machineName=2
+		
+		Notification History Table.
+		https://komatsu-ind-history-service.run.aws-usw02-pr.ice.predix.io/komatsu/indHistory?startDate=01-Aug-2014&endDate=31-Aug-2014&machineName=2
+
+		1st Chart.
+			On Load (Titled Repair Type Ananlysis)
+			https://komatsu-ind-history-service.run.aws-usw02-pr.ice.predix.io/komatsu/repairType?machineName=1  
+
+			On click of a button (Titled Repair Type by Date)
+			https://komatsu-ind-history-service.run.aws-usw02-pr.ice.predix.io/komatsu/repairTypeByDate?machineName=1  
+
+		2nd Chart.
+			Error Count by Date
+			https://komatsu-ind-history-service.run.aws-usw02-pr.ice.predix.io/komatsu/errorDetails?startDate=09-Jul-2015&endDate=01-Sep-2016&machineName=1
+
+Events History Screen.
+----------------------------
+
+		Event Mapping.
+		https://komatsu-event-service.run.aws-usw02-pr.ice.predix.io/komatsu/eventLocations?startDate=23-Aug-2014&endDate=27-Aug-2014&machineName=1&eventList=event4,event8
+		
+		Event History Table.
+		https://komatsu-event-service.run.aws-usw02-pr.ice.predix.io/komatsu/eventHistory?startDate=23-Aug-2014&endDate=27-Aug-2014&machineName=1&eventList=event4,event8
+		
+		Event Tabulation.
+		https://komatsu-event-service.run.aws-usw02-pr.ice.predix.io/komatsu/eventTabulation?startDate=23-Aug-2014&endDate=27-Aug-2014&machineName=1&eventList=event4,event8
+
+		
+Graph Screen.
+----------------------------
+		
+		Histogram.
+		https://komatsu-graph-service.run.aws-usw02-pr.ice.predix.io/komatsu/histogramResult?startDate=23-Aug-2014&sensor=parameter_6&machineNumber=1,2,3&tagLmt=50'
+		
+		Trend Analysis.
+		https://komatsu-graph-service.run.aws-usw02-pr.ice.predix.io/komatsu/graph/trendAnalysis?startDate='+$scope.fromDate+'&endDate='+$scope.toDate+'&tagName=parameter_6&machineName=1'
+		
+		Event Tabulation Table.
+		https://komatsu-graph-service.run.aws-usw02-pr.ice.predix.io/komatsu/graph/eventTabulation?startDate='+$scope.fromDate+'&endDate='+$scope.toDate+'&machineName='+machines
+		
+		Threshold.
+		https://komatsu-graph-service.run.aws-usw02-pr.ice.predix.io/komatsu/graph/trendAnalysis?startDate=01-Jan-2015&endDate=01-Sep-2016&tagName=parameter_12&machineName=1
+
+Analysis Screen.
+----------------------------
+		
+		Map.
+		https://komatsu-analysis-service.run.aws-usw02-pr.ice.predix.io/komatsu/eventAnalysisLocations?startDate=25-Apr-2014&endDate=26-Aug-2014&machineName=1,2,3
+		
+		Table.
+		https://komatsu-analysis-service.run.aws-usw02-pr.ice.predix.io/komatsu/dataAnalysis?startDate=23-Aug-2014&sensor=parameter_1,parameter_8,parameter_5&machineNumber=1&tagLimit=10
+		
+		Box Plot Chart.
+		https://komatsu-analysis-service.run.aws-usw02-pr.ice.predix.io/komatsu/boxPlotChart?startDate=23-Aug-2014&sensor=parameter_1,parameter_8,parameter_5&machineNumber=1&tagLimit=10
+		
+		Time Series.
+		https://komatsu-analysis-service.run.aws-usw02-pr.ice.predix.io/komatsu/controlChartData?startDate=23-Aug-2014&sensor=parameter_1&machineNumber=1&tagLimit=10
+
+		
+<html>
+    <head>
+        <title>Runtime Error</title>
+        <style>
+         body {font-family:"Verdana";font-weight:normal;font-size: .7em;color:black;} 
+         p {font-family:"Verdana";font-weight:normal;color:black;margin-top: -5px}
+         b {font-family:"Verdana";font-weight:bold;color:black;margin-top: -5px}
+         H1 { font-family:"Verdana";font-weight:normal;font-size:18pt;color:red }
+         H2 { font-family:"Verdana";font-weight:normal;font-size:14pt;color:maroon }
+         pre {font-family:"Lucida Console";font-size: .9em}
+         .marker {font-weight: bold; color: black;text-decoration: none;}
+         .version {color: gray;}
+         .error {margin-bottom: 10px;}
+         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }
+        </style>
+    </head>
+
+    <body bgcolor="white">
+
+            <span><H1>Server Error in '/' Application.<hr width=100% size=1 color=silver></H1>
+
+            <h2> <i>Runtime Error</i> </h2></span>
+
+            <font face="Arial, Helvetica, Geneva, SunSans-Regular, sans-serif ">
+
+            <b> Description: </b>An application error occurred on the server. The current custom error settings for this application prevent the details of the application error from being viewed remotely (for security reasons). It could, however, be viewed by browsers running on the local server machine.
+            <br><br>
+
+            <b>Details:</b> To enable the details of this specific error message to be viewable on remote machines, please create a &lt;customErrors&gt; tag within a &quot;web.config&quot; configuration file located in the root directory of the current web application. This &lt;customErrors&gt; tag should then have its &quot;mode&quot; attribute set to &quot;Off&quot;.<br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>
+
+&lt;!-- Web.Config Configuration File --&gt;
+
+&lt;configuration&gt;
+    &lt;system.web&gt;
+        &lt;customErrors mode=&quot;Off&quot;/&gt;
+    &lt;/system.web&gt;
+&lt;/configuration&gt;</pre></code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+            <b>Notes:</b> The current error page you are seeing can be replaced by a custom error page by modifying the &quot;defaultRedirect&quot; attribute of the application's &lt;customErrors&gt; configuration tag to point to a custom error page URL.<br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>
+
+&lt;!-- Web.Config Configuration File --&gt;
+
+&lt;configuration&gt;
+    &lt;system.web&gt;
+        &lt;customErrors mode=&quot;RemoteOnly&quot; defaultRedirect=&quot;mycustompage.htm&quot;/&gt;
+    &lt;/system.web&gt;
+&lt;/configuration&gt;</pre></code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+    </body>
+</html>

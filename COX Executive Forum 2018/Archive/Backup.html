@@ -1,0 +1,59 @@
+<topHeader></topHeader>
+<div id="sponsorDetails">
+  <div id="sponsorDetailsHead">
+    WE ARE THRILLED YOU CAN JOIN US. THANK YOU FOR YOUR COMMITMENT.
+  </div>
+  <div id="sponsorDetailsSubHead">
+    Please complete the following information, an invoice will be immediately available for your convenience.
+  </div>
+  <div id="sponsorDetailForm">
+    <div class="row">
+      <div class="col-md-6">
+        <label class="control-label">Company Name</label>
+        <input type="text" name="companyName" [(ngModel)]="companyName" class="form-control" required>
+      </div>
+      <div class="col-md-6 formAlignment">
+        <label class="control-label">Email</label>
+        <input type="email" name="emailAdd" [(ngModel)]="emailAdd" class="form-control">
+      </div>
+    </div>
+    <div class="row" style="padding-top:2%">
+      <div class="col-md-6">
+        <label class="control-label">Your Name</label>
+        <input type="text" class="form-control" name="sponorsName" [(ngModel)]="sponsorsName">
+      </div>
+      <div class="col-md-6 formAlignment">
+        <label class="control-label">Phone</label>
+        <input type="text" class="form-control" name="phoneNo" [(ngModel)]="phoneNo">
+      </div>
+    </div>
+    <div class="row" style="padding-top:2%">
+      <div class="col-md-6">
+        <label class="control-label">Title</label>
+        <input type="text" class="form-control" name="tit" [(ngModel)]="tit">
+      </div>
+      <div class="col-md-2 customLabel">
+        <label class="control-label">Your Primary Cox Contact</label>
+      </div>
+      <div class="col-md-4 customDiv">
+        <input type="text" class="form-control form-control1" name="coxCont" [(ngModel)]="coxCont">
+      </div>
+    </div>
+    <div class="row" style="padding-top:2%">
+      <div class="col-md-6">
+        <label class="control-label">Company Address</label>
+        <input type="text" class="form-control" name="companyAdd" [(ngModel)]="companyAdd">
+      </div>
+    </div>
+    <div class="row" style="padding-top:2%">
+      <div class="col-md-6">
+        <label class="control-label">City, State, Zip</label>
+        <input type="text" class="form-control" name="cSZ" [(ngModel)]="cSZ">
+      </div>
+      <div class="col-md-6 formAlignment">
+        <a href="javascript:void(0)" routerLink="../acknowledgement"><button id="confirmLink" href="javascript:void(0)" (click)="Confirm()">CONFIRM</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<bottomfooter></bottomfooter>

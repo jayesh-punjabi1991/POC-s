@@ -1,0 +1,273 @@
+/* Credits for API :Joost de Valk */
+a img {
+	border: 0;
+}
+table.sortable {
+	color: #3B73B9;
+}
+table.sortable th{
+	background-image:url('../images/Menubar.png'); 
+	color: #FFFFFF;
+}
+
+
+table.sortable td {
+	border-width: 0px 1px 0px 1px;
+	font-size: 11px;
+	font-family: Arial;
+}
+table.sortable tr.odd td {
+	font-size: 11px;
+	font-family: Arial;
+
+}
+table.sortable tr.odd td span {
+	
+}
+table.sortable tr.even td {
+	font-size: 11px;
+	font-family: Arial;
+}
+table.sortable tr.sortbottom td {
+	border-top: 1px solid #444;
+	font-weight: bold;
+}
+
+
+div#tb1-container  {
+	overflow: auto;
+}
+
+div#tb2-container {
+	overflow: auto;
+}
+
+div#tb3-container {
+	overflow: auto;
+}
+
+
+div td.locked, div#tbl-container th.locked{
+		left: expression(document.getElementById("tbl-container").scrollLeft); /* IE5+ only */
+		position: relative;
+		z-index: 10;
+}
+
+
+div td.locked, div#tb2-container th.locked{
+		left: expression(document.getElementById("tb2-container").scrollLeft); /* IE5+ only */
+		position: relative;
+		z-index: 10;
+}
+
+div td.locked, div#tb3-container th.locked{
+		left: expression(document.getElementById("tb3-container").scrollLeft); /* IE5+ only */
+		position: relative;
+		z-index: 10;
+}
+
+div td.locked, div#tb4-container th.locked{
+		left: expression(document.getElementById("tb4-container").scrollLeft); /* IE5+ only */
+		position: relative;
+		z-index: 10;
+}
+
+
+table.sortable .thead1 {
+		z-index: 20;
+		left: expression(document.getElementById("tbl-container").scrollLeft); /* IE5+ only */
+		top: expression(document.getElementById("tbl-container").scrollTop-2); 
+		border: 0px solid white;
+		position: relative;
+		cursor: default;
+		color: #FFFFFF;
+}
+
+table.sortable .thead2 {
+		z-index: 20;
+		left: expression(document.getElementById("tb2-container").scrollLeft); /* IE5+ only */
+		top: expression(document.getElementById("tb2-container").scrollTop-2); 
+		border: 0px solid white;
+		position: relative;
+		cursor: default;
+		color: #FFFFFF;
+}
+table.sortable .thead3 {
+		z-index: 20;
+		left: expression(document.getElementById("tb3-container").scrollLeft); /* IE5+ only */
+		top: expression(document.getElementById("tb3-container").scrollTop-2); 
+		border: 0px solid white;
+		position: relative;
+		cursor: default;
+		color: #FFFFFF;
+}
+
+table.sortable .thead4 {
+		z-index: 20;
+		left: expression(document.getElementById("tb4-container").scrollLeft); /* IE5+ only */
+		top: expression(document.getElementById("tb4-container").scrollTop-2); 
+		border: 0px solid white;
+		position: relative;
+		cursor: default;
+		color: #FFFFFF;
+}
+
+table.sortable .thead5 {
+		z-index: 20;
+		left: expression(document.getElementById("tb4-container").scrollLeft); /* IE5+ only */
+		top: expression(document.getElementById("tb4-container").scrollTop-2); 
+		border: 0px solid white;
+		position: relative;
+		cursor: default;
+		color: #FFFFFF;
+}
+
+
+table.sortable th a{
+text-decoration: none;
+color: #FFFFFF;
+}
+
+table.sortable th a:HOVER{
+color: #FFFFFF;
+}
+
+table.dynaSortable th a:HOVER{
+	color: #FFFFFF;
+}
+
+table.sortable td {
+	color: #000000;
+}
+
+
+
+
+table.dynaSortable {
+	font-weight:normal;
+	margin: 0px auto;
+	height: 90px;
+}
+
+table.dynaSortable th, table.dynaSortable td {
+	text-align: left;
+	text-decoration:none;
+	border-color: #B3B2B2;
+ 	font-size:11px;
+	font-weight:normal;
+	color: #000000;
+	height: 5px;
+
+}
+table.dynaSortable th {
+	background-image: url('../../JquerySort/img/bg.gif'); 
+	background-repeat: no-repeat;
+	background-position: right top;
+	text-decoration:none;
+	font-weight:normal;
+	text-align: center;
+	border-width: 0px 1px 1px 1px;
+	background-color: #3873B9;
+	color:#FFFFFF;
+ 	font-size:11px;
+}
+
+table.dynaSortable td {
+	text-decoration:none;
+ 	font-size:11px;
+ 	border-width: 0px 1px 0px 1px;
+	border-color: #00000;
+	color: #000000;
+	height: 5px;
+}
+table.dynaSortable tr.odd td {
+	text-decoration:none;
+	font:  70% 'Arial',arial; 
+ 	font-size:11px;
+	font-weight:normal;
+	color: #000000;
+	height: 5px;
+	
+}
+table.dynaSortable tr.even td {
+	text-decoration:none;
+	font:  70% 'Arial',arial; 
+ 	font-size:11px;
+	color: #000000;
+	height: 5px;
+}
+table.dynaSortable tr.sortbottom td {
+	text-decoration:none;
+ 	font-size:10px;
+	background-color: #ccc;
+	font-weight: normal;
+	height: 5px;
+}
+.dynaSortable .thead1 {
+	text-decoration:none;
+	top: expression(document.getElementById ("tb1-container") . scrollTop-2);
+	position: relative;
+	font-family:Arial;
+	color: #FFFFFF;
+}
+
+.dynaSortable .headerSortUp {
+	top: expression(document.getElementById ("tb1-container") . scrollTop-2);
+	position: relative;
+	background-image: url('../../JquerySort/img/asc.gif');
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+.dynaSortable .headerSortDown {
+	top: expression(document.getElementById ("tb1-container") . scrollTop-2);
+	position: relative;
+	background-image: url('../../JquerySort/img/desc.gif');
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+table.dynaSortable td a:HOVER{
+	text-decoration:none;
+	font-weight:bold;
+	text-align: center;
+	color:#000000;
+ 	font-size:11px;
+}
+
+table.dynaSortable th a{
+	text-decoration:none;
+	font-weight:bold;
+	text-align: center;
+	background-color: #3873B9;
+	color:#FFFFFF;
+ 	font-size:11px;
+}
+table.dynaSortable th a:HOVER{
+	text-decoration:none;
+	font-weight:bold;
+	text-align: center;
+	background-color: #3873B9;
+	color:#FFFFFF;
+ 	font-size:11px;
+}
+table.dynaSortable th a:ACTIVE{
+	text-decoration:none;
+	font-weight:bold;
+	text-align: center;
+	background-color: #3873B9;
+	color:#FFFFFF;
+ 	font-size:11px;
+}
+table.dynaSortable td a{
+	text-decoration:none;
+ 	font-size:11px;
+ 	color:#000000;
+	
+}
+
+.dynaSortable .thead2 {
+	top: expression(document.getElementById ("tb2-container") . scrollTop-2);
+	position: relative;
+	z-index: 30;
+}

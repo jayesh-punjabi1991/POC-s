@@ -1,0 +1,7 @@
+#footerDiv{
+  height:2vh;
+  position: fixed;
+  background-color: #ffff;
+  bottom: 0;
+  width:100%;
+}

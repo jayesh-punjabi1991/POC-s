@@ -1,0 +1,105 @@
+<link rel="stylesheet" type="text/css" href="../css/BusiestDay.css">
+<script type="text/javascript">
+    $(document).ready(function() {
+    $('.ui.dropdown').dropdown();
+    });
+</script>
+<style type="text/css">
+#container{
+  height: auto!important;
+  width: 100!important;
+}</style>
+
+<div class="container-fluid" id="Maindiv">         
+              
+ 
+                  <div class="row" style="margin-left: -2px !important;margin-top: 2%">
+                    <div class="col-md-6 col-xs-12 col-sm-12">
+                        <div class="panel panel-primary" style="background-color:#2d3345;">
+                            <div class="panel-heading" style="background-color:#2d3345;" >
+                                    <div>
+                                    <p id="textforChartHeading">
+                                   <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Attractive Places </span>
+                                    </p>
+                                    
+                                    </div>
+                            </div>
+                            <div class="panel-body">
+                                       <svg id="container"  viewBox="7 77 600 350" style="background-image: url('images/JDA_MAP.png')" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                  <circle cx="433" cy="231" r="1" stroke="yellow" stroke-width="1" fill="white" place-glow custom-title place-name="MANYAWAS" shop-name="KFC" dis="5" marker-name="place">
+                    <title></title>
+                  </circle>
+                   <circle cx="283" cy="148" r="1" stroke="yellow" stroke-width="1" fill="white" place-glow custom-title place-name="GAJSINGHPURA" shop-name="MC-DONALDs" dis="3" marker-name="place">
+                      <title></title>
+                   </circle>
+                  
+                   <circle cx="285" cy="314" r="1" stroke="yellow" stroke-width="1" fill="white" place-glow custom-title place-name="BADARWAS" shop-name="CHINA TOWN" dis="2" marker-name="place">
+                      <title></title>
+                   </circle>
+                   
+                   <circle cx="368" cy="356" r="1" stroke="yellow" stroke-width="1" fill="white" place-glow custom-title place-name="GANPAT PURA" shop-name="BIZIBEANS" dis="1" marker-name="place">
+                      <title></title>
+                   </circle>
+                   <circle cx="284" cy="113" r="1" stroke="yellow" stroke-width="1" fill="white" place-glow custom-title place-name="NANDKISHORE PURA" shop-name="SHOPPERS STOP" dis="1" marker-name="place">
+                      <title></title>
+                   </circle>
+                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12 col-sm-12">
+                        <div class="panel panel-primary" style="background-color:#2d3345;">
+                            <div class="panel-heading" style="background-color:#2d3345;" >
+                                    <div>
+                                    <p id="textforChartHeading">
+                                    <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Access Points</span>
+                                    </p>
+                                    
+                                    </div>
+                            </div>
+                            <div class="panel-body">
+                               <svg id="container" viewBox="7 77 600 350" style="background-image: url('images/JDA_MAP.png')" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                  <filter id="Access">
+                    <feImage xlink:href="images/wifi.png"/>
+                  </filter>
+                  <filter id="Faulty">
+                    <feImage xlink:href="images/faulty.png"/>
+                  </filter>
+                </defs>
+                <circle cx="368" cy="159" r="4" stroke="green" stroke-width="4" fill="green" ng-mouseover="show_line = true" ng-mouseout="show_line = false" custom-title mac-ip="192.132.87.8" url="http://youtube.com" loc="location1" marker-name="user">
+                <title></title>
+               </circle>   
+               <line x1="368" y1="159" x2="433" y2="234" style="stroke:rgb(255,0,0);stroke-width:2" ng-show="show_line"/>
+               <circle cx="433" cy="234" r="10" style="filter:url(#Access);" >
+                   <title>Access Point 1</title>
+               </circle>
+               <line x1="368" y1="159" x2="283" y2="150" style="stroke:rgb(255,0,0);stroke-width:2" ng-show="show_line"/>
+               <circle cx="283" cy="150" r="10" style="filter:url(#Access);">
+                  <title>Access Point 2</title>
+               </circle>
+               <line x1="368" y1="159" x2="285" y2="316" style="stroke:rgb(255,0,0);stroke-width:2" ng-show="show_line"/>
+               <circle cx="285" cy="316" r="10" style="filter:url(#Access);">
+                  <title>Access Point 3</title>  
+               </circle>
+               <line x1="368" y1="159" x2="368" y2="358" style="stroke:blue;stroke-width:2" ng-show="show_line"/>
+               <circle cx="368" cy="358" r="10" style="filter:url(#Access);">
+                  <title>Access Point 4</title>  
+               </circle>
+               <circle cx="284" cy="115" r="10" style="filter:url(#Faulty);">
+                  <title>Faulty access Point</title>  
+               </circle>
+               <circle cx="380" cy="210" r="4" stroke="red" stroke-width="4" fill="red" place-glow custom-title mac-ip="192.101.56.18" url="http://youtube.com" loc="location1" marker-name="user">
+                 <title></title>
+               </circle>
+               <circle cx="300" cy="170" r="4" stroke="red" stroke-width="4" fill="red" place-glow custom-title mac-ip="192.52.56.18" url="http://youtube.com" loc="location1" marker-name="user">
+                  <title></title>
+               </circle>
+              </svg> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 
+            </div>

@@ -1,0 +1,1720 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>DIGITAL SALES TOOLKIT</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow" />
+
+<script type="text/javascript" src="content/js/jq_select/jquery.js"></script>
+<script type="text/javascript"	src="content/js/jq_select/jquery-ui.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css"
+	href="bootstrap/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css"
+	href="css/custom_css_duke-page.css">
+	
+	<link rel="stylesheet" type="text/css" href="content/css/mpr.css" />
+<link rel="stylesheet" type="text/css" href="content/css/sortable.css" />
+<link rel="stylesheet" type="text/css" href="content/css/global.css" />
+ 
+<script>
+   $(this).ready(function(e) {
+
+	   $('.stage').hide();
+	   var filterOpened = false;
+    	$("#filterBtn").click(function()
+		{
+    		$('.stage').show();
+			$("#optionBtn_1").show();
+			$("#rowFilters_1").show();
+			$("#moreFilterBtn_1").show();
+			
+			
+			filterOpened = true;
+		});
+		$(".content_main").click(function(){
+		filterOpened = false;
+		 $('.stage').hide();
+		$("#optionBtn_1").hide();
+			$("#rowFilters_1").hide();
+			$("#moreFilterBtn_1").hide();
+		});
+		
+		
+	});
+   </script>
+   
+   <script>
+$(document).ready(function(){
+    $("toggle").click(function(){
+        $("p").toggle();
+    });
+});
+</script>
+   
+
+<script type="text/javascript">
+  
+function showFailurepartsTable(){
+	 
+	$('#plusContetnDiv').hide();
+	$('#minusContentDiv').show();
+	$('#criticalForecastId').show();
+	
+}
+function hideFailurepartsTable(){
+ 
+	$('#minusContentDiv').hide();
+	$('#criticalForecastId').hide();
+	$('#plusContetnDiv').show();
+	
+}
+ 
+</script>
+
+<script type="text/javascript" src="content/js/jq_select/jquery.js"></script>
+<script type="text/javascript"	src="content/js/jq_select/jquery-ui.min.js"></script>
+	
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		var options = {
+			chart : {
+				renderTo : 'container',
+				type : 'column',
+				marginRight : 130,
+				marginBottom : 125
+			},
+			title : {
+				text : 'Critical Parts Failure Forecast',
+				x : -20
+			//center
+			},
+			subtitle : {
+				text : 'DownTime Cost Impact($) Failure',
+				x : -20
+			},
+			xAxis : {
+				categories : []
+			},
+			yAxis : {
+				min : 0,
+				
+				title : {
+					text : ''
+				},
+				plotLines : [ {
+					value : 0,
+					width : 1,
+					color : '#808080'
+				} ]
+			},
+			series : []
+		}
+
+		$.getJSON("json/critical.json", function(json) {
+			options.xAxis.categories = json[0]['data'];
+			options.series[0] = json[1];
+			options.series[1] = json[2];
+
+			chart = new Highcharts.Chart(options);
+		});
+	});
+</script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="bootstrap/js/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="script/script.js"></script>
+<script src="script/highcharts.js"></script>
+  
+ 
+
+  
+	  
+ 
+</head>
+<body>
+	<header class="full-container landing-page header-fx">
+  <nav class="navbar">
+    <div class="nav-header">
+   
+      <h3 class="header-logo"><a href="#">Maintenance Cost Optimizer</a></h3>
+      <h3 class="genpact-logo">GENPACT</h3>
+      <a href="#" class="btn navicon"><span class="fa fa-navicon"></span></a>
+    </div>
+</nav>
+</header>
+	
+	<!-- sidebar section -->
+<section class="sidebar-section">
+  <div class="sidebar-header">
+    <a href="#"><span class="fa fa-close close-side"></span></a>
+  </div>
+
+  <div class="sidebar-body">
+ 
+<div class="sidebar-view">
+  <div class="panel-group" id="accordion">
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a href="industrial-asset-optimization.html"><li style="color: white;">Home</li></a>
+        </h4>
+      </div>
+    </div>
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><li>Turbine Health Management</li></a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+          <ul>
+           <a href="turbine-health-management-opt-11.html"><li>Turbine Operating Metrics</li></a>
+           <a href="turbine-health-management-opt-2.html"><li>Alarm Detection</li></a>
+           <a href="turbine-performance-matrix.html"> <li>Turbine Performance Matrics</li></a>  
+          </ul>
+
+        </div>
+      </div>
+    </div>
+    
+     
+ <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4"><li>Optimized Cost Summary</li></a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body">
+        <ul>
+          <a href="maintenance-matrix-opt-1.html"> <li>Turbine Cost Analysis</li></a>
+          
+            </ul>
+        </div>
+      </div>
+    </div>
+
+
+     <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5"><li>Analytics</li></a>
+        </h4>
+      </div>
+      <div id="collapse5" class="panel-collapse collapse in">
+       <div class="panel-body">
+       <ul>
+           <a href="weibull-analysy.html"> <li>Weibull Analysis</li></a>
+           <a href="failure-parts-life.html"> <li>Failure By Parts Life</li></a>
+            <a href="site-comparison.html"> <li>Site Comparison</li></a>
+            <a href="critical-parts-failure.html"> <li>Critical Parts Failure Forecast</li></a>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+     <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a href="About-page.html"><li style="color: white;">About</li></a>
+        </h4>
+      </div>
+    </div>
+
+   
+<!-- filter start -->
+    <div class="panel panel-default">
+      <div class="panel-heading filter-section">
+        <h4 class="panel-title">
+          <a href="#"><li class="">Filter</li></a>
+        </h4>
+
+
+        <div class="filter-screen">
+             
+               <div class="filter-screen-opt"> <a href="#"><li class="">Turbine #</li></a>
+
+                <ul class="filter-screen-opt-inner">
+                <a href="#"><li> inner1 Options</li></a>
+                <a href="#"><li> inner1</li></a>
+                <a href="#"><li> inner1</li></a>
+                <a href="#"><li> inner1</li></a>
+                <a href="#"><li> inner1</li></a>
+                <a href="#"><li> inner1</li></a>
+                 <a href="#"><li> inner1</li></a>
+                <a href="#"><li> inner1</li></a>
+                <a href="#"><li> inner1</li></a>
+                <a href="#"><li> inner1</li></a>
+                <a href="#"><li> inner1</li></a>
+                <a href="#"><li> inner1</li></a>
+                 <a href="#"><li> inner1</li></a>
+                <a href="#"><li> inner1</li></a>
+                <a href="#"><li> inner1</li></a>
+                <a href="#"><li> inner1</li></a>
+                <a href="#"><li> inner1</li></a>
+                <a href="#"><li> inner1</li></a>
+                </ul>
+                        
+               </div>
+               <div class="filter-screen-opt"> <a href="#"><li class="">Year</li></a>
+ <ul class="filter-screen-opt-inner">
+                <a href="#"><li> inner2 options</li></a>
+                <a href="#"><li> inner2</li></a>
+                <a href="#"><li> inner2</li></a>
+                <a href="#"><li> inner2</li></a>
+                <a href="#"><li> inner2</li></a>
+                <a href="#"><li> inner2</li></a>
+                <a href="#"><li> inner2</li></a>
+                <a href="#"><li> inner2</li></a>
+                <a href="#"><li> inner2</li></a>
+                <a href="#"><li> inner2</li></a>
+                <a href="#"><li> inner2</li></a>
+                <a href="#"><li> inner2</li></a>
+                </ul>
+               </div>
+               <div class="filter-screen-opt"> <a href="#"><li class="">Maintenance</li></a>
+ <ul class="filter-screen-opt-inner">
+                <a href="#"><li> inner3 options</li></a>
+                <a href="#"><li> inner3</li></a>
+                <a href="#"><li> inner3</li></a>
+                <a href="#"><li> inner3</li></a>
+                <a href="#"><li> inner3</li></a>
+                <a href="#"><li> inner3</li></a>
+                </ul>
+               </div>
+               <div class="filter-screen-opt"> <a href="#"><li class="">Season</li></a>
+   <ul class="filter-screen-opt-inner">
+                <a href="#"><li> inner4 options</li></a>
+                <a href="#"><li> inner4</li></a>
+                <a href="#"><li> inner4</li></a>
+                <a href="#"><li> inner4</li></a>
+                <a href="#"><li> inner4</li></a>
+                <a href="#"><li> inner4</li></a>
+                </ul>
+               </div>
+               <div class="filter-screen-opt"> <a href="#"><li class="">Failure Class</li></a>
+ <ul class="filter-screen-opt-inner">
+                <a href="#"><li> inner5 options</li></a>
+                <a href="#"><li> inner5</li></a>
+                <a href="#"><li> inner5</li></a>
+                <a href="#"><li> inner5</li></a>
+                <a href="#"><li> inner5</li></a>
+                <a href="#"><li> inner5</li></a>
+                </ul>
+               </div>
+
+               <div class="filter-screen-opt"> <a href="#"><li class="">Service Type</li></a>
+ <ul class="filter-screen-opt-inner">
+                <a href="#"><li> inner6 options</li></a>
+                <a href="#"><li> inner6</li></a>
+                <a href="#"><li> inner6</li></a>
+                <a href="#"><li> inner6</li></a>
+                <a href="#"><li> inner6</li></a>
+                <a href="#"><li> inner6</li></a>
+                </ul>
+               </div>
+
+                <div class="filter-screen-opt"> <a href="#"><li class="">Part Name</li></a>
+ <ul class="filter-screen-opt-inner">
+                <a href="#"><li> inner7 options</li></a>
+                <a href="#"><li> inner7</li></a>
+                <a href="#"><li> inner7</li></a>
+                <a href="#"><li> inner7</li></a>
+                <a href="#"><li> inner7</li></a>
+                <a href="#"><li> inner7</li></a>
+                </ul>
+               </div>
+
+       </div>
+
+<!--filter screen end-->
+      </div>
+    </div>
+    <!--  filter end -->
+  </div> 
+</div>
+
+  </div>
+</section>
+<div class="breadcrumbs">
+   <ul class="nav">
+    <a href="#"><li>Analytics</li></a>
+    <li><img src="img/breadcrumb-icon.png"></li>
+    <a href="#"><li>Critical Parts Failure Forecasts</li></a>
+  </ul>
+
+<div class="search-container"> 
+                        <form action="/search" class="filter-form" method="GET" autocomplete="off">
+                            <div class="module-search-bar">
+                                <div class="search">
+                                    <span class="icon-search"></span>
+                                    <input type="text" name="search_block_form" placeholder="Search...">
+                                   <span><a href="#" class="search-icon btn"><i class="fa fa-search fa-2x"></i></a></span>
+                               </div>    
+                            </div>
+                        </form>
+</div>
+</div>
+
+	<div align="right">
+		<select name="AnalyticsDrpsDwns">
+			<Option value="">Down Tower Assembly (PDC, CFC, MCC, CBC) -
+				AEAA</option>
+			<Option value="">Down Tower Assembly (PDC, CFC, MCC, CBC) -
+				AEAD</option>
+			<Option value="">Generator - Generator</option>
+			<Option value="">Generator - Rotor Connection</option>
+			<Option value="">Generator - Slipring</option>
+			<Option value="">High Speed Shaft Assembly - High Speed
+				Shaft Assembly</option>
+			<Option value="">High Speed Shaft Assembly - Coupling</option>
+			<Option value="">Hub / Blades - Blade 3 Fiberglass</option>
+			<Option value="">Hub / Blades - Blade 2 Fiberglass</option>
+			<Option value="">Hub / Blades - Blade 1 Fiberglass</option>
+			<Option value="">Main Shaft - Main Bearing</option>
+			<Option value="">Main Shaft - Main Shaft</option>
+			<Option value="">Nacelle - Ultrasonic Wind Sensor (Sonic)</option>
+			<Option value="">Pad Mount Transformer - Transformer</option>
+			<Option value="Top Box - ALL" selected="selected">Top Box -
+				ALL</option>
+			<Option value="">Top Box - Contactor</option>
+			<Option value="">Top Box - Overvoltage Protection</option>
+			<Option value="">Top Box - TVSS</option>
+			<Option value="">Top Box - WETA</option>
+			<Option value="">Top Box - WETB</option>
+			<Option value="">Top Box - WETC</option>
+			<Option value="">Tower - Ladder</option>
+			<Option value="">Tower - Power Cables</option>
+			<Option value="">Yaw System - Breaker</option>
+			<Option value="">Yaw System - Contactor</option>
+			<Option value="">Yaw System - Yaw Bearing</option>
+			<Option value="">ELECTRICAL - Air Switch (High & Low)</option>
+			<Option value="">ELECTRICAL - Main Power Transformer</option>
+			<Option value="">ELECTRICAL - Pad Mount Transformer</option>
+			<Option value="">ELECTRICAL - Main Breaker (High Side)</option>
+			<Option value="">ELECTRICAL - Battery Back-up Substation
+				(RTU)</option>
+			<Option value="">Down Tower Assembly (PDC, CFC, MCC, CBC) -
+				AEBI</option>
+			<Option value="">Down Tower Assembly (PDC, CFC, MCC, CBC) -
+				AEPS</option>
+		</select>
+	</div>
+<a href="#" class="btn export-btn"><h5>Export to Excel</h5></a>
+
+<div class="container-fluid margn-top">
+<div class="row">
+
+<div class="col-md-12">
+<div >
+      <div id="criticalparts"></div>
+</div>
+</div>
+</div>
+</div>
+	<div id="container"
+		style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+		<!-- <div class="container-fluid">
+  <button type="button" class="btn btn-info btn-full-width" data-toggle="collapse" data-target="#failureByParts">+ Failure By Parts Dataset</button>
+  <div id="failureByParts" class="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div> -->
+  
+  
+
+<!-- main section end -->
+
+
+
+
+		
+</body>
+<!-- <div id="containerpareto" style="width:100%; height:432px;float:left ; margin-top: 25px;"></div> -->
+ <table class='plusContetnDiv'  id='plusContetnDiv'  onclick='showFailurepartsTable()' width="95%" height="15 %"  cellpadding="0" cellspacing="1">
+			<tr ><td  > &nbsp;&nbsp;+ &nbsp;&nbsp; Failure By Critical Parts </td></tr>
+	</table>
+	
+	<table class='minusContentDiv'  id='minusContentDiv' onclick='hideFailurepartsTable()'  width="95%"  height="15 %" cellpadding="0" cellspacing="1">
+			<tr ><td>  &nbsp;&nbsp; - &nbsp;&nbsp; Failure By Critical Parts </td></tr>
+			
+			 
+	</table>
+ <table class="criticalForecastCls" id="criticalForecastId" width="95%"   cellpadding="0" cellspacing="1"  style="display: none;  padding-bottom: 27 px;">
+  
+
+		<tr  style="border: 1px solid #DDDDDD;min-height: 35px;">
+
+							<th   	class="thead2" style="border: 1px solid #DDDDDD;padding-left: 10px"><font class="HeadsDataFont" style="font-size: 12px;">Critical Part Spares</font></th> 
+							<th   	class="thead2" style="border: 1px solid #DDDDDD;padding-left: 10px"><font class="HeadsDataFont" style="font-size: 12px">Annual Failure Forecast</font></th>
+							<th   	class="thead2" style="border: 1px solid #DDDDDD;padding-left: 10px"><font class="HeadsDataFont" style="font-size: 12px">Buy/No Buy Decision</font></th>
+							<th   	class="thead2" style="border: 1px solid #DDDDDD;padding-left: 10px"><font class="HeadsDataFont" style="font-size: 12px">Downtime Cost Impact ($) / Failure</font></th>
+							<th   	class="thead2" style="border: 1px solid #DDDDDD;padding-left: 10px"><font class="HeadsDataFont" style="font-size: 12px">Safety Stock</font></th>
+							<th   	class="thead2" style="border: 1px solid #DDDDDD;padding-left: 10px"><font class="HeadsDataFont" style="font-size: 12px">Current Inventory</font></th>
+							<th   	class="thead2" style="border: 1px solid #DDDDDD;padding-left: 10px"><font class="HeadsDataFont" style="font-size: 12px">Working Capital Impact ($)</font></th>
+							<th   	class="thead2" style="border: 1px solid #DDDDDD;padding-left: 10px"><font class="HeadsDataFont" style="font-size: 12px">Annual Inventory Carrying Cost Savings ($)</font></th>
+								
+		</tr>
+ 
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Down Tower Assembly (PDC, CFC, MCC, CBC) - AEBI</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >10</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;268,056</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >12</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >54</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;92,796</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;32,479</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Top Box - WETC</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;250,920</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >15</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;57,013</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;19,955</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Down Tower Assembly (PDC, CFC, MCC, CBC) - Contactor</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >1</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;88,128</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >1</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >34</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;48,484</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;16,969</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Down Tower Assembly (PDC, CFC, MCC, CBC) - Sync Contactor, K1</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >1</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;110,160</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >1</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >10</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;40,933</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;14,327</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Top Box - WETA</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >1</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;250,920</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >2</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >11</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;38,872</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;13,605</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Pitch System Control - (Axis 1 &amp; Battery Enclosure) - ENET Switch</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >1</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;61,200</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >38</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;37,188</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;13,016</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Down Tower Assembly (PDC, CFC, MCC, CBC) - Converter (Line Side)</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >1</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;146,880</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >1</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >6</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;34,800</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;12,180</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Yaw System - Yaw Bearing</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >2</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;220,320</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >3</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >8</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;34,400</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;12,040</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Down Tower Assembly (PDC, CFC, MCC, CBC) - AEAA</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >1</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;268,056</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >2</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >16</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;28,956</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;10,135</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Down Tower Assembly (PDC, CFC, MCC, CBC) - WEMA</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;250,920</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >17</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;22,212</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;7,774</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Down Tower Assembly (PDC, CFC, MCC, CBC) - AEAD</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;268,056</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >13</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;19,212</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;6,724</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Down Tower Assembly (PDC, CFC, MCC, CBC) - UCSA</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >1</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;219,096</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >1</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >8</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;18,408</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;6,443</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Yaw System - Yaw Motor</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >2</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;153,000</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >2</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >12</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;18,379</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;6,433</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Pitch System Control - (Axis 1 &amp; Battery Enclosure) - Axis 1 - Pitch Drive</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >1</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;231,336</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >2</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >10</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;17,999</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;6,300</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Down Tower Assembly (PDC, CFC, MCC, CBC) - Breaker</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;88,128</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >9</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;16,212</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;5,674</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >High Speed Shaft Assembly - Coupling</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >1</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;250,920</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >2</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >5</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;12,838</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;4,493</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Top Box - Contactor</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >11</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;91,800</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >6</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >139</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;10,800</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;3,780</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Pitch System Control - (Axis 1 &amp; Battery Enclosure) - Axis 1 - AEPA</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >4</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;250,920</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >7</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >14</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;10,632</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;3,721</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Generator - Slipring</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >1</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;36,720</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >3</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;10,531</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;3,686</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Gearbox - Slipring</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >9</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;48,960</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >1</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >6</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;9,102</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;3,186</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Down Tower Assembly (PDC, CFC, MCC, CBC) - BPPB</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >1</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;250,920</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >2</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >6</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;9,039</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;3,164</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Down Tower Assembly (PDC, CFC, MCC, CBC) - Converter (Rotor Side)</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >2</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;146,880</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >1</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >7</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;8,000</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;2,800</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Pitch System Control - Pitch Center Box - Pitch Center Box - AEPC</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >3</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;250,920</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >5</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >11</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;5,124</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;1,793</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Down Tower Assembly (PDC, CFC, MCC, CBC) - Current Transformer (CT)</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;139,536</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >31</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;3,395</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;1,188</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Gearbox - Gear Oil Pump Motor</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >1</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;148,104</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >1</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >4</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;2,049</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;717</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Gearbox - Gearbox</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										        
+										    
+										        No Buy
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;183,600</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Generator - Generator</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										        
+										    
+										        No Buy
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;146,880</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Generator - Rotor Connection</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										        
+										    
+										        -
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >High Speed Shaft Assembly - High Speed Shaft Assembly</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										        
+										    
+										        -
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Down Tower Assembly (PDC, CFC, MCC, CBC) - Main Circuit Breaker, Q1</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										        
+										    
+										        -
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >7</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Main Shaft - Main Shaft</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										        
+										    
+										        No Buy
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;268,056</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Hub / Blades - Blade 3 Fiberglass</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										        
+										    
+										        No Buy
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;220,320</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Hub / Blades - Blade 2 Fiberglass</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										        
+										    
+										        No Buy
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;220,320</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Hub / Blades - Blade 1 Fiberglass</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										        
+										    
+										        No Buy
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;220,320</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Down Tower Assembly (PDC, CFC, MCC, CBC) - IGBT Module</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										        
+										    
+										        -
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Down Tower Assembly (PDC, CFC, MCC, CBC) - WECA</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										        
+										    
+										        -
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Down Tower Assembly (PDC, CFC, MCC, CBC) - WEMD</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										        
+										    
+										        -
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Down Tower Assembly (PDC, CFC, MCC, CBC) - AEBM</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										        
+										    
+										        -
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Down Tower Assembly (PDC, CFC, MCC, CBC) - AEDB</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										        
+										    
+										        -
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Pitch System Control - (Axis 1 &amp; Battery Enclosure) - Axis 1 - Power Converter</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >8</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;220,320</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >12</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >15</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Top Box - Breaker</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										        
+										    
+										        -
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >35</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Pad Mount Transformer - Transformer</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										        
+										    
+										        No Buy
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;134,640</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Top Box - TVSS</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										        
+										    
+										        -
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Tower - Power Cables</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										        
+										    
+										        No Buy
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;39,168</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Yaw System - Breaker</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										        
+										    
+										        -
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Yaw System - Contactor</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										        
+										    
+										        -
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >ELECTRICAL - Air Switch (High &amp; Low)</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										        
+										    
+										        No Buy
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;146,880</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >ELECTRICAL - Main Power Transformer</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										        
+										    
+										        No Buy
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;465,120</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >ELECTRICAL - Pad Mount Transformer</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										        
+										    
+										        No Buy
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;134,640</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >ELECTRICAL - Main Breaker (High Side)</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										        
+										    
+										        No Buy
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;306,000</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >ELECTRICAL - Battery Back-up Substation (RTU)</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										        
+										    
+										        No Buy
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;146,880</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;0</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Nacelle - Ultrasonic Wind Sensor (Sonic)</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >28</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;28,152</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >4</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >15</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;-3,235</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;-1,132</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Down Tower Assembly (PDC, CFC, MCC, CBC) - AEPS</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;268,056</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >7</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;-6,672</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;-2,335</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Top Box - Overvoltage Protection</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;99,144</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;-7,959</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;-2,786</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Gearbox - Gear Oil Pump</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;113,832</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;-8,874</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;-3,106</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Tower - Ladder</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;110,160</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;-8,942</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;-3,130</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >ELECTRICAL - Collection Circuit Cable</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;146,880</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;-12,055</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;-4,219</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Down Tower Assembly (PDC, CFC, MCC, CBC) - MACC</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;250,920</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >3</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;-12,054</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;-4,219</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Yaw System - Yaw Gear</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;220,320</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;-12,067</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;-4,223</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Down Tower Assembly (PDC, CFC, MCC, CBC) - WEOR</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;268,056</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >8</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;-13,338</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;-4,668</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Yaw System - Yaw Drive 1</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;187,272</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;-14,364</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;-5,027</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Pitch System Control - (Axis 1 &amp; Battery Enclosure) - Axis 1 - AEPC</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;250,920</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;-20,496</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;-7,174</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Main Shaft - Main Bearing</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;268,056</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;-25,800</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;-9,030</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >ELECTRICAL - Collection Circuit Breaker</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;306,000</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >0</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;-30,000</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;-10,500</td>
+
+		
+			 <tr id="showAndHideID" style="background-color: #FFFFFF; ;height: 17px; font-size: 12px;border: 1px solid gray;color:black">
+	  			<td align="left" style="border: 1px solid #DDDDDD;padding-left: 10px"   >Top Box - WETB</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >17</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >
+				                        
+										    
+										      <a href = "javascript:closeWindow()" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="font-size: 12px;color:black"><span style="color:#005CB9;">Buy</span></a> 
+										        
+										    
+										 
+				</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;250,920</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >13</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >8</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;-45,495</td>
+				<td align="left"  style="border: 1px solid #DDDDDD;padding-left: 10px"  >$ &nbsp;-15,923</td>
+									
+</table>					 
+								
+ 
+ <style>
+    .black_overlay{
+        display: none;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: #83B6F4;
+        z-index:1001;
+        -moz-opacity: 0.8;
+        opacity:.70;
+        filter: alpha(opacity=80);
+    }
+    .white_content {
+        display: none;
+        position: absolute;
+        top: 25%;
+        left: 30%;
+        width: 500px;
+        height: 200px;
+        padding: 0px;
+        border: 1px solid white;
+        background-color: white;
+        z-index:1002;
+        overflow: auto;
+    }
+</style>
+    
+     <div id="light" class="white_content" >
+        <table style=" background-color: white; color: black; border:1; font-family: sans-serif;width:100%;height: 100%;" >
+		  <tr style="border: 2px solid #f1f1f1">
+		    <td style="padding-top: 0px; vertical-align: text-top;color:graytext;height: 10%">Notification !</td>
+		  </tr>
+		  <tr style="border: 2px solid #f1f1f1">
+		    <td style="text-align: center;color:graytext;height: 80%">
+		        <img src="content/images/tick.png" height="35px" width="35px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Buy request for this part has been sent to ERP<br />
+		       </td>
+		  </tr>
+		  <tr style="border: 2px solid #f1f1f1">
+		    <td style="text-align: center;">
+		         <a  href = "#" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">
+                     <span style="font-weight: bold;color: #0091E0;font-size: 12px;vertical-align: middle;">Close</span>
+                 </a>
+		    </td>
+		  </tr>
+		</table>
+	    <script type="text/javascript">
+	      
+	         function closeWindow(){
+	           $("#light").fadeIn('slow').delay(15000).fadeOut('slow');
+	           $("#fade").fadeIn('slow').delay(15000).fadeOut('slow'); 
+	         }
+		 </script>
+     </div>
+   <div class="footer-section"></div>
+ 
+</html>

@@ -1,0 +1,24 @@
+Admin
+------
+*Spinner while refresh
+*Display a simple comma delimited text string will ALL the contact fields entered by the sponsor org.As they will simply be cutting and pasting into a sharepoint list or spreadsheet.
+
+Forum
+------
+*Change Layout
+*Spinner while Adding User
+*Make About Page as landing screen
+*Remove the “*” and put at the bottom “All fields are required”
+*No. of attendees – we need to restrict this value to 0 to 3
+*For the .ics file
+		i.      can we update the start/stop date to 9/24 – 9/26
+		ii.      Update location to Monarch Beach Resort, Dana Point, CA
+*For the “Auction Donation next steps” lets scrap the web page and just link this directly to the .PDF file
+*Configure TimeZone,Description and Time
+*Responsive
+*Change Logos in Acknowledgement Screen
+
+Live
+-----
+*Push the code to Bitbucket
+*Deploy the code

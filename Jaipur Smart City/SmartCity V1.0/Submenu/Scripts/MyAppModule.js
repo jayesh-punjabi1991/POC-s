@@ -1,0 +1,1 @@
+var smartcity = angular.module('cisco',['ui.router','angularjs-dropdown-multiselect']);

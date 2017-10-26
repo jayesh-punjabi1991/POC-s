@@ -1,0 +1,55 @@
+ @font-face {
+	font-family: Roboto-Regular;
+	src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+	font-family: Roboto-Light;
+	src: url(../fonts/Roboto-Light.ttf);
+}
+#Maindiv{
+	font-family: Roboto-Regular !important;
+}
+#textfordropdown{
+	color:#65697b;
+}
+#textforChartHeading{
+	color:#d5d6da;
+	font-size:18px;
+	margin-top: 1%;
+}
+.widthofselect{
+	min-width: 100% !important
+}
+#styleofdate{
+	color:#707384;
+	font-size: 18px;
+	margin-left: 33%;
+	vertical-align: -webkit-baseline-middle;
+}
+#textforChartSubHeading{
+	color:#707384;
+	font-size:15px;
+	margin-top: -8%;
+}
+.progress-bar-success {
+    background-color: #8e4fc8 !important;
+}
+.progress {
+    border-radius: 10px;
+    height: 12px !important;
+}
+.progress-bar-primary{
+	background-color:#2573c5 !important;
+}
+#LeftTextofProgressBar{
+	color:#8e4fc8;
+	font-size: 13px;
+}
+#RightTextofProgressBar{
+	color:#2573c5;
+	font-size: 13px;
+}
+#NumberBeneathProgressbar{
+	font-size: 15px;
+	font-weight: bolder;
+}

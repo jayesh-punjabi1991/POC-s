@@ -1,0 +1,90 @@
+{
+  "startTime": "00:00",
+  "startDate": "2016-11-30",
+  "connectionState": "all",
+  "results": [
+    {
+      "id": 90,
+      "ancestry": [
+        {
+          "level": "Floor",
+          "name": "DevNetZone"
+        },
+        {
+          "level": "Building",
+          "name": "DevNetBuilding"
+        },
+        {
+          "level": "Campus",
+          "name": "DevNetCampus"
+        }
+      ],
+      "startDate": "2016-11-30",
+      "series": [
+        "datetime",
+        "dwell"
+      ],
+      "hasChildren": false,
+      "level": "ZONE",
+      "area": "Test",
+      "data": [
+        {
+          "dwell": "0-1440",
+          "name": null,
+          "value": 20
+        },
+        {
+          "dwell": "0-1440",
+          "name": null,
+          "value": 10
+        },
+        {
+          "dwell": "0-1440",
+          "name": null,
+          "value":9
+        },
+        {
+          "dwell": "0-1440",
+          "name": null,
+          "value": 18
+        },
+        {
+          "dwell": "0-1440",
+          "name": null,
+          "value": 30
+        }
+      ]
+    }
+  ],
+  "interval": "hourly",
+  "executionTime": 5,
+  "minValue": 90,
+  "insights": {
+    "summary": {
+      "ancestry": [
+        {
+          "level": "Floor",
+          "name": "DevNetZone"
+        },
+        {
+          "level": "Building",
+          "name": "DevNetBuilding"
+        },
+        {
+          "level": "Campus",
+          "name": "DevNetCampus"
+        }
+      ],
+      "id": 90,
+      "index": 0,
+      "maxDate": "2016-11-30",
+      "name": "Test",
+      "maxTime": "00:00",
+      "maxValue": 101
+    }
+  },
+  "endDate": "2016-12-2",
+  "endTime": "23:59",
+  "dataFreshness": "2016-11-30T09:42:38.869Z",
+  "maxValue": 101
+}

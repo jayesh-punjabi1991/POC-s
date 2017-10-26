@@ -1,0 +1,298 @@
+<style>
+.heading1{
+    margin: 0 0 0 70px;
+}
+button.accordion {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    padding: 18px;
+    width: 99.8%;
+    border: 1px solid #b1b1bc;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-left: 0.3%;
+}
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+button.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+button.accordion.active:after {
+    content: "\2796";
+}
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;
+}
+div.panel1 {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 500px;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 1;
+}
+div.panel1.show {
+    opacity: 0;
+    max-height: 0;
+}
+button.a:after {
+    content: '\02796';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+button.a.active:after {
+    content: "\02795";
+}
+button.a.active, button.a:hover {
+    background-color: #ffffff;
+}
+button.a {
+    background-color: #ddd;
+    color: #000000;
+    cursor: pointer;
+    padding: 18px;
+    width: 99.8%;
+    border: 1px solid #b1b1bc;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-left: 0.3%;
+}
+.striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.table,.table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}
+
+.bordered tr,.table-all tr{border-bottom:1px solid #ddd}
+.striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.table-all tr:nth-child(odd){background-color:#fff}
+.table-all tr:nth-child(even){background-color:#f1f1f1}
+.hoverable tbody tr:hover,.ul.hoverable li:hover{background-color:#ccc}
+.centered tr th,.w3-centered tr td{text-align:center}
+.table td,.table th,.w3-table-all td,.table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
+.table th:first-child,.table td:first-child,.table-all th:first-child,.table-all td:first-child{padding-left:16px}
+.responsive{overflow-x:auto}
+
+/*Desktop*/
+@media screen and (min-width: 769px) and (max-width: 2600px) {
+  #dropcell{
+  width: 200px !important;
+}
+#fieldWrapper{
+  width:200px !important;
+}
+#dropdown{
+  width: 200px!important;
+}
+#StartDateDiv{
+  padding-top:20px
+}
+#Filters{
+margin-left: -75px
+}
+#Filters1{
+margin-left: -90px
+}
+}
+
+/*Ipad*/
+@media screen and (min-width: 700px) and (max-width:768px){
+#StartDateDiv{
+  padding-top:18px
+}
+#fieldWrapper{
+  width:120px !important;
+}
+#iphonewid
+{
+ padding-top: 20px;
+}
+}
+
+/*Mobile*/
+@media screen and (min-width: 0px) and (max-width: 650px) {
+
+#AnalysisButton{
+  margin-bottom: 6% !important; 
+}
+#dropcell{
+  width: 170px !important;
+}
+#fieldWrapper{
+  width:170px !important;
+}
+#iphonewid
+{
+ padding-top: 5px;
+}
+#dropdown{
+  width: 170px!important;
+}
+
+}
+
+
+</style>
+
+<px-card style="padding-top:10px;
+    padding-bottom: 0px;
+    padding-left: 15px;background: linear-gradient(#242326,#3b3b3f);
+        border-bottom: 1px solid #bbbbbb;
+    box-shadow: 1px 1px 1px #cec2c2;
+    color: white;">
+    <h4 style="margin-top:0px;margin-bottom:10px;font-size:1.2em">Locomotive ID : {{locomotiveID}} </h4>
+</px-card>
+
+<!--Maintenance Records Table-->
+<button class="accordion a" style="font-weight: bold;font-family: geInspira;font-size: 1.2em;margin-top:1%;margin-left: 0px;">Maintenance Records</button>
+
+<div class="panel1" id="responsive" style="margin-top:1%;margin-left:0.4%;border:1px solid #b1b1bc;margin-bottom:1%;margin-left: 0px;">
+    <div ng-show="data=='!loading'" style="margin-right:1%;margin-left:1%;margin-top:2%;margin-bottom:2%">
+             <px-data-table  class="data-table" id="mytable1" table-data="{{MaintenanceData}}" filterable="true" selectable="true" enable-column-reorder="true" enable-column-resize="true" >
+             <px-data-table-column name="maintenaceID" label="Maintenance ID" sortable filterable>
+              </px-data-table-column>
+              <px-data-table-column name="locoID" label="Loco ID" sortable filterable>
+              </px-data-table-column>
+              <px-data-table-column name="part" label="Part" sortable filterable>
+              </px-data-table-column>
+              <px-data-table-column name="partDesc" label="Part Desc" sortable filterable>
+              </px-data-table-column>
+              <px-data-table-column name="rmDate" label="RM Date" sortable filterable>
+              </px-data-table-column>
+              <px-data-table-column name="futureRMDate" label="Future RM Date" sortable filterable>
+              </px-data-table-column>
+              <px-data-table-column name="futureOHDate" label="Future OH Date" sortable filterable>
+              </px-data-table-column>
+              <px-data-table-column name="upDate" label="Unplanned Date" sortable filterable>
+              </px-data-table-column>
+              <px-data-table-column name="ohdate" label="OH Date" sortable filterable>
+              </px-data-table-column>     
+            </px-data-table>
+    </div>
+      </div>
+ 
+      <div ng-show="data=='loading'" ng-hide="data=='!loading'" >
+                      <svg version="1.1" id="L4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 50 50" enable-background="new 0 0 0 0" xml:space="preserve" style="padding-left:30%;height:300px;">
+                        <circle fill="#000000" stroke="none" cx="27" cy="20" r="2">
+                          <animate
+                            attributeName="opacity"
+                            dur="1s"
+                            values="0;1;0"
+                            repeatCount="indefinite"
+                           begin="0.1"/>   
+                        </circle>
+                        <circle fill="#000000" stroke="none" cx="37" cy="20" r="2">
+                          <animate
+                            attributeName="opacity"
+                            dur="1s"
+                            values="0;1;0"
+                            repeatCount="indefinite"
+                            begin="0.2"/>      
+                        </circle>
+                        <circle fill="#000000" stroke="none" cx="47" cy="20" r="2">
+                          <animate
+                            attributeName="opacity"
+                            dur="1s"
+                            values="0;1;0"
+                            repeatCount="indefinite"
+                            begin="0.3"/>    
+                        </circle>
+                      </svg>
+                </div>
+           
+ 
+<!--Image-->
+<button class="accordion" style="font-weight: bold;font-family: geInspira;font-size: 1.2em;margin-bottom:1%;margin-left: 0px;">Maintenance Documents
+</button>
+<div class="panel" style="border:1px solid #b1b1bc;margin-left:0.4%;margin-bottom:1%;margin-left: 0px;">
+    <px-card style="background-color:#ffffff;padding-left:0;padding-right:0;padding-top:2%;padding-bottom:2%">
+             <div >
+              <p ng-show="note=='show'"><b><i>Select the Maintenance ID from the table to view the Part.</i></b></p>
+              <p ng-show="note1=='show'"><b><i>No Image Available</i></b></p>
+              <div ng-show="image=='show'" ng-hide="image=='hide'">
+              <img src="{{url}}" id="myImage" style="display: block;margin-left: auto;margin-right: auto;height:100%;width:auto" />
+            </div>
+      </div>
+  </px-card>
+</div>
+
+<!--Trend Analysis-->
+<button class="accordion" style="font-weight: bold;font-family: geInspira;font-size: 1.2em;margin-left: 0px;">Trend Analysis</button>
+    <div class="panel" style="border:1px solid #b1b1bc;margin-left:0.4%;padding-right:0;margin-left: 0px;margin-top:1%">
+   <px-card style="background-color:#ffffff;padding-left:0;height:525px">
+        <div class="w3-row">
+            <div class="w3-col l12 m12 s12" style="padding-top:5px;">
+              <div class="w3-col l3 m3 s6" style="">
+                     
+                        <div class="w3-row" style="padding-left:0px;padding-top:20px">
+                        <div class="w3-col l6 m12 s12" style="font-family: geInspira !important;font-weight: bold;padding-top: 6px;" id="ipadwid">
+                          Parameter1
+                        </div>
+                        <div class="w3-col l6 m12 s12" id="Filters">
+                          <px-dropdown display-value="Select">
+                          <px-dropdown-content id="firstparameter" class="px-dropdown-content" max-cont-character-width="10"
+                          extend-dropdown="true" extend-dropdown-by="15"  items='{{data2}}'>
+                          </px-dropdown-content>
+                          </px-dropdown>
+                        </div>                        
+                      </div>                               
+              </div>
+              <div class="w3-col l3 m3 s6" style="">
+                      <div class="w3-row" style="padding-left:0px;padding-top:20px">
+                        <div class="w3-col l6 m12 s12" style="font-family: geInspira !important;font-weight: bold;padding-top: 6px;" id="ipadwid">
+                          Parameter2
+                        </div>
+
+                        <div class="w3-col l6 m12 s12" id="Filters">
+
+                          <px-dropdown display-value="Select">
+                          <px-dropdown-content id="secondparameter" class="px-dropdown-content" max-cont-character-width="10"
+                      extend-dropdown="true" extend-dropdown-by="15"  items='{{data2}}'>
+                          </px-dropdown-content>
+                          </px-dropdown>
+                        </div>                        
+                      </div>               
+              </div>
+              <div class="w3-col l3 m3 s6" id="StartDateDiv">
+                     
+                       <div class="w3-row" style="padding-left:0px;">
+                        <div class="w3-col l6 m12 s12" style="font-family: geInspira !important;font-weight: bold;padding-top: 6px;" id="ipadwid">
+                          Start Date
+                        </div>
+                        <div class="w3-col l6 m12 s12" id="Filters1">
+                          <px-datetime-picker date-time="2016-03-01T01:00:00.000Z" date-format="MM/DD/YY" hide-time="true" show-time-zone="none"></px-datetime-picker>
+                        </div>                        
+                      </div>              
+              </div>
+              <div class="w3-col l3 m3 s6" id="iphonewid">
+                <br/>
+              <button class="btn cbtn" ng-click="trendAnalysisComparison()" id="butwid">Compare</button> 
+            </div>
+        </div>
+        <div class="w3-row">
+         <div id="chart1"></div>
+        </div> 
+      </div>
+      </px-card>
+</div>
+<button ui-sref="analysis" id="AnalysisButton" class="btn cbtn pull-right" style="width:200px;margin-bottom:2%;margin-top:2%" >Go to Analysis</button>
+ 

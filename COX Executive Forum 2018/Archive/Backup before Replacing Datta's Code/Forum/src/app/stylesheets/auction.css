@@ -1,0 +1,8 @@
+#auctionLogo{
+  height:90px;
+  width:90px;
+  filter:brightness(90%);
+}
+#auctionText{
+  padding-top:6%;
+}

@@ -1,0 +1,732 @@
+[
+    [
+        {
+            "latitude": 40.681059,
+            "longitude": -89.580967,
+            "machineNumber": "2",
+            "timestamp": "2014-04-26"
+        },
+        {
+            "latitude": 40.68163295,
+            "longitude": -89.58119125,
+            "machineNumber": "2",
+            "timestamp": "2014-04-28"
+        },
+        {
+            "latitude": 40.6822069,
+            "longitude": -89.5814155,
+            "machineNumber": "2",
+            "timestamp": "2014-08-20"
+        },
+        {
+            "latitude": 40.68278085,
+            "longitude": -89.58163975000001,
+            "machineNumber": "2",
+            "timestamp": "2014-08-18"
+        },
+        {
+            "latitude": 40.6833548,
+            "longitude": -89.581864,
+            "machineNumber": "2",
+            "timestamp": "2014-08-10"
+        },
+        {
+            "latitude": 40.68392875,
+            "longitude": -89.58208825,
+            "machineNumber": "2",
+            "timestamp": "2014-06-24"
+        },
+        {
+            "latitude": 40.684502699999996,
+            "longitude": -89.5823125,
+            "machineNumber": "2",
+            "timestamp": "2014-06-27"
+        },
+        {
+            "latitude": 40.68507665,
+            "longitude": -89.58253675,
+            "machineNumber": "2",
+            "timestamp": "2014-06-02"
+        },
+        {
+            "latitude": 40.685650599999995,
+            "longitude": -89.582761,
+            "machineNumber": "2",
+            "timestamp": "2014-08-16"
+        },
+        {
+            "latitude": 40.68622455,
+            "longitude": -89.58298525000001,
+            "machineNumber": "2",
+            "timestamp": "2014-05-19"
+        },
+        {
+            "latitude": 40.686798499999995,
+            "longitude": -89.58320950000001,
+            "machineNumber": "2",
+            "timestamp": "2014-08-21"
+        },
+        {
+            "latitude": 40.68737245,
+            "longitude": -89.58343375,
+            "machineNumber": "2",
+            "timestamp": "2014-08-21"
+        },
+        {
+            "latitude": 40.6879464,
+            "longitude": -89.583658,
+            "machineNumber": "2",
+            "timestamp": "2014-08-24"
+        },
+        {
+            "latitude": 40.68852035,
+            "longitude": -89.58388225,
+            "machineNumber": "2",
+            "timestamp": "2014-08-25"
+        },
+        {
+            "latitude": 40.6890943,
+            "longitude": -89.5841065,
+            "machineNumber": "2",
+            "timestamp": "2014-05-23"
+        },
+        {
+            "latitude": 40.68966825,
+            "longitude": -89.58433075,
+            "machineNumber": "2",
+            "timestamp": "2014-05-27"
+        },
+        {
+            "latitude": 40.6902422,
+            "longitude": -89.58455500000001,
+            "machineNumber": "2",
+            "timestamp": "2014-05-11"
+        },
+        {
+            "latitude": 40.690816149999996,
+            "longitude": -89.58477925,
+            "machineNumber": "2",
+            "timestamp": "2014-05-04"
+        },
+        {
+            "latitude": 40.6913901,
+            "longitude": -89.5850035,
+            "machineNumber": "2",
+            "timestamp": "2014-08-08"
+        },
+        {
+            "latitude": 40.691964049999996,
+            "longitude": -89.58522775,
+            "machineNumber": "2",
+            "timestamp": "2014-07-28"
+        },
+        {
+            "latitude": 40.692538,
+            "longitude": -89.585452,
+            "machineNumber": "2",
+            "timestamp": "2014-07-31"
+        },
+        {
+            "latitude": 40.694931,
+            "longitude": -89.587133,
+            "machineNumber": "1",
+            "timestamp": "2014-08-23"
+        },
+        {
+            "latitude": 40.695288624999996,
+            "longitude": -89.586559,
+            "machineNumber": "1",
+            "timestamp": "2014-08-23"
+        },
+        {
+            "latitude": 40.695646249999996,
+            "longitude": -89.585985,
+            "machineNumber": "1",
+            "timestamp": "2014-08-24"
+        },
+        {
+            "latitude": 40.696003874999995,
+            "longitude": -89.585411,
+            "machineNumber": "1",
+            "timestamp": "2014-08-24"
+        },
+        {
+            "latitude": 40.696361499999995,
+            "longitude": -89.584837,
+            "machineNumber": "1",
+            "timestamp": "2014-08-23"
+        },
+        {
+            "latitude": 40.696719124999994,
+            "longitude": -89.58426299999999,
+            "machineNumber": "1",
+            "timestamp": "2014-08-23"
+        },
+        {
+            "latitude": 40.697076749999994,
+            "longitude": -89.58368899999999,
+            "machineNumber": "1",
+            "timestamp": "2014-08-24"
+        },
+        {
+            "latitude": 40.697434375,
+            "longitude": -89.58311499999999,
+            "machineNumber": "1",
+            "timestamp": "2014-08-24"
+        },
+        {
+            "latitude": 40.697792,
+            "longitude": -89.58254099999999,
+            "machineNumber": "1",
+            "timestamp": "2014-08-24"
+        },
+        {
+            "latitude": 40.698149625,
+            "longitude": -89.58196699999999,
+            "machineNumber": "1",
+            "timestamp": "2014-08-23"
+        },
+        {
+            "latitude": 40.69850725,
+            "longitude": -89.58139299999999,
+            "machineNumber": "1",
+            "timestamp": "2014-08-23"
+        },
+        {
+            "latitude": 40.698864875,
+            "longitude": -89.58081899999999,
+            "machineNumber": "1",
+            "timestamp": "2014-08-23"
+        },
+        {
+            "latitude": 40.6992225,
+            "longitude": -89.58024499999999,
+            "machineNumber": "1",
+            "timestamp": "2014-08-24"
+        },
+        {
+            "latitude": 40.699580125,
+            "longitude": -89.57967099999999,
+            "machineNumber": "1",
+            "timestamp": "2014-08-23"
+        },
+        {
+            "latitude": 40.69993775,
+            "longitude": -89.57909699999999,
+            "machineNumber": "1",
+            "timestamp": "2014-08-23"
+        },
+        {
+            "latitude": 40.700295374999996,
+            "longitude": -89.57852299999999,
+            "machineNumber": "1",
+            "timestamp": "2014-08-23"
+        },
+        {
+            "latitude": 40.700652999999996,
+            "longitude": -89.57794899999999,
+            "machineNumber": "1",
+            "timestamp": "2014-08-23"
+        },
+        {
+            "latitude": 40.701010624999995,
+            "longitude": -89.57737499999999,
+            "machineNumber": "1",
+            "timestamp": "2014-08-23"
+        },
+        {
+            "latitude": 40.701368249999994,
+            "longitude": -89.57680099999999,
+            "machineNumber": "1",
+            "timestamp": "2014-08-24"
+        },
+        {
+            "latitude": 40.701725874999994,
+            "longitude": -89.57622699999999,
+            "machineNumber": "1",
+            "timestamp": "2014-08-24"
+        },
+        {
+            "latitude": 40.7020835,
+            "longitude": -89.57565299999999,
+            "machineNumber": "1",
+            "timestamp": "2014-08-24"
+        },
+        {
+            "latitude": 40.702441125,
+            "longitude": -89.575079,
+            "machineNumber": "1",
+            "timestamp": "2014-08-24"
+        },
+        {
+            "latitude": 40.70279875,
+            "longitude": -89.574505,
+            "machineNumber": "1",
+            "timestamp": "2014-08-24"
+        },
+        {
+            "latitude": 40.703156375,
+            "longitude": -89.573931,
+            "machineNumber": "1",
+            "timestamp": "2014-08-24"
+        },
+        {
+            "latitude": 40.703514,
+            "longitude": -89.573357,
+            "machineNumber": "1",
+            "timestamp": "2014-08-24"
+        },
+        {
+            "latitude": 40.703871625,
+            "longitude": -89.572783,
+            "machineNumber": "1",
+            "timestamp": "2014-08-24"
+        },
+        {
+            "latitude": 40.70422925,
+            "longitude": -89.572209,
+            "machineNumber": "1",
+            "timestamp": "2014-08-24"
+        },
+        {
+            "latitude": 40.704586875,
+            "longitude": -89.571635,
+            "machineNumber": "1",
+            "timestamp": "2014-08-24"
+        },
+        {
+            "latitude": 40.704944499999996,
+            "longitude": -89.571061,
+            "machineNumber": "1",
+            "timestamp": "2014-08-24"
+        },
+        {
+            "latitude": 40.705302124999996,
+            "longitude": -89.570487,
+            "machineNumber": "1",
+            "timestamp": "2014-08-24"
+        },
+        {
+            "latitude": 40.705659749999995,
+            "longitude": -89.569913,
+            "machineNumber": "1",
+            "timestamp": "2014-08-24"
+        },
+        {
+            "latitude": 40.706017374999995,
+            "longitude": -89.569339,
+            "machineNumber": "1",
+            "timestamp": "2014-08-24"
+        },
+        {
+            "latitude": 40.706374999999994,
+            "longitude": -89.568765,
+            "machineNumber": "1",
+            "timestamp": "2014-08-24"
+        },
+        {
+            "latitude": 40.706732624999994,
+            "longitude": -89.568191,
+            "machineNumber": "1",
+            "timestamp": "2014-08-24"
+        },
+        {
+            "latitude": 40.70709025,
+            "longitude": -89.567617,
+            "machineNumber": "1",
+            "timestamp": "2014-08-23"
+        },
+        {
+            "latitude": 40.707447875,
+            "longitude": -89.567043,
+            "machineNumber": "1",
+            "timestamp": "2014-08-23"
+        },
+        {
+            "latitude": 40.7078055,
+            "longitude": -89.566469,
+            "machineNumber": "1",
+            "timestamp": "2014-08-23"
+        },
+        {
+            "latitude": 40.708163125,
+            "longitude": -89.565895,
+            "machineNumber": "1",
+            "timestamp": "2014-08-23"
+        },
+        {
+            "latitude": 40.70852075,
+            "longitude": -89.565321,
+            "machineNumber": "1",
+            "timestamp": "2014-08-23"
+        },
+        {
+            "latitude": 40.708878375,
+            "longitude": -89.564747,
+            "machineNumber": "1",
+            "timestamp": "2014-08-23"
+        },
+        {
+            "latitude": 40.709236,
+            "longitude": -89.564173,
+            "machineNumber": "1",
+            "timestamp": "2014-08-23"
+        },
+        {
+            "latitude": 40.716174,
+            "longitude": -89.533437,
+            "machineNumber": "3",
+            "timestamp": "2014-05-24"
+        },
+        {
+            "latitude": 40.716359425,
+            "longitude": -89.53402997500001,
+            "machineNumber": "3",
+            "timestamp": "2014-08-22"
+        },
+        {
+            "latitude": 40.716544850000005,
+            "longitude": -89.53462295,
+            "machineNumber": "3",
+            "timestamp": "2014-07-01"
+        },
+        {
+            "latitude": 40.716730275,
+            "longitude": -89.535215925,
+            "machineNumber": "3",
+            "timestamp": "2014-06-21"
+        },
+        {
+            "latitude": 40.7169157,
+            "longitude": -89.5358089,
+            "machineNumber": "3",
+            "timestamp": "2014-07-01"
+        },
+        {
+            "latitude": 40.717101125,
+            "longitude": -89.53640187500001,
+            "machineNumber": "3",
+            "timestamp": "2014-05-23"
+        },
+        {
+            "latitude": 40.717286550000004,
+            "longitude": -89.53699485000001,
+            "machineNumber": "3",
+            "timestamp": "2014-07-31"
+        },
+        {
+            "latitude": 40.717471975,
+            "longitude": -89.537587825,
+            "machineNumber": "3",
+            "timestamp": "2014-06-10"
+        },
+        {
+            "latitude": 40.7176574,
+            "longitude": -89.5381808,
+            "machineNumber": "3",
+            "timestamp": "2014-07-02"
+        },
+        {
+            "latitude": 40.717842825,
+            "longitude": -89.53877377500001,
+            "machineNumber": "3",
+            "timestamp": "2014-06-11"
+        },
+        {
+            "latitude": 40.71802825,
+            "longitude": -89.53936675,
+            "machineNumber": "3",
+            "timestamp": "2014-08-01"
+        },
+        {
+            "latitude": 40.718213675,
+            "longitude": -89.539959725,
+            "machineNumber": "3",
+            "timestamp": "2014-06-01"
+        },
+        {
+            "latitude": 40.7183991,
+            "longitude": -89.5405527,
+            "machineNumber": "3",
+            "timestamp": "2014-06-13"
+        },
+        {
+            "latitude": 40.718584525000004,
+            "longitude": -89.54114567500001,
+            "machineNumber": "3",
+            "timestamp": "2014-05-27"
+        },
+        {
+            "latitude": 40.71876995,
+            "longitude": -89.54173865000001,
+            "machineNumber": "3",
+            "timestamp": "2014-05-21"
+        },
+        {
+            "latitude": 40.718955375,
+            "longitude": -89.542331625,
+            "machineNumber": "3",
+            "timestamp": "2014-08-25"
+        },
+        {
+            "latitude": 40.7191408,
+            "longitude": -89.5429246,
+            "machineNumber": "3",
+            "timestamp": "2014-07-22"
+        },
+        {
+            "latitude": 40.719326225,
+            "longitude": -89.54351757500001,
+            "machineNumber": "3",
+            "timestamp": "2014-08-03"
+        },
+        {
+            "latitude": 40.71951165,
+            "longitude": -89.54411055,
+            "machineNumber": "3",
+            "timestamp": "2014-08-18"
+        },
+        {
+            "latitude": 40.719697075,
+            "longitude": -89.544703525,
+            "machineNumber": "3",
+            "timestamp": "2014-07-23"
+        },
+        {
+            "latitude": 40.7198825,
+            "longitude": -89.5452965,
+            "machineNumber": "3",
+            "timestamp": "2014-05-11"
+        },
+        {
+            "latitude": 40.720067925,
+            "longitude": -89.54588947500001,
+            "machineNumber": "3",
+            "timestamp": "2014-06-25"
+        },
+        {
+            "latitude": 40.72025335,
+            "longitude": -89.54648245000001,
+            "machineNumber": "3",
+            "timestamp": "2014-06-25"
+        },
+        {
+            "latitude": 40.720438775,
+            "longitude": -89.547075425,
+            "machineNumber": "3",
+            "timestamp": "2014-05-13"
+        },
+        {
+            "latitude": 40.7206242,
+            "longitude": -89.5476684,
+            "machineNumber": "3",
+            "timestamp": "2014-06-26"
+        },
+        {
+            "latitude": 40.720809625,
+            "longitude": -89.54826137500001,
+            "machineNumber": "3",
+            "timestamp": "2014-08-18"
+        },
+        {
+            "latitude": 40.72099505,
+            "longitude": -89.54885435,
+            "machineNumber": "3",
+            "timestamp": "2014-05-10"
+        },
+        {
+            "latitude": 40.721180475,
+            "longitude": -89.549447325,
+            "machineNumber": "3",
+            "timestamp": "2014-06-27"
+        },
+        {
+            "latitude": 40.7213659,
+            "longitude": -89.5500403,
+            "machineNumber": "3",
+            "timestamp": "2014-05-31"
+        },
+        {
+            "latitude": 40.721551325,
+            "longitude": -89.55063327500001,
+            "machineNumber": "3",
+            "timestamp": "2014-05-31"
+        },
+        {
+            "latitude": 40.72173675,
+            "longitude": -89.55122625000001,
+            "machineNumber": "3",
+            "timestamp": "2014-05-25"
+        },
+        {
+            "latitude": 40.721922175,
+            "longitude": -89.551819225,
+            "machineNumber": "3",
+            "timestamp": "2014-05-11"
+        },
+        {
+            "latitude": 40.7221076,
+            "longitude": -89.5524122,
+            "machineNumber": "3",
+            "timestamp": "2014-07-26"
+        },
+        {
+            "latitude": 40.722293025,
+            "longitude": -89.55300517500001,
+            "machineNumber": "3",
+            "timestamp": "2014-06-28"
+        },
+        {
+            "latitude": 40.72247845,
+            "longitude": -89.55359815,
+            "machineNumber": "3",
+            "timestamp": "2014-08-20"
+        },
+        {
+            "latitude": 40.722663875,
+            "longitude": -89.554191125,
+            "machineNumber": "3",
+            "timestamp": "2014-07-27"
+        },
+        {
+            "latitude": 40.7228493,
+            "longitude": -89.5547841,
+            "machineNumber": "3",
+            "timestamp": "2014-05-11"
+        },
+        {
+            "latitude": 40.723034725,
+            "longitude": -89.55537707500001,
+            "machineNumber": "3",
+            "timestamp": "2014-06-08"
+        },
+        {
+            "latitude": 40.723220149999996,
+            "longitude": -89.55597005000001,
+            "machineNumber": "3",
+            "timestamp": "2014-08-25"
+        },
+        {
+            "latitude": 40.723405575,
+            "longitude": -89.556563025,
+            "machineNumber": "3",
+            "timestamp": "2014-05-28"
+        },
+        {
+            "latitude": 40.723591,
+            "longitude": -89.557156,
+            "machineNumber": "3",
+            "timestamp": "2014-08-23"
+        }
+    ],
+    [
+        {
+            "eventName": null,
+            "errorCount": 0,
+            "warCount": 0,
+            "eventCount": 0,
+            "machineNumber": "1",
+            "model": "930E",
+            "affilation": "Mountain A"
+        },
+        {
+            "eventName": null,
+            "errorCount": 67,
+            "warCount": 67,
+            "eventCount": 0,
+            "machineNumber": "2",
+            "model": "930E",
+            "affilation": "Mountain A"
+        },
+        {
+            "eventName": null,
+            "errorCount": 62,
+            "warCount": 47,
+            "eventCount": 0,
+            "machineNumber": "3",
+            "model": "930E",
+            "affilation": "Mountain A"
+        },
+        {
+            "eventName": null,
+            "errorCount": 0,
+            "warCount": 0,
+            "eventCount": 0,
+            "machineNumber": "4",
+            "model": "930E",
+            "affilation": "Mountain A"
+        },
+        {
+            "eventName": null,
+            "errorCount": 0,
+            "warCount": 0,
+            "eventCount": 0,
+            "machineNumber": "5",
+            "model": "930E",
+            "affilation": "Mountain A"
+        },
+        {
+            "eventName": null,
+            "errorCount": 0,
+            "warCount": 0,
+            "eventCount": 0,
+            "machineNumber": "6",
+            "model": "930E",
+            "affilation": "Mountain B"
+        },
+        {
+            "eventName": null,
+            "errorCount": 0,
+            "warCount": 0,
+            "eventCount": 0,
+            "machineNumber": "7",
+            "model": "930E",
+            "affilation": "Mountain B"
+        },
+        {
+            "eventName": null,
+            "errorCount": 0,
+            "warCount": 0,
+            "eventCount": 0,
+            "machineNumber": "8",
+            "model": "860E",
+            "affilation": "Mountain B"
+        },
+        {
+            "eventName": null,
+            "errorCount": 0,
+            "warCount": 0,
+            "eventCount": 0,
+            "machineNumber": "9",
+            "model": "860E",
+            "affilation": "Mountain B"
+        },
+        {
+            "eventName": null,
+            "errorCount": 0,
+            "warCount": 0,
+            "eventCount": 0,
+            "machineNumber": "10",
+            "model": "930E",
+            "affilation": "Mountain A"
+        },
+        {
+            "eventName": null,
+            "errorCount": 0,
+            "warCount": 0,
+            "eventCount": 0,
+            "machineNumber": "12",
+            "model": "860E",
+            "affilation": "Mountain C"
+        },
+        {
+            "eventName": null,
+            "errorCount": 0,
+            "warCount": 0,
+            "eventCount": 0,
+            "machineNumber": "12",
+            "model": "860E",
+            "affilation": "Mountain C"
+        }
+    ]
+]

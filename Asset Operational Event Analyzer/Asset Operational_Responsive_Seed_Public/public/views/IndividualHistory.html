@@ -1,0 +1,168 @@
+<style>
+</style>
+
+
+<px-card style="padding-top:10px;
+    padding-bottom: 0px;
+    padding-left: 15px;background: linear-gradient(#242326,#3b3b3f);
+        border-bottom: 1px solid #bbbbbb;
+    box-shadow: 1px 1px 1px #cec2c2;
+    color: white;margin-left:0.75%">
+    <h4 style="margin-top:0px;margin-bottom:10px">Machine Number : {{machineNumber}}</h4>
+</px-card>
+
+
+
+
+<div class="layout" style="padding-top:0;">
+      <div class="layout__item u-2/4" style="padding-left:2%;">
+
+         <px-card style="background-color:#ffffff;padding-bottom:0;padding-top:1%;paddig-left:2%;padding-right:4%;height:98%;width:100%;border: 1px solid #b1b1bc;">
+          <h1 style="text-align:center;margin-top:0" >Maintenance Records </h1>     
+             <div ng-show="data1=='!loading'">
+                      <px-data-table  class="data-table" id="mytable1" table-data="{{Maintenance}}" filterable="true" enable-column-reorder="true" enable-column-resize="true"  >
+                          <px-data-table-column name="machineNumber" label="Machine Number" sortable filterable>
+                          </px-data-table-column>
+                          <px-data-table-column name="maintenanceDate" label="Maintenance Date" sortable filterable>
+                          </px-data-table-column>
+                          <px-data-table-column name="repairType" label="Repair Type" sortable filterable>
+                          </px-data-table-column>
+                          <px-data-table-column name="repairPart1" label="Repair Part 1" sortable filterable>
+                          </px-data-table-column>
+                          <px-data-table-column name="repairPart2" label="Repair Part 2" sortable filterable>
+                          </px-data-table-column>
+                          <px-data-table-column name="repairPart3" label="Repair Part 3" sortable filterable>
+                          </px-data-table-column>
+                          <px-data-table-column name="repairPart4" label="Repair Part 4" sortable filterable>
+                          </px-data-table-column>
+                          <px-data-table-column name="repairPart5" label="Repair Part 5" sortable filterable>
+                          </px-data-table-column>
+                      </px-data-table>
+              </div>
+
+              <div ng-show="data1=='loading'" ng-hide="data1=='!loading'" >
+
+                      <svg version="1.1" id="L4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 20 20" enable-background="new 0 0 0 0" xml:space="preserve" style="padding-left:25%;height:300px;">
+                        <circle fill="#000000" stroke="none" cx="4" cy="10" r="0.5">
+                          <animate
+                            attributeName="opacity"
+                            dur="1s"
+                            values="0;1;0"
+                            repeatCount="indefinite"
+                            begin="0.1"/>    
+                        </circle>
+                        <circle fill="#000000" stroke="none" cx="6" cy="10" r="0.5">
+                          <animate
+                            attributeName="opacity"
+                            dur="1s"
+                            values="0;1;0"
+                            repeatCount="indefinite" 
+                            begin="0.2"/>       
+                        </circle>
+                        <circle fill="#000000" stroke="none" cx="8" cy="10" r="0.5">
+                          <animate
+                            attributeName="opacity"
+                            dur="1s"
+                            values="0;1;0"
+                            repeatCount="indefinite" 
+                            begin="0.3"/>     
+                        </circle>
+                      </svg>
+                </div>
+
+          </px-card>
+
+      </div>
+
+      <div class="layout__item u-2/4" style="padding-right:1%;" >
+           <px-card style="background-color:#ffffff;padding-bottom:0;border: 1px solid #b1b1bc;height:98%;width:100%;padding-left:0">
+          
+          <!-- <div class="pull-right" style="">
+              <px-dropdown display-value="Target Sensor">
+                      <px-dropdown-content class="px-dropdown-content" max-cont-character-width="10"
+                      extend-dropdown="true" extend-dropdown-by="15" items='{{data1}}'>
+                      </px-dropdown-content>
+              </px-dropdown>
+            </div> -->
+           
+             <div id="chart1" style="height:260px">
+             </div> 
+          
+             <form style="padding-left:15%;margin-top:7%;padding-bottom:3%">
+                <input type="radio" name="Chart" value="RepairTypeAnalysis" ng-model="RenderChart" ng-change='RepairTypeAnalysis()' checked> Repair Type Analysis
+                <input type="radio" name="Chart" value="RepairTypeAnalysisByDate" ng-model="RenderChart" ng-change='RepairTypeAnalysisByDate()'> Repair Type Analysis By Date
+              </form>
+          </px-card>
+      </div>
+       
+
+</div>
+
+  
+<div class="layout" style="padding-top:0;">
+      <div class="layout__item u-2/4" style="padding-left:2%;">
+             <px-card style="background-color:#ffffff;padding-bottom:0;padding-top:1%;paddig-left:2%;padding-right:2%;height:98%;width:100%;border: 1px solid #b1b1bc;">
+               <h1 style="text-align:center;margin-top:0" >Notification History </h1>   
+                <div ng-show="data=='!loading'">
+
+                    <px-data-table  class="data-table" id="mytable1" table-data="{{Notification}}" filterable="true" enable-column-reorder="true" >
+                      <px-data-table-column name="maintenanceDate" label="Maintenance Date" sortable filterable>
+                      </px-data-table-column>
+                      <px-data-table-column name="errorType" label="Notification" sortable filterable>
+                      </px-data-table-column>
+                    </px-data-table>
+
+                </div>
+     
+                <div ng-show="data=='loading'" ng-hide="data=='!loading'" >
+                        <svg version="1.1" id="L4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                          viewBox="0 0 20 20" enable-background="new 0 0 0 0" xml:space="preserve" style="padding-left:25%;height:350px;">
+                          <circle fill="#000000" stroke="none" cx="4" cy="10" r="0.5">
+                            <animate
+                              attributeName="opacity"
+                              dur="1s"
+                              values="0;1;0"
+                              repeatCount="indefinite"
+                              begin="0.1"/>    
+                          </circle>
+                          <circle fill="#000000" stroke="none" cx="6" cy="10" r="0.5">
+                            <animate
+                              attributeName="opacity"
+                              dur="1s"
+                              values="0;1;0"
+                              repeatCount="indefinite" 
+                              begin="0.2"/>       
+                          </circle>
+                          <circle fill="#000000" stroke="none" cx="8" cy="10" r="0.5">
+                            <animate
+                              attributeName="opacity"
+                              dur="1s"
+                              values="0;1;0"
+                              repeatCount="indefinite" 
+                              begin="0.3"/>     
+                          </circle>
+                        </svg>
+            
+              </px-card>
+
+              </div>
+        </div>
+        
+        <div class="layout__item u-2/4" style="padding-right:1%;" >
+                <px-card style="background-color:#ffffff;padding-bottom:0;border: 1px solid #b1b1bc;height:98%;width:100%;padding-left:0">
+                  <div class="pull-right" style="">
+                <!--     <px-dropdown display-value="Target Sensor ">
+                            <px-dropdown-content class="px-dropdown-content" max-cont-character-width="10"
+                            extend-dropdown="true" extend-dropdown-by="15" items='{{data1}}'>
+                            </px-dropdown-content>
+                    </px-dropdown> -->
+                  </div>
+                  <div id="chart2" style="height:320px">
+                  </div> 
+       
+                </px-card>
+        </div>
+     
+        </div>
+    </div>

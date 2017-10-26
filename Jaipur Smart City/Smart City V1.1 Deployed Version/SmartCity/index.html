@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Jaipur Smart City</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
+  <link rel="stylesheet" href="../css/Index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-websocket/1.0.0/angular-websocket.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+  <script src="Submenu/Scripts/MyAppModule.js"></script>  
+  <script src="Submenu/Scripts/Router.js"></script>
+  <script src="Submenu/Scripts/SmartCityCtrl.js"></script>
+  <script src="Submenu/Scripts/SmartWifiManagementCtrl.js"></script>
+  <script src="Submenu/Scripts/SmartSurveillanceCtrl.js"></script>
+  <script src="Submenu/Scripts/BusiestDayCtrl.js"></script>
+  <script src="Submenu/Scripts/NewVisitorPatternCtrl.js"></script>
+  <script src="Submenu/Scripts/PlacesofAttractionCtrl.js"></script>
+  <script src="Submenu/Scripts/CustomerVisitPatternCtrl.js"></script>
+  <script src="Submenu/Scripts/AssetHealthCtrl.js"></script>
+  <script src="Submenu/Scripts/SmartParkingCtrl.js"></script>
+  <script src="Submenu/Scripts/OperationalStatusCtrl.js"></script>
+  <script src="Submenu/Scripts/VSMAccessUsageStatisticsCtrl.js"></script>
+  <script src="Submenu/Scripts/AlertManagmentCtrl.js"></script>
+  <script type="text/javascript" src="api/angularjs-dropdown-multiselect/dist/angularjs-dropdown-multiselect.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.7.0/lodash.min.js"></script>
+    
+  <script type="text/javascript">
+  var flag=false; 
+  function openNav() {
+    if(flag==true){
+      closeNav();
+      flag=false;
+    }
+    else if(flag!=true){
+      document.getElementById("logo_for_menu").style.display="block";
+      document.getElementById("mySidenav").style.width = "100%";
+      flag=true;
+    }
+  }
+  function closeNav() {
+      document.getElementById("logo_for_menu").style.display="none";
+      document.getElementById("mySidenav").style.width = "0";
+  }
+
+  </script>
+  <style type="text/css">
+    
+  </style>
+</head>
+<div ui-view>
+<body ng-app="cisco" ng-controller="smartcityctrl">
+<div class="Maindiv">
+       
+    <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <!--Icons Layout in Iphone-->
+    <table id="PhoneNavMenu">
+    <tr>    
+    <td align="center">
+    <div>
+      <div id="custom-icon">
+       <a href="#"><img src="../images/Wifi-ico.png"></a>
+     </div>
+     </div>
+    </td>
+    <td align="center">
+    <div>
+    <div id="custom-icon">
+      <a href="#"><img src="../images/camera-ico.png"></a>
+   </div>
+   </div>
+    </td>
+    <td align="center">
+    <div>
+    <div id="custom-icon">
+      <a href="#"><img src="../images/tourist-ico.png"></a>
+   </div>
+   </div>
+    </td>    
+    </tr>
+
+    <tr>
+    <td id="MenuText">
+    Smart Wifi Management
+    </td>
+    <td id="MenuText">
+    Smart Surveillance
+    </td>
+    <td id="MenuText">
+    Tourist Experience
+    </td>
+    </tr>
+    
+    <tr style="border-top:25px solid #f6f6f6">    
+    <td align="center">
+    <div>
+      <div id="custom-icon">
+       <a href="#"><img src="../images/traffic-ico.png"></a>
+     </div>
+     </div>
+    </td>
+    <td align="center">
+    <div>
+    <div id="custom-icon">
+      <a href="#"><img src="../images/parking-ico.png"></a>
+   </div>
+   </div>
+    </td>
+    <td align="center">
+    <div>
+    <div id="custom-icon">
+      <a href="#"><img src="../images/water-ico.png"></a>
+   </div>
+   </div>
+    </td>    
+    </tr>
+
+    <tr >
+    <td id="MenuText">
+    Smart Traffic Operations
+    </td>
+    <td id="MenuText">
+    Parking Management
+    </td>
+    <td id="MenuText">
+    Water Management
+    </td>
+    </tr>
+    
+    <tr style="border-top:25px solid #f6f6f6">    
+    <td align="center">
+    <div>
+      <div id="custom-icon">
+       <a href="#"><img src="../images/pollution-ico.png"></a>
+     </div>
+     </div>
+    </td>
+    <td align="center">
+    <div>
+    <div id="custom-icon">
+      <a href="#"><img src="../images/waste-ico.png"></a>
+   </div>
+   </div>
+    </td>   
+    </tr>
+
+    <tr>
+    <td id="MenuText">
+    Pollution Management
+    </td>
+    <td id="MenuText">
+    Waste Management 
+    </td>
+    </tr>    
+    </table>
+
+
+    <!--Icons Layout in Ipad-->
+    <table style="width:100%" id="IpadNavMenu">
+    <tr>    
+    <td align="center">
+    <div>
+      <div id="custom-icon">
+       <a href="#"><img src="../images/Wifi-ico.png"></a>
+     </div>
+     </div>
+    </td>
+    <td align="center">
+    <div>
+    <div id="custom-icon">
+      <a href="#"><img src="../images/camera-ico.png"></a>
+   </div>
+   </div>
+    </td>
+    <td align="center">
+    <div>
+    <div id="custom-icon">
+      <a href="#"><img src="../images/tourist-ico.png"></a>
+   </div>
+   </div>
+    </td>
+    <td align="center">
+    <div>
+      <div id="custom-icon">
+       <a href="#"><img src="../images/traffic-ico.png"></a>
+     </div>
+     </div>
+    </td>    
+    </tr>
+
+    <tr>
+    <td id="MenuText">
+    Smart Wifi Management
+    </td>
+    <td id="MenuText">
+    Smart Surveillance
+    </td>
+    <td id="MenuText">
+    Tourist Experience
+    </td>
+    <td id="MenuText">
+    Smart Traffic Operations
+    </td>
+    </tr>
+    
+    <tr style="border-top:25px solid #f6f6f6">    
+    
+    <td align="center">
+    <div>
+    <div id="custom-icon">
+      <a href="#"><img src="../images/parking-ico.png"></a>
+   </div>
+   </div>
+    </td>
+    <td align="center">
+    <div>
+    <div id="custom-icon">
+      <a href="#"><img src="../images/water-ico.png"></a>
+   </div>
+   </div>
+    </td>
+    <td align="center">
+    <div>
+      <div id="custom-icon">
+       <a href="#"><img src="../images/pollution-ico.png"></a>
+     </div>
+     </div>
+    </td>
+    <td align="center">
+    <div>
+    <div id="custom-icon">
+      <a href="#"><img src="../images/waste-ico.png"></a>
+   </div>
+   </div>
+    </td>    
+    </tr>
+
+    <tr>    
+    <td id="MenuText">
+    Parking Management
+    </td>
+    <td id="MenuText">
+    Water Management
+    </td>
+    <td id="MenuText">
+    Pollution Management
+    </td>
+    <td id="MenuText">
+    Waste Management 
+    </td>
+    </tr>
+    </table>
+
+    </div>
+
+    <div id= "logo_for_menu">
+    <picture>
+    <img src="../images/logo_for_menu.png">
+    </picture>
+    </div>
+
+   
+   <div id= "Title">
+    <picture>
+    <source srcset="../images/title@3x.png" media="(max-width: 500px)">
+    <source  srcset="../images/title@2x.png" media="(max-width:800px)">
+    <img src="../images/title.png">
+    </picture>
+  </div>
+
+  <div class="Rectangle">
+    <div><p class="Powered-by">Powered by </p></div>
+   </div>
+
+   <div id="Cisco_Logo">
+    <picture>
+    <source  srcset="../images/Cisco-Logo_phone_Ipad.png" media="(max-width:800px)">
+    <img src="../images/Cisco-Logo.png">
+    </picture>
+   </div>
+
+   <div id="Genpact_Logo">
+     <picture>
+    <source  srcset="../images/Genpact-Logo_phone_Ipad.png" media="(max-width:800px)">    
+    <img src="../images/Genpact-Logo.png">
+    </picture>
+   </div>
+
+<!--Icons for Laptop and Desktop and Center-->
+   <div id="tag">
+   <div class="Menu">
+    <img src="../images/menu-ico_index.png" onclick="openNav()">
+    </div>
+
+   <div class="row" style="max-width:98%">
+   <div class="col-md-4 col-sm-4 col-xs-4">
+   <div class="row" id="LeftIcons">
+         <div class="col-md-3 col-sm-3 col-xs-3">
+            <div class="wifi-ico">
+            <div id="custom-icon">
+             <a ui-sref="WifiManagement.BusiestDay"><img src="../images/Wifi-ico.png"></a>
+           </div>
+           </div>
+           <div class="Smart-WIFI-Managemen">
+             <a class="hyperlink" ui-sref="WifiManagement.BusiestDay">Smart WIFI Management</a>
+           </div>
+           </div>
+           <div class="col-md-3 col-sm-3 col-xs-3">
+            <div class="wifi-ico">
+            <div id="custom-icon">
+              <a ui-sref=".Surveillance.VSMAccessUsageStatistics"><img src="../images/camera-ico.png"></a>
+           </div>
+           </div>
+           <div class="Smart-Surveillance">
+             <a class="hyperlink" ui-sref=".Surveillance.VSMAccessUsageStatistics">Smart Surveillance</a>
+           </div>
+           </div>
+
+           <div class="col-md-3 col-sm-3 col-xs-3">
+            <div class="wifi-ico">
+            <div id="custom-icon">
+              <a href="#"><img src="../images/tourist-ico.png"></a>
+           </div>
+           </div>
+           <div class="Tourist-Experience">
+           Tourist Experience
+           </div>
+           </div>
+           <div class="col-md-3 col-sm-3 col-xs-3">
+            <div class="wifi-ico">
+            <div id="custom-icon">
+              <a href="#"><img src="../images/traffic-ico.png"></a>
+           </div>
+           </div>
+           <div class="Smart-Traffic-Operat">
+           Smart Traffic Operations 
+           </div>
+           </div>
+        </div>
+   </div>
+   <div class="col-md-4 col-sm-4 col-xs-4">
+   <img class="smartcity-img" src="../images/smartcity-ico.png">
+   </div>
+   <div class="col-md-4 col-sm-4 col-xs-4">
+   <div class="row" id="RightIcons">
+          <div class="col-md-3 col-sm-3 col-xs-3">
+            <div class="wifi-ico">
+            <div id="custom-icon">
+             <a href="#"><img src="../images/parking-ico.png"></a>
+           </div>
+           </div>
+           <div class="Parking-Management ">
+           Parking Management
+           </div>
+           </div>
+           <div class="col-md-3 col-sm-3 col-xs-3">
+            <div class="wifi-ico">
+            <div id="custom-icon">
+              <a href="#"><img src="../images/water-ico.png"></a>
+           </div>
+           </div>
+           <div class="Water-Management">
+           Water Management
+           </div>
+           </div>
+           <div class="col-md-3 col-sm-3 col-xs-3">
+            <div class="wifi-ico">
+            <div id="custom-icon">
+              <a href="#"><img src="../images/pollution-ico.png"></a>
+           </div>
+           </div>
+           <div class="Pollution-Management">
+           Pollution Management
+           </div>
+           </div>
+           <div class="col-md-3 col-sm-3 col-xs-3">
+            <div class="wifi-ico">
+            <div id="custom-icon">
+              <a href="#"><img src="../images/waste-ico.png"></a>
+           </div>
+           </div>
+           <div class="Waste-Management ">
+           Waste Management 
+           </div>
+           </div>
+        </div>
+   </div>
+   </div>
+    </div>
+
+    <!--Top Banner Image-->
+    <picture>
+    <source srcset="../images/home_phone.png" media="(max-width: 500px)">
+    <img class="hero-img" src="../images/hero-ico.png">  
+    </picture>  
+</div>
+
+<!--Center Div-->
+<div class="container-fluid" style="margin-left:1%;margin-right:1%;margin-top: 4%">
+<div class="row" id="rowoftext">
+  <div class="col-md-6 col-sm-12 col-xs-12" id="firstcolofrowoftext" >
+    <div class="Cisco-CDP-Genpact">Cisco CDP & Genpact’s Lean Digital For</div>
+    <div class="Smart-City-With-Inte">Smart City With Internet of Things</div>
+    <div class="Genpacts-lean-Digit" id="Genpacts-lean-Digit-div" >Genpact’s lean DigitalSM approach harnesses Internet of Things platforms like Cisco CDP by applying a business domains lens to identify what  generates impact and which solutions are practical and effective.</div>
+  <div class="JDA-Logo" style="margin-top: 6%">
+  <picture>
+    <img src="../images/JDA-Logo.png">
+  </picture>
+  </div>
+  </div>
+
+  <div class="col-md-2 col-sm-12 col-xs-12">
+  </div>
+
+  <div class="col-md-4 col-sm-12 col-xs-12" id="thirdcolofrowoftext" style="margin-bottom:2%">
+    <div class="Rethink-Your-Digital">Rethink Your Digital With <span class="LEAN-DIGITAL">&nbsp;LEAN DIGITAL</span></div> 
+    <div class="Unique-Approach-That" style="margin-top: 2%">Unique Approach That Delivers</div>
+    <div class="Unique-Approach-That"> Digital’s Full Potential </div>
+    <div style="margin-top: 5%;margin-left: 5%">
+      <picture>    
+    <img src="../images/Digital-process-ico.png">  
+    </picture>  
+    <span class="Digital-process-cent" style="padding-left: 2%">Digital process-centric technologies</span>
+    </div> 
+    <div style="margin-top: 5%;margin-left: 5%">
+      <picture>    
+    <img src="../images/Thinking-ico.png">  
+    </picture>  
+    <span class="Design-thinking-meth" id="Design-thinking-meth-span">Design thinking methods focused on the end customer </span>
+    </div> 
+    <div style="margin-top: 5%;margin-left: 5%">
+      <picture>    
+    <img src="../images/Lean-ico.png">  
+    </picture>  
+    <span class="Lean-principles-that" id="Lean-principles-that-span" style="padding-left: 3.4%">Lean principles that focus on agility</span>
+    </div>
+    <div class="JDA-Logo_forMobile" style="margin-top: 6%;margin-bottom:5%;">
+  <picture>
+    <img src="../images/JDA-Logo.png">
+  </picture>
+  </div>
+  </div>
+     
+  </div>
+</div>
+</div>
+
+<!--Footer-->
+ <footer class="container-fluid text-center Rectangle-Copy">
+  <h4 class="Copyright-Genpact">Copyright © Genpact 2016. All Rights Reserved. Privacy | Terms & Conditions</h4>
+</footer>
+</body>
+</div>
+</html>

@@ -1,0 +1,197 @@
+<!-- <style>
+.highcharts-container{
+  height: 260px !important;
+}
+</style> -->
+<link rel="stylesheet" type="text/css" href="../css/BusiestDay.css">
+<script type="text/javascript">
+    $(document).ready(function() {
+    $('.ui.dropdown').dropdown();
+    });
+</script>
+
+<div class="container-fluid" id="Maindiv">         
+                <div class="row" style="margin-top: 1%;margin-left: -2px !important">                       
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="well2">
+                                    <div class="row" style="margin-left: -10px !important">
+                                        <div class="col-md-2 col-sm-6 col-xs-12">
+                                            <span id="textfordropdown">
+                                            Location Type
+                                             </span>
+                                    </div>
+                                    <div class="col-md-2 col-sm-6 col-xs-12">
+                                            <span id="textfordropdown" >
+                                            Location Name
+                                             </span>
+                                    </div>
+                                    <div class="col-md-2 col-sm-6 col-xs-12">
+                                            <span id="textfordropdown">
+                                            Date
+                                             </span>
+                                    </div>
+                            </div>
+                             <div class="row" style="margin-top: 5px">
+                                  <div class="col-md-2 col-sm-6 col-xs-12">
+                                             <select disabled id="Area" class="ui search selection dropdown widthofselect" style="height:35px; padding-top:0px;padding-bottom:0px;background-color: #cbced8">
+                                                    <option selected style=>Building</option>
+                                                  </select>
+                                 </div>    
+                                 <div class="col-md-2 col-sm-6 col-xs-12">
+                                 <select id="Location" class="ui search selection dropdown widthofselect" style="height:35px;padding-top:0px;padding-bottom:0px;background-color: #cbced8">
+                                            <option selected value="0">All</option>
+                                            <option value="16">CiscoCampus</option>
+                                            <option value="44">CiscoLiveLatAm</option>
+                                          </select>
+                                          </div>   
+                                  <div class="col-md-2 col-sm-6 col-xs-12">
+                                        <select id="Day" class="ui search selection dropdown widthofselect" style="height:35px;padding-top:0px;padding-bottom:0px;background-color: #cbced8">
+                                              <option selected value="today">Today</option>
+                                              <option value="yesterday">Yesterday</option>
+                                              <option value="this week">Week To Date</option>
+                                            
+                                            </select>
+                                 </div>
+                                 <div class="col-md-4 col-sm-6 col-xs-12">
+                                 </div>
+                                 <div class="col-md-2 col-sm-6 col-xs-12">
+                                        <span id="styleofdate">
+                                        {{Date1}} 
+                                        </span><img src="../images/calendar-ico.png">
+                                 </div>                              
+                            </div>
+                            </div>
+                       </div>                         
+                  </div>
+ 
+                  <div class="row" style="margin-left: -2px !important">
+                    <div class="col-md-6 col-xs-12 col-sm-12">
+                        <div class="panel panel-primary" style="background-color:#2d3345;height:430px !important">
+                            <div class="panel-heading" style="background-color:#2d3345;" >
+                                <div>
+                                    <p id="textforChartHeading">
+                                    Visitors
+                                    </p>
+                                    <p class="pull-right" id="textforChartSubHeading" ng-hide="loading">
+                                    {{NumberOfVisitor}}<br>
+                                    Total Visits
+                                    </p>
+                                    <p class="pull-right" id="textforChartSubHeading" ng-show="loading">
+                                    --<br>
+                                    Total Visits
+                                    </p>
+                                    </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="progress">
+                                  
+                                           <div class="progress-bar progress-bar-success" role="progressbar" style="width:{{TotalRepeatVisitorPercent}}%" ng-hide="loading">
+                                         </div>
+                                          <div class="progress-bar progress-bar-primary" role="progressbar" style="width:{{TotalNewVisitorPercent}}%" ng-hide="loading">
+                                         </div>
+                                            
+                                    </div>
+                                    <div class="pull-left" id="LeftTextofProgressBar" ng-show="loading">
+                                    Repeat Visitors : --% <span id="NumberBeneathProgressbar">--</span>
+                                    </div>
+                                    <div class="pull-left" id="LeftTextofProgressBar" ng-hide="loading">
+                                    Repeat Visitors : {{TotalRepeatVisitorPercent}}% <span id="NumberBeneathProgressbar">{{TotalRepeatVisitorCount}}</span>
+                                    </div>
+
+                                    <div class="pull-right" id="RightTextofProgressBar" ng-show="loading">
+                                    New Visitors: --% <span id="NumberBeneathProgressbar">--</span>
+                                    </div>
+                                    <div class="pull-right" id="RightTextofProgressBar" ng-hide="loading">
+                                    New Visitors: {{TotalNewVisitorPercent}}% <span id="NumberBeneathProgressbar">{{TotalNewVisitor}}</span>
+                                    </div>
+
+                             <loading style="text-align:center;height: 280px;"></loading>
+                             <div id="container" style="height: 280px;width: 551px;" ng-hide="loading"> <!--id="container" -->
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12 col-sm-12">
+                        <div class="panel panel-primary" style="background-color:#2d3345;height:430px !important">
+                            <div class="panel-heading" style="background-color:#2d3345;" >
+                                <div>
+                                    <p id="textforChartHeading">
+                                    Dwell Time Breakdown
+                                    </p>
+                                    <p class="pull-right" id="textforChartSubHeading" ng-hide="loading">
+                                    {{DwellTimeVisitor}}<br>
+                                    Dwell Time of All Visits
+                                    </p>
+                                    <p class="pull-right" id="textforChartSubHeading" ng-show="loading">
+                                    --<br>
+                                    Dwell Time of All Visits
+                                    </p>
+                                    </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="progress">
+                                  
+                                           <div class="progress-bar progress-bar-success" role="progressbar" style="width:{{RepeatVisitorPercent}}%" ng-hide="loading">
+                                         </div>
+                                          <div class="progress-bar progress-bar-primary" role="progressbar" style="width:{{NewVisitorPercent}}%" ng-hide="loading">
+                                         </div>
+                                            
+                                    </div>
+                                    <div class="pull-left" id="LeftTextofProgressBar" ng-show="loading">
+                                    Repeat Visitors : --% <span id="NumberBeneathProgressbar">--</span>
+                                    </div>
+                                    <div class="pull-left" id="LeftTextofProgressBar" ng-hide="loading">
+                                    Repeat Visitors : {{RepeatVisitorPercent}}% <span id="NumberBeneathProgressbar">{{RepeatVisitorCount}}</span>
+                                    </div>
+
+                                    <div class="pull-right" id="RightTextofProgressBar" ng-show="loading">
+                                    New Visitors: --% <span id="NumberBeneathProgressbar">--</span>
+                                    </div>
+                                    <div class="pull-right" id="RightTextofProgressBar" ng-hide="loading">
+                                    New Visitors: {{NewVisitorPercent}}% <span id="NumberBeneathProgressbar">{{NewTotalVisitorDwell}}</span>
+                                    </div>
+
+                             <loading style="text-align:center;height: 280px;"></loading>       
+                             <div id="container1" style="height: 280px;width: 551px;" ng-hide="loading"> <!--id="container1"-->
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="row" style="margin-left: -2px !important">
+                    <div class="col-md-6 col-xs-12 col-sm-12">
+                        <div class="panel panel-primary" style="background-color:#2d3345;">
+                            <div class="panel-heading" style="background-color:#2d3345;" >
+                                <div style="max-width: 70%">
+                                    <p id="textforChartHeading">
+                                    Recommendation for New Product Promotion / Additional Staff
+                                    </p>
+                                    </div>
+                            </div>
+                            <div class="panel-body">
+                               <loading style="text-align:center;height: 280px;"></loading>
+                             <div id="container2" style="height: 280px;width: 551px;" ng-hide="loading"> <!--id="container2"-->
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12 col-sm-12" ng-hide="display1='Hide'" ng-show="display1!='show'">
+                        <div class="panel panel-primary" style="background-color:#2d3345; height:314px !important">
+                            <div class="panel-heading" style="background-color:#2d3345;" >
+                                <div>
+                                    <p id="textforChartHeading">
+                                    Dwell Time for {{hours}}
+                                    </p>
+                                    <p class="pull-right" id="textforChartSubHeading">                    
+                                    </p>
+                                    </div>
+                            </div>
+                            <div class="panel-body">
+                            <loading style="text-align:center;height: 280px;"></loading>  
+                            <div id="container3" style="height: 280px;width: 551px;" ng-hide="loading"> <!--id="container3"-->
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>

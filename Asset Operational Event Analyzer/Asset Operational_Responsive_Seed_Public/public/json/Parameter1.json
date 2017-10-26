@@ -1,0 +1,175 @@
+
+    [
+    {
+        "key": "parameter_1",
+        "val": "ATMOSPHERIC PRESSURE"
+    },
+    {
+        "key": "parameter_4",
+        "val": "% DROOP SETTING"
+    },
+    {
+        "key": "parameter_5",
+        "val": "POWER TURBINE SPEED REFERENCE"
+    },
+    {
+        "key": "parameter_6",
+        "val": "BUS FREQUENCY"
+    },
+    {
+        "key": "parameter_7",
+        "val": "UTILITY FREQUENCY"
+    },
+    {
+        "key": "parameter_8",
+        "val": "BUS VOLTAGE"
+    },
+    {
+        "key": "parameter_9",
+        "val": "UTILITY VOLTAGE 1"
+    },
+    {
+        "key": "parameter_10",
+        "val": "UTILITY VOLTAGE 2"
+    },
+    {
+        "key": "parameter_11",
+        "val": "SUMP A CHIP DETECTOR SENSOR"
+    },
+    {
+        "key": "parameter_12",
+        "val": "SUMP A CHIP DETECTOR SELECT"
+    },
+    {
+        "key": "parameter_13",
+        "val": "SUMP B CHIP DETECTOR SENSOR"
+    },
+    {
+        "key": "parameter_14",
+        "val": "SUMP B CHIP DETECTOR SELECT"
+    },
+    {
+        "key": "parameter_15",
+        "val": "SUMP C CHIP DETECTOR SENSOR"
+    },
+    {
+        "key": "parameter_16",
+        "val": "CHIP DETECTOR 1"
+    },
+    {
+        "key": "parameter_17",
+        "val": "CHIP DETECTOR 2"
+    },
+    {
+        "key": "parameter_18",
+        "val": "SUMP C CHIP DETECTOR SELECT"
+    },
+    {
+        "key": "parameter_19",
+        "val": "DECEL MIN COUNT"
+    },
+    {
+        "key": "parameter_20",
+        "val": "COUNTO OF E STOPS"
+    },
+    {
+        "key": "parameter_21",
+        "val": "EMERGENCY SD WITHOUT MOTOR COUNTER"
+    },
+    {
+        "key": "parameter_22",
+        "val": "OPERATIONAL HOURS  FUEL"
+    },
+    {
+        "key": "parameter_23",
+        "val": "PS3 IN CONTROL RUNNING"
+    },
+    {
+        "key": "parameter_24",
+        "val": "CRF VIBE LEVEL FILTERED"
+    },
+    {
+        "key": "parameter_25",
+        "val": "CRF VIBE LEVEL FILTERED TO N25"
+    },
+    {
+        "key": "parameter_26",
+        "val": "CRF VIBE LEVEL FILTERED TO N2"
+    },
+    {
+        "key": "parameter_27",
+        "val": "GENERATOR BEARING DE X AXIS VIBRATION"
+    },
+    {
+        "key": "parameter_28",
+        "val": "GENERATOR BEARING DE Y AXIS VIBRATION"
+    },
+    {
+        "key": "parameter_29",
+        "val": "AUX EXCITATION CURRENT"
+    },
+    {
+        "key": "parameter_30",
+        "val": "AUX EXCITATION CURRENT SELECT"
+    },
+    {
+        "key": "parameter_31",
+        "val": "EXCITER FIELD"
+    },
+    {
+        "key": "parameter_32",
+        "val": "FLAME DETECTOR"
+    },
+    {
+        "key": "parameter_33",
+        "val": "FUEL SUPPLY ALARM"
+    },
+    {
+        "key": "parameter_34",
+        "val": "AGB VIBE"
+    },
+    {
+        "key": "parameter_35",
+        "val": "GENERATOR FREQUENCY"
+    },
+    {
+        "key": "parameter_36",
+        "val": "ANTI-ICE AMBIENT HUMIDITY"
+    },
+    {
+        "key": "parameter_37",
+        "val": "ANTI-ICE AMBIENT HUMIDITY SELECT"
+    },
+    {
+        "key": "parameter_38",
+        "val": "GENERATURE LUBE OIL PRESSURE SIGNAL A"
+    },
+    {
+        "key": "parameter_39",
+        "val": "GENERATOR CONTROL VAR SETPOINT"
+    },
+    {
+        "key": "parameter_40",
+        "val": "(N25) RATE OF CHANGE"
+    },
+    {
+        "key": "parameter_41",
+        "val": "SPEED CORRECTED TO T25"
+    },
+    {
+        "key": "parameter_42",
+        "val": "SPEED CORRECTED TO T2"
+    },
+    {
+        "key": "parameter_43",
+        "val": "N25REF TO HMI - SLOW EXCHANGE"
+    },
+    {
+        "key": "parameter_44",
+        "val": "NET LOAD ON LP SHAFT #1 BEARING"
+    },
+    {
+        "key": "parameter_45",
+        "val": "VG FILTER PRESS SENSOR"
+    }
+]

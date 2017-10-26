@@ -1,0 +1,51 @@
+#donationHeader{
+  height:150px;
+  width:900px;
+}
+#Text{
+  color:black;
+  font-family:AvenirRegular;
+  font-size:1.5rem;
+  padding:1% 0 0 1.5%;
+}
+.textDiv{
+  padding:0.5% 3% 0.5% 3%;
+  font-family:AvenirRegular;
+}
+.container{
+  background-color: white !important;
+  margin-left: 233px !important;
+  margin-right: 233px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  width: 900px !important;
+}
+#Signature{
+  height:60px;
+  width:150px;
+  padding-top:2%;
+  padding-bottom: 1%;
+}
+#footer{
+  bottom:0;  
+  height:20px;
+  width:900px;
+}
+
+#donationPlea{
+  font-family: AvenirBoldCn;
+}
+.pdfViewer{
+ display : block;	
+}
+.pdfViewerMobile{
+display : none;
+}
+@media only screen and (max-width: 414px) {
+	.pdfViewer{
+ 		display : none;	
+	}
+.pdfViewerMobile{
+display : block;
+}
+}

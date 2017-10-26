@@ -1,0 +1,1092 @@
+[
+ {
+   "LogTime": "11/17/2016 23:52",
+   "ActivityType": "Logout",
+   "Description": "Logged out user admin successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.81"
+ },
+ {
+   "LogTime": "11/17/2016 23:08",
+   "ActivityType": "Logout",
+   "Description": "Logged out user admin successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.26"
+ },
+ {
+   "LogTime": "11/17/2016 19:56",
+   "ActivityType": "Logout",
+   "Description": "Logged out user JDA-IT successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "42.111.70.224"
+ },
+ {
+   "LogTime": "11/17/2016 19:05",
+   "ActivityType": "Session Expiry",
+   "Description": "Logging out user admin as session expired",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 18:36",
+   "ActivityType": "Login Success",
+   "Description": "User admin logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.80"
+ },
+ {
+   "LogTime": "11/17/2016 18:33",
+   "ActivityType": "Session Expiry",
+   "Description": "Logging out user admin as session expired",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 18:24",
+   "ActivityType": "Session Expiry",
+   "Description": "Logging out user admin as session expired",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 18:23",
+   "ActivityType": "Session Expiry",
+   "Description": "Logging out user admin as session expired",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 18:12",
+   "ActivityType": "Login Success",
+   "Description": "User JDA-IT logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "42.111.70.224"
+ },
+ {
+   "LogTime": "11/17/2016 18:12",
+   "ActivityType": "Logout",
+   "Description": "Logged out user admin successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "42.111.70.224"
+ },
+ {
+   "LogTime": "11/17/2016 18:11",
+   "ActivityType": "Session Expiry",
+   "Description": "Logging out user JDA-IT as session expired",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 18:07",
+   "ActivityType": "Session Expiry",
+   "Description": "Logging out user admin as session expired",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 18:06",
+   "ActivityType": "Session Expiry",
+   "Description": "Logging out user JDA-IT as session expired",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 17:56",
+   "ActivityType": "Login Success",
+   "Description": "User admin logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "42.111.70.224"
+ },
+ {
+   "LogTime": "11/17/2016 17:55",
+   "ActivityType": "Login Success",
+   "Description": "User admin logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "42.111.70.224"
+ },
+ {
+   "LogTime": "11/17/2016 17:52",
+   "ActivityType": "Login Success",
+   "Description": "User admin logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "172.30.101.1"
+ },
+ {
+   "LogTime": "11/17/2016 17:45",
+   "ActivityType": "Login Success",
+   "Description": "User admin logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "72.163.220.26"
+ },
+ {
+   "LogTime": "11/17/2016 17:39",
+   "ActivityType": "Login Success",
+   "Description": "User JDA-IT logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "220.225.221.145"
+ },
+ {
+   "LogTime": "11/17/2016 17:38",
+   "ActivityType": "Logout",
+   "Description": "Logged out user JDA-IT successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "220.225.221.145"
+ },
+ {
+   "LogTime": "11/17/2016 17:38",
+   "ActivityType": "Logout",
+   "Description": "Logged out user JDA-IT successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "220.225.221.145"
+ },
+ {
+   "LogTime": "11/17/2016 17:38",
+   "ActivityType": "License Status",
+   "Description": "User JDA-IT accepted the SASD download license agreement",
+   "ObjectLocation": "",
+   "ObjectName": "SASD",
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "220.225.221.145"
+ },
+ {
+   "LogTime": "11/17/2016 17:38",
+   "ActivityType": "Login Success",
+   "Description": "User JDA-IT logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "220.225.221.145"
+ },
+ {
+   "LogTime": "11/17/2016 17:38",
+   "ActivityType": "Login Success",
+   "Description": "User JDA-IT logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "220.225.221.145"
+ },
+ {
+   "LogTime": "11/17/2016 17:35",
+   "ActivityType": "Login Success",
+   "Description": "User JDA-IT logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "1.186.58.2"
+ },
+ {
+   "LogTime": "11/17/2016 17:27",
+   "ActivityType": "Login Success",
+   "Description": "User admin logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.81"
+ },
+ {
+   "LogTime": "11/17/2016 17:04",
+   "ActivityType": "Config Status",
+   "Description": "Apply Configuration",
+   "ObjectLocation": "Jaipur.Park-Ram Niwas Bagh",
+   "ObjectName": "* RamniwasBagh-15",
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.26"
+ },
+ {
+   "LogTime": "11/17/2016 17:04",
+   "ActivityType": "Login Success",
+   "Description": "User admin logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.26"
+ },
+ {
+   "LogTime": "11/17/2016 17:04",
+   "ActivityType": "Login failure",
+   "Description": "Operation failed: Credentials are incorrect for the user admin",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.26"
+ },
+ {
+   "LogTime": "11/17/2016 17:00",
+   "ActivityType": "Config Status",
+   "Description": "Apply Configuration",
+   "ObjectLocation": "Jaipur.Park-Ram Niwas Bagh",
+   "ObjectName": "* RamniwasBagh-15",
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.26"
+ },
+ {
+   "LogTime": "11/17/2016 16:57",
+   "ActivityType": "Config Status",
+   "Description": "Apply Configuration",
+   "ObjectLocation": "Jaipur.Park-Ram Niwas Bagh",
+   "ObjectName": "* RamniwasBagh-15",
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.26"
+ },
+ {
+   "LogTime": "11/17/2016 16:57",
+   "ActivityType": "Session Expiry",
+   "Description": "Logging out user admin as session expired",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 16:57",
+   "ActivityType": "Config Status",
+   "Description": "Apply Configuration",
+   "ObjectLocation": "Jaipur.Park-Ram Niwas Bagh",
+   "ObjectName": "* RamniwasBagh-15",
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.26"
+ },
+ {
+   "LogTime": "11/17/2016 16:56",
+   "ActivityType": "Config Status",
+   "Description": "Apply Configuration",
+   "ObjectLocation": "Jaipur.Park-Ram Niwas Bagh",
+   "ObjectName": "* RamniwasBagh-15",
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.26"
+ },
+ {
+   "LogTime": "11/17/2016 16:46",
+   "ActivityType": "Session Expiry",
+   "Description": "Logging out user admin as session expired",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 15:37",
+   "ActivityType": "Config Status",
+   "Description": "Apply Configuration",
+   "ObjectLocation": "Jaipur.Tourist Place-Amber Fort",
+   "ObjectName": "AmberFort-01",
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.81"
+ },
+ {
+   "LogTime": "11/17/2016 15:36",
+   "ActivityType": "Config Status",
+   "Description": "Apply Configuration",
+   "ObjectLocation": "Jaipur.Tourist Place-Amber Fort",
+   "ObjectName": "AmberFort-01",
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.81"
+ },
+ {
+   "LogTime": "11/17/2016 15:36",
+   "ActivityType": "Logout",
+   "Description": "Logged out user admin successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "42.111.92.76"
+ },
+ {
+   "LogTime": "11/17/2016 15:36",
+   "ActivityType": "Config Status",
+   "Description": "Apply Configuration",
+   "ObjectLocation": "Jaipur.Tourist Place-Amber Fort",
+   "ObjectName": "AmberFort-01",
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.81"
+ },
+ {
+   "LogTime": "11/17/2016 15:36",
+   "ActivityType": "Login Success",
+   "Description": "User admin logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "42.111.92.76"
+ },
+ {
+   "LogTime": "11/17/2016 15:36",
+   "ActivityType": "Login failure",
+   "Description": "Operation failed: Credentials are incorrect for the user admin",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "42.111.92.76"
+ },
+ {
+   "LogTime": "11/17/2016 15:35",
+   "ActivityType": "Config Status",
+   "Description": "Apply Configuration",
+   "ObjectLocation": "Jaipur.Tourist Place-Amber Fort",
+   "ObjectName": "AmberFort-01",
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.81"
+ },
+ {
+   "LogTime": "11/17/2016 15:35",
+   "ActivityType": "Config Status",
+   "Description": "Apply Configuration",
+   "ObjectLocation": "Jaipur.Tourist Place-Amber Fort",
+   "ObjectName": "AmberFort-01",
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.81"
+ },
+ {
+   "LogTime": "11/17/2016 15:35",
+   "ActivityType": "Config Status",
+   "Description": "Apply Configuration",
+   "ObjectLocation": "Jaipur.Tourist Place-Amber Fort",
+   "ObjectName": "AmberFort-01",
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.81"
+ },
+ {
+   "LogTime": "11/17/2016 15:34",
+   "ActivityType": "Config Status",
+   "Description": "Apply Configuration",
+   "ObjectLocation": "Jaipur.Tourist Place-Amber Fort",
+   "ObjectName": "AmberFort-01",
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.81"
+ },
+ {
+   "LogTime": "11/17/2016 15:32",
+   "ActivityType": "Config Status",
+   "Description": "Apply Configuration",
+   "ObjectLocation": "Jaipur.Tourist Place-Amber Fort",
+   "ObjectName": "AmberFort-01",
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.81"
+ },
+ {
+   "LogTime": "11/17/2016 15:32",
+   "ActivityType": "Login Success",
+   "Description": "User admin logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "42.111.92.76"
+ },
+ {
+   "LogTime": "11/17/2016 15:32",
+   "ActivityType": "Config Status",
+   "Description": "Apply Configuration",
+   "ObjectLocation": "Jaipur.Tourist Place-Amber Fort",
+   "ObjectName": "AmberFort-01",
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.81"
+ },
+ {
+   "LogTime": "11/17/2016 15:13",
+   "ActivityType": "Session Expiry",
+   "Description": "Logging out user admin as session expired",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 15:12",
+   "ActivityType": "Session Expiry",
+   "Description": "Logging out user admin as session expired",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 15:12",
+   "ActivityType": "Session Expiry",
+   "Description": "Logging out user admin as session expired",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 15:11",
+   "ActivityType": "Session Expiry",
+   "Description": "Logging out user admin as session expired",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 15:11",
+   "ActivityType": "Session Expiry",
+   "Description": "Logging out user admin as session expired",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 15:10",
+   "ActivityType": "Session Expiry",
+   "Description": "Logging out user admin as session expired",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 15:09",
+   "ActivityType": "Session Expiry",
+   "Description": "Logging out user admin as session expired",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 15:05",
+   "ActivityType": "Session Expiry",
+   "Description": "Logging out user admin as session expired",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 15:04",
+   "ActivityType": "Config Status",
+   "Description": "Apply Configuration",
+   "ObjectLocation": "Jaipur.Tourist Place-Amber Fort",
+   "ObjectName": "AmberFort-01",
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.81"
+ },
+ {
+   "LogTime": "11/17/2016 15:03",
+   "ActivityType": "Config Status",
+   "Description": "Apply Configuration",
+   "ObjectLocation": "Jaipur.Tourist Place-Amber Fort",
+   "ObjectName": "AmberFort-01",
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.81"
+ },
+ {
+   "LogTime": "11/17/2016 15:02",
+   "ActivityType": "Config Status",
+   "Description": "Apply Configuration",
+   "ObjectLocation": "Jaipur.Tourist Place-Amber Fort",
+   "ObjectName": "AmberFort-01",
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.81"
+ },
+ {
+   "LogTime": "11/17/2016 14:42",
+   "ActivityType": "Login Success",
+   "Description": "User admin logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.231"
+ },
+ {
+   "LogTime": "11/17/2016 14:42",
+   "ActivityType": "Login Success",
+   "Description": "User admin logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.231"
+ },
+ {
+   "LogTime": "11/17/2016 14:41",
+   "ActivityType": "Login Success",
+   "Description": "User admin logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.231"
+ },
+ {
+   "LogTime": "11/17/2016 14:41",
+   "ActivityType": "Login Success",
+   "Description": "User admin logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.231"
+ },
+ {
+   "LogTime": "11/17/2016 14:40",
+   "ActivityType": "Login Success",
+   "Description": "User admin logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.231"
+ },
+ {
+   "LogTime": "11/17/2016 14:39",
+   "ActivityType": "Login Success",
+   "Description": "User admin logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.231"
+ },
+ {
+   "LogTime": "11/17/2016 14:39",
+   "ActivityType": "Login Success",
+   "Description": "User admin logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.231"
+ },
+ {
+   "LogTime": "11/17/2016 14:34",
+   "ActivityType": "Login Success",
+   "Description": "User admin logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.231"
+ },
+ {
+   "LogTime": "11/17/2016 14:32",
+   "ActivityType": "Logout",
+   "Description": "Logged out user admin successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.26"
+ },
+ {
+   "LogTime": "11/17/2016 14:25",
+   "ActivityType": "Session Expiry",
+   "Description": "Logging out user admin as session expired",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 13:55",
+   "ActivityType": "Login Success",
+   "Description": "User admin logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.231"
+ },
+ {
+   "LogTime": "11/17/2016 13:49",
+   "ActivityType": "Session Expiry",
+   "Description": "Logging out user admin as session expired",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 13:34",
+   "ActivityType": "Session Expiry",
+   "Description": "Logging out user admin as session expired",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 13:25",
+   "ActivityType": "Session Expiry",
+   "Description": "Logging out user admin as session expired",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 13:18",
+   "ActivityType": "Login Success",
+   "Description": "User admin logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.231"
+ },
+ {
+   "LogTime": "11/17/2016 13:05",
+   "ActivityType": "Config Status",
+   "Description": "Apply Configuration",
+   "ObjectLocation": "Jaipur.Tourist Place-Albert Hall",
+   "ObjectName": "* AlbertHall-02",
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.81"
+ },
+ {
+   "LogTime": "11/17/2016 13:03",
+   "ActivityType": "Login Success",
+   "Description": "User admin logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.231"
+ },
+ {
+   "LogTime": "11/17/2016 12:55",
+   "ActivityType": "Login Success",
+   "Description": "User admin logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.231"
+ },
+ {
+   "LogTime": "11/17/2016 12:08",
+   "ActivityType": "Session Expiry",
+   "Description": "Logging out user JDA-IT as session expired",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 12:06",
+   "ActivityType": "Session Expiry",
+   "Description": "Logging out user JDA-IT as session expired",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 12:03",
+   "ActivityType": "Session Expiry",
+   "Description": "Logging out user JDA-IT as session expired",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 12:03",
+   "ActivityType": "Session Expiry",
+   "Description": "Logging out user JDA-IT as session expired",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 11:55",
+   "ActivityType": "Session Expiry",
+   "Description": "Logging out user JDA-IT as session expired",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 11:40",
+   "ActivityType": "Logout",
+   "Description": "Logged out user JDA-IT successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "220.225.221.145"
+ },
+ {
+   "LogTime": "11/17/2016 11:39",
+   "ActivityType": "Login Success",
+   "Description": "User JDA-IT logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "220.225.221.145"
+ },
+ {
+   "LogTime": "11/17/2016 11:37",
+   "ActivityType": "Logout",
+   "Description": "Logged out user JDA-IT successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "220.225.221.145"
+ },
+ {
+   "LogTime": "11/17/2016 11:37",
+   "ActivityType": "Logout",
+   "Description": "Logged out user JDA-IT successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "220.225.221.145"
+ },
+ {
+   "LogTime": "11/17/2016 11:37",
+   "ActivityType": "License Status",
+   "Description": "User JDA-IT accepted the SASD download license agreement",
+   "ObjectLocation": "",
+   "ObjectName": "SASD",
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "220.225.221.145"
+ },
+ {
+   "LogTime": "11/17/2016 11:37",
+   "ActivityType": "Login Success",
+   "Description": "User JDA-IT logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "220.225.221.145"
+ },
+ {
+   "LogTime": "11/17/2016 11:37",
+   "ActivityType": "Login Success",
+   "Description": "User JDA-IT logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "220.225.221.145"
+ },
+ {
+   "LogTime": "11/17/2016 11:36",
+   "ActivityType": "Logout",
+   "Description": "Logged out user JDA-IT successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "220.225.221.145"
+ },
+ {
+   "LogTime": "11/17/2016 11:36",
+   "ActivityType": "License Status",
+   "Description": "User JDA-IT accepted the SASD download license agreement",
+   "ObjectLocation": "",
+   "ObjectName": "SASD",
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "220.225.221.145"
+ },
+ {
+   "LogTime": "11/17/2016 11:36",
+   "ActivityType": "Login Success",
+   "Description": "User JDA-IT logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "220.225.221.145"
+ },
+ {
+   "LogTime": "11/17/2016 11:36",
+   "ActivityType": "Login Success",
+   "Description": "User JDA-IT logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "220.225.221.145"
+ },
+ {
+   "LogTime": "11/17/2016 11:35",
+   "ActivityType": "Login Success",
+   "Description": "User JDA-IT logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "220.225.221.145"
+ },
+ {
+   "LogTime": "11/17/2016 11:29",
+   "ActivityType": "Login Success",
+   "Description": "User JDA-IT logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "1.186.58.2"
+ },
+ {
+   "LogTime": "11/17/2016 11:28",
+   "ActivityType": "Login Success",
+   "Description": "User JDA-IT logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "1.186.58.2"
+ },
+ {
+   "LogTime": "11/17/2016 11:27",
+   "ActivityType": "Login failure",
+   "Description": "Operation failed: Credentials are incorrect for the user JDA-IT",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "1.186.58.2"
+ },
+ {
+   "LogTime": "11/17/2016 11:26",
+   "ActivityType": "Login failure",
+   "Description": "Operation failed: Credentials are incorrect for the user JDA-IT",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "1.186.58.2"
+ },
+ {
+   "LogTime": "11/17/2016 11:21",
+   "ActivityType": "Login Success",
+   "Description": "User JDA-IT logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "72.163.220.19"
+ },
+ {
+   "LogTime": "11/17/2016 11:21",
+   "ActivityType": "Logout",
+   "Description": "Logged out user JDA-IT successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "72.163.220.19"
+ },
+ {
+   "LogTime": "11/17/2016 11:17",
+   "ActivityType": "Login Success",
+   "Description": "User JDA-IT logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "JDA-IT",
+   "UserIp": "72.163.220.19"
+ },
+ {
+   "LogTime": "11/17/2016 8:28",
+   "ActivityType": "Login Success",
+   "Description": "User admin logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.26"
+ },
+ {
+   "LogTime": "11/17/2016 8:27",
+   "ActivityType": "Login failure",
+   "Description": "Operation failed: Credentials are incorrect for the user *****",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "*****",
+   "UserIp": "10.10.10.26"
+ },
+ {
+   "LogTime": "11/17/2016 8:27",
+   "ActivityType": "Login failure",
+   "Description": "Operation failed: Credentials are incorrect for the user *****",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "*****",
+   "UserIp": "10.10.10.26"
+ },
+ {
+   "LogTime": "11/17/2016 8:21",
+   "ActivityType": "Login Success",
+   "Description": "User admin logged in successfully",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": "admin",
+   "UserIp": "10.10.10.81"
+ },
+ {
+   "LogTime": "11/17/2016 6:15",
+   "ActivityType": "Database Error",
+   "Description": "creating new partition p346 for partition time 1479513600000 on table auditchanges",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": null,
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 6:15",
+   "ActivityType": "Database Error",
+   "Description": "creating new partition p346 for partition time 1479513600000 on table auditlog",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": null,
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 6:10",
+   "ActivityType": "Database Error",
+   "Description": "creating new partition 437 for partition time 1487289600000 on table USERCOMMENT",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": null,
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 6:10",
+   "ActivityType": "Database Error",
+   "Description": "creating new partition 437 for partition time 1487289600000 on table ALERT",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": null,
+   "UserIp": "localhost"
+ },
+ {
+   "LogTime": "11/17/2016 6:05",
+   "ActivityType": "Database Error",
+   "Description": "creating new partition 437 for partition time 1487289600000 on table EVENT",
+   "ObjectLocation": "",
+   "ObjectName": null,
+   "ObjectType": "vs_auditLog",
+   "User": null,
+   "UserIp": "localhost"
+ }
+]

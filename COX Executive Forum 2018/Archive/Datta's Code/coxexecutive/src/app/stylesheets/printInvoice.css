@@ -1,0 +1,86 @@
+@media print{
+  #mainDiv{
+    background-color: white !important;
+    height:3508px !important;
+  }
+  #heading{
+    font-family: AvenirBoldCn;
+    font-size:2.5rem;
+    color:#333333;
+  }
+  #InvoiceDiv{
+    margin-top: 4%;
+  }
+  #coxAddress, #billTo, #invoiceDetailsContent,#remitBody{
+    margin-top: 1%;
+    font-family: AvenirMedium;
+    font-size: 1.5rem;
+  }
+  #invoiceDetailsHead{
+    font-family: AvenirBoldCn;
+    font-size: 1.75rem;
+    color:#333333;
+    text-align: left !important;
+    padding-right: 20%;
+    width:150px;
+  }
+  #billToHeading,thead,#paymentOptionsHead,#remitHead{
+    font-family: AvenirBoldCn;
+    font-size: 1.75rem;
+    color:#333333;
+  }
+  #secondDiv{
+    margin-top: 3%;
+  }
+  #invoiceDetailsDiv{
+    text-align:right;
+  }
+  #invoiceDetailsTable{
+    float:right;
+  }
+  #sponsorshipTable{
+    margin-top:3%;
+    padding:0 15px 0 15px;
+  }
+  #sponsorshipTable > table > thead > th{
+    padding-left:10px !important;
+    border-right:1px solid #333333 !important;
+    border:1px solid #333333 !important;
+  }
+  #paymentOptionsTable > table > thead > th{
+    padding-left:10px !important;
+    border-right:1px solid #333333 !important;
+    border:1px solid #333333 !important;
+  }
+  .table-bordered,.table-bordered>tbody>tr>td{
+      border:1px solid #333333 !important;
+  }
+  #bodyInvoiceDetailsTable,#bodyPaymentOptionsTable{
+    font-family: AvenirMedium;
+    font-size: 1.5rem;
+  }
+  #customTD{
+    border-left-color:white !important;
+    border-bottom-color:white !important;
+    text-align: right;
+    font-size: 1.75rem;
+    font-family: AvenirBoldCn;
+  }
+  #paymentOptionsDiv{
+    margin-top:1%;
+    padding:0 15px 0 15px;
+  }
+  #customTD1{
+    vertical-align: middle;
+  }
+  #remitDiv{
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+  #paymentOptionsHead{
+    margin-bottom: 1%;
+  }
+  #printButton{
+    display: none;
+  }
+}

@@ -1,0 +1,158 @@
+<topHeader></topHeader>
+<div class="row" style="background-color:#f5fbfb;padding-top:2%;padding-bottom:1%">
+  <div class="col-md-4">
+  </div>
+  <div class="col-md-2">
+    <img src="../app/images/person.png" style="height:50px;width:50px;float:left">
+    <div style="font-family:AvenirMedium;font-size:1.75rem">Total Sponsors</div>
+    <div style="font-family:AvenirMedium;font-size:1.75rem">{{number}}</div>
+  </div>
+  <div class="col-md-2">
+    <img src="../app/images/money.png" style="height:50px;width:50px;float:left">
+    <div style="font-family:AvenirMedium;font-size:1.75rem">Total Sponsorship</div>
+    <div style="font-family:AvenirMedium;font-size:1.75rem">${{total}}</div>
+  </div>
+  <div class="col-md-4">
+    <button (click)="refresh()" style="float:right;height:30px !important;width:30px !important;padding:0px !important;font-size:rem !important;background-color:#f5fbfb !important;border:1px solid !important"><img style="height:25px;width:25px;margin-top:-70%" src="../app/images/refresh.png"></button>
+  </div>
+</div>
+<div class="row" *ngIf="showTable" style="background-color:#f5fbfb;padding-top:2%;">
+  <div class="col-md-12">
+    <div class="row mobileView">
+      <div class="col-md-3"><strong class="tableHeading">Name</strong></div>
+      <div class="col-md-2"><strong class="tableHeading">Reg. No.</strong></div>
+      <div class="col-md-2"><strong class="tableHeading">Reg Date</strong></div>
+      <div class="col-md-3"><strong class="tableHeading">E-mail</strong></div>
+      <div class="col-md-2"><strong class="tableHeading">Company Name</strong></div>
+    </div>
+  </div>
+</div>
+<div class="row" style="background-color:#f5fbfb;padding-top:2%;padding-bottom:1%" *ngFor="let sponsor of sponsors.registeredUsers">
+      <div class="row col-md-3"><span style="margin-left : 15px">{{sponsor.userDetails.name}}</span>
+            <div class="col-md-12">
+              <span><strong>Title:</strong></span><span>{{sponsor.userDetails.title}}</span>
+            </div>
+            <div class="col-md-12">
+              <span><strong>Phone Number:</strong></span><span>{{sponsor.userDetails.phoneNumber}}</span>
+            </div>
+            <div class="col-md-12">
+              <span><strong>Cox Contact:</strong></span><span>{{sponsor.userDetails.coxContact}}</span>
+            </div>
+            <div class="col-md-12">
+              <span><strong>Number of Attendees:</strong></span><span>{{sponsor.userDetails.noOfAttendees}}</span>
+            </div>
+      </div>
+      <div class="col-md-2"><span style="margin-left : 15px">{{sponsor.registrationNumber}}</span>
+            <div class="col-md-12">
+              <span><strong>Invoice Contact:</strong></span><span>{{sponsor.userDetails.invoiceContact}}</span>
+            </div>
+            <div class="col-md-12">
+              <span><strong>Invoice Contact Email:</strong></span><span>{{sponsor.userDetails.invoiceContactEmail}}</span>
+            </div>
+            <div class="col-md-12">
+              <span><strong>Invoice Contact Phone:</strong></span><span>{{sponsor.userDetails.invoiceContactPhone}}</span>
+            </div>
+            
+      </div>
+      <div class="col-md-2"><span style="margin-left : 15px">{{sponsor.registrationDate}}</span>
+            <div class="col-md-12">
+              <span><strong>Signage Contact:</strong></span><span>{{sponsor.userDetails.signageContact}}</span>
+            </div>
+             <div class="col-md-12">
+              <span><strong>Signage Contact Email:</strong></span><span>{{sponsor.userDetails.signageContactEmail}}</span>
+            </div>
+           </div>
+      <div class="col-md-3"><span style="margin-left : 15px">{{sponsor.userDetails.email}}</span>
+        <div class="col-md-12">
+              <span><strong>Invoice Contact Phone:</strong></span><span>{{sponsor.userDetails.signageContactEmail}}</span>
+            </div>
+        <div class="col-md-12">
+              <span><strong>Company Address:</strong></span><span>{{sponsor.userDetails.address.companyAddress}}</span>
+            </div> 
+      </div>
+      <div class="col-md-2" ><span style="margin-left : 15px">{{sponsor.userDetails.company}}</span>
+            <div class="col-md-12">
+              <span><strong>City,State and Zip:</strong></span><span>{{sponsor.userDetails.address.cityStateZip}}</span>
+            </div>
+      </div>
+</div>
+<!-- <div class="dashboardDiv" *ngIf="showTable">
+  <table class="table " id="sponsorsTable">
+    <thead>
+      <th>Name</th>
+      <th>Registration Number</th>
+      <th>Registration Date</th>
+      <th>Email</th>
+      <th>Company Name</th>
+    </thead>
+  </table>
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default" *ngFor="let sponsor of sponsors.registeredUsers">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <table id="accordianTable">
+            <tbody>
+              <tr>
+                <td><a data-toggle="collapse" data-parent="#accordion" href="#{{sponsor.registrationNumber}}">{{sponsor.userDetails.name}}</a></td>
+                <td>{{sponsor.registrationNumber}}</td>
+                <td>{{sponsor.registrationDate}}</td>
+                <td>{{sponsor.userDetails.email}}</td>
+                <td>{{sponsor.userDetails.company}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </h4>
+      </div>
+      <div id="{{sponsor.registrationNumber}}" class="panel-collapse collapse">
+        <div class="panel-body">
+          <div class="row" style="margin-bottom:1%">
+            <div class="col-md-3">
+              <span><strong>Title:</strong></span><span>{{sponsor.userDetails.title}}</span>
+            </div>
+            <div class="col-md-3">
+              <span><strong>Phone Number:</strong></span><span>{{sponsor.userDetails.phoneNumber}}</span>
+            </div>
+            <div class="col-md-3">
+              <span><strong>Cox Contact:</strong></span><span>{{sponsor.userDetails.coxContact}}</span>
+            </div>
+            <div class="col-md-3">
+              <span><strong>Number of Attendees:</strong></span><span>{{sponsor.userDetails.noOfAttendees}}</span>
+            </div>
+          </div>
+          <div class="row" style="margin-bottom:1%">
+            <div class="col-md-3">
+              <span><strong>Invoice Contact:</strong></span><span>{{sponsor.userDetails.invoiceContact}}</span>
+            </div>
+            <div class="col-md-3">
+              <span><strong>Invoice Contact Email:</strong></span><span>{{sponsor.userDetails.invoiceContactEmail}}</span>
+            </div>
+            <div class="col-md-3">
+              <span><strong>Invoice Contact Phone:</strong></span><span>{{sponsor.userDetails.invoiceContactPhone}}</span>
+            </div>
+            <div class="col-md-3">
+              <span><strong>Signage Contact:</strong></span><span>{{sponsor.userDetails.signageContact}}</span>
+            </div>
+          </div>
+          <div class="row" style="margin-bottom:1%">
+            <div class="col-md-3">
+              <span><strong>Signage Contact Email:</strong></span><span>{{sponsor.userDetails.signageContactEmail}}</span>
+            </div>
+            <div class="col-md-3">
+              <span><strong>Invoice Contact Phone:</strong></span><span>{{sponsor.userDetails.signageContactEmail}}</span>
+            </div>
+            <div class="col-md-3">
+              <span><strong>Company Address:</strong></span><span>{{sponsor.userDetails.address.companyAddress}}</span>
+            </div>
+            <div class="col-md-3">
+              <span><strong>City,State and Zip:</strong></span><span>{{sponsor.userDetails.address.cityStateZip}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+<div class="messageDiv" *ngIf="showMessage">
+  <span>No Records Found</span>
+</div>
+<bottomfooter></bottomfooter>

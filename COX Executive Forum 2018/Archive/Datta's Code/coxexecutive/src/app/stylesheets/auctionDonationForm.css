@@ -1,0 +1,70 @@
+#donationHeader{
+  height:150px;
+  width:900px;
+}
+#textDonationForm{
+  color:black;
+  font-family:AvenirRegular;
+  font-size:1.5rem;
+  padding:1.5% 0 0 0;
+}
+.container{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  background-color: white !important;
+  margin-left: 233px !important;
+  margin-right: 233px !important;
+  width: 900px !important;
+}
+.textDivForDonationForm{
+  padding:1% 5% 1% 5%;
+  font-family:AvenirRegular;
+}
+#footer{
+  bottom:0;
+  height:20px;
+  width:900px;
+}
+.firstCol{
+  width:40%;
+  padding:10px;
+  color:black;
+}
+.secondCol{
+  width:60%;
+}
+.customRow{
+  height:100px;
+}
+table{
+  font-size:1.5rem;
+}
+.customCell{
+  padding:10px;
+}
+.square{
+  border: solid 1px black;
+  width: 20px;
+  height: 20px;
+  display:inline-block;
+  margin-right: 5px;
+}
+#deadlineInfo{
+  font-size:1.5rem;
+  font-weight:bold;
+  font-family:AvenirBoldCn;
+}
+#deliveryInstructionsHeading{
+  font-weight:bold;
+  text-decoration: underline;
+}
+#addressToDeliverCourier{
+  padding:0 0 0 3%;
+}
+#addressToDeliverCourier > p{
+  margin:0;
+}
+#info{
+  font-weight:bold;
+  font-family:AvenirBoldCn;
+}

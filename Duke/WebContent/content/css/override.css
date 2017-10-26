@@ -1,0 +1,526 @@
+
+.top_column_text{
+	padding-top: 5px;
+	padding-left: 10px;
+	float: left;
+	font-weight: bolder;
+}
+
+.top_column_header{
+	height: 20px;
+	background-color: #0BAEEF;
+	float: left;
+	color: #fff;
+}
+
+#content2{
+	width: 50%;
+	float: left;
+	height: auto;
+	margin-top: 10px;
+	margin-right: 0px;
+}
+#channel{
+	width: 100%;
+	float: left;
+	height: auto;	
+	margin: 10px 0px;	
+}
+
+#top_column_quarter_header{
+	height: 20px;
+	background-color: #0BAEEF;
+	float: left;
+	width: 300px;
+	color: #fff;
+}
+#top_column_text{
+	padding-top: 5px;
+	padding-left: 10px;
+	float: left;
+	font-weight: bolder;
+}
+.headerFont{
+	font-family: Arial;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	
+}
+.headerFont1{
+	font-family: Arial;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #3AB3ED;
+	
+}
+.newsHeaderId{
+	font-family: Arial;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+}
+.newsBodyId	{
+	font-family: Arial;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	
+}
+.newsBodyTdId{
+	text-align: left;
+}
+.newsHeaderTdId{
+	text-align: left;
+}
+.pdfReportsCls{
+	
+	font-family: Arial;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	
+	margin-top: -440px;
+}
+.pdfReportHeader{
+	background-color: #538DD5;
+}
+.pdfReportHeading{
+	font-family: Arial;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: white;
+
+}
+.pdfReportHref{
+	font-family: Arial;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	color: #808080;
+}
+.PerformanceComparisonWithCompetitors{
+	border: 1px solid;
+	border-collapse: collapse;
+	padding: 3px;
+}
+.PerformanceComparisonWithCompetitorsHeader{
+	border: 1px solid;
+	border-collapse: collapse;
+	padding: 3px;
+	background-color: #538DD5;
+	color:white;
+	font-family: arial;
+	font-size: 12px;
+	font-weight:bold;
+}
+<<<<<<< .mine
+.exestingsuppliertableHeader{
+	
+	border-collapse: collapse;
+	padding: 1px;
+	background-color: #F2F2F2;
+	color:black;
+	font-family: arial;
+	font-size: 9px;
+	
+}
+=======
+.InvoiceHeader{
+	border: 1px solid;
+	border-collapse: collapse;
+	padding: 3px;
+	background-color: #538DD5;
+	color:white;
+	font-family: arial;
+	font-size: 12px;
+	font-weight:bold;
+}
+.InvoiceLeftHeader{
+	border: 1px solid;
+	border-collapse: collapse;
+	padding: 3px;
+	background-color: #538DD5;
+	color:white;
+	font-family: arial;
+	font-size: 12px;
+	font-weight:bold;
+	text-align:left;
+}
+>>>>>>> .r1608
+
+.suerveyHeaders{
+	border: 1px solid;
+	border-collapse: collapse;
+	padding: 3px;
+	background-color: #DDDDDD;
+	color:white;
+	font-family: arial;
+	font-size: 12px;
+	font-weight:bold;
+}
+.PerformanceComparisonWithCompetitorsHeaderPlain{
+ 
+	border-collapse: collapse;
+	padding: 3px;
+ 
+	font-family: arial;
+	font-size: 12px;
+	font-weight:bold;
+}
+.VAPWithCompetitorsHeaderTdata{
+	border-collapse: collapse;
+	padding: 3px;
+ 	text-align: left;
+	font-family: arial;
+	font-size: 12px;
+	font-weight:normal;
+}
+.TopTenSupplierHeader{
+	border: 1px solid;
+	border-collapse: collapse;
+	padding: 3px;
+	background-color: #538DD5;
+	color:white;
+	font-family: arial;
+	font-size: 12px;
+	font-weight:bold;
+	
+ 
+}
+.spendbylobtd{
+	
+	border: 1px solid #DDDDDD;
+	width:100px;
+	vertical-align: middle;
+	
+	
+}
+.spendbylobtdR{
+	
+	border: 1px solid #DDDDDD;
+	width:50px;
+	vertical-align: middle;
+	
+	
+}
+.spendbylobtdL{
+	
+	border: 1px solid #DDDDDD;
+	width:150px;
+	vertical-align: middle;
+ 
+}
+span.tab{
+    padding: 0 280px; /* Or desired space*/
+}
+
+.PerformanceComparisonWithCompetitorsHeaderRed{
+	border: 1px solid;
+	border-collapse: collapse;
+	padding: 3px;
+	background-color: #C0504D;
+	color:white;
+	font-family: arial;
+	font-size: 10px;
+	font-weight:bold;
+}
+.supplierRiskHeader{
+	border: 1px solid #E6E6E6;
+	border-collapse: collapse;
+	padding: 1px;
+	background-color: #538DD5;
+	color:white;
+	font-family: arial;
+	font-size: 12px;
+	font-weight:bold;
+}
+.supplierRiskHeader20{
+	border: 1px solid #E6E6E6;
+	border-collapse: collapse;
+	padding: 1px;
+	background-color: #F79646;
+	color:white;
+	font-family: arial;
+	font-size: 12px;
+	font-weight:bold;
+}
+.supplierRiskHeader2{
+	border: 1px inset #E6E6E6;
+	border-collapse: collapse;
+	padding: 3px;
+	background-color: #FFCC00;;
+	color:white;
+	font-family: arial;
+	font-size: 12px;
+	font-weight:bold;
+}
+.supplierRiskSubHeader{
+	border: 1px inset #E6E6E6;
+	border-collapse: collapse;
+	padding: 1px;
+	background-color: #EBF1DE;
+	font-family: arial;
+	font-size: 11px;
+	font-weight:bold;
+}
+.supplierRiskSubHeaderTemp{
+	border: 1px solid;
+	border-collapse: collapse;
+	padding: 1px;
+	background-color: #EBF1DE;
+	font-family: arial;
+	font-size: 11px;
+	font-weight:bold;
+	width: 12px;
+}
+.supplierRiskText{
+	border: 1px solid #E6E6E6;
+	border-collapse: collapse;
+	padding: 1px;
+	font-family: arial;
+	font-size: 11px;
+	
+	text-align: left
+	
+ 
+}
+.supplierRiskTextCenter{
+	border: 1px solid;
+	border-collapse: collapse;
+	padding: 3px;
+	font-family: arial;
+	font-size: 12px;
+	
+	text-align: center;
+ 
+}
+.PerformanceComparisonWithCompetitorsSubHeader{
+	border: 1px solid;
+	border-collapse: collapse;
+	padding: 3px;
+	background-color: #EBF1DE;
+	font-family: arial;
+	font-size: 12px;
+	font-weight:bold;
+}
+.PerformanceComparisonWithCompetitorsSubHeader1{
+	border: 1px solid;
+	border-collapse: collapse;
+	padding: 3px;
+	font-family: arial;
+	font-size: 12px;
+	font-weight:bold;
+}
+.PerformanceComparisonWithCompetitorsText{
+	border: 1px solid;
+	border-collapse: collapse;
+	padding: 3px;
+	font-family: arial;
+	font-size: 12px;
+}
+.PerformanceComparisonWithCompetitorsTextFont{
+	font-family: arial;
+	font-size: 12px;
+	font-weight: bold;
+}
+.tableProps{
+	
+	 border-style: solid;
+    border-color: #F2F2F2 #F2F2F2;
+	
+}
+.headerFont50{
+	font-family: Arial;
+	font-size: 17px;
+	font-style: normal;
+	
+	
+	
+}
+.PerformanceComparisonWithCompetitorsHeader{
+	border: 1px solid;
+	border-collapse: collapse;
+	padding: 3px;
+	background-color: #538DD5;
+	color:white;
+	font-family: arial;
+	font-size: 12px;
+	font-weight:bold;
+}
+.spendbylobtd{
+	
+	border: 1px solid #DDDDDD;
+	width:100px;
+	vertical-align: middle;
+	
+	
+}
+
+.headerpart{
+	border: 1px solid;
+	border-color: #BFBFBF;
+	background-color: #8DB4E2;
+	color: white;
+	font-weight: bold;
+}
+
+.tdpart{
+	
+	border: 1px solid;
+	border-color: #BFBFBF;
+	color: black;
+	
+}
+.tdcell{
+	
+	border: 0px solid;
+	border-color: #BFBFBF;
+	color: black;
+	
+}
+
+.tdpartcolor{
+	
+	border: 1px solid;
+	border-color: #BFBFBF;
+	color: black;
+	background-color: #D9D9D9
+	
+<<<<<<< .mine
+}
+/*3-8-2015*/
+.graph_contentdetails {
+float: left;
+font-family: Arial;
+font-size: 12px;
+font-style: normal;
+border: 1px solid #ddd;
+width: 440px;
+margin-left: 10px;
+color: #000;
+background-color:#EDEDED;
+padding:5px;
+}
+/*04-08-2014*/
+.anchor_class{color:#000;}
+.vendor_page_buttons{text-align:right;margin-top:10px;}
+.bt_override{background-color: #EDEDED;
+font-size: 0.7rem;
+border: 1px solid #ddd;
+border-radius: 5px;
+color: #000;
+font-weight: normal;
+padding: 5px !important;
+border-radius: 4px !important;
+-moz-border-radius: 4px !important;
+-web-border-radius: 4px !important;
+-o-border-radius: 4px !important;}
+.anchor_class1{color:#000;}
+.anchor_class1 >a:hover{color:#fff !important;}
+.vendor_menu{margin-top:10px;}
+/*5-8-2015*/
+.plus_img_align{width:25px;height:25px;}
+.heading_align {
+color: #1F5AB1;
+font-size: 12px;
+font-weight: normal;
+float:left;
+}
+.menu_active_style{color:#fff;}
+.vendor-create-table {
+border: 1px solid #aaaaaa;
+margin: 8px;
+}
+.headerpart1 {
+border: 1px solid #BFBFBF;
+background-color: #EAEAEA;
+color: #000;
+font-weight: bold;
+}
+.main-menu-header{border-bottom:2px solid blue;}
+.noborder1 {
+border: 1px solid #fff !important;
+}
+/*modal popup*/
+.modalDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff);
+    background: -webkit-linear-gradient(#fff);
+    background: -o-linear-gradient(#fff);
+}
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+    background: #00d9ff;
+}
+
+/*end popup*/
+.header1 {
+margin-top: 30px;
+text-align: center;
+}
+.pop_up_btalign{margin-top:15px;}
+.ui-dialog-title {
+position: relative;
+left: 45%;
+}
+/*6-8-2015*/
+.row1,.row2,.row3{width:100%;margin-top:20px;margin:0 auto;}
+.row1_sub1,.row1_sub2,.row1_sub3,.row2_sub1,.row2_sub2,.row2_sub3,.row3_sub1,.row3_sub2,.row3_sub3{width: 32%;
+float: left;
+margin-left: 1%;
+//border: 1px solid grey;
+margin-top:20px;}
+}
+
+
+=======
+}
+
+.tabs li {
+  float: left;
+  
+}
+>>>>>>> .r1640

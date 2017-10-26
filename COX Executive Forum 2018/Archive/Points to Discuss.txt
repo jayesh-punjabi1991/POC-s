@@ -1,0 +1,9 @@
+	Second Page will be scrollable according to the size of the content. Will that be okay ? Do what suits the best
+	Confirm if the 3rd Screen will have payment option for the user to select ? Not for now
+Where will we store the invoice pdf file ? 
+	Do we have to display all the payment options in the invoice pdf ? Yes
+	Do we need to send a confirmation email to the user and Cox at the end ? Yes
+	When will we get the images in the UX ? Tim will share
+	Location/Date/Subject for .ics file ? Tim will share
+
+Admin Screen !

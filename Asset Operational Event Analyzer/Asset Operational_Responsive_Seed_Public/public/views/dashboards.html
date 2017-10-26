@@ -1,0 +1,269 @@
+<style>
+  .data-table{
+    align:center;
+    width:100%;
+  }
+    .multiselect{
+      width:150px;
+    }
+    .selectBox {
+        position: relative;
+    }
+    .selectBox select {
+        width: 100%;
+        font-weight: bold;
+    }
+    .overSelect {
+        position: relative;
+        left: 0; right: 0; top: 0; bottom: 0;
+        z-index:-1;
+    }
+    #checkboxes {
+        display: none;
+        border: 1px #dadada solid;
+        z-index:100;
+        position: absolute;
+    }
+    #checkboxes label {
+        display: block;
+        width: 120px;
+        background: white;
+    }
+    #checkboxes label:hover {
+        background-color: #1e90ff;
+    }
+
+#toFields{
+    margin-top: 5px !important;
+  }
+#fromFields{
+    margin-top: 5px !important;
+  }  
+/*Desktop*/
+@media screen and (min-width: 769px) and (max-width: 2600px) {
+}
+
+/*Ipad*/
+@media screen and (min-width: 700px) and (max-width:768px){
+
+}
+
+/*Mobile*/
+@media screen and (min-width: 0px) and (max-width: 650px) {
+
+#RealTimebutton{
+  margin-bottom: 6% !important; 
+  margin-top: 6% !important;
+  margin-right: -2% !important;
+}
+}
+
+/*Ipad*/
+@media screen and (min-width: 768px) and (max-width: 800px) {
+ #fieldWrapper  {
+  width:150px;
+ }
+#dropcell
+  {
+    min-width: 150px;
+  }
+  #dropdown{
+    min-width: 150px;
+  }
+  #boxwid {
+    width:150px;
+    height:35px;
+  }
+  #buttonWid{
+   width:153px; 
+        height: 37px;   
+  }
+  #padleft{
+  padding-top: 5px;
+  padding-left:2% 
+}
+  #topbr{
+        padding-top: 5px;
+  }
+  #padMob{
+    padding-left:3%
+  }  
+}
+/*Desktop*/
+@media screen and (min-width: 801px) and (max-width: 2600px) {
+  #boxwid {
+  width:115px;height:33px;
+  }
+    #buttonWid{
+        height: 37px;
+    }
+  #padMob{
+    padding-left:3%
+  } 
+  #dropcell
+  {
+    height: 34px !important;
+  }  
+}
+/*Iphone*/
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  #dropcell
+  {
+    min-width: 97%;
+  }
+  #dropdown{
+    min-width: 97%;
+  }
+  #hideM{
+    display: none;
+  }
+  #buttonWid{
+    width:338px;
+  }
+  #boxwid{
+    width:150px;height:35px;
+  }
+    #padleft{
+    padding-top: 10px;
+  }
+   #fieldWrapper  {
+  width:150px;
+ }
+  #topbr{
+        padding-top: 10px;
+  }  
+  #padMob{
+    padding-left:8%
+  }
+}
+</style>
+ 
+<px-card style="background-color:#ffffff;border: 1px solid #b1b1bc;padding-top: 15px;padding-bottom:10px;" id="padMob">
+          <div class="w3-row">
+            <div class="w3-col l12 m12 s12" style="padding-top:5px;">
+                  <div class="w3-col l3 m6 s12" style=""><b >Time Frame</b>
+                    <px-rangepicker id="rangePicker" range='{"from":"2012-08-01","to":"2015-08-01"}' hide-time="true" hide-presets="true"></px-rangepicker>
+                  </div>
+
+                  <div class="w3-col l3 m6 s12" style="padding-left:0px; " id="topbr">
+                      <b>MW Hrs</b>
+                      <br/>
+                       <div style="display: block">
+                            
+                            <input type="number" placeholder="Start" ng-model="mwStart"  ng-change="SetVelocityFirst()" style="border: 1px solid ;" id="boxwid"/>
+                            <div style="margin-top:5px; display: inline-block">&nbsp; TO &nbsp;</div>
+                            
+                            <input type="number" placeholder="End"  ng-model="mwEnd" ng-change="SetVelocitySecond()" style="border: 1px solid ;" id="boxwid"/>
+                       </div>
+                  </div> 
+        
+                  <div class="w3-col l3 m6 s12" style="padding-top:0px;padding-left:0px">
+                      <div class="w3-row" style="padding-left:0px;">
+                        <div class="w3-col l6 m6 s12" id="topbr">
+                          <b>Loco ID</b>
+                          <br/> 
+                          <px-dropdown display-value='Select Loco Id'>
+                          <px-dropdown-content  items='{{data2}}' id="element" extend-dropdown-by="30" extend2dropdown="true" checkbox-mode="true"></px-dropdown-content></px-dropdown>
+                        </div>
+                        <div  class="w3-col l6 m6 s12" style="display: inline-block;" id="padleft">
+                          <b>Technology</b>
+                                   <br/> 
+                          <px-dropdown display-value='Select Type' id="Affiliation">
+                          <px-dropdown-content  items='{{affData}}' id="tech" extend-dropdown-by="30" extend-dropdown="true" checkbox-mode="true"></px-dropdown-content></px-dropdown>
+                        </div> 
+                      </div>                           
+                  </div>
+                  <div class="w3-col l3 m6 s12" style="padding-left:0px">
+                    <div class="w3-row" id="topbr">
+                        <ul style="list-style-type: none;display: inline-flex;padding-left: 0px;margin-left: 0px;">
+                          <li><button class="btn cbtn" ng-click="sendFilterValues();" id="buttonWid">Apply filter</button></li>
+                          <li style="padding-left:35px" id="hideM"><button class="btn cbtn" ng-click="clearFilter();"  id="buttonWid"> Cancel </button></li>
+                        </ul> 
+                    </div>
+                  </div>                   
+            </div> 
+          </div> 
+</px-card>
+
+<div id="responsive" ng-show="results=='show'" ng-hide="results=='hide'">
+<px-card style="background:#ffffff;padding-bottom:0px;border: 1px solid #b1b1bc;">
+   <div class="w3-row" style="padding-top: 20px;padding-left: 10px">
+    <div class="w3-col l6 m6 s6 pull-left">
+     <i class="fa fa-th-list fa-lg" aria-hidden="true"></i><b> Results </b>
+    </div>
+    <div class="w3-col l6 m6 s6 ">
+        <div class="pull-right" style="padding-right:15px">
+        <b> {{view}} </b>
+        <i class="fa xyz fa-toggle-off fa-lg" id="toggle" aria-hidden="true" ng-click="swapView();">
+        </i>
+      </div>
+    </div>
+  </div>
+  <div ng-show="spinner=='!running'" ng-hide="spinner=='running'"  >
+    <div  style="padding-left:2%;padding-bottom:2%;padding-right:1%;margin-top:15px;">
+
+    <div  ng-if='v=="Map View"' class="pull-center" ng-hide="v!=='Map View'" map-lazy-load="https://maps.google.com/maps/api/js">
+       <div id="map" style="height: 700px;">
+    </div>
+    </div>
+    </div>
+
+      <div  ng-show='v=="!Map View"' ng-hide="v=='Map View'" style="padding-bottom: 10px">
+        <div >
+             <px-data-table  class="data-table" id="mytable" table-data="{{information}}" filterable="true" selectable="true" enable-column-reorder="true" enable-column-resize="true" >
+            <px-data-table-column name="locoId" label="Locomotive ID" sortable filterable>
+            </px-data-table-column>
+            <px-data-table-column name="inServiceDate" label="In Service Date" sortable filterable>
+            </px-data-table-column>
+            <px-data-table-column name="fleetType" label="Fleet Type" sortable filterable>
+            </px-data-table-column>
+            <px-data-table-column name="mwhr" label="MegaWatt Hours" sortable filterable>
+            </px-data-table-column>     
+            <px-data-table-column name="mile" label="Miles" sortable filterable>
+            </px-data-table-column> 
+            <px-data-table-column name="lastMaintenanceDate" label="Last Maintenance Date" sortable filterable>
+            </px-data-table-column>
+              <px-data-table-column name="lastohDate" label="Over Haul" sortable filterable>
+            </px-data-table-column>    
+             <px-data-table-column name="age" label="Years" sortable filterable>
+            </px-data-table-column>       
+            </px-data-table>
+          </div>
+    </div>
+
+    </div>
+    <div ng-show="spinner=='running'" ng-hide="spinner=='!running'">
+      
+                       <svg version="1.1" id="L4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 50 50" enable-background="new 0 0 0 0" xml:space="preserve" style="padding-left:32%;height:300px;">
+                        <circle fill="#000000" stroke="none" cx="27" cy="20" r="2">
+                          <animate
+                            attributeName="opacity"
+                            dur="1s"
+                            values="0;1;0"
+                            repeatCount="indefinite"
+                            begin="0.1"/>    
+                        </circle>
+                        <circle fill="#000000" stroke="none" cx="37" cy="20" r="2">
+                          <animate
+                            attributeName="opacity"
+                            dur="1s"
+                            values="0;1;0"
+                            repeatCount="indefinite" 
+                            begin="0.2"/>       
+                        </circle>
+                        <circle fill="#000000" stroke="none" cx="47" cy="20" r="2">
+                          <animate
+                            attributeName="opacity"
+                            dur="1s"
+                            values="0;1;0"
+                            repeatCount="indefinite" 
+                            begin="0.3"/>     
+                        </circle>
+                      </svg>
+    </div>
+
+          <a ui-sref="RealtimeTracking" ><button id="RealTimebutton" class="btn cbtn pull-right" style="margin-bottom:2%;margin-top:2%;margin-right:1%">Realtime Locomotive Tracking</button></a>
+</px-card>
+
+</div> 

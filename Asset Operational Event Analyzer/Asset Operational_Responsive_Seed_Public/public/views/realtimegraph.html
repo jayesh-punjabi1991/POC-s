@@ -1,0 +1,287 @@
+<px-card style="padding-top:10px;padding-bottom:0px;padding-left: 15px;background: linear-gradient(#242326,#3b3b3f);
+        border-bottom: 1px solid #bbbbbb;box-shadow: 1px 1px 1px #cec2c2;color: white;">
+    <h4 style="margin-top:0px;margin-bottom:0px">Real time Graph -  TimeSeries Data</h4>
+    <p style="margin-top:0px;margin-bottom:10px">Sub-heading</p>
+</px-card>
+
+
+
+  <!--script type="text/javascript">
+  	var pk=[];
+  	var parameterValue="parameter_1";
+  	var machineNumberFilterSelectedValue="1";
+  	$(document).ready(function() {
+  		$("#button").click(function() {
+  			//alert("The paragraph was clicked.");
+  			pk = $('#container').highcharts();
+  			//pk.series[0].addPoint([ 1473281462199, .1 ], true, true)
+  			//console.log(pk);
+  			connect(pk.series[0]);
+  			//var series = pk.series[0];
+  			/*  setInterval(function () {
+  			     var x = (new Date()).getTime(), // current time
+  			         y = Math.random();
+  			     series.addPoint([x, y], true, true);
+  			 }, 1000); */
+
+  		});
+
+  		$("#country").change(function () {
+  				parameterValue = $('#country').val();
+  				dispalyMessage();
+
+  		});
+
+  		$("#machineNumberFilter").change(function () {
+  			machineNumberFilterSelectedValue = $('#machineNumberFilter').val();
+  			dispalyMessage();
+
+  	    });
+
+  	});
+
+  	function dispalyMessage(){
+  		$('#parameterSelected').text("Plotting for Machine"+machineNumberFilterSelectedValue+" and parameter ="+parameterValue);
+  	}
+
+  	function connect(series) {
+  		//{ "tagNumber" : "parameter_1", "timestamp" : "1473282740324", "machineNumber" : "13", "datavalue" : "0.28003556", "quality" : "3" }<<
+  		var socket = new SockJS('/gs-guide-websocket');
+  		stompClient = Stomp.over(socket);
+  		stompClient.connect({}, function(frame) {
+  			setConnected(true);
+  			console.log('Connected: ' + frame);
+  			stompClient.subscribe('/topic/greetings', function(greeting) {
+  				parsedBody = JSON.parse(greeting.body);
+  				tagNumberL = parsedBody.tagNumber;
+  				mahcineNumberL  = parsedBody.machineNumber;
+
+  				console.warn("For="+mahcineNumberL+ " & " +parsedBody.tagNumber)
+
+  				if(tagNumberL==parameterValue && machineNumberFilterSelectedValue==mahcineNumberL){
+  					console.info("("+mahcineNumberL+":"+parameterValue+") >> "+parsedBody.timestamp+"=="+parsedBody.datavalue)
+  					var time = (new Date()).getTime()
+  					series.addPoint([ Number(parsedBody.timestamp),Number(parsedBody.datavalue) ], true, true)
+  				}
+
+  			});
+  		});
+  	}
+  	function setConnected(connected) {
+  		$("#connect").prop("disabled", connected);
+  		$("#disconnect").prop("disabled", !connected);
+  		if (connected) {
+  			$("#conversation").show();
+  		} else {
+  			$("#conversation").hide();
+  		}
+  		$("#greetings").html("");
+  	}
+
+  	$(function() {
+  		$(document).ready(
+  				function() {
+
+  					Highcharts.setOptions({
+  						global : {
+  							useUTC : false
+  						}
+  					});
+
+  					$('#container').highcharts(
+  							{
+  								chart : {
+  									type : 'spline',
+  									animation : Highcharts.svg, // don't animate in old IE
+  									marginRight : 10,
+  									events : {
+  										load : function() {
+
+  											// set up the updating of the chart each second
+  											var series = this.series[0];
+  											/*  setInterval(function () {
+  											     var x = (new Date()).getTime(), // current time
+  											         y = Math.random();
+  											     series.addPoint([x, y], true, true);
+  											 }, 1000); */
+  										}
+  									}
+  								},
+  								title : {
+  									text : 'Live simulated sensor data'
+  								},
+  								xAxis : {
+  									type : 'datetime',
+  									tickPixelInterval : 150
+  								},
+  								yAxis : {
+  									title : {
+  										text : 'Value'
+  									},
+  									plotLines : [ {
+  										value : 0,
+  										width : 1,
+  										color : '#808080'
+  									} ]
+  								},
+  								tooltip : {
+  									formatter : function() {
+  										return '<b>'
+  												+ this.series.name
+  												+ '</b><br/>'
+  												+ Highcharts.dateFormat(
+  														'%Y-%m-%d %H:%M:%S',
+  														this.x)
+  												+ '<br/>'
+  												+ Highcharts.numberFormat(
+  														this.y, 2);
+  									}
+  								},
+  								legend : {
+  									enabled : false
+  								},
+  								exporting : {
+  									enabled : false
+  								},
+  								series : [ {
+  									name : 'Random data',
+  									data : (function() {
+  										// generate an array of random data
+  										var data = [], time = (new Date())
+  												.getTime(), i;
+
+  										for (i = -19; i <= 0; i += 1) {
+  											data.push({
+  												x : time + i * 1000,
+  												y : Math.random(2)
+  											});
+  										}
+  										return data;
+  									}())
+  								} ]
+  							});
+  				});
+
+  	});
+  </script-->
+
+
+  	<!--script src="https://code.highcharts.com/highcharts.js"></script>
+  	<script src="https://code.highcharts.com/modules/exporting.js"></script-->
+
+<!-- <px-card style="background-color:#ffffff;border: 1px solid #b1b1bc;padding-top: 20px;padding-bottom:10px;padding-left:3%">
+  	<h1>Demo of Real Time Data Rendering</h1>
+
+  	<h2 id="parameterSelected"></h2>
+
+  	<p>Select a machine and parameter to be plotted</p>
+  	<select id="machineNumberFilter">
+  		<option value="1">Machine 1</option>
+  		<option value="2">Machine 2</option>
+  		<option value="3">Machine 3</option>
+  		<option value="4">Machine 4</option>
+  	</select>
+  	<select id="country">
+  	   <option value="parameter_1">parameter_1</option>
+  	   <option value="parameter_2">parameter_2</option>
+  	   <option value="parameter_3">parameter_3</option>
+  	   <option value="parameter_4">parameter_4</option>
+  	   <option value="parameter_5">parameter_5</option>
+  	   <option value="parameter_6">parameter_6</option>
+  	   <option value="parameter_7">parameter_7</option>
+  	   <option value="parameter_8">parameter_8</option>
+  	   <option value="parameter_9">parameter_9</option>
+  	   <option value="parameter_10">parameter_10</option>
+  	   <option value="parameter_11">parameter_11</option>
+  	   <option value="parameter_12">parameter_12</option>
+  	   <option value="parameter_13">parameter_13</option>
+  	   <option value="parameter_14">parameter_14</option>
+  	   <option value="parameter_15">parameter_15</option>
+  	   <option value="parameter_16">parameter_16</option>
+  	   <option value="parameter_17">parameter_17</option>
+  	   <option value="parameter_18">parameter_18</option>
+  	   <option value="parameter_19">parameter_19</option>
+  	   <option value="parameter_20">parameter_20</option>
+  	   <option value="parameter_21">parameter_21</option>
+  	   <option value="parameter_22">parameter_22</option>
+  	   <option value="parameter_23">parameter_23</option>
+  	   <option value="parameter_24">parameter_24</option>
+  	   <option value="parameter_25">parameter_25</option>
+  	   <option value="parameter_26">parameter_26</option>
+  	   <option value="parameter_27">parameter_27</option>
+  	   <option value="parameter_28">parameter_28</option>
+  	   <option value="parameter_29">parameter_29</option>
+  	   <option value="parameter_30">parameter_30</option>
+  	   <option value="parameter_31">parameter_31</option>
+  	   <option value="parameter_32">parameter_32</option>
+  	   <option value="parameter_33">parameter_33</option>
+  	   <option value="parameter_34">parameter_34</option>
+  	   <option value="parameter_35">parameter_35</option>
+  	   <option value="parameter_36">parameter_36</option>
+  	   <option value="parameter_37">parameter_37</option>
+  	   <option value="parameter_38">parameter_38</option>
+  	   <option value="parameter_39">parameter_39</option>
+  	   <option value="parameter_40">parameter_40</option>
+  	   <option value="parameter_41">parameter_41</option>
+  	   <option value="parameter_42">parameter_42</option>
+  	   <option value="parameter_43">parameter_43</option>
+  	   <option value="parameter_44">parameter_44</option>
+  	   <option value="parameter_45">parameter_45</option>
+
+
+  	</select>
+  	<button id="button" type="button">Start...</button>
+
+  	<div id="container"
+  		style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+</px-card> -->
+
+
+<px-card style="background-color:#ffffff;border: 1px solid #b1b1bc;padding-bottom:10px;">
+    <!-- <h1>Demo of Real Time Data Rendering</h1> -->
+
+    <h2 style="margin-bottom:0px;margin-top:10px" id="parameterSelected"></h2>
+
+    <!-- <p style="margin-bottom:5px">Select a machine and parameter to be plotted</p> -->
+    <div class="layout">
+      <div class="layout__item u-2/3">
+        <div class="layout">
+         <div class="layout__item u-1/3">
+
+           <b>Machine No</b>
+                                   
+                                <px-dropdown  display-value="Machine 1"  style="width:130px;" class="a">
+                                   <px-dropdown-content id="machineValue" class="px-dropdown-content" max-cont-character-width="10"
+                                   extend-dropdown="true" extend-dropdown-by="15"  items='{{machineData}}'>
+                                   </px-dropdown-content>
+                                </px-dropdown>
+          </div>
+          <div class="layout__item u-1/3"><b>Sensor</b>
+                                   
+                                <px-dropdown  display-value="Parameter_1"  style="width:130px;" class="a">
+                                   <px-dropdown-content id="sensorValue" class="px-dropdown-content" max-cont-character-width="10"
+                                   extend-dropdown="true" extend-dropdown-by="15"  items='{{sensorData}}'>
+                                   </px-dropdown-content>
+                                </px-dropdown>
+          </div>
+          <div class="layout__item u-1/3">
+          </br>
+            <button class="btn cbtn" style="width:150px;" ng-click="buttonClicked()">Start</button> 
+          </div>
+         </div>
+      </div>
+      <div class="layout__item u-1/3">
+       
+                               
+      </div>
+     
+   </div>
+
+</px-card>
+
+ <px-card style="border:1px solid #b1b1bc;padding-bottom:1%;padding-left:0%">
+        <div>
+        <!-- <h4 style="padding-left:15px">Status: {{statusToDisplay}}</h4> -->
+        </div> 
+       <div id="container"></div>
+     </px-card>

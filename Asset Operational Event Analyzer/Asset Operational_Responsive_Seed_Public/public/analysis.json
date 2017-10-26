@@ -1,0 +1,48 @@
+[
+      {
+         "MaintenanceID": "M.01",
+         "Locoid": "8835",
+         "SubSystem": "Engine",
+         "Year": 2019,
+         "FLYear": 2022,
+         "OHYear": 2020,
+         "RMYear":2021
+      },
+      {
+         "MaintenanceID": "M.02",
+         "Locoid": "8835",
+         "SubSystem": "Trucks",
+         "Year": 2017,
+         "FLYear": 2020,
+         "OHYear": 2020,
+         "RMYear":2019
+      },
+      {
+         "MaintenanceID": "M.03",
+         "Locoid": "8835",
+         "SubSystem": "Cooling",
+         "Year": 2018,
+         "FLYear": 2021,
+         "OHYear": 2018,
+         "RMYear":2017  
+            },
+      {
+         "MaintenanceID": "M.04",
+         "Locoid": "8835",
+         "SubSystem": "Brakes",
+         "Year": 2017,
+         "FLYear": 2017,
+         "OHYear": 2022,
+         "RMYear":2022
+      },
+      {
+         "MaintenanceID": "M.05",
+         "Locoid": "8835",
+         "SubSystem": "Cooling",
+         "Year": 2022,
+         "FLYear": 2020,
+         "OHYear": 2018,
+         "RMYear":2019
+      }
+]
+

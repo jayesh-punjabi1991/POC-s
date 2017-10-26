@@ -1,0 +1,11 @@
+--- 
+
+applications: 
+
+  - 
+
+    buildpack: staticfile_buildpack
+
+    memory: 64M
+
+    name: assetlifecycle-v1

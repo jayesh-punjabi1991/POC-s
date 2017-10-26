@@ -1,0 +1,79 @@
+[
+  {
+    "timestamp": 1462197600000,
+    "tag": "820423:mwsel_val0",
+    "value": 20.73328928785,
+    "quality": 3,
+    "date": "02-May-2016 14:00:00"
+  },
+  {
+    "timestamp": 1462197640000,
+    "tag": "820423:mwsel_val0",
+    "value": 32.73328928785,
+    "quality": 3,
+    "date": "02-May-2016 14:00:00"
+  },
+  {
+    "timestamp": 1462197680000,
+    "tag": "820423:mwsel_val0",
+    "value": 26.73328928785,
+    "quality": 3,
+    "date": "02-May-2016 14:00:00"
+  },
+  {
+    "timestamp": 1462197520000,
+    "tag": "820423:mwsel_val0",
+    "value": 29.73328928785,
+    "quality": 3,
+    "date": "02-May-2016 14:00:00"
+  },
+  {
+    "timestamp": 1462197560000,
+    "tag": "820423:mwsel_val0",
+    "value": 64.73328928785,
+    "quality": 3,
+    "date": "02-May-2016 14:00:00"
+  },
+  {
+    "timestamp": 1462297600000,
+    "tag": "820423:mwsel_val0",
+    "value": 24.73328928785,
+    "quality": 3,
+    "date": "02-May-2016 14:00:00"
+  },
+  {
+    "timestamp": 1462397600000,
+    "tag": "820423:mwsel_val0",
+    "value": 64.73328928785,
+    "quality": 3,
+    "date": "02-May-2016 14:00:00"
+  },
+  {
+    "timestamp": 1463197600000,
+    "tag": "820423:mwsel_val0",
+    "value": 61.73328928785,
+    "quality": 3,
+    "date": "02-May-2016 14:00:00"
+  },
+  {
+    "timestamp": 1472197600000,
+    "tag": "820423:mwsel_val0",
+    "value": 29.73328928785,
+    "quality": 3,
+    "date": "02-May-2016 14:00:00"
+  },
+  {
+    "timestamp": 1482197600000,
+    "tag": "820423:mwsel_val0",
+    "value": 69.73328928785,
+    "quality": 3,
+    "date": "02-May-2016 14:00:00"
+  },
+  {
+    "timestamp": 1462197600000,
+    "tag": "820423:mwsel_val0",
+    "value": 49.73328928785,
+    "quality": 3,
+    "date": "02-May-2016 14:00:00"
+  }
+]

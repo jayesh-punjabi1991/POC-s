@@ -1,0 +1,657 @@
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto-Light;
+  src: url(../fonts/Roboto-Light.ttf);
+}
+
+
+#logo_for_menu{
+  display:none;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f6f6f6;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+    margin-top: 10%
+}
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#Design-thinking-meth-span{
+padding-left:5%;
+}
+#Lean-principles-that-span{
+  padding-left: 4%
+}
+.hero-img {
+  width:100%;
+  height:auto;
+  object-fit: contain;
+}
+.Rectangle-Copy {
+  width:100%;
+  height:40px;
+  background-color: #000000;
+  position:absolute;
+  text-align: center;
+  /*bottom: 0;*/
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Copyright-Genpact {
+  width: 100%;
+  height: 14px;
+  font-family: Roboto-Regular;
+  font-size: 0.9em;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  color: #ffffff;
+}
+h4{
+  margin-top: 15px !important;
+  margin-bottom: 10px !important;
+}
+
+.smartcity-img {
+  height: 340px;
+  object-fit: contain;
+  text-align: center; 
+  width: 100%;
+  transform: translateY(45%);
+}
+.wifi-ico {
+  object-fit: contain;
+  transform: translate(30%,300%);
+}
+#tag {
+  float: left;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;  
+  width: 100%;
+}
+#Title {
+  float: left;
+  position: absolute;
+  left: 2%;   
+  top:17%;  
+  max-width: 100%;
+}
+#Cisco_Logo {
+  float: left;
+  position: absolute;
+  left: 78%;   
+  top:24%;  
+  max-width: 100%;
+}
+#Genpact_Logo {
+  float: left;
+  position: absolute;
+  left: 85%;   
+  top:24%;  
+  max-width: 100%;
+}
+.Maindiv{
+  position:relative;
+}
+.camera-ico {
+  object-fit: contain;
+  transform: translate(130%,850%);
+}
+#SecondaryDiv2{
+  margin-left:-6%;
+}
+#custom-icon {
+  background:#592a46;
+  -webkit-border-radius:1100%;
+  color:#fff;
+  text-align:center;
+  display:table-cell;
+  vertical-align:middle;
+  width:5em;
+  height:5em;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  -o-transition:.5s;
+  transition:.5s;
+}
+.Cisco-CDP-Genpact {
+  height: 21px;
+  font-family: Roboto-Light;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  color: #4a4a4a;
+}
+.LEAN-DIGITAL {
+  height: 29px;
+  font-family: Roboto-Light;
+  font-size: 25px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  color: #cc24a6;
+}
+.Smart-City-With-Inte {
+  height: 29px;
+  font-family: Roboto-Light;
+  font-size: 25px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  color: #cc24a6;
+}
+.Design-thinking-meth {
+  font-family: Roboto-Light;
+  font-size: 13px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  color: #4a4a4a;
+  color: var(--greyish-brown);
+}
+.Genpacts-lean-Digit {
+  font-family: Roboto-Light;
+  font-size: 13px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  color: #4a4a4a;
+}
+.Rethink-Your-Digital {
+  height: 21px;
+  font-family: Roboto-Light;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  color: #4a4a4a;
+}
+.Unique-Approach-That {
+  font-family: Roboto-Light;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  color: #4a4a4a;
+}
+.Digital-process-cent {
+  font-family: Roboto-Light;
+  font-size: 13px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  color: #4a4a4a;
+}
+.Lean-principles-that {
+  font-family: Roboto-Light;
+  font-size: 13px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  color: #4a4a4a;
+}
+.JDA-Logo {
+  width: 144px;
+  height: 34px;
+  object-fit: contain;
+  opacity: 0.87;
+}
+.Menu{
+  float: left;
+  position: absolute;
+  display:none;
+}
+.Rectangle {
+  opacity: 0.5;
+  border-radius: 100px;
+  background-color: #582a45;
+  float: left;
+  position: absolute;
+  height:25px;
+  width: 92px;
+  transform: translate(1200%,250%);
+}
+.Powered-by {
+  font-family: Roboto-Regular;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 2%;
+}
+.Smart-WIFI-Managemen {
+  width: 77px;
+  height: 30px;
+  font-family: Roboto-Regular;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff;
+  transform:translate(30%,730%);
+}
+.Smart-Surveillance {
+  width: 70px;
+  height: 30px;
+  font-family: Roboto-Regular;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff;
+  transform:translate(30%,730%);
+}
+.Tourist-Experience {
+  width: 64px;
+  height: 30px;
+  font-family: Roboto-Regular;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff;
+  transform:translate(30%,730%);
+}
+.Smart-Traffic-Operat {
+  width: 78px;
+  height: 30px;
+  font-family: Roboto-Regular;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff;
+  transform:translate(30%,730%);
+}
+.Parking-Management {
+  width: 77px;
+  height: 30px;
+  font-family: Roboto-Regular;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff;
+  transform:translate(30%,730%);
+}
+.Water-Management {
+  width: 77px;
+  height: 30px;
+  font-family: Roboto-Regular;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff;
+  transform:translate(30%,730%);
+}
+.Pollution-Management {
+  width: 77px;
+  height: 30px;
+  font-family: Roboto-Regular;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff;
+  transform:translate(30%,730%);
+}
+.Waste-Management {
+  width: 77px;
+  height: 30px;
+  font-family: Roboto-Regular;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff;
+  transform:translate(30%,730%);
+}
+#Genpacts-lean-Digit-div{
+  margin-top:1%;
+  max-width:60%;
+}
+#firstcolofrowoftext{
+  margin-top:1%;
+}
+.JDA-Logo_forMobile{
+  display:none;
+}
+#MenuText{
+  font-family: Roboto-Regular;
+  font-size: 16px;
+}
+
+/*For Iphone*/
+@media screen  and (max-device-width: 500px){
+#Title {
+  left:22%; 
+}
+#Cisco_Logo{
+  left:28%;
+  top:52%;
+}
+#Genpact_Logo{
+  left:45%;
+  top:53%;
+}
+.Menu{
+  display:block;
+  left:4%;
+  top:-55%;
+}
+.sidenav{
+  margin-top: 17%;
+}
+.smartcity-img{
+  transform:translate(-20%,47%);
+  width:257px;
+  height:245px;
+}
+.Copyright-Genpact{
+  font-size: 0.6em;
+}
+#LeftIcons {
+  display:none;
+}
+#RightIcons{
+  display:none;
+}
+.Rectangle{
+  height:20px;
+  width:67px;
+  transform: translate(235%,860%);
+}
+#rowoftext{
+  margin-top:35%;
+}
+#Genpacts-lean-Digit-div{
+  margin-top:15%;
+   max-width:100%;
+}
+.LEAN-DIGITAL {
+  font-size: 21px;
+}
+.Rethink-Your-Digital{
+  margin-top:5%;
+}
+.JDA-Logo{
+  display:none;
+}
+.JDA-Logo_forMobile {
+  display:block;
+  width: 144px;
+  height: 34px;
+  object-fit: contain;
+  opacity: 0.87;
+  margin-top: 6%;
+  margin-bottom:5%;
+  margin-left:25%;
+}
+#logo_for_menu{
+  top:5%;
+  left:36%;
+  display:none;
+  position: absolute;
+}
+.wifi-ico{
+  transform: translateX(15%);
+}
+#IpadNavMenu{
+  display:none;
+}
+}
+/*Iphone 6Plus*/
+@media screen and (device-width:414px) and (device-height:736px)
+{
+#Genpacts-lean-Digit-div{
+  margin-top:8%;
+   max-width:100%;
+}
+.Rectangle{
+  transform: translate(235%,900%);
+}
+.JDA-Logo_forMobile {
+  margin-left:32%;
+}
+#logo_for_menu{
+  top:5%;
+  left:36%;
+  display:none;
+  position: absolute;
+}
+.wifi-ico{
+  transform: translateX(15%);
+}
+#IpadNavMenu{
+  display:none;
+}
+}
+
+/*Iphone 5*/
+@media screen and (device-width:320px) and (device-height:448px)
+{
+.smartcity-img{
+  transform: translate(-25%,47%);
+}
+.Cisco-CDP-Genpact{
+  font-size:16px;
+}
+.Rethink-Your-Digital{
+  font-size:13px;
+}
+#firstcolofrowoftext{
+  margin-top: 5%
+}
+.Rectangle{
+  transform: translate(175%,735%);
+}
+#logo_for_menu{
+  top:5%;
+  left:42%;
+  display:none;
+  position: absolute;
+}
+.wifi-ico{
+  transform: translateX(15%);
+}
+#IpadNavMenu{
+  display:none;
+}
+}
+/*For Ipad*/
+@media screen and (min-device-width:520px) and (max-device-width: 1050px){
+  #Title {
+  left: 5%;
+  top:40%;  
+}
+#Cisco_Logo{
+  left:74%;
+  top:52%;
+}
+#Genpact_Logo{
+  left:82%;
+  top:53%;
+}
+.Menu{
+  display:block;
+  left:2%;
+  top:20%;
+}
+.smartcity-img{
+  transform:translateY(47%);
+  width:289px;
+  height:275px;
+}
+.Copyright-Genpact{
+  font-size: 0.6em;
+}
+#LeftIcons {
+  display:none;
+}
+#RightIcons{
+  display:none;
+} 
+.Rectangle{
+ transform: translate(850%,490%);
+ width: 67px;
+ height: 20px;
+}
+.Powered_by{
+  font-size: 10px;
+}
+
+#firstcolofrowoftext{
+  margin-top:15%;
+  margin-left:22%;
+}
+.JDA-Logo{
+  display:none;
+}
+.Cisco-CDP-Genpact{
+  font-size:22px;
+}
+.Smart-City-With-Inte{
+  font-size:30px;
+  margin-top:1%;
+}
+.Genpacts-lean-Digit{
+  font-size:16px;
+}
+#Genpacts-lean-Digit-div{
+  margin-top:3%;
+}
+#thirdcolofrowoftext{
+  margin-left:22%;
+}
+.JDA-Logo_forMobile {
+  width: 144px;
+  height: 34px;
+  object-fit: contain;
+  opacity: 0.87;
+  margin-top: 6%;
+  margin-bottom:5%;
+  margin-left:20%;
+  display:block;
+}
+#Design-thinking-meth-span{
+  padding-left:4%;
+}
+#Lean-principles-that-span{
+  padding-left: 3%
+}
+.Rectangle-Copy{
+  bottom:0;
+}
+#logo_for_menu{
+  top:5%;
+  left:42%;
+  display:none;
+  position: absolute;
+}
+#PhoneNavMenu{
+  display:none;
+}
+}
+
+/*Iphone6Plus Landscape*/
+@media screen and (device-height:414px) and (device-width:736px){
+.Rectangle-Copy{
+  bottom:auto;
+}
+}
+
+/*Iphone6 Landscape*/
+@media screen and (device-height:375px) and (device-width:667px) {
+.Rectangle-Copy{
+  bottom:auto;
+}
+.Menu{
+  top:35%;
+}
+.Rectangle{
+  transform: translate(775%,410%);
+}
+#Genpact_Logo{
+  left:83%;
+}
+}
+
+/*For Ipad Landscape Mode Only for the Smart City Image*/
+@media screen and (device-height:768px) and (device-width:1024px){
+  .smartcity-img{
+    transform: translateY(47%);
+    width: 357px;
+    height:340px;
+  }
+  .Rectangle{
+ transform: translate(1140%,665%);
+}
+.Rectangle-Copy{
+  bottom:auto;
+}
+#logo_for_menu{
+  top:5%;
+  left:42%;
+  display:none;
+  position: absolute;
+}
+#PhoneNavMenu{
+  display: none;
+}
+#thirdcolofrowoftext{
+  width:50%;
+}
+}
+/*For Ipad-Pro Landscape Mode Only for the Smart City Image*/
+@media screen and (device-height:1366px) and (device-width:1024px){
+  .smartcity-img{
+    transform: translateY(47%);
+    width: 357px;
+    height:340px;
+  }
+    .Rectangle{
+ transform: translate(1140%,665%);
+}
+#logo_for_menu{
+  top:5%;
+  left:42%;
+  display:none;
+  position: absolute;
+}
+#PhoneNavMenu{
+  display:none;
+}
+}

@@ -1,0 +1,57 @@
+
+.full-container{width: 100%;height: 80px;background-color: #ffffff}
+.nav-header {width: 100%}
+
+/*.nav-header .navbar-logo img{float:left;margin:-20px 20px 0px 0px}
+.nav-header .navbar-logo h2 {margin-top: 10px;color: #376092;font-weight: bold}*/
+.header-image{margin-top: -20px;float: left}
+.header-logo{color: #376092;font-weight: bold}
+
+
+.navbar-logo a:hover {text-decoration: none !important;}
+.full-container .navbar{margin: 0px 10px;padding-top: 20px}
+.main-section{width: 100%;height: auto;background-color: #ffffff;padding: 5px 20px;box-sizing:border-box;}
+.content{width: 100%;height: auto;border-radius: 120px;background-color: #005cb9;border: 2px solid black;padding-top: 10px;overflow: hidden}
+.image-banner{text-align: center}
+.image-banner img{width: 90%;margin-top: 10px;box-shadow: 5px 5px 5px #655959}
+.content-inner{width: 100%;height: auto;padding: 20px 20px 0px 20px;overflow: auto;margin-top: 10px}
+.animation-section{width: 70%;background-color: #ffffff;height: auto;border-radius: 100px;float: left;text-align: center;padding: 50px;box-sizing:border-box;}
+.animation-section img {width: 100%}
+.image-section{width: 25%;height: auto;float: right;list-style: none;margin-top: 10px}
+.image-section li {margin-bottom: 50px;float: right;width: 100%}
+.image-section li img {width: 100%}
+.image-banner .gradient-btn {
+    margin-bottom: 20px;
+   border: 1px solid #96d1f8;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #ff942f, #B96F29);
+   background: -moz-linear-gradient(top, #ff942f, #B96F29);
+   background: -ms-linear-gradient(top, #ff942f, #B96F29);
+   background: -o-linear-gradient(top, #ff942f, #B96F29);
+   padding: 9px 30px;
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 16px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   box-shadow: 2px 2px 4px #424141;
+   border-radius: 5px;
+   overflow: hidden;
+   }
+.image-banner .gradient-btn:hover {
+   border-top-color: #CE6D12;
+   background: #CE6D12;
+   color: #ccc;
+   }
+.image-banner .gradient-btn:active {
+   border-top-color: #CE6D12
+   background: #CE6D12;
+   }

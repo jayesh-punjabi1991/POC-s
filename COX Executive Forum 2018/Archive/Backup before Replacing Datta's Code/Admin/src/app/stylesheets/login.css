@@ -1,0 +1,484 @@
+.loginBody{
+  background-color:#f5fbfb;
+  height:72vh;
+  font-family: AvenirMedium;
+}
+/* Pen Title */
+.pen-title {
+  padding: 50px 0;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.pen-title h1 {
+  margin: 0 0 20px;
+  font-size: 48px;
+  font-weight: 300;
+}
+.pen-title span {
+  font-size: 12px;
+}
+.pen-title span .fa {
+  color: rgba(0,106,136,0.6);
+}
+.pen-title span a {
+  color: rgba(0,106,136,0.6);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Rerun */
+.rerun {
+  margin: 0 0 30px;
+  text-align: center;
+}
+.rerun a {
+  cursor: pointer;
+  display: inline-block;
+  background: rgba(0,106,136,0.6);
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 10px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.rerun a:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* Scroll To Bottom */
+#codepen, #portfolio {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #363636;
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  color: #ffffff;
+  text-align: center;
+}
+#codepen i, #portfolio i {
+  line-height: 56px;
+}
+#codepen:hover, #portfolio:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* CodePen */
+#portfolio {
+  bottom: 96px;
+  right: 36px;
+  background: rgba(0,106,136,0.6);
+  width: 44px;
+  height: 44px;
+  -webkit-animation: buttonFadeInUp 1s ease;
+  animation: buttonFadeInUp 1s ease;
+}
+#portfolio i {
+  line-height: 44px;
+}
+
+/* Container */
+.container {
+  position: relative;
+  max-width: 460px;
+  width: 100%;
+  margin: 0 auto 100px;
+  padding-top: 50px;
+}
+.container.active .card:first-child {
+  background: #f2f2f2;
+  margin: 0 15px;
+}
+.container.active .card:nth-child(2) {
+  background: #fafafa;
+  margin: 0 10px;
+}
+.container.active .card.alt {
+  top: 20px;
+  right: 0;
+  width: 100%;
+  min-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  padding: 60px 0 40px;
+  overflow: hidden;
+}
+.container.active .card.alt .toggle {
+  position: absolute;
+  top: 40px;
+  right: -70px;
+  box-shadow: none;
+  -webkit-transform: scale(10);
+  transform: scale(10);
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+.container.active .card.alt .toggle:before {
+  content: '';
+}
+.container.active .card.alt .title,
+.container.active .card.alt .input-container,
+.container.active .card.alt .button-container {
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.container.active .card.alt .title {
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+.container.active .card.alt .input-container {
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+}
+.container.active .card.alt .input-container:nth-child(2) {
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+}
+.container.active .card.alt .input-container:nth-child(3) {
+  -webkit-transition-delay: .6s;
+          transition-delay: .6s;
+}
+.container.active .card.alt .button-container {
+  -webkit-transition-delay: .7s;
+          transition-delay: .7s;
+}
+
+/* Card */
+.card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 60px 0 40px 0;
+  box-sizing: border-box;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  /* Title */
+  /* Inputs */
+  /* Button */
+  /* Footer */
+  /* Alt Card */
+}
+.card:first-child {
+  background: #fafafa;
+  height: 0px;
+  border-radius: 5px 5px 0 0;
+  margin: 0 10px;
+  padding: 0;
+}
+.card .title {
+  position: relative;
+  z-index: 1;
+  border-left: 5px solid rgba(0,106,136,0.6);
+  /*margin: 0 0 35px;*/
+  padding: 10px 0 10px 50px;
+  color: rgba(0,106,136,0.6);
+  font-size: 32px;
+  font-weight: 600;
+  /*text-transform: uppercase;*/
+}
+.card .input-container {
+  position: relative;
+  margin: 0 60px 50px;
+  margin-bottom: 20px;
+}
+.card .input-container input {
+  outline: none;
+  z-index: 1;
+  position: relative;
+  background: none;
+  width: 100%;
+  height: 60px;
+  border: 0;
+  color: #212121;
+  font-size: 24px;
+  font-weight: 400;
+}
+.card .input-container input:focus ~ label {
+  color: #9d9d9d;
+  -webkit-transform: translate(-12%, -50%) scale(0.75);
+          transform: translate(-12%, -50%) scale(0.75);
+}
+.card .input-container input:focus ~ .bar:before, .card .input-container input:focus ~ .bar:after {
+  width: 50%;
+}
+.card .input-container input:valid ~ label {
+  color: #9d9d9d;
+  -webkit-transform: translate(-12%, -50%) scale(0.75);
+          transform: translate(-12%, -50%) scale(0.75);
+}
+.card .input-container label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #757575;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 60px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.card .input-container .bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #757575;
+  width: 100%;
+  height: 1px;
+}
+.card .input-container .bar:before, .card .input-container .bar:after {
+  content: '';
+  position: absolute;
+  background: rgba(0,106,136,0.6);
+  width: 0;
+  height: 2px;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+.card .input-container .bar:before {
+  left: 50%;
+}
+.card .input-container .bar:after {
+  right: 50%;
+}
+.card .button-container {
+  margin: 0 60px;
+  text-align: center;
+}
+.card .button-container button {
+  outline: 0 !important !important;
+  cursor: pointer !important;
+  position: relative !important;
+  display: inline-block !important;
+  background: rgba(0,106,136,0.9) !important;
+  /*width: 240px !important;*/
+  border: 2px solid #e3e3e3 !important;
+  padding: 20px 0 !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 1 !important;
+  text-transform: uppercase !important;
+  overflow: hidden !important;
+  -webkit-transition: .3s ease !important;
+  transition: .3s ease !important;
+}
+.card .button-container button span {
+  position: relative;
+  z-index: 1;
+  color: #ddd;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.card .button-container button:before {
+  content: '' !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  display: block !important;
+  background: rgba(0,106,136,0.6) !important;
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 100% !important;
+  margin: -15px 0 0 -15px !important;
+  opacity: 0 !important;
+  -webkit-transition: .3s ease !important;
+  transition: .3s ease !important !important;
+}
+.card .button-container button:hover, .card .button-container button:active, .card .button-container button:focus {
+  border-color: rgba(0,106,136,0.6) !important !important;
+}
+.card .button-container button:hover span, .card .button-container button:active span, .card .button-container button:focus span {
+  color: rgba(0,106,136,0.6) !important !important;
+}
+.card .button-container button:active span, .card .button-container button:focus span {
+  color: #ffffff !important;
+}
+.card .button-container button:active:before, .card .button-container button:focus:before {
+  opacity: 1 !important;
+  -webkit-transform: scale(10) !important;
+  transform: scale(10) !important;
+}
+.card .footer {
+  margin: 40px 0 0 !important;
+  color: #d3d3d3 !important;
+  font-size: 24px !important;
+  font-weight: 300 !important;
+  text-align: center !important;
+}
+.card .footer a {
+  color: inherit !important;
+  text-decoration: none !important;
+  -webkit-transition: .3s ease !important;
+  transition: .3s ease !important;
+}
+.card .footer a:hover {
+  color: #bababa !important;
+}
+.card.alt {
+  position: absolute !important;
+  top: 40px !important;
+  right: -70px !important;
+  z-index: 10 !important;
+  width: 140px !important;
+  height: 140px !important;
+  background: none !important;
+  border-radius: 100% !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  -webkit-transition: .3s ease !important;
+  transition: .3s ease !important;
+  /* Toggle */
+  /* Title */
+  /* Input */
+  /* Button */
+}
+.card.alt .toggle {
+  position: relative !important;
+  background: rgba(0,106,136,0.6) !important;
+  width: 140px !important;
+  height: 140px !important;
+  border-radius: 100% !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+  color: #ffffff !important;
+  font-size: 58px !important;
+  line-height: 140px !important;
+  text-align: center !important;
+  cursor: pointer !important;
+}
+.card.alt .toggle:before {
+  content: '\f040' !important;
+  display: inline-block !important;
+  font: normal normal normal 14px/1 FontAwesome !important;
+  font-size: inherit !important;
+  text-rendering: auto !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  -webkit-transform: translate(0, 0) !important;
+          transform: translate(0, 0) !important;
+}
+.card.alt .title,
+.card.alt .input-container,
+.card.alt .button-container {
+  left: 100px !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+.card.alt .title {
+  position: relative !important;
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+}
+.card.alt .title .close {
+  cursor: pointer !important;
+  position: absolute !important;
+  top: 0 !important;
+  right: 60px !important;
+  display: inline !important;
+  color: #ffffff !important;
+  font-size: 58px !important;
+  font-weight: 400 !important;
+}
+.card.alt .title .close:before {
+  content: '\00d7' !important;
+}
+.card.alt .input-container input {
+  color: #ffffff !important;
+}
+.card.alt .input-container input:focus ~ label {
+  color: #ffffff !important;
+}
+.card.alt .input-container input:focus ~ .bar:before, .card.alt .input-container input:focus ~ .bar:after {
+  background: #ffffff !important;
+}
+.card.alt .input-container input:valid ~ label {
+  color: #ffffff !important;
+}
+.card.alt .input-container label {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+.card.alt .input-container .bar {
+  background: rgba(255, 255, 255, 0.8) !important;
+}
+.card.alt .button-container button {
+  width: 100% !important;
+  background: #ffffff !important;
+  border-color: #ffffff !important;
+}
+.card.alt .button-container button span {
+  color: rgba(0,106,136,0.6) !important;
+}
+.card.alt .button-container button:hover {
+  background: rgba(255, 255, 255, 0.9) !important;
+}
+.card.alt .button-container button:active:before, .card.alt .button-container button:focus:before {
+  display: none !important;
+}
+
+/* Keyframes */
+@-webkit-keyframes buttonFadeInUp {
+  0% {
+    bottom: 30px !important;
+    opacity: 0 !important;
+  }
+}
+@keyframes buttonFadeInUp {
+  0% {
+    bottom: 30px !important;
+    opacity: 0 !important;
+  }
+}
+button{
+  height: inherit !important;
+}
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}

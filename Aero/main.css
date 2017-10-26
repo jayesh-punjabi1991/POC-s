@@ -1,0 +1,54 @@
+@font-face {
+    font-family: geInspira;
+    src: url(../fonts/GEInspRg.woff);
+}
+
+.content-wrapper:not([style-scope]):not(.style-scope) {
+    position: relative;
+    display: inline-flex;
+}
+
+.viewport:not([style-scope]):not(.style-scope) {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#rangepickerModal > div:nth-child(1) > div > div.flex.flex--center.u-m.style-scope.px-datetime-range-panel{
+	display:none !important;
+}
+
+#dropcell{
+	width: 40% !important;
+}
+#dropdown{
+	width: 140px !important;
+}
+#Header{
+    height: 45px !important;
+}
+.tr--filter{
+    height:45px !important;
+}
+
+.layout__item {
+    outline: rgba(135, 206, 250, 0) solid 1px !important;
+}
+
+.px-login-0 .login.px-login{
+	display:none;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

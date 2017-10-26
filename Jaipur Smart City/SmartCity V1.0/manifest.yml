@@ -1,0 +1,5 @@
+---
+applications:
+  - name: jaipursmartcity
+    buildpack: staticfile_buildpack
+    memory: 128MB

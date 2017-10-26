@@ -1,0 +1,20 @@
+{
+    "region": "CENTRAL",
+    "market": "ATLANTA",
+    "headend": "Super Headend",
+    "nods_devics": "SNVLSYSC01",
+    "serviceimpacted": "VIDEO",
+    "sub_service": "CBS_VIDEO",
+    "channel": "CNN",
+    "customers_impacted": "Business",
+    "customer_platform": "Rovi",
+    "customer_bundle": "Cox Bronze Bundle",
+    "service_impaction": "Service Affecting",
+    "elapsed_time": 0,
+    "tool_name": "Netcool",
+    "device_type": "HFC Node",
+    "group_owner": "",
+    "agent": "SCOTT LECHEVET",
+    "groupType": "AGENT"
+}
+

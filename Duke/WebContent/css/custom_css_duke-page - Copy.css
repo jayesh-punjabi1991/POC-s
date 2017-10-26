@@ -1,0 +1,73 @@
+
+.nav-header {background-color: #4f81bd;height: auto;overflow: auto}
+.header-image {float: left;margin-top: 0px;border}
+.header-logo a {color: #ffffff;margin-left: 20px;float: left}
+.header-logo a:hover{text-decoration: none !important;} 
+.genpact-logo {float: right;color: #ffffff;margin: 0px 20px 0px 0px;font-style: italic;}
+
+.main-section {padding: 0px 50px 0px 50px}
+.animated-section {height: auto;width: 65%;float: left;margin-top: -50px}
+.statistics-image {float: right;margin-top: 150px;margin-right: 100px;}
+.animated-section img {width: 100%;margin-left: -50px}
+.statistics-image img {width: 120%}
+.info-section {border: #ff0000}
+.inner-section .info-inner h3 ,.inner-section-wind .info-inner h3 {color: #01295A}
+.inner-section .info-inner ul li ,.inner-section-wind .info-inner ul li{font-size: 14px}
+.inner-section {height: 230px;margin-bottom: 20px}
+.info-inner img {width: 90%}
+.inner-section-wind {height: 300px}
+.inner-section-wind img {width: 100%}
+.arrow-image {margin-top: 170px;width: 5%;}
+.image-banner {margin-top: 30px;float: right;}
+.image-banner .gradient-btn {
+   border: 1px solid #96d1f8;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #ff942f, #B96F29);
+   background: -moz-linear-gradient(top, #ff942f, #B96F29);
+   background: -ms-linear-gradient(top, #ff942f, #B96F29);
+   background: -o-linear-gradient(top, #ff942f, #B96F29);
+   padding: 9px 30px;
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 16px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   box-shadow: 2px 2px 4px #424141;
+   border-radius: 5px;
+   overflow: hidden;
+   }
+.image-banner .gradient-btn:hover {
+   border-top-color: #CE6D12;
+   background: #CE6D12;
+   color: #ccc;
+   }
+.image-banner .gradient-btn:active {
+   border-top-color: #CE6D12;
+   background: #CE6D12;
+   }
+
+/*css for second page*/
+.breadcrumbs {width: 100%; height: auto;background-color: #ff00ff;overflow: auto;background-color: #bfbfbf} 
+.breadcrumbs ul li {float: left;list-style:none;background-color: #003E7B;color:#c4c000;font-weight: bold;font-size: 18px;padding: 10px 10px 10px 10px;}
+.breadcrumbs ul li span {margin-right: 10px;margin-left: -10px}
+.breadcrumbs ul li a {text-decoration: none}
+.breadcrumbs .navicon {float: right;font-size: 20px;margin-top: -5px}
+.main-section .header-title {width: 100%;color: #ffffff;background-color: #404040;text-align: center; margin-top: 10px; padding: 1px;}
+.sidebar-section {width: 300px;height: 700px;position: fixed;;right: -305px;z-index: 10000 !important;margin-top:-10px;background-color: #000000;opacity: 0.9;
+transition: all 0.3s ease-in-out;
+-webkit-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+}
+
+
+.sidebar-header{height: 50px;width: 100%;background-color: #000000}
+.close-side {font-size: 20px; margin-right: 10px;margin-top:10px;float: right;}
+.left-side {right: 0px}

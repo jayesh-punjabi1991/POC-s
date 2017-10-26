@@ -1,0 +1,18 @@
+.loadmask {
+	Z-INDEX: 100; POSITION: absolute; FILTER: alpha(opacity=50); BACKGROUND-COLOR: #ccc; WIDTH: 100%; ZOOM: 1; HEIGHT: 100%; TOP: 0px; LEFT: 0px; -moz-opacity: 0.5; opacity: .50
+}
+.loadmask-msg {
+	Z-INDEX: 20001;  POSITION: absolute;  PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px;   TOP: 0px;  PADDING-TOP: 2px; LEFT: 0px
+}
+.loadmask-msg DIV {
+	 PADDING-BOTTOM: 125px; PADDING-LEFT: 25px; PADDING-RIGHT: 110px;  BACKGROUND: url(/BWI/content/images/page/ajax_loader_orange64.gif)  no-repeat 5px 5px; COLOR: #222;  CURSOR: wait;  PADDING-TOP: 5px
+}
+.masked {
+	OVERFLOW: hidden !important
+}
+.masked-relative {
+	POSITION: relative !important
+}
+.masked-hidden {
+	VISIBILITY: hidden !important
+}

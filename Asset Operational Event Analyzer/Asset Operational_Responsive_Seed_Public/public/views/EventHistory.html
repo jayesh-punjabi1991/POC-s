@@ -1,0 +1,129 @@
+<px-card style="padding-top:10px;
+    padding-bottom: 0px;
+    padding-left: 15px;background: linear-gradient(#242326,#3b3b3f);
+        border-bottom: 1px solid #bbbbbb;
+    box-shadow: 1px 1px 1px #cec2c2;
+    color: white;">
+    <h4 style="margin-top:0px;margin-bottom:10px">Machine Number : {{machineNumFrGraph}}</h4>
+</px-card>
+  
+<div class="layout">
+                <div class="layout__item u-1/2">
+                    <px-card style="border:1px solid #a09191;padding:5px;height:442px;">
+                                <h1 style="text-align:center;margin-top:0px"> Event Tabulation </h1>
+    <!--        <div ng-show="data1=='!loading'"> -->
+                        <px-data-table  class="data-table" id="EventTable" table-data="{{EventArr}}" filterable="true"  enable-column-reorder="true" enable-column-resize="true" >
+                                      <!--   <px-data-table-column name="MachineNumber" label="Machine Number" sortable filterable>
+                                        </px-data-table-column>
+                                        <px-data-table-column name="EventName" label="Event" sortable filterable>
+                                        </px-data-table-column>
+                                        <px-data-table-column name="Count" label="Count" sortable filterable>
+                                        </px-data-table-column> -->
+                        </px-data-table>
+                    </px-card>
+                </div>
+                <div class="layout__item u-1/2" style="padding-left: 5px;">
+
+                    <px-card style="border:1px solid #a09191;padding:5px;height:440px;">                                                         
+                        <h1 style="text-align:center;margin-top:0px"> Event Map </h1> 
+                        <div ng-show="spinner=='running'" ng-hide="spinner=='!running'" style="padding-left:47%;margin-top:50px;padding-top:10%;">
+                        </div>
+                            <div ng-hide="spinner=='running'" ng-show="spinner=='!running'" class="pull-center" map-lazy-load="https://maps.google.com/maps/api/js" style="width:100%">
+                                <ng-map center="[{{AvgLat}},{{AvgLon}}]" zoom="14" style="height:385px">
+                                    <div ng-repeat="p in points">
+                                        <marker icon="{{customIcon}}"  position="{{p.latitude}}, {{p.longitude}}" title='Machine No:{{p.machineNumber}},Date Time:{{p.datetime}},Event:{{p.eventName}}'>
+                                        </marker>
+                                    </div>
+                                </ng-map>
+                            </div>
+
+                    <div ng-show="spinner=='running'" ng-hide="spinner=='!running'">
+
+                      <svg version="1.1" id="L4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 50 50" enable-background="new 0 0 0 0" xml:space="preserve" style="padding-left:37%;height:200px;">
+                        <circle fill="#000000" stroke="none" cx="7" cy="20" r="2">
+                          <animate
+                            attributeName="opacity"
+                            dur="1s"
+                            values="0;1;0"
+                            repeatCount="indefinite"
+                            begin="0.1"/>    
+                        </circle>
+                        <circle fill="#000000" stroke="none" cx="17" cy="20" r="2">
+                          <animate
+                            attributeName="opacity"
+                            dur="1s"
+                            values="0;1;0"
+                            repeatCount="indefinite" 
+                            begin="0.2"/>       
+                        </circle>
+                        <circle fill="#000000" stroke="none" cx="27" cy="20" r="2">
+                          <animate
+                            attributeName="opacity"
+                            dur="1s"
+                            values="0;1;0"
+                            repeatCount="indefinite" 
+                            begin="0.3"/>     
+                        </circle>
+                      </svg>
+              </div>
+
+
+                   </px-card>
+
+                </div>
+</div>
+<div class="layout">
+                <div class="layout__item u-1/2">
+                <px-card style="border:1px solid #a09191;padding-bottom:10px;padding-right:10px;padding-left:10px;height:420px;"> 
+                <div id="table1" style="height:240px;" >
+                  <h1 style="text-align:center;margin-top:0px"> Event History </h1>
+                    <px-data-table  class="data-table" id="mytable2" table-data="{{info2}}" filterable="true" enable-column-reorder="true" selectable="true" enable-column-resize="true" pagination="false">
+                        <px-data-table-column name="machineNumber" label="Machine Number" sortable filterable>
+                        </px-data-table-column>
+                        <px-data-table-column name="eventName" label="Event Name" sortable filterable>
+                        </px-data-table-column>
+                        <px-data-table-column name="eventDate" label="Date" sortable filterable>
+                        </px-data-table-column>
+                <div ng-show="MR=='!Selected'" ng-hide="MR=='Selected'">
+                   <p style="text-align:center;font-size:14px;"><b>Note:</b> Select Event in Events History Table to populate Chart</p>
+                </div>
+                    </px-data-table>
+                </div>
+
+
+                </px-card>
+                </div>
+                <div class="layout__item u-1/2" style="padding-left: 5px;">
+        <px-card style="border:1px solid #a09191;height:420px;padding-bottom: 10px;padding-right: 10px;padding-left: 10px;"> 
+                        
+                <div id="chart1" style="height:350px;">
+                <p style="text-align: center">{{responseStatusText}}</p>
+                </div> 
+                <div class="pull-right">
+                    <ul style="list-style-type: none;display: inline-flex;padding-top:0px;">
+                            <li>
+                                <px-dropdown  display-value="Set Parameter1"  style="display: inline-block">
+                                <px-dropdown-content id="firstparameter" class="px-dropdown-content" max-cont-character-width="10"
+                                extend-dropdown="true" extend-dropdown-by="15"  items='{{data2}}'>
+                                </px-dropdown-content>
+                                </px-dropdown>
+                            </li>
+                            <li class="pull-right" style="padding-left:15px;">
+
+                                <px-dropdown  display-value="Set Parameter2"  style="display: inline-block">
+                                <px-dropdown-content id="secondparameter" class="px-dropdown-content" max-cont-character-width="10"
+                                extend-dropdown="true" extend-dropdown-by="15"  items='{{data3}}'>
+                                </px-dropdown-content>
+                                </px-dropdown>
+                            </li>
+                            <li style="padding-left:15px;">
+                            <button class="btn cbtn" ng-click="trendAnalysisComparison()">Compare</button>
+                            </li>
+                    </ul>
+                </div>
+        </px-card>
+    </div>
+</div>
+
+

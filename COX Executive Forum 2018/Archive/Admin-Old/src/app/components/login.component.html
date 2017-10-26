@@ -1,0 +1,25 @@
+<topHeader></topHeader>
+<div class="loginBody">
+  <div class="container">
+  <div class="card">
+    <h1 class="title">Admin</h1>
+    <form id="loginForm">
+      <div class="input-container">
+        <input type="text" name="user" [(ngModel)]="user" required/>
+        <label>Username</label>
+        <div class="bar"></div>
+      </div>
+      <div class="input-container">
+        <input type="password" name="pwd" [(ngModel)]="pwd" required/>
+        <label>Password</label>
+        <div class="bar"></div>
+      </div>
+      <div class="button-container">
+        <button (click)="validate()"><span>Login</span></button>
+      </div>
+    </form>
+  </div>
+  </div>
+</div>
+<bottomfooter></bottomfooter>
+<div id="snackbar">Please Fill in the Credentials</div>

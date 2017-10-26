@@ -1,0 +1,2 @@
+cal_single = ics();
+cal_single.addEvent('2018 Cox Communications Executive Forum', `The Cox Executive Forum is held every two years for Cox's senior leaders to align on strategy, set priorities, and celebrate success. The forum also presents a special opportunity to make a charitable impact through the Silent and Live Auction, benefiting the Boys & Girls Clubs of America.`, 'Monarch Beach Resort, Dana Point, CA', '9/24/2018', '9/27/2018');

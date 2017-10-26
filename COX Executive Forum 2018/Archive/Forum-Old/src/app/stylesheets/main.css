@@ -1,0 +1,41 @@
+html,body{
+  height:100% !important;
+  margin:0 !important;
+  padding: 0 !important;
+  background-color: #0b0b09 !important;
+},
+@font-face {
+    font-family: AvenirBold;
+    src: url(../fonts/AvenirNextLTPro-Bold.otf);
+}
+@font-face {
+    font-family: AvenirBoldCn;
+    src: url(../fonts/AvenirNextLTPro-BoldCn.otf);
+}
+@font-face {
+    font-family: AvenirMedium;
+    src: url(../fonts/AvenirNextLTPro-Medium.otf);
+}
+@font-face {
+    font-family: AvenirMediumCn;
+    src: url(../fonts/AvenirNextLTPro-MediumCn.otf);
+}
+@font-face {
+    font-family: AvenirRegular;
+    src: url(../fonts/AvenirNextLTPro-Regular.otf);
+}
+.row{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+button{
+  margin:1% 0 0 0 !important;
+  font-family: AvenirBoldCn !important;
+  font-size:3rem !important;
+  height:45px !important;
+  width:120px !important;
+  background-color:#d1cf54 !important;
+  color:#004059 !important;
+  cursor:pointer !important;
+  border: none !important;
+}

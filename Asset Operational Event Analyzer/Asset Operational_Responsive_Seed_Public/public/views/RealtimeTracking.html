@@ -1,0 +1,83 @@
+<!--Table-->
+<div id="responsive">
+<px-card style="padding-top:10px;
+    padding-bottom: 0px;
+    padding-left: 15px;background: linear-gradient(#242326,#3b3b3f);
+        border-bottom: 1px solid #bbbbbb;
+    box-shadow: 1px 1px 1px #cec2c2;
+    color: white;">
+    <h4 style="margin-top:0px;margin-bottom:10px;font-size:1.2em">Realtime Locomotive Tracking</h4>
+</px-card>
+   <px-card style="background-color:#ffffff;border: 1px solid #b1b1bc;margin-left:0.3%;margin-right:0" >
+      <h1 style="text-align:center;">Running Locomotives</h1>
+      
+        <div class="w3-content" style="max-width:95%">
+          
+            <div ng-show="data=='!loading'">
+            <px-data-table  class="data-table" id="mytable" table-data="{{DataforTable}}" filterable="true" selectable="true" enable-column-reorder="true" enable-column-resize="true" >
+             <px-data-table-column name="locoId" label="Loco Id" sortable filterable>
+            </px-data-table-column>
+            <px-data-table-column name="fleetType" label="Fleet Type" sortable filterable>
+            </px-data-table-column>
+            <px-data-table-column name="inServiceDate" label="In Service Date" sortable filterable>
+            </px-data-table-column>
+            <px-data-table-column name="mwhr" label="Mega Watt Hours" sortable filterable>
+            </px-data-table-column>     
+            <px-data-table-column name="mile" label="Mile" sortable filterable>
+            </px-data-table-column>  
+            <px-data-table-column name="lastMaintenanceDate" label="Last Maintenance Date" sortable filterable>
+            </px-data-table-column>
+            <px-data-table-column name="lastohDate" label="Last Over Haul Date" sortable filterable>
+            </px-data-table-column>
+            <px-data-table-column name="age" label="Age" sortable filterable>
+            </px-data-table-column>               
+            </px-data-table>
+          </div>
+            <div ng-show="data=='loading'" ng-hide="data=='!loading'" margin>
+      
+            <svg version="1.1" id="L4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               viewBox="0 0 50 50" enable-background="new 0 0 0 0" xml:space="preserve" style="padding-left:35%;height:300px;">
+              <circle fill="#000000" stroke="none" cx="27" cy="20" r="2">
+                  <animate
+                    attributeName="opacity"
+                    dur="1s"
+                    values="0;1;0"
+                    repeatCount="indefinite"
+                    begin="0.1"/>    
+              </circle>
+              <circle fill="#000000" stroke="none" cx="37" cy="20" r="2">
+                 <animate
+                  attributeName="opacity"
+                  dur="1s"
+                  values="0;1;0"
+                  repeatCount="indefinite" 
+                  begin="0.2"/>       
+              </circle>
+              <circle fill="#000000" stroke="none" cx="47" cy="20" r="2">
+                <animate
+                  attributeName="opacity"
+                  dur="1s"
+                  values="0;1;0"
+                  repeatCount="indefinite" 
+                  begin="0.3"/>     
+                </circle>
+            </svg>
+                </div>
+                    </div>
+ </px-card>
+</div>
+
+<!--Map-->
+
+<px-card style="background-color:#ffffff;border: 1px solid #b1b1bc;margin-left:0.3%;margin-right:0">
+  <div>
+    <div class="w3-row " style="padding-left:2%;padding-bottom:2%;padding-right:1%;margin-top:15px;">
+
+    <div map-lazy-load="https://maps.google.com/maps/api/js">
+       <div id="map1" style=" height: 700px">
+    </div>
+
+    </div>
+    </div>
+  </div>
+</px-card>

@@ -1,0 +1,47 @@
+.dashboardDiv,.messageDiv{
+  background-color:#f5fbfb;
+  min-height:72vh;
+  max-height:72vh;
+  font-family: AvenirMedium;
+  padding: 20px 20px 20px 20px;
+}
+#sponsorsTable > thead{
+  font-family:AvenirMedium;
+  font-size:1.75rem;
+  /*border:1px solid black;*/
+}
+#sponsorsTable > thead >th{
+  /*border-right: 1px solid black;*/
+  padding:3px 0px 3px 5px;
+  width:250px !important;
+}
+.rows{
+  font-family: AvenirRegular;
+  font-size:1.5rem;
+  border: 1px solid black;
+}
+#sponsorsTable > tbody > tr > td{
+  border:1px solid !important;
+}
+.panel-heading{
+  padding:10px 20px !important;
+}
+.table{
+  margin-bottom: 1% !important;
+  margin-left: 1% !important;
+}
+#accordianTable{
+  width:100%;
+}
+#accordianTable > tbody > tr > td{
+  width:250px !important
+}
+.tableHeading{
+	margin-left : 5%;
+	text-decoration: underline;
+}
+@media only screen and (max-width: 414px) {
+	.mobileView{
+		display : none;
+	}
+}

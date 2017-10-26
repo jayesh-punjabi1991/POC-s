@@ -1,0 +1,407 @@
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+          <link rel="stylesheet" type="text/css" href="Submenu/css/responsivemain.css">
+    <link rel="stylesheet" type="text/css" href="Submenu/css/cmx.css">
+
+    <style type="text/css">
+	
+	
+	 @media screen  and (min-device-width: 320px) and (max-device-width: 768px) {
+            button.dropdown-toggle.ng-binding.btn.btn-default {
+			  width: 450px;
+              padding-right: 191px;
+			  font-size: 1.5vh;
+           }
+           ul.dropdown-menu.dropdown-menu-form {
+		     width: 450px;
+             height: 150px;               
+           }
+			.dropdown-menu {
+			  min-width:450px; 
+			 min-height: 150px;
+			  
+			 } 
+		 text.highcharts-credits {
+            display: none;
+         }
+
+         .multiselect-parent .dropdown-toggle span.caret{
+             position: absolute;
+             right: 8px;
+             top: 15px;
+          }
+		  .float--left.ng-isolate-scope {
+			margin-bottom: 14px;
+		  }
+		  .quartertxt {
+			font-size: 1.5vh;
+			margin-bottom: 4px;
+          }
+		  .dropdown-menu>li>a {
+			font-size: 2vh;
+          }
+    
+      }
+	  
+        @media screen  and (min-device-width: 769px) {
+        button.dropdown-toggle.ng-binding.btn.btn-default {
+            width: 131px;    
+            padding-right: 107px;            			
+         }
+         .multiselect-parent .dropdown-toggle {
+  
+          }
+         ul.dropdown-menu.dropdown-menu-form {
+          width: 131px;
+          height: 150px;          
+         }
+         text.highcharts-credits {
+            display: none;
+         }    
+         .multiselect-parent .dropdown-toggle span.caret{
+    
+             position: absolute;
+             right: 8px;
+             top: 15px;
+          }    
+         .dropdown-menu {
+			 min-width:131px; 
+			 min-height: 150px;
+		 } 
+         .quartertxt{
+		  font-size: 2vh;
+		  margin-bottom: 4px;
+		}		 
+     
+     }
+     
+      
+
+		#highcharts-9kb8sb9-2{
+		  width:1100px !important;
+		}
+		
+		.panel-collapse-clickable {
+		  cursor: pointer;  
+		}
+		.activepnl{
+		  background-color: dodgerblue;
+		}
+         
+    </style> 
+	
+                                    
+ 
+<div class="row" style="padding-top: 2%">
+    <div class="col-md-6 col-xs-12 col-sm-12">
+        <div class="panel panel-primary">
+            <div class="panel-heading" id="text">
+                <div class="row">
+                    <div class="col-md-8 col-xs-12 col-sm-12">
+                        <span class="pull-left"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp; Alert Reasoning</span>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+
+                <div class="row hidden-xs hidden-sm">
+
+                    <div class="col-md-3 col-sm-3 col-xs-3" style="background-color: transparent;">
+
+                        <div class="quartertxt">Severity</div>
+                        <div class="float--left" ng-dropdown-multiselect="severityalmodel" options="severityaldata" selected-model="severityalmodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: severityalMultiSelData, onItemDeselect: severityalMultiSelData, onSelectAll: severityalMultiSelData, onDeselectAll: severityalMultiSelData}"></div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3" style="background-color: transparent;">
+
+                        <div class="quartertxt">Device</div>
+                        <div class="float--left" ng-dropdown-multiselect="devicealmodel" options="devicealdata" selected-model="devicealmodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: devicealMultiSelData, onItemDeselect: devicealMultiSelData, onSelectAll: devicealMultiSelData, onDeselectAll: devicealMultiSelData}">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3" style="background-color: transparent;">
+
+                        <div class="quartertxt">Type</div>
+                        <div class="float--left" ng-dropdown-multiselect="typesalmodel" options="typesaldata" selected-model="typesalmodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: typesalMultiSelData, onItemDeselect: typesalMultiSelData, onSelectAll: typesalMultiSelData, onDeselectAll: typesalMultiSelData}"></div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3" style="background-color: transparent;">
+                        <div class="quartertxt">Ext. Type</div>
+                        <div class="float--left" ng-dropdown-multiselect="extypesalmodel" options="extypesaldata" selected-model="extypesalmodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: extypesalMultiSelData, onItemDeselect: extypesalMultiSelData, onSelectAll: extypesalMultiSelData, onDeselectAll: extypesalMultiSelData}"></div>
+                    </div>
+
+
+
+
+
+                </div>
+
+                <div class="row hidden-xs hidden-sm">
+
+                    <div class="col-md-3 col-sm-3 col-xs-3" style="background-color: transparent;">
+                        <div class="quartertxt">Status</div>
+                        <div class="float--left" ng-dropdown-multiselect="statusalmodel" options="statusaldata" selected-model="statusalmodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{onItemSelect: statusalMultiSelData, onItemDeselect: statusalMultiSelData, onSelectAll: statusalMultiSelData, onDeselectAll: statusalMultiSelData}"></div>
+                    </div>
+
+                </div>
+
+                <div  class="panel panel-default hidden-lg">
+                    <div id="filterpanelh" class="panel-heading">
+                      <h4 class="panel-title">
+					    <div  class="row">
+                            <div class="col-sm-6 col-xs-12" style="background-color: transparent;">
+							 <div class="quartertxt">Severity</div>
+                             <div class="float--left" ng-dropdown-multiselect="severityalmodel" options="severityaldata" selected-model="severityalmodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: severityalMultiSelData, onItemDeselect: severityalMultiSelData, onSelectAll: severityalMultiSelData, onDeselectAll: severityalMultiSelData}"></div>
+                            </div>
+                            <div class="col-sm-6 col-xs-12" style="background-color: transparent;">
+                             <div class="quartertxt">Device</div>
+                              <div class="float--left" ng-dropdown-multiselect="devicealmodel" options="devicealdata" selected-model="devicealmodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: devicealMultiSelData, onItemDeselect: devicealMultiSelData, onSelectAll: devicealMultiSelData, onDeselectAll: devicealMultiSelData}"></div>
+                            </div>	
+                        </div>
+						
+                     </h4>
+                    </div>
+                    <div id="filterPanel" class="panel-collapse panel-collapse collapse">
+                        <div class="panel-body">
+						 <div  class="row">
+							 <div class="col-sm-6 col-xs-12" style="background-color: transparent;">
+								<div class="quartertxt">Type</div>
+								<div class="float--left" ng-dropdown-multiselect="typesalmodel" options="typesaldata" selected-model="typesalmodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: typesalMultiSelData, onItemDeselect: typesalMultiSelData, onSelectAll: typesalMultiSelData, onDeselectAll: typesalMultiSelData}"></div>
+							</div>
+							<div class="col-sm-6 col-xs-12" style="background-color: transparent;">
+								<div class="quartertxt">Ext. Type</div>
+								<div class="float--left" ng-dropdown-multiselect="extypesalmodel" options="extypesaldata" selected-model="extypesalmodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: extypesalMultiSelData, onItemDeselect: extypesalMultiSelData, onSelectAll: extypesalMultiSelData, onDeselectAll: extypesalMultiSelData}"></div>
+							</div>
+							
+						 </div>
+						<br>						 
+                         <div class="row">
+							 <div class="col-sm-6 col-xs-12" style="background-color: transparent;">
+									<div class="quartertxt">Status</div>
+									<div class="float--left" ng-dropdown-multiselect="statusalmodel" options="statusaldata" selected-model="statusalmodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{onItemSelect: statusalMultiSelData, onItemDeselect: statusalMultiSelData, onSelectAll: statusalMultiSelData, onDeselectAll: statusalMultiSelData}"></div>
+							  </div>
+                         </div>						 
+                        </div>
+                    </div>
+					<div class="panel-collapse-clickable" data-toggle="collapse" data-parent="#accordion" ng-click="callme()"  data-target="#filterPanel">
+							<i class="glyphicon glyphicon-chevron-down"></i>
+					</div>
+                </div>
+                <div class="row">
+                    <loading style="text-align:center;"></loading>
+                    <div id="columnchart" style="height: 270px; width:550px" ng-hide="loading"> </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="col-md-6 col-xs-12 col-sm-12">
+        <div class="panel panel-primary">
+            <div class="panel-heading" id="text">
+                <div class="row">
+                    <div class="col-md-8 col-xs-12 col-sm-12">
+                        <span class="pull-left"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp; Alert Classification</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="panel-body">
+
+                <div class="row hidden-xs hidden-sm">
+
+                    <div class="col-md-3 col-sm-3 col-xs-3" style="background-color: transparent;">
+                        <div class="quartertxt">Status</div>
+                        <div class="float--left" ng-dropdown-multiselect="statusmodel" options="statusdata" selected-model="statusmodel" translation-texts="{buttonDefaultText: 'All'}" events="{onItemSelect: statusMultiSelData, onItemDeselect: statusMultiDeselData, onSelectAll: statusMultiSelData, onDeselectAll: statusMultiDeselData}"></div>
+
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3" style="background-color: transparent;">
+                        <div class="quartertxt">Device</div>
+                        <div class="float--left" ng-dropdown-multiselect="devicemodel" options="devicedata" selected-model="devicemodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: deviceMultiSelData, onItemDeselect: deviceMultiSelData, onSelectAll: deviceMultiSelData, onDeselectAll: deviceMultiDeselData}">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-3" style="background-color: transparent;">
+                        <div class="quartertxt">Severity</div>
+                        <div class="float--left" ng-dropdown-multiselect="severitymodel" options="severitydata" selected-model="severitymodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: severityMultiSelData, onItemDeselect: severityMultiSelData, onSelectAll: severityMultiSelData, onDeselectAll: severityMultiSelData}"></div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3" style="background-color: transparent;">
+                        <div class="quartertxt">Type</div>
+                        <div class="float--left" ng-dropdown-multiselect="typesmodel" options="typesdata" selected-model="typesmodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: typesMultiSelData, onItemDeselect: typesMultiSelData, onSelectAll: typesMultiSelData, onDeselectAll: typesMultiDeselData}"></div>
+                    </div>
+
+                </div>
+				
+				<div  class="panel panel-default hidden-lg">
+                    <div id="filterpanelhc" class="panel-heading">
+                      <h4 class="panel-title">
+					    <div  class="row">
+						 <div class="col-sm-6 col-xs-12" style="background-color: transparent;">
+							<div class="quartertxt">Severity</div>
+							<div class="float--left" ng-dropdown-multiselect="severitymodel" options="severitydata" selected-model="severitymodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: severityMultiSelData, onItemDeselect: severityMultiSelData, onSelectAll: severityMultiSelData, onDeselectAll: severityMultiSelData}"></div>
+						</div>
+						<div class="col-sm-6 col-xs-12" style="background-color: transparent;">
+							<div class="quartertxt">Type</div>
+							<div class="float--left" ng-dropdown-multiselect="typesmodel" options="typesdata" selected-model="typesmodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: typesMultiSelData, onItemDeselect: typesMultiSelData, onSelectAll: typesMultiSelData, onDeselectAll: typesMultiDeselData}"></div>
+						</div>
+                        </div>						
+                     </h4>
+                    </div>
+                    <div id="filterPanelc" class="panel-collapse panel-collapse collapse">
+                        <div class="panel-body">
+						 <div  class="row">
+							 <div class="col-sm-6 col-xs-12" style="background-color: transparent;">
+								<div class="quartertxt">Status</div>
+								<div class="float--left" ng-dropdown-multiselect="statusmodel" options="statusdata" selected-model="statusmodel" translation-texts="{buttonDefaultText: 'All'}" events="{onItemSelect: statusMultiSelData, onItemDeselect: statusMultiDeselData, onSelectAll: statusMultiSelData, onDeselectAll: statusMultiDeselData}"></div>
+							  </div>
+							<div class="col-sm-6 col-xs-12" style="background-color: transparent;">
+								<div class="quartertxt">Device</div>
+								<div class="float--left" ng-dropdown-multiselect="devicemodel" options="devicedata" selected-model="devicemodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: deviceMultiSelData, onItemDeselect: deviceMultiSelData, onSelectAll: deviceMultiSelData, onDeselectAll: deviceMultiDeselData}">
+								</div>
+							</div>						
+							
+						 </div>											 
+                        </div>
+                    </div>
+					<div class="panel-collapse-clickable" data-toggle="collapse" data-parent="#accordion" ng-click="classify()"  data-target="#filterPanelc">
+							<i class="glyphicon glyphicon-chevron-down"></i>
+					</div>
+                </div>
+				
+                <div class="row">
+				  <loading style="text-align:center;"></loading>
+                  <div id="piechart" style="height: 316px;width:550px" ng-hide="loading"> </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-12 col-xs-12 col-sm-12">
+        <div class="panel panel-primary">
+            <div class="panel-heading" id="text">
+                <div class="row">
+                    <div class="col-md-8 col-xs-12 col-sm-12">
+                        <span class="pull-left"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;Cam Health Status</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="panel-body">
+
+                <div class="row hidden-xs hidden-sm">
+
+                    <div class="col-md-2 col-sm-2 col-xs-3" style="background-color: transparent;">
+
+                        <div class="quartertxt">Severity</div>
+                        <div class="float--left" ng-dropdown-multiselect="severityhmodel" options="severityhdata" selected-model="severityhmodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: severityhMultiSelData, onItemDeselect: severityhMultiSelData, onSelectAll: severityhMultiSelData, onDeselectAll: severityhMultiSelData}"></div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-3" style="background-color: transparent;">
+
+                        <div class="quartertxt">Device</div>
+                        <div class="float--left" ng-dropdown-multiselect="devicehmodel" options="devicehdata" selected-model="devicehmodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: devicehMultiSelData, onItemDeselect: devicehMultiSelData, onSelectAll: devicehMultiSelData, onDeselectAll: devicehMultiSelData}">
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-3" style="background-color: transparent;">
+                        <div class="quartertxt">Status</div>
+                        <div class="float--left" ng-dropdown-multiselect="statushmodel" options="statushdata" selected-model="statushmodel" translation-texts="{buttonDefaultText: 'All'}" events="{onItemSelect: statushMultiSelData, onItemDeselect: statushMultiSelData, onSelectAll: statushMultiSelData, onDeselectAll: statushMultiSelData}"></div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-3" style="background-color: transparent;">
+
+                        <div class="quartertxt">Type</div>
+                        <div class="float--left" ng-dropdown-multiselect="typeshmodel" options="typeshdata" selected-model="typeshmodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: typeshMultiSelData, onItemDeselect: typeshMultiSelData, onSelectAll: typeshMultiSelData, onDeselectAll: typeshMultiSelData}"></div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-3" style="background-color: transparent;">
+                        <div class="quartertxt">False alarm</div>
+                        <div class="float--left" ng-dropdown-multiselect="falmodel" options="falhdata" selected-model="falmodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: falMultiSelData, onItemDeselect: falMultiSelData, onSelectAll: falMultiSelData, onDeselectAll: falMultiSelData}"></div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-3" style="background-color: transparent;">
+                        <div class="quartertxt">Acknowledged by</div>
+                        <div class="float--left" ng-dropdown-multiselect="ackbymodel" options="ackbyhdata" selected-model="ackbymodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: ackbyMultiSelData, onItemDeselect: ackbyMultiSelData, onSelectAll: ackbyMultiSelData, onDeselectAll: ackbyMultiSelData}"></div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-3" style="background-color: transparent;">
+                        <div class="quartertxt">Closed</div>
+                        <div class="float--left" ng-dropdown-multiselect="closedmodel" options="closedhdata" selected-model="closedmodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: closedMultiSelData, onItemDeselect: closedMultiSelData, onSelectAll: closedMultiSelData, onDeselectAll: closedMultiSelData}"></div>
+                    </div>
+
+                </div>
+				
+				<div  class="panel panel-default hidden-lg">
+                    <div id="filterpanelhh" class="panel-heading">
+                      <h4 class="panel-title">
+					    <div  class="row">
+						 <div class="col-sm-6 col-xs-12" style="background-color: transparent;">
+							<div class="quartertxt">Severity</div>
+							<div class="float--left" ng-dropdown-multiselect="severityhmodel" options="severityhdata" selected-model="severityhmodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: severityhMultiSelData, onItemDeselect: severityhMultiSelData, onSelectAll: severityhMultiSelData, onDeselectAll: severityhMultiSelData}"></div>
+                         </div>
+						<div class="col-sm-6 col-xs-12" style="background-color: transparent;">
+							<div class="quartertxt">Type</div>
+                            <div class="float--left" ng-dropdown-multiselect="typeshmodel" options="typeshdata" selected-model="typeshmodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: typeshMultiSelData, onItemDeselect: typeshMultiSelData, onSelectAll: typeshMultiSelData, onDeselectAll: typeshMultiSelData}"></div>
+                	     </div>
+                        </div>						
+                     </h4>
+                    </div>
+                    <div id="filterPanelh" class="panel-collapse panel-collapse collapse">
+                        <div class="panel-body">
+						 <div  class="row">
+							<div class="col-sm-6 col-xs-12" style="background-color: transparent;">
+							  <div class="quartertxt">Device</div>
+							  <div class="float--left" ng-dropdown-multiselect="devicehmodel" options="devicehdata" selected-model="devicehmodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: devicehMultiSelData, onItemDeselect: devicehMultiSelData, onSelectAll: devicehMultiSelData, onDeselectAll: devicehMultiSelData}"></div>
+							</div>
+							<div class="col-sm-6 col-xs-12" style="background-color: transparent;">
+                               <div class="quartertxt">Status</div>
+                               <div class="float--left" ng-dropdown-multiselect="statushmodel" options="statushdata" selected-model="statushmodel" translation-texts="{buttonDefaultText: 'All'}" events="{onItemSelect: statushMultiSelData, onItemDeselect: statushMultiSelData, onSelectAll: statushMultiSelData, onDeselectAll: statushMultiSelData}"></div>               							
+							</div>
+						 </div>	
+						 <br>
+						 <div  class="row">
+							<div class="col-sm-6 col-xs-12" style="background-color: transparent;">
+							    <div class="quartertxt">False alarm</div>
+                                <div class="float--left" ng-dropdown-multiselect="falmodel" options="falhdata" selected-model="falmodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: falMultiSelData, onItemDeselect: falMultiSelData, onSelectAll: falMultiSelData, onDeselectAll: falMultiSelData}"></div>
+                 
+							 </div>
+							<div class="col-sm-6 col-xs-12" style="background-color: transparent;">
+							    <div class="quartertxt">Acknowledged by</div>
+                                <div class="float--left" ng-dropdown-multiselect="ackbymodel" options="ackbyhdata" selected-model="ackbymodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: ackbyMultiSelData, onItemDeselect: ackbyMultiSelData, onSelectAll: ackbyMultiSelData, onDeselectAll: ackbyMultiSelData}"></div>
+                
+                             </div>
+						 </div>	
+						 <br>
+						 <div  class="row">
+							<div class="col-sm-6 col-xs-12" style="background-color: transparent;">
+							   <div class="quartertxt">Closed</div>
+                               <div class="float--left" ng-dropdown-multiselect="closedmodel" options="closedhdata" selected-model="closedmodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: closedMultiSelData, onItemDeselect: closedMultiSelData, onSelectAll: closedMultiSelData, onDeselectAll: closedMultiSelData}"></div>
+               
+							
+							 </div>							
+						 </div>
+						 
+ 						 
+                        </div>
+                    </div>
+					<div class="panel-collapse-clickable" data-toggle="collapse" data-parent="#accordion" ng-click="healthstatus()"  data-target="#filterPanelh">
+							<i class="glyphicon glyphicon-chevron-down"></i>
+					</div>
+                </div>
+				
+				
+				
+				<div class="row">
+					<loading style="text-align:center;"></loading>
+					<div id="barchart" style="height: 400px;width:1200px" ng-hide="loading"> </div>
+				</div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+
+</div>
+      

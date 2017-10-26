@@ -1,0 +1,93 @@
+<link rel="stylesheet" type="text/css" href="../css/BusiestDay.css">
+<style>
+button.dropdown-toggle.ng-binding.btn.btn-default {
+            width: 168px;   
+            padding-right: 123px; 
+            background-color: #cbced8;      
+         }
+         
+      .float--left.ng-isolate-scope {
+      margin-left: 15px;
+      margin-right: 20px;
+      margin-bottom: 15px;
+          }
+         ul.dropdown-menu.dropdown-menu-form {
+          width: 168px;
+          height: 140px; 
+          background-color: #cbced8;      
+         }
+         text.highcharts-credits {
+            display: none;
+         }    
+         .multiselect-parent .dropdown-toggle span.caret{    
+             position: absolute;
+             right: 8px;
+             top: 15px;
+          }    
+         .dropdown-menu {
+       min-width:168px; 
+       min-height: 140px;
+     } 
+         .quartertxt{     
+      margin-bottom: 4px;
+       color: #65697b;
+       padding-left: 18px;
+    }           
+          option.ng-binding.ng-scope {      
+      width: 160px;
+    } 
+</style>
+<div class="container-fluid" id="Maindiv" style="padding-top: 2%">         
+                <div class="row" style="margin-left: -2px !important">
+                    <div class="col-md-6 col-xs-12 col-sm-12">
+                        <div class="panel panel-primary" style="background-color:#2d3345;">
+                            <div class="panel-heading" style="background-color:#2d3345;" >
+                                    <div>
+                                    <p id="textforChartHeading">
+                                    CAM Operational Status Dashboard
+                                    </p>                                   
+                                    </div>
+                            </div>
+                            <div class="panel-body" style="height: 500px;">
+                               <div class="col-sm-6">
+                                   <div class="section group" style="padding: 0 5px">
+                                       <div class="col " style="background-color: transparent;margin-left:10px;">
+                                       <div style="margin-bottom: 3%;color:#65697b;padding-left: 18px;">Location</div>
+                                          <div class="float--left" ng-dropdown-multiselect="CamOperationalData"  selected-model="CamOperationalModel" options="CamOperationalData"  extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}"
+                                          events="{ onItemSelect: CamOperationalDataFirstMultiSelect,onItemDeselect: CamOperationalDataFirstMultiSelect,onSelectAll: CamOperationalDataFirstMultiSelect, onDeselectAll: CamOperationalDataFirstMultiSelect}" ></div>
+                                          </div> 
+                                          </div>
+                                  </div>
+                                    <div class="col-sm-6">
+                                    <div class="section group" style="padding: 0 5px">
+                                       <div class="col " style="background-color: transparent;margin-left:10px;">
+                                       <div style="margin-bottom: 3%;color:#65697b;padding-left: 18px;">Operational Status</div>
+                                          <div class="float--left" ng-dropdown-multiselect=""  selected-model="OperationalStatusModel" options="OperationalStatusdata"  extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: OperationalStatusModelMultiSelect,onItemDeselect: OperationalStatusModelMultiSelect,onSelectAll: OperationalStatusModelMultiSelect, onDeselectAll: OperationalStatusModelMultiSelect}" ></div>
+                                          </div> 
+                                          </div>
+                                  </div>
+
+                             <div id="container" style="height: 400px;width:500px;"> 
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12 col-sm-12">
+                        <div class="panel panel-primary" style="background-color:#2d3345;">
+                            <div class="panel-heading" style="background-color:#2d3345;" >
+                                    <div>
+                                    <p id="textforChartHeading">
+                                    Cam Activity Summary
+                                    </p>
+                                    
+                                    </div>
+                            </div>
+                            <div class="panel-body" style="height: 500px;">
+                                
+                             <div id="container1" style="height: 400px;width:500px;"> 
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>

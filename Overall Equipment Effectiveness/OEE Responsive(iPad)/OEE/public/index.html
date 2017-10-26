@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>OEE</title>
+    <base href="/">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+    <script type='application/javascript' src='bower_components/px/dist/px.min.js'></script>
+
+    <!-- Just needed for IE -->
+    <script src="bower_components/es6-promise/es6-promise.min.js"></script>
+
+    <!-- Requires Webcomponents.js polyfill is provided by the page for browsers that don't support html imports -->
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+
+    <script src="js/materialize.js"></script>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <link rel="import" href="polymer-loader.vulcanized.html">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./stylesheet/main.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css" media="screen,projection" />
+
+    <!--<link type="text/css" rel="stylesheet" href="bower_components/angular-bootstrap-grid-tree/src/treeGrid.css">-->
+<!--     <link type="text/css" rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"> -->
+</head>
+
+<body unresolved data-ng-controller="MainCtrl">
+    <header class="fixed-header">
+        <ul>
+            <li>
+                <span href="#home" style="padding: 0px;">
+                        <img src="./images/GE-logo.png" alt="Not Found">
+                    </span>
+            </li>
+            <li><span style="font-size: 18px;">Overall Equipment Effectiveness</span></li>
+            <li class="right hide-on-med-and-down"><span style="font-size: 14px; padding:13px;">Powered by Predix</span></li>
+        </ul>
+    </header>
+    <div class="page-content">
+        <!-- Show Page Loading Spinner-->
+        <px-spinner size="70" class="page-loading"></px-spinner>
+        <div ui-view id="ui-view"></div>
+    </div>
+    <footer>
+        <ul>
+            <li><span class="grey-text">Copyright © 2017 All rights reserved</span></li>
+            <li class="right hide-on-med-and-down"><span><a class="grey-text" href="https://www.ge.com/privacy" target="_blank">Privacy</a></span></li>
+            <li class="right hide-on-med-and-down"><span><a class="grey-text" href="https://www.ge.com/terms" target="_blank">Terms of Use</a></span></li>
+        </ul>
+    </footer>
+    <!-- Page return to top-->
+    <span return-to-top></span>
+    <google-analytics code="UA-72329845-1"></google-analytics>
+    <!-- Google Maps -->
+    <!-- <script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCtBI6mtWdJNgy7p4ZXz9Mbzkawtnrh1Qc&language=en"></script> -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtBI6mtWdJNgy7p4ZXz9Mbzkawtnrh1Qc&language=en"></script>
+
+</body>
+<script>
+    // IE11 workaround: We can't rely on IE's load order for scripts that are loaded outside of require.js (might
+    //  be an issue with the web components polyfill), so we wait for the HTMLImportsLoaded event to ensure our
+    //  web components' scripts have loaded.
+    window.addEventListener('HTMLImportsLoaded', function(e) {
+        var elScript = document.createElement('script');
+        elScript.setAttribute('src', 'bower_components/requirejs/require.js');
+        elScript.setAttribute('data-main', 'scripts/bootstrapper.js');
+        document.getElementsByTagName('body')[0].appendChild(elScript);
+    });
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-12846745-20']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' === document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+    <script type="text/javascript" src="js/angularjs-dropdown-multiselect.js"</script>
+
+
+</html>

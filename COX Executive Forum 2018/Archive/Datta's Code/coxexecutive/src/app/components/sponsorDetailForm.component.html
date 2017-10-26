@@ -1,0 +1,99 @@
+<topHeader></topHeader>
+<div id="sponsorDetails" class="whiteBackground">
+  <div id="sponsorDetailsHead" class="formLabel">
+    WE ARE THRILLED YOU CAN JOIN US. THANK YOU FOR YOUR COMMITMENT.
+  </div>
+  <div id="sponsorDetailsSubHead" class="formLabel">
+    Please complete the following information.
+    <br>
+    An invoice will be immediately available for your convenience.
+  </div>
+  <div id="sponsorDetailsSubHead">
+    <span style="color : #A0A0A0;font-size : 15px">(All fields are required)</span>
+  </div>
+  <div id="sponsorDetailForm">
+    <form>
+    <div class="row">
+      <div class="col-md-6 paddingBottom">
+        <label class="control-label formLabel leftAlign"><i class="textOverflow" aria-hidden="true"></i>Company Name</label>
+        <input type="text" name="companyName" [(ngModel)]="companyName" class="form-control" required value="companyName">
+      </div>
+      <div class="col-md-6  formAlignment paddingBottom">
+        <label class="control-label formLabel leftAlign"><i class="textOverflow" aria-hidden="true"></i>Your Name</label>
+       <input type="text" class="form-control" name="sponorsName" [(ngModel)]="sponsorsName" value="sponsorsName">
+      </div>
+    </div>
+    <div class="row" style="padding-top:1%">
+      <div class="col-md-6 paddingBottom">
+        <label class="control-label formLabel leftAlign"><i class="textOverflow" aria-hidden="true"></i>Company Address</label>
+        <input type="text" class="form-control" name="companyAdd" [(ngModel)]="companyAdd" value="companyAdd">
+      </div>
+      <div class="col-md-6  formAlignment paddingBottom">
+        <label class="control-label formLabel leftAlign"><i class="textOverflow" aria-hidden="true"></i>Title</label>
+        <input type="text" class="form-control" name="tit" [(ngModel)]="tit" value="tit">
+      </div>
+    </div>
+    <div class="row" style="padding-top:1%">
+      <div class="col-md-6 paddingBottom">
+        <label class="control-label formLabel leftAlign"><i class="textOverflow" aria-hidden="true"></i>City, State, Zip</label>
+        <input type="text" class="form-control" name="cSZ" [(ngModel)]="cSZ" value="cSZ">
+      </div>
+      <div class="col-md-6  formAlignment paddingBottom">
+        <label class="control-label formLabel leftAlign"><i class="textOverflow" aria-hidden="true"></i>Email</label>
+        <input type="email" name="emailAdd" [(ngModel)]="emailAdd" class="form-control" value=""value="emailAdd" placeholder="eg:abc@xyz.com">
+      </div>
+    </div>
+    <div class="row" style="padding-top:1%">
+      <div class="col-md-6 paddingBottom">
+        <label class="control-label formLabel leftAlign"><i class="textOverflow" aria-hidden="true"></i>No. Of Attendees</label>
+        <input type="text" required class="form-control" min="1" max="3" maxlength="1" pattern="\d{1}" name="noOfAttend" [(ngModel)]="noOfAttend" value="noOfAttend">
+      </div>
+      <div class="col-md-6  formAlignment paddingBottom">
+        <label class="control-label formLabel leftAlign"><i class="textOverflow" aria-hidden="true"></i>Phone</label>
+        <input type="number" class="form-control" name="phoneNo" [(ngModel)]="phoneNo" value="phoneNo">
+      </div>
+    </div>
+    <div class="row" style="padding-top:1%">
+      <div class="col-md-6 paddingBottom">
+        <label class="control-label formLabel leftAlign"><i class="textOverflow" aria-hidden="true"></i>Invoice Contact</label>
+        <input type="text" class="form-control" name="invoiceCont" [(ngModel)]="invoiceCont" value="invoiceCont">
+      </div>
+      <div class="col-md-6  formAlignment paddingBottom">
+        <label class="control-label formLabel leftAlign"><i class="textOverflow" aria-hidden="true"></i>Logo/Signage Contact</label>
+        <input type="text" class="form-control" name="signageCont" [(ngModel)]="signageCont" value="signageCont">
+      </div>
+    </div>
+    <div class="row" style="padding-top:1%">
+      <div class="col-md-6 paddingBottom">
+        <label class="control-label formLabel leftAlign"><i class="textOverflow" aria-hidden="true"></i>Invoice Contact Email</label>
+        <input type="email" class="form-control" name="invoiceContEmail" [(ngModel)]="invoiceContEmail" value="invoiceContEmail" placeholder="eg:abc@xyz.com">
+      </div>
+      <div class="col-md-6  formAlignment paddingBottom">
+        <label class="control-label formLabel leftAlign textOverflow"><i class="" aria-hidden="true"></i>Logo/Signage Contact Email</label>
+        <input type="email" class="form-control" name="signageCont" [(ngModel)]="signageContEmail" value="signageContEmail" placeholder="eg:abc@xyz.com">
+      </div>
+    </div>
+    <div class="row" style="padding-top:1%">
+      <div class="col-md-6 paddingBottom">
+        <label class="control-label formLabel leftAlign"><i class="textOverflow" aria-hidden="true"></i>Invoice Contact Phone</label>
+        <input type="number" class="form-control" name="invoiceContPhone" [(ngModel)]="invoiceContPhone" value="invoiceContPhone">
+      </div>
+      <div class="col-md-6  formAlignment paddingBottom">
+        <label class="control-label formLabel leftAlign"><i class="textOverflow" aria-hidden="true"></i>Logo/Signage Contact Phone</label>
+        <input type="number" class="form-control" name="signageContPhone" [(ngModel)]="signageContPhone" value="signageContPhone">
+      </div>
+    </div>
+    <div class="row" style="padding-top:1%">
+      <div class="col-md-6 paddingBottom">
+        <label class="control-label formLabel leftAlign"><i class="textOverflow" aria-hidden="true"></i>Your Primary Cox Contact</label>
+        <input type="text" class="form-control" name="coxCont" [(ngModel)]="coxCont" value="coxCont">
+      </div>
+      <div class="col-md-6 formAlignment paddingBottom">
+        <a href="javascript:void(0)"><button type="submit" class="confirmBtn formLabel" id="confirmLink" href="javascript:void(0)" (click)="Confirm()">CONFIRM</button></a>
+      </div>
+    </div>
+  </form>
+  </div>
+</div>
+<bottomfooter></bottomfooter>
+<div id="snackbar">Please Fill the Mandatory Fields</div>

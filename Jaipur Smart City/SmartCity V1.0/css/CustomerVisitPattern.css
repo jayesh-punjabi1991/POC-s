@@ -1,0 +1,237 @@
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto-Light;
+    src: url(../fonts/Roboto-Light.ttf);
+}
+#Maindiv{
+    font-family: Roboto-Regular;
+}
+#textfordropdown{
+    color:#65697b;
+}
+#textforChartHeading{
+    color:#d5d6da;
+    font-size:18px;
+    margin-top: 1%;
+}
+.widthofselect{
+    min-width: 100% !important
+}
+#styleofdate{
+    color:#707384;
+    font-size: 18px;
+    margin-left: 33%;
+    vertical-align: -webkit-baseline-middle;
+}
+#textforChartSubHeading{
+    color:#707384;
+    font-size:15px;
+    margin-top: -8%;
+}
+.progress-bar-success {
+    background-color: #8e4fc8 !important;
+}
+.progress {
+    border-radius: 10px;
+    height: 12px !important;
+}
+.progress-bar-primary{
+    background-color:#2573c5 !important;
+}
+#LeftTextofProgressBar{
+    color:#8e4fc8;
+    font-size: 13px;
+}
+#RightTextofProgressBar{
+    color:#2573c5;
+    font-size: 13px;
+}
+#NumberBeneathProgressbar{
+    font-size: 15px;
+    font-weight: bolder;
+}
+text.highcharts-credits {
+    display: none;
+  
+
+}
+path.highcharts-data-label-connector {
+    display: none;
+}
+  div#svgcontainer{
+      position: absolute;
+    top: 11em;
+    left: 49em;
+   
+   }
+    div#textcontainer{
+      position: absolute;
+    top: 4%;
+    left: 44.3em;
+   
+   }
+/* #### iPhone 4+ Portrait or Landscape #### */
+@media screen and (min-device-width: 320px) and (max-width :400px){
+  /* some CSS here */
+   div#svgcontainer{
+      position: absolute;
+    top: 40%;
+    left: 44.5em;
+   
+   }
+   div#textcontainer{
+      position: absolute;
+    top: 0%;
+    left: 39.3em;
+   
+   }
+}
+
+
+/* #### iPhone 5 Portrait or Landscape #### */
+@media (device-height: 568px) and (device-width: 320px){
+  /* some CSS here */
+  div#svgcontainer{
+      position: absolute;
+    top: 40%;
+ 
+   
+   }
+   div#textcontainer{
+      position: absolute;
+    top: 0%;
+   
+   
+   }
+}
+
+/* #### iPhone 6 and 6 plus Portrait or Landscape #### */
+@media (max-device-height: 667px) and (min-device-width: 375px) {
+  /* some CSS here */
+  div#svgcontainer{
+      position: absolute;
+    top: 40%;
+    left:39em;
+
+   
+   }
+   div#textcontainer{
+      position: absolute;
+    top: 0%;
+    left:44.5em;
+   
+   }
+}
+
+/* #### Tablets Portrait or Landscape #### */
+@media screen and (min-device-width: 760px) and (max-device-width: 1024px){
+  /* some CSS here */
+  div#svgcontainer{
+      position: absolute;
+    top: 40%;
+    left: 44.7em;
+   
+   }
+    div#textcontainer{
+    position: absolute;
+    top: 0%;
+    left: 39em;
+   
+   }
+}
+
+/* #### Desktops #### */
+@media screen and (min-width: 1024px) and (max-width:1500px){
+  /* some CSS here */
+  div#svgcontainer{
+      position: absolute;
+    top: 28%;
+    left: 39.7em;
+   
+   }
+   div#container10{
+      position: absolute;
+    top: 0%;
+    left: 21.3em;
+   
+   }
+    div#textcontainer{
+      position: absolute;
+    top: 0%;
+    left: 37.3em;
+   
+   }
+}
+
+ .well1 {
+    min-height: 20px;
+    height: 50px;
+    padding: 6px;
+    margin-bottom: 20px;
+    background-color: #536e87;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
+
+.text-primary {
+    color: white;
+}
+.class=ng-scope {
+    width: 1332px;
+
+}
+
+
+
+#LocationDropdown:hover a {
+    opacity: 1; /* added */
+    top: 0; /* added */
+    z-index: 500;
+}
+/* added */
+#LocationDropdown:hover a span {
+    top: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+/* added */
+#LocationDropdown a {
+    display: block;
+    position: absolute;
+    top: -100%;
+    opacity: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    color: inherit;
+}
+
+/*For Dropdowns*/
+@media screen  and (max-width: 1400px) and (min-width: 500px){
+.col-sm-4{
+  width:16% !important;
+}
+#firstdiv{
+  width:10% !important;
+}
+#seconddiv{
+  width:10% !important;
+}
+/*#ui #search #selection */
+#dropdown{ 
+   min-width:11% !important
+}
+
+ @media screen  and (max-width: 1000px) and (min-width: 500px){
+        .thirddiv{
+    padding-left: 35% !important;
+  }
+}

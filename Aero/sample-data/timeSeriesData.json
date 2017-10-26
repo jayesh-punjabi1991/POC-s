@@ -1,0 +1,114 @@
+[
+    {
+        "timestamp": 1482690600000,
+        "tag": "810659:Mwselval0",
+        "value": 0.00932693481445312,
+        "quality": 3,
+        "date": "26-Dec-2016 00:00:00"
+    },
+    {
+        "timestamp": 1482604200000,
+        "tag": "810659:Mwselval0",
+        "value": 0.00685930252075195,
+        "quality": 3,
+        "date": "25-Dec-2016 00:00:00"
+    },
+    {
+        "timestamp": 1482517800000,
+        "tag": "810659:Mwselval0",
+        "value": 0.00650525093078613,
+        "quality": 3,
+        "date": "24-Dec-2016 00:00:00"
+    },
+    {
+        "timestamp": 1481740200000,
+        "tag": "810659:Mwselval0",
+        "value": 0.00935196876525879,
+        "quality": 3,
+        "date": "15-Dec-2016 00:00:00"
+    },
+    {
+        "timestamp": 1480962600000,
+        "tag": "810659:Mwselval0",
+        "value": 0.00616729259490967,
+        "quality": 3,
+        "date": "06-Dec-2016 00:00:00"
+    },
+    {
+        "timestamp": 1480876200000,
+        "tag": "810659:Mwselval0",
+        "value": 0.00905513763427734,
+        "quality": 3,
+        "date": "05-Dec-2016 00:00:00"
+    },
+    {
+        "timestamp": 1480703400000,
+        "tag": "810659:Mwselval0",
+        "value": 0.00660359859466553,
+        "quality": 3,
+        "date": "03-Dec-2016 00:00:00"
+    },
+    {
+        "timestamp": 1480530600000,
+        "tag": "810659:Mwselval0",
+        "value": 0.0086599588394165,
+        "quality": 3,
+        "date": "01-Dec-2016 00:00:00"
+    },
+    {
+        "timestamp": 1482690600000,
+        "tag": "810659:N25selVal0",
+        "value": 0,
+        "quality": 3,
+        "date": "26-Dec-2016 00:00:00"
+    },
+    {
+        "timestamp": 1482604200000,
+        "tag": "810659:N25selVal0",
+        "value": 0,
+        "quality": 3,
+        "date": "25-Dec-2016 00:00:00"
+    },
+    {
+        "timestamp": 1482517800000,
+        "tag": "810659:N25selVal0",
+        "value": 0,
+        "quality": 3,
+        "date": "24-Dec-2016 00:00:00"
+    },
+    {
+        "timestamp": 1481740200000,
+        "tag": "810659:N25selVal0",
+        "value": 0,
+        "quality": 3,
+        "date": "15-Dec-2016 00:00:00"
+    },
+    {
+        "timestamp": 1480962600000,
+        "tag": "810659:N25selVal0",
+        "value": 0,
+        "quality": 3,
+        "date": "06-Dec-2016 00:00:00"
+    },
+    {
+        "timestamp": 1480876200000,
+        "tag": "810659:N25selVal0",
+        "value": 0,
+        "quality": 3,
+        "date": "05-Dec-2016 00:00:00"
+    },
+    {
+        "timestamp": 1480703400000,
+        "tag": "810659:N25selVal0",
+        "value": 0,
+        "quality": 0,
+        "date": "03-Dec-2016 00:00:00"
+    },
+    {
+        "timestamp": 1480530600000,
+        "tag": "810659:N25selVal0",
+        "value": 0,
+        "quality": 0,
+        "date": "01-Dec-2016 00:00:00"
+    }
+]

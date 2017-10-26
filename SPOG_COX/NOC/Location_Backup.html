@@ -1,0 +1,371 @@
+<link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="./lib/treeGrid.css">
+
+<!-- <script type='application/javascript' src='./lib/tree-grid-directive.js'></script> -->
+
+<style type="text/css">
+	h1,h2,h3,h4,h5,h6{
+		text-align: center;
+		color: grey
+	}
+	.dropdown-filter, input{
+		width:100%;
+	}
+
+	.lsn{
+		margin: 0px !important;
+	    padding: 0px;
+	    padding-top: 20px;
+	    list-style-type: none;
+	    display: block;
+	}
+	.lsn li{
+		margin-bottom: 10px;
+	}
+
+	.layout > div:last-child{
+		border-right: 1px solid #d3d3d3;
+	}
+	.layout > div{
+		border-left: 1px solid #d3d3d3;
+		border-top: 1px solid #d3d3d3;
+	}
+
+	a:hover{
+		cursor:pointer;
+		color: crimson !important;
+	}
+	.btn-shadow{
+	    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+	}
+	tr th{
+		background-color: #3F51B5;
+		color: #fff;
+	}
+	tr td{
+		text-overflow: ellipsis;
+		white-space: -o-pre-wrap;
+	    word-wrap: break-all;
+	    /*white-space: pre-wrap;
+	    white-space: -moz-pre-wrap;
+	    white-space: -pre-wrap; */
+
+	}
+	#location-tree, #cs-tree, #status-tree, #at-tree{
+		background-color: #fff;
+		overflow: auto;
+	}
+	.tree-grid tbody tr td{
+		text-align: left;
+		word-wrap: break-all;
+		border: 0px;
+	}
+
+	.table td, th{
+		word-wrap: break-all;
+		table-layout: fixed;
+	}
+	.sortorder:after {
+	  content: '\25b2';   // BLACK UP-POINTING TRIANGLE
+	}
+	.sortorder.reverse:after {
+	  content: '\25bc';   // BLACK DOWN-POINTING TRIANGLE
+	}
+/*	.tree-grid tbody{
+		overflow: auto;
+	}*/
+/*	.tree-grid {
+		width: 100%;
+		display:block;
+	}
+	.tree-grid thead {
+	    display: inline-block;
+	    width: 100%;
+	    height: 20px;
+	}
+	.tree-grid tbody {
+	    height: 100%;
+	    display: inline-block;
+	    width: 100%;
+	    overflow: auto;
+	}*/
+</style>
+<script type="text/javascript">
+	function myFunction(id) {
+	    var x = document.getElementById(id);
+	    if (x.className.indexOf("w3-show") == -1) {
+	        x.className += " w3-show";
+	    } else {
+	        x.className = x.className.replace(" w3-show", "");
+	    }
+	}
+
+	myFunction('Demo1');
+
+	/*var em=document.getElementById('tableHead');
+	var em2=document.getElementById('tableBody').clientWidth;
+	em2.clientWidth=em.clientWidth;
+	debugger*/
+</script>
+<px-card header-text="" class="u-m0 u-p0" style="padding-left: 15px !important">
+	<div class="layout">
+		<div class="layout__item u-1/6" style="background-color:#E8EAF6; text-align: center; padding-right: 10px;">
+			<h4>BUSINESS DIMENTION FILTERS</h4>
+
+
+
+<div id="filters">
+
+<!-- <h5>Location</h5> -->
+
+<div class="w3-section" style="background-color: #8b8d8f; border: 1px solid #d4d4d4;">
+  <!-- <button onclick="myFunction('Demo1')" class="w3-btn-block" style="background-color: #8b8d8f; color: #fff">
+  Location</button> -->
+  <div id="Demo1" class="w3-white" style="padding:5px;">
+		<label>Region</label><br>
+		<select class="dropdown-filter" ng-options="location.lable for location in locations" ng-model="location" ng-change='regionSpecific(location)'>
+			<option ng-change='regionSpecific('all')'>All</option>
+		</select>
+
+
+		<label>Market</label><br>
+		<select class="dropdown-filter" ng-options='region.lable for region in regions' ng-model="region" ng-change='marketSpecific(region)'>
+
+		</select>
+
+		<label>Headends</label><br>
+		<select class="dropdown-filter" ng-options='headEnd.lable for headEnd in headEnds' ng-model="headEnd" ng-change='headEndSpecific()'></select>
+
+		<label>Nodes</label><br>
+		<select class="dropdown-filter" ng-options='noded.lable for noded in nodeData' ng-model="noded" ng-change='nodeDataSpecific()'></select>
+
+		<label>Device Type</label><br>
+		<select class="dropdown-filter" ng-options='da.value for da in deviceAlarmed' ng-model="da" ng-change='deviceAlarmedSpecific(da)'></select>
+
+  </div>
+</div>
+
+<div class="w3-section" style="background-color: #8b8d8f; border: 1px solid #d4d4d4;">
+  <!-- <button onclick="myFunction('Demo2')" class="w3-btn-block" style="background-color: #8b8d8f; color: #fff">
+  Customer/Service</button> -->
+  <div id="Demo2" class="w3-white" style="padding:5px;">
+  		<label>Service Impacted</label><br>
+  		<select class="dropdown-filter" ng-options='si.lable for si in serviceImpactedData' ng-model="si" ng-change='serviceImpactedSpecific(si)'></select>
+
+
+		<label>Sub-Service</label><br>
+		<select class="dropdown-filter" ng-options='sssb.lable for sssb in subServiceSelectedData' ng-model="sssb" ng-change='nodeSpecific(si)'></select>
+
+		<label>Channel</label><br>
+		<select class="dropdown-filter" ng-options='video.lable for video in videoChannels' ng-model="video" ng-change='nodeSpecific(video)'></select>
+
+
+		<label>Customers Impacted</label><br>
+		<select class="dropdown-filter" ng-options='ci.lable for ci in customersImpacted' ng-model="ci" ng-change='nodeSpecific(ci)'></select>
+
+		<label>Customer Platform</label><br>
+		<select class="dropdown-filter" ng-options='cp.lable for cp in customerPlatforms' ng-model="cp" ng-change='nodeSpecific(cp)'></select>
+
+		<label>Customer Bundle</label><br>
+		<select class="dropdown-filter" ng-options='cPlan.lable for cPlan in customerPlan' ng-model="cPlan" ng-change='nodeSpecific(cPlan)'></select>
+
+		<label>Service Impaction</label><br>
+		<select class="dropdown-filter" ng-options='saf.lable for saf in serviceAffecting' ng-model="saf" ng-change='nodeSpecific(saf)'></select>
+
+		<label>Issue Description</label><br>
+		<input type="textbox" placeholder="Issue Description here..." />
+  </div>
+</div>
+
+<div class="w3-section" style="background-color: #8b8d8f;">
+  <!-- <button onclick="myFunction('Demo3')" class="w3-btn-block" style="background-color: #8b8d8f; color: #fff">
+  Status of Issue</button> -->
+  <div id="Demo3" class="w3-hide w3-white" style="padding:5px;">
+  		<label>Elapsed Time</label><br>
+
+  		<!-- elapsedTime -->
+		<input type="number" placeholder="days:hours:minutes" />
+
+		<!-- <label>Issue Time Stamp</label><br>
+		<input type="time" placeholder="time"/> -->
+  </div>
+</div>
+
+
+<div class="w3-section" style="background-color: #8b8d8f; border: 1px solid #d4d4d4;">
+  <!-- <button onclick="myFunction('Demo4')" class="w3-btn-block" style="background-color: #8b8d8f; color: #fff">
+  Data Governance</button> -->
+  <div id="Demo4" class="w3-white" style="padding:5px;">
+  		<label>Notifying Tool</label><br>
+  		<select class="dropdown-filter" ng-options='nt.value for nt in toolNotified' ng-model="nt" ng-change='nodeSpecific(nt)'></select>
+
+		<!-- Device Type Moved -->
+
+		<label>Owner Type</label><br>
+		<input class="w3-input" type="checkbox" ng-model="groupAgent" ng-change='toggleOwner(groupAgent)'/>
+
+		<label ng-hide="groupAgent">Group Owner</label><br ng-hide="groupAgent">
+		<select ng-hide="groupAgent" class="dropdown-filter" ng-options='org.value for org in ownerRGroup' ng-model="org" ng-change='nodeSpecific(org)'></select>
+
+		<label ng-show="groupAgent">Agent</label><br ng-show="groupAgent">
+		<select ng-show="groupAgent" class="dropdown-filter" ng-options='agent.value for agent in agents' ng-model="agent" ng-change='nodeSpecific(agent)'></select>
+
+  </div>
+</div>
+
+
+
+
+
+	<input class="w3-btn w3-blue w3-round" type="button" value="Submit" ng-click="requestData()"/>
+
+</div>
+
+
+
+		</div>
+		<div class="layout__item u-4/6" style="background-color:#E8EAF6; text-align: center;padding-right: 5px; padding-left: 20px;">
+			<h3>NOC ANALYTICS COCKPIT</h3>
+				<div class="layout">
+					<table class="w3-table w3-striped w3-white w3-text-black;" style="background:#01809E; overflow-y:scroll; height:250px; display: block; table-layout:fixed;">
+						<thead id="tableHead" style="">
+							<tr class="" style="background-color:#29B6F6;">
+								<th style="">Incident No.</th>
+								<th style="">Region</th>
+								<th style="">Status</th>
+								<th style="">Audit</th>
+
+								<th style="">Issue Desc.</th>
+								<th style="">Service Impacted</th>
+								<th style="">Market Impacted</th>
+								<th style="">Sub Service</th>
+							</tr>
+						</thead>
+						<tbody id="tableBody" style="height: 150px; overflow-y:scroll;">
+							<tr ng-repeat="data in tableDataSet" style="">
+								<td style="">
+									<a ng-click="updateIncident(data.incidentNumber)">{{data.incidentNumber}}</a>
+								</td>
+								<td style="">
+									{{data.region}}
+								</td>
+								<td style="">
+									Active
+								</td>
+								<td style="">
+									{{data.tool_name}}
+								</td>
+
+								<td style="">
+									NA
+								</td>
+								<td style="">
+									{{data.serviceimpacted}}
+								</td>
+								<td style="">
+									{{data.customers_impacted}}
+								</td>
+								<td style="">
+									{{data.sub_service}}
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+
+				<div class="layout" style="background-color: transparent; border-bottom: 1px solid #d3d3d3; margin-bottom: 10px;">
+					<div class="layout__item u-1/4 u-p0">
+						<div id="location-tree" style="width: 100%; height: 200px;">
+							<tree-grid tree-data="tree_data1" tree-control="my_tree" col-defs="col_defs" expand-on="expanding_property1" on-select="my_tree_handler(branch)" expand-level="2" icon-leaf=""></tree-grid>
+						</div>
+					</div>
+					<div class="layout__item u-1/4 u-p0">
+						<div id="cs-tree" style="width: 100%; height: 200px;">
+							<tree-grid tree-data="tree_data" tree-control="my_tree" col-defs="col_defs" expand-on="expanding_property" on-select="my_tree_handler(branch)" expand-level="2" icon-leaf=""></tree-grid>
+						</div>
+					</div>
+					<div class="layout__item u-1/4 u-p0">
+						<div id="status-tree" style="width: 100%; height: 200px;">
+							<tree-grid tree-data="tree_data2" tree-control="my_tree" col-defs="col_defs" expand-on="expanding_property2" on-select="my_tree_handler(branch)" expand-level="2" icon-leaf=""></tree-grid>
+						</div>
+					</div>
+					<div class="layout__item u-1/4 u-p0">
+						<div id="at-tree" style="width: 100%; height: 200px;">
+							<tree-grid tree-data="tree_data3" tree-control="my_tree" col-defs="col_defs" expand-on="expanding_property3" on-select="my_tree_handler(branch)" expand-level="2" icon-leaf=""></tree-grid>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="layout" style="margin-bottom: 10px;">
+					<div class="layout__item u-4/4" style="padding-left: 0px;">
+						<div id="map" style="width: 100%; height: 250px; background-color: #fff;">
+
+						</div>
+					</div>
+				</div>
+				<div class="layout" style="background-color: transparent; margin-bottom: 5px;">
+					<div class="layout__item u-2/4" style="padding-left: 0px;">
+						<div id="c1" style="width: 100%; height: 150px; background-color: #fff;">
+							<div style="background-color: #3F51B5;padding: 10px; font-weight: bold; color: #fff;"><span>TRENDING</span></div>
+							<div class="layout" style="padding-left: 15px !important;">
+								<div class="layout__item u-1/2" style="background-color: transparent;">
+									<div id="speed_chart">
+										<img src="./images/pie.jpg"/>
+									</div>
+								</div>
+								<div class="layout__item u-1/2" style="background-color: transparent">
+									<div id="bar_chart">
+										<img src="./images/bar.jpg"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="layout__item u-2/4" style="padding-left: 0px;">
+						<div id="c2" style="width:100%; height:150px; background-color:#fff;">
+							<div style="background-color: #3F51B5;padding: 10px; font-weight: bold; color: #fff;"><span>CORRELATION</span></div>
+							<div id="trending" style="border-top: 1px solid #d3d3d3; ; padding: 11px;font-size: 11px;">
+
+									6.1 Lorem ipsum dolor sit amet, consect adipiscing elit.<br>
+									6.2 Lorem ipsum dolor sit amet, consect adipiscing elit.<br>
+									6.3 Lorem ipsum dolor sit amet, consect adipiscing elit.<br>
+									6.4 Lorem ipsum dolor sit amet, consect adipiscing elit.<br>
+									6.5 Lorem ipsum dolor sit amet, consect adipiscing elit.
+
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		<div class="layout__item u-1/6" style="background-color:#E8EAF6; text-align: center; padding-right: 10px; font-size:13px ">
+			<h4>ACTIONS</h4>
+
+			<ul class="lsn">
+				<li>
+					<input class="w3-btn" type="button" value="INCIDENT COMMANDER" style="background-color: #8b8d8f; color: #fff"/><br>
+					<div>{{incidentCommander}}</div>
+				</li>
+				<li>
+					<input class="w3-btn" type="button" value="BRIDGE" style="background-color: #8b8d8f; color: #fff"/>
+					<div>{{bridge}}</div>
+				</li>
+				<li>
+					<input class="w3-btn" type="button" value="COMMUNICATE" style="background-color: #8b8d8f; color: #fff"/>
+					<div>{{communicate}}</div>
+				</li>
+				<li>
+					<input class="w3-btn" type="button" value="SHOUT" style="background-color: #8b8d8f; color: #fff"/>
+					<div>{{shout}}</div>
+				</li>
+				<li>
+					<input class="w3-btn" type="button" value="QUEUES" style="background-color: #8b8d8f; color: #fff"/>
+					<div>{{queues}}</div>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+</px-card>

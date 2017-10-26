@@ -1,0 +1,5 @@
+---
+applications:
+  - name: smartcity
+    buildpack: staticfile_buildpack
+    memory: 128MB

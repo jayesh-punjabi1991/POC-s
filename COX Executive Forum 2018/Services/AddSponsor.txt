@@ -1,0 +1,54 @@
+https://coxexecutiveforum.run.aws-usw02-pr.ice.predix.io/coxevent/user
+Input JSON
+{
+"userDetails":{
+   "name":"Vikram Kakkar",
+   "email":"vikram.kakkar@genpact.com",
+   "title":"Lead Consultant",
+   "company":"Genpact",
+   "phoneNumber":"1234567890",
+   "coxContact":"Mr. XYZ from GE",
+   "noOfAttendees":"3",
+   "invoiceContact":"ABC",
+   "invoiceContactEmail":"ABC@ABC.com",
+   "invoiceContactPhone":"123",
+   "signageContact":"PQR",
+   "signageContactEmail":"PQR@PQR.com",
+   "signageContactPhone":"456",
+   "address":{
+              "companyAddress":"Genpact, Sector 48, Tikri",
+              "cityStateZip":"Gurgaon, HR, 122001"
+             }
+   }
+}
+Response JSON:
+{
+    "details": {
+        "userDetails": {
+            "name": "Vikram Kakkar",
+            "title": "Lead Consultant",
+            "company": "Genpact",
+            "email": "vikram.kakkar@genpact.com",
+            "phoneNumber": "1234567890",
+            "coxContact": "Mr. XYZ from GE",
+            "noOfAttendees": 3,
+            "invoiceContact": "ABC",
+            "invoiceContactEmail": "ABC@ABC.com",
+            "invoiceContactPhone": "123",
+            "signageContact": "PQR",
+            "signageContactEmail": "PQR@PQR.com",
+            "signageContactPhone": "456",
+            "address": {
+                "companyAddress": "Genpact, Sector 48, Tikri",
+                "cityStateZip": "Gurgaon, HR, 122001"
+            }
+        },
+        "registrationNumber": "9Z1XLWN3ZU",
+        "registrationDate": 1507653426383
+    }
+}
+Error Code:
+{
+  error":"This email id is already registered",
+  errorCode":"23502"
+}

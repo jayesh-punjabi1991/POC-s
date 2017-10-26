@@ -1,0 +1,74 @@
+<style>
+
+</style>
+
+<px-card style="padding-top:10px;padding-bottom:0px;padding-left: 15px;background: linear-gradient(#242326,#3b3b3f);
+        border-bottom: 1px solid #bbbbbb;box-shadow: 1px 1px 1px #cec2c2;color: white;">
+    <h4 style="margin-top:0px;margin-bottom:0px">Kalman Anomaly</h4>
+    <p style="margin-top:0px;margin-bottom:10px">Analytics</p>
+</px-card>
+
+
+
+             <px-card style="border:1px solid #b1b1bc;padding-bottom:1%;padding-left:0%">
+               <div class="layout" style="margin-left:0; margin-top:1%">
+
+                    <div class="layout__item u-2/3">
+                        <div class="layout">
+                              <div class="layout__item u-1/2" >
+
+
+                              <b >Time</b>
+                              <px-rangepicker id="rangePick" range='{"from":"2016-08-22","to":"2016-08-25"}' hide-time="true" hide-presets="true"></px-rangepicker>
+                              </div>
+
+
+                            <div class="layout__item u-1/2">
+                            	<div class="layout">
+                            		<div class="layout__item u-1/2">
+                            		<b>Limit</b>
+                                  <input type="text" ng-model="valForLimit" style="width:110px;height:28px;"/>
+                            	</div>
+                                <div class="layout__item u-1/2" style="padding-left:0px">
+                                	<b>Sensor</b>
+                                   <!-- <input type="text" style="width:110px;height:28px;"/> -->
+                                <px-dropdown  display-value="Parameter_1"  style="width:130px;" class="a">
+                                   <px-dropdown-content id="sensorValue" class="px-dropdown-content" max-cont-character-width="10"
+                                   extend-dropdown="true" extend-dropdown-by="15"  items='{{sensorData}}'>
+                                   </px-dropdown-content>
+                                </px-dropdown>
+                               </div>
+                            </div>
+
+
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="layout_-item u-1/6" style="margin-left:0%;margin-right:0%">
+                              <b>Machine No.</b>
+                              <px-dropdown  display-value="Machine 1"  sstyle="width:130px;" class="a">
+                              <px-dropdown-content id="machineValue" class="px-dropdown-content" max-cont-character-width="10"
+                              extend-dropdown="true" extend-dropdown-by="15"  items='{{machineSelected}}'>
+                              </px-dropdown-content>
+                              </px-dropdown>
+
+                        </div>
+
+                        <div class="layout__item u-1/6" style="margin-top:3px">
+                              <p></p>
+                              <button class="btn cbtn cstm-btn" ng-click="SearchAnalysis()">Search</button>
+
+                        </div>
+
+                        </div>
+
+      </px-card>
+
+      <px-card>
+        <div>
+        <h4>Status: {{statusToDisplay}}</h4 style="margin-top:2%">
+        </div>
+       <div id="container"></div>
+     </px-card>

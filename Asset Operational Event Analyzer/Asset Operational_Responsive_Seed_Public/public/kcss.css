@@ -1,0 +1,197 @@
+
+@media screen and (min-width: 1024px){
+    
+} 
+
+.viewport:not([style-scope]):not(.style-scope) {
+    width: 100%;
+    max-width: 92rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@font-face {
+    font-family: geInspira;
+    src: url(fonts/GEInspRg.woff);
+}
+body {
+  font-family: geInspira;
+}
+
+/*Ipad*/
+@media screen and (min-width: 700px) and (max-width:768px){
+#responsive{
+  max-width:760px;
+}
+#L4{
+  padding-left: 20% !important;
+}
+}
+/*Mobile*/
+@media screen and (min-width: 0px) and (max-width: 650px) {
+#responsive{
+  max-width:405px;
+}
+#L4{
+  margin-left:-13% !important;
+  padding-left: 0% !important;
+}
+#pageSizeSelect{
+    height:35px !important;
+    width:73px !important;
+    padding-left: 10px !important;
+    padding-right: 0px !important;
+}
+#pagination > span.u-pl\2b.u-ml\2b.summary.style-scope.px-pagination{
+    margin-left:0px !important;
+    padding-left:0px !important; 
+}
+}
+
+[role=banner]:not([style-scope]):not(.style-scope) {
+    width: 100%;
+    display: block;
+    margin: auto;
+     
+    border-bottom: 2px #313131 !important;
+}
+
+b:not([style-scope]):not(.style-scope), strong:not([style-scope]):not(.style-scope) {
+    font-weight: bolder;
+}
+
+main:not([style-scope]):not(.style-scope) {
+    min-height: calc(100vh - 8rem);
+    margin-left: 0;
+    background-color: #8b8d8f;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.cbtn{
+	  border: 1px solid #2886af !important;
+    background-color: #2886af !important;
+    color: #fff !important;
+
+}
+
+.cbtn:hover{
+    border: 1px solid #3ab4d4 !important;
+    background-color: #3ab4d4 !important;
+    color: #fff !important;
+    box-shadow: none !important;
+}
+
+.custom{
+    padding-left:0px !important;
+    padding-right:0px !important;
+    padding-top:0px !important;
+}
+.b{
+    width:210px !important
+}
+#dropcell{
+    width:120px !important;
+    margin-right:0px !important;
+    margin-left:0px !important;
+}
+
+.px-dropdown--checkbox{
+    margin-right:10px !important;
+}
+#times{
+    cursor: pointer;
+    overflow: hidden;
+    -ms-flex: 1 1 auto !important;
+    flex: 1 1 auto !important;
+    padding: 0.3333333333rem !important;
+}
+
+#hours{
+    cursor: pointer;
+    overflow: hidden;
+    -ms-flex: 1 1 auto !important;
+    flex: 1 1 auto !important;
+    padding: 0.3333333333rem !important;
+    width: 100px !important;
+}
+
+.px-dropdown--content{
+    width:124px !important;
+}
+
+
+
+.px-app-nav-0 a.selected.px-app-nav, .px-app-nav-0 a.selected.px-app-nav:hover {
+    background-color: #2886af  !important;
+}
+
+.px-app-nav-0 a.px-app-nav:link, .px-app-nav-0 a.px-app-nav:visited {
+    color: #fff;
+}
+
+.btn:not([style-scope]):not(.style-scope) {
+    display: inline-block;
+    overflow: visible;
+    height: 2.3em;
+    margin: 0;
+    border: 1px solid #b1b1bc;
+    border-radius: 3px;
+    padding: 0px 1.8em;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    font: inherit;
+    line-height: calc(2em - 2px);
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    white-space: nowrap;
+    background-color: #e4e4ea;
+}
+
+.customDrop{
+    
+    cursor: pointer !important;
+    overflow: hidden !important;
+    -ms-flex: 1 1 auto !important;
+    flex: 1 1 auto !important;
+    padding: 0.3333333333rem !important;
+    width: 150px !important;
+
+}
+
+.customDrop:hover{
+    background: #b1b1bc;
+};
+
+
+body > div > div > main > section > px-card:nth-child(3) > div > div:nth-child(2) > div:nth-child(2) > ng-map > div > div > div:nth-child(2) > a > div{
+    visibility: hidden;
+}
+
+#chart:hover{
+  border-top: 5px solid black;
+
+};
+
+
+.dashboard{
+    padding-top:10px !important;
+    padding-bottom: 0px !important;
+    padding-left: 15px;background: linear-gradient(#242326,#3b3b3f) !important;
+    border-bottom: 1px solid #bbbbbb !important;
+    box-shadow: 1px 1px 1px #cec2c2 !important;
+    color: white
+}
+
+.a{
+    display: block !important;
+}
+.a #dropcell, .a div{
+width: 100% !important;
+}
+.cstm-btn{
+     width: 90% !important;
+    margin: 0 15px !important;
+}

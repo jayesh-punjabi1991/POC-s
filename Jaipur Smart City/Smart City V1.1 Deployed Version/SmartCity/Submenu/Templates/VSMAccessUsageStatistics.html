@@ -1,0 +1,201 @@
+<link rel="stylesheet" type="text/css" href="../css/BusiestDay.css">
+<script type="text/javascript">
+    $(document).ready(function() {
+    $('.ui.dropdown').dropdown();
+    });
+</script>
+<style>
+       .form-control{
+      background-color: #cbced8;
+    }
+        button.dropdown-toggle.ng-binding.btn.btn-default {
+            width: 139px;   
+            padding-right: 93px; 
+            background-color: #cbced8;      
+         }
+         
+      .float--left.ng-isolate-scope {
+      margin-left: 15px;
+      margin-right: 20px;
+      margin-bottom: 15px;
+          }
+         ul.dropdown-menu.dropdown-menu-form {
+          width: 139px;
+          height: 150px; 
+          background-color: #cbced8;      
+         }
+         text.highcharts-credits {
+            display: none;
+         }    
+         .multiselect-parent .dropdown-toggle span.caret{    
+             position: absolute;
+             right: 8px;
+             top: 15px;
+          }    
+         .dropdown-menu {
+       min-width:139px; 
+       min-height: 150px;
+     } 
+         .quartertxt{     
+      margin-bottom: 4px;
+       color: #65697b;
+       padding-left: 18px;
+    }           
+          option.ng-binding.ng-scope {      
+      width: 160px;
+    } 
+        
+     
+     
+</style>
+
+<div class="container-fluid" id="Maindiv" style="padding-top: 2%">         
+                <div class="row" style="margin-left: -2px !important">
+                    <div class="col-md-6 col-xs-12 col-sm-12" style="height:539px;">
+                        <div class="panel panel-primary" style="background-color:#2d3345;">
+                            <div class="panel-heading" style="background-color:#2d3345;" >
+                              <div class="row">
+                               <div class="col-md-8 col-xs-12 col-sm-12" id="textforChartHeading">User Access Status & Reason - Statistics
+                               </div>
+                            </div>
+                                    
+                            </div>
+                            <div class="panel-body" style="height: 454px;">
+                              <div id="dropDown-Header"  style="padding-bottom: 8px;"
+               class="col-sm-12">
+               <div class="col-sm-4 ">
+                  <div>
+                     <div class="quartertxt2" style="margin-bottom: 3%;color:#65697b">Object Name</div>
+                  </div>
+                  <div style="background-color: #cbced8;border-radius: 10%;">
+                     <select id="products-select"  class="form-control" ng-model="selObj" ng-change="onChgObjectNameData()">
+                        <option value="All">All</option>
+                        <option ng-repeat="part in objectNameData" value="{{part['Object Name']}}">{{part['Object Name']}}</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="col-sm-4">
+                  <div>
+                     <div class="quartertxt2" style="margin-bottom: 3%;color:#65697b">Activity Type</div>
+                  </div>
+                  <div style="background-color: #cbced8;border-radius: 10%;">
+                     <select id="products-select"  class="form-control" ng-model="selActivity" ng-change="onChgActivityData()">
+                        <option value="All">All</option>
+                        <option ng-repeat="part in activityTypeData" value="{{part['Activity Type']}}">{{part['Activity Type']}}</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="col-sm-4">
+                  <div>
+                     <div class="quartertxt2" style="margin-bottom: 3%;color:#65697b">User</div>
+                  </div>
+                  <div style="background-color: #cbced8;border-radius: 10%;">
+                     <select id="products-select"  class="form-control" ng-model="selUser" ng-change="onChgUser()">
+                        <option value="All">All</option>
+                        <option ng-repeat="part in userData" value="{{part.User}}">{{part.User}}</option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+            <loading style="text-align:center;"></loading>
+            <div id="container3" style="height: 350px;width:500px;" ng-hide="loading"> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12 col-sm-12">
+                        <div class="panel panel-primary" style="background-color:#2d3345;">
+                            <div class="panel-heading" style="background-color:#2d3345;" >
+                              <div class="row">
+               <div class="col-md-12 col-xs-12 col-sm-12" id="textforChartHeading">Access Level Status Monitoring & Reasoning
+               </div>
+            </div>
+                                    
+                            </div>
+                            <div class="panel-body">
+                            <div class="row hidden-xs" style="margin-bottom: 2%">
+               <div class="col-md-4 col-sm-4 col-xs-4 " style="background-color: transparent;">
+                  <div class="quartertxt " style="margin-bottom: 3%;color:#65697b">Object Name</div>
+                  <div class="float--left " ng-dropdown-multiselect="objectnamemodel" options="objectnamedata" selected-model="objectnamemodel"  extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: objectnameMultiSelData, onItemDeselect: objectnameMultiSelData, onSelectAll: objectnameMultiSelData, onDeselectAll: objectnameMultiSelData}"></div>
+               </div>
+               <div class="col-md-4 col-sm-4 col-xs-4 " style="background-color: transparent;">
+                  <div class="quartertxt" style="margin-bottom: 3%;color:#65697b">Object Type</div>
+                  <div class="float--left" ng-dropdown-multiselect="objectypemodel" options="objectypedata" selected-model="objectypemodel"  extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: objectypeMultiSelData, onItemDeselect: objectypeMultiSelData, onSelectAll: objectypeMultiSelData, onDeselectAll: objectypeMultiSelData}">
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-4 col-xs-4" style="background-color: transparent;">
+                  <div class="quartertxt" style="margin-bottom: 3%;color:#65697b">Log Time</div>
+                  <div class="float--left" ng-dropdown-multiselect="logtimemodel" options="logtimedata" selected-model="logtimemodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}"   events="{onItemSelect: logtimeMultiSelData, onItemDeselect: logtimeMultiSelData, onSelectAll: logtimeMultiSelData, onDeselectAll: logtimeMultiSelData}"></div>
+               </div>
+            </div>
+            <div class="row hidden-xs">
+               <div class="col-md-4 col-sm-4 col-xs-4 " style="background-color: transparent;">
+                  <div class="quartertxt" style="margin-bottom: 3%;color:#65697b">User IP</div>
+                  <div class="float--left" ng-dropdown-multiselect="useripmodel" options="useripdata" selected-model="useripmodel"  extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: useripMultiSelData, onItemDeselect: useripMultiSelData, onSelectAll: useripMultiSelData, onDeselectAll: useripMultiSelData}"></div>
+               </div>
+               <div class="col-md-4 col-sm-4 col-xs-4 " style="background-color: transparent;">
+                  <div class="quartertxt" style="margin-bottom: 3%;color:#65697b">User</div>
+                  <div class="float--left" ng-dropdown-multiselect="usermodel" options="userdata" selected-model="usermodel"  extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: userMultiSelData, onItemDeselect: userMultiSelData, onSelectAll: userMultiSelData, onDeselectAll: userMultiSelData}"></div>
+               </div>
+               <div class="col-md-4 col-sm-4 col-xs-4 " style="background-color: transparent;">
+                  <div class="quartertxt" style="margin-bottom: 3%;color:#65697b">Activity Type</div>
+                  <div class="float--left" ng-dropdown-multiselect="acttypemodel" options="acttypedata" selected-model="acttypemodel"  extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: acttypeMultiSelData, onItemDeselect: acttypeMultiSelData, onSelectAll: acttypeMultiSelData, onDeselectAll: acttypeMultiSelData}"></div>
+               </div>
+            </div>
+            <div  class="panel panel-default hidden-lg hidden-sm">
+               <div id="filterpanelhr" class="panel-heading">
+                  <h4 class="panel-title">
+                     <div  class="row">
+                        <div class="col-sm-6 col-xs-12" style="background-color: transparent;">
+                           <div class="quartertxt">Object Name</div>
+                           <div class="float--left" ng-dropdown-multiselect="objectnamemodel" options="objectnamedata" selected-model="objectnamemodel"  extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: objectnameMultiSelData, onItemDeselect: objectnameMultiSelData, onSelectAll: objectnameMultiSelData, onDeselectAll: objectnameMultiSelData}"></div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12" style="background-color: transparent;">
+                           <div class="quartertxt">Object Type</div>
+                           <div class="float--left" ng-dropdown-multiselect="objectypemodel" options="objectypedata" selected-model="objectypemodel"  extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: objectypeMultiSelData, onItemDeselect: objectypeMultiSelData, onSelectAll: objectypeMultiSelData, onDeselectAll: objectypeMultiSelData}">
+                           </div>
+                        </div>
+                     </div>
+                  </h4>
+               </div>
+               <div id="filterPanelr" class="panel-collapse panel-collapse collapse">
+                  <div class="panel-body">
+                     <div  class="row">
+                        <div class="col-sm-6 col-xs-12" style="background-color: transparent;">
+                           <div class="quartertxt">Log Time</div>
+                           <div class="float--left" ng-dropdown-multiselect="logtimemodel" options="logtimedata" selected-model="logtimemodel" extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}"   events="{onItemSelect: logtimeMultiSelData, onItemDeselect: logtimeMultiSelData, onSelectAll: logtimeMultiSelData, onDeselectAll: logtimeMultiSelData}"></div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12" style="background-color: transparent;">
+                           <div class="quartertxt">User Ip</div>
+                           <div class="float--left" ng-dropdown-multiselect="useripmodel" options="useripdata" selected-model="useripmodel"  extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: useripMultiSelData, onItemDeselect: useripMultiSelData, onSelectAll: useripMultiSelData, onDeselectAll: useripMultiSelData}"></div>
+                        </div>
+                     </div>
+                     <br>
+                     <div  class="row">
+                        <div class="col-sm-6 col-xs-12" style="background-color: transparent;">
+                           <div class="quartertxt">User</div>
+                           <div class="float--left" ng-dropdown-multiselect="usermodel" options="userdata" selected-model="usermodel"  extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: userMultiSelData, onItemDeselect: userMultiSelData, onSelectAll: userMultiSelData, onDeselectAll: userMultiSelData}"></div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12" style="background-color: transparent;">
+                           <div class="quartertxt">Activity Type</div>
+                           <div class="float--left" ng-dropdown-multiselect="acttypemodel" options="acttypedata" selected-model="acttypemodel"  extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: acttypeMultiSelData, onItemDeselect: acttypeMultiSelData, onSelectAll: acttypeMultiSelData, onDeselectAll: acttypeMultiSelData}"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel-collapse-clickable" data-toggle="collapse" data-parent="#accordion" ng-click="reason()"  data-target="#filterPanelr">
+                  <i class="glyphicon glyphicon-chevron-down"></i>
+               </div>
+            </div>
+            <div class="row">
+               <loading style="text-align:center;"></loading>
+               <div id="barchart" style="height: 275px;width:500px;" ng-hide="loading"> </div>
+            </div>
+                               
+                                    
+                             <!-- <div id="container3" style="height: 270px;"> 
+                             </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>               
+            </div>

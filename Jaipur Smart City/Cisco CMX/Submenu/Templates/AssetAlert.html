@@ -1,0 +1,140 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="Submenu/css/responsivemain.css">
+<link rel="stylesheet" type="text/css" href="Submenu/css/cmx.css">
+<style type="text/css">
+  
+  
+   @media screen  and (min-device-width: 320px) and (max-device-width: 768px) {
+           button.dropdown-toggle.ng-binding.btn.btn-default {
+              width: 245px;
+              padding-right: 191px;    
+            padding-left: 5px;
+            position: relative;
+            margin-left: 19px;
+            margin-top: 4px;
+           }
+           ul.dropdown-menu.dropdown-menu-form {
+            width: 245px;
+          height: 150px;
+          margin-left: 19px;          
+         }
+     .dropdown-menu {min-width:245px; min-height: 150px;} 
+     text.highcharts-credits {
+            display: none;
+         }
+
+         .multiselect-parent .dropdown-toggle span.caret{
+    
+             position: absolute;
+             right: 8px;
+             top: 15px;
+
+    
+          } 
+     .section.group {
+        padding: 0 5px;                 
+      
+         }
+     
+    
+      }
+    #highcharts-8vtw3em-2{
+      padding-top: 7% !important;
+    }
+       @media screen  and (min-device-width: 769px) {
+        button.dropdown-toggle.ng-binding.btn.btn-default {
+            width: 149px;     
+            padding-right: 90px;    
+            padding-left: 5px;
+            position: relative;
+            margin-left: 19px;
+            margin-top: 4px;
+         }
+         .multiselect-parent .dropdown-toggle {
+  
+          }
+         ul.dropdown-menu.dropdown-menu-form {
+          width: 149px;
+          height: 150px;
+          margin-left: 19px;
+         }
+         text.highcharts-credits {
+            display: none;
+         }    
+         .multiselect-parent .dropdown-toggle span{
+    
+             position: absolute;
+             right: 8px;
+             top: 15px;
+    
+          }    
+         .dropdown-menu {min-width:149px; min-height: 150px;}   
+     .section.group {
+        padding: 0 5px;     
+      font-size: large;
+         }
+     }
+
+     .quartertxt{
+  font-size: small;
+  margin-bottom: 4px;
+
+}
+     
+    </style>
+
+  <div class="row" style="margin-top:2%">
+        <div >
+                    <div class="col-md-6 col-xs-12 col-sm-12">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading" id="text">
+                                 <div class="row">
+                              <div class="col-md-8 col-xs-12 col-sm-12">
+                                  <span class="pull-left"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;CAM Operational Status Dashboard</span>
+                                </div>
+                             </div>
+                            </div>
+                            <div class="panel-body" style="padding-bottom: 116px;">
+                            
+                                 <div class="col-sm-6">
+                                   <div class="section group" style="padding: 0 5px">
+                                       <div class="col " style="background-color: transparent;margin-left:10px;">
+                                       <div class="quartertxt">Location</div>
+                                          <div class="float--left" ng-dropdown-multiselect="CamOperationalData"  selected-model="CamOperationalModel" options="CamOperationalData"  extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}"
+                                          events="{ onItemSelect: CamOperationalDataFirstMultiSelect,onItemDeselect: CamOperationalDataFirstMultiSelect,onSelectAll: CamOperationalDataFirstMultiSelect, onDeselectAll: CamOperationalDataFirstMultiSelect}" ></div>
+                                          </div> 
+                                          </div>
+                                  </div>
+                                    <div class="col-sm-6">
+                                    <div class="section group" style="padding: 0 5px">
+                                       <div class="col " style="background-color: transparent;margin-left:10px;">
+                                       <div class="quartertxt">Operational Status</div>
+                                          <div class="float--left" ng-dropdown-multiselect=""  selected-model="OperationalStatusModel" options="OperationalStatusdata"  extra-settings="{displayProp: 'label', idProp: 'label', scrollableHeight: '250px', scrollable: true}" translation-texts="{buttonDefaultText: 'All'}" events="{ onItemSelect: OperationalStatusModelMultiSelect,onItemDeselect: OperationalStatusModelMultiSelect,onSelectAll: OperationalStatusModelMultiSelect, onDeselectAll: OperationalStatusModelMultiSelect}" ></div>
+                                          </div> 
+                                          </div>
+                                  </div>
+                                   <div id="container3" style="height: 300px;width:550px"> 
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-md-6 col-xs-12 col-sm-12">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading" id="text">
+                                 <div class="row">
+                              <div class="col-md-8 col-xs-12 col-sm-12">
+                                  <span class="pull-left"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;Cam Activity Summary</span>
+                                </div>
+                             </div>
+                            </div>
+                            <div class="panel-body">
+                             <div id="container1" style="height: 400px; width:550px"> 
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+            
+            </div>

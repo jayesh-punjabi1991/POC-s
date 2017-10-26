@@ -1,0 +1,367 @@
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>   
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script src="https://code.highcharts.com/highcharts-more.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+<!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animations/2.1/css/animations.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/> -->
+    
+    <style type="text/css">
+
+#LocationDropdown:hover a {
+    opacity: 1; /* added */
+    top: 0; /* added */
+    z-index: 500;
+}
+/* added */
+#LocationDropdown:hover a span {
+    top: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+/* added */
+#LocationDropdown a {
+    display: block;
+    position: absolute;
+    top: -100%;
+    opacity: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    color: inherit;
+}
+ .well1 {
+    min-height: 20px;
+    height: 50px;
+    padding: 6px;
+    margin-bottom: 20px;
+    background-color: #536e87;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
+
+
+*, :after, :before {
+    box-sizing: inherit;
+}
+.text-primary {
+    color: white;
+}
+
+</style>  
+<style>
+.loader {
+  border: 16px solid rgba(221, 221, 221, 0.66);
+  position: absolute;
+  z-index: 9;
+  border-radius: 50%;
+  border-top: 16px solid #337ab7;
+  border-bottom: 16px solid #337ab7;
+  width: 120px;
+  margin-left: 45%;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/*For Dropdowns*/
+@media screen  and (max-width: 1400px) and (min-width: 500px){
+.col-sm-4{
+  width:16% !important;
+}
+#firstdiv{
+  width:10% !important;
+}
+#seconddiv{
+  width:10% !important;
+}
+/*#ui #search #selection */#dropdown{ min-width:11% !important
+  }
+
+      }
+@media screen  and (max-width: 1000px) and (min-width: 500px){
+        .thirddiv{
+    padding-left: 35% !important;
+  }
+}
+</style>   
+<script>
+
+</script>
+                               
+ <div class="well1" style="margin-top:2%;" ng-hide="''" ng-show="''">
+                                
+                                    <div class="row">
+                                        <div class="col-md-1 col-sm-4 col-xs-12" id="firstdiv" style="padding-right:0px">
+                                            <label class="text-primary pull-left" id="text" style="padding-left:5%;padding-top: 8px;">
+                                            <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Location
+                                            </label>
+                                        </div>
+                                        <div class="col-md-2 col-sm-4 col-xs-12" id="LocationDropdown" style="padding-left:0px;padding-right:0px">
+                                             <a href="#"><span class="fa fa-ban" style="font-size:24px;color:red">
+                                             </span></a>
+                                                    <select disabled id="Area" class="ui search selection dropdown" style="height:35px; padding-top:0px;padding-bottom:0px;color:#c1bcbc;">
+                                                    <option selected style=>Building</option>
+                                                  </select>
+                                            
+                                        </div>
+                                          <div class="col-md-2 col-sm-4 col-xs-12" style="padding-left:0px;padding-right:0px">
+                                          <select id="Location" class="ui search selection dropdown" style="height:35px;padding-top:0px;padding-bottom:0px;">
+                                            <option selected value="0">All</option>
+                                            <option value="16">CiscoCampus</option>
+                                            <option value="44">CiscoLiveLatAm</option>
+                                          </select>
+                                                  
+                                       </div>
+                                        <div class="col-md-1 col-sm-4 col-xs-12" id="seconddiv" >
+                                              <label class="text-primary pull-left" id="text" style="padding-left:5%;padding-top: 8px;">
+                                             <i class="fa fa-calendar" ></i>&nbsp;&nbsp;Date
+                                             </label>
+                                        </div>
+                                        <div class="col-md-2 col-sm-4 col-xs-12" style="padding-left:0px;margin-left: -40px;">
+                                            <select id="Day" class="ui search selection dropdown" style="height:35px;padding-top:0px;padding-bottom:0px;">
+                                              <option selected value="today">Today</option>
+                                              <option value="yesterday">Yesterday</option>
+                                              <option value="this week">Week To Date</option>
+                                            
+                                            </select>
+                                        </div>
+                                <div class="col-md-2 col-sm-4 col-xs-12" id="LocationDropdown">
+                                       <a href="#"><span class="fa fa-ban" style="font-size:24px;color:red"></span></a>
+                                      <div class="ui input">
+                                      <input type="text" ng-model="Date1" style="height:35px;color:#c1bcbc" disabled>
+                                      </div>
+                                </div> 
+                                
+
+                            </div>
+                      
+                                   </div>  
+                            
+
+<div class=""  style="padding-top: 11px;padding-left: 0px;padding-right: 0px;padding-bottom: 0px;">
+
+ 
+                  <div class="row">
+                    <div class="col-md-6 col-xs-12 col-sm-12">
+                        <div class="panel panel-primary">
+                       
+                            <div class="panel-heading" id="text">
+                                 <div class="row">
+                              <div class="col-md-8 col-xs-12 col-sm-7">
+                                  <span class="pull-left"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;Visitors </span>
+                                </div>
+                                 <div ng-hide="day=='this week'" ng-show="day!='this week'"class="col-md-4 col-xs-12 col-sm-5 thirddiv" style="padding-left:20%">
+                                 <span ><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;{{SdateMonth}},{{SdateDay}}&nbsp;&nbsp;</span>
+                                 </div>
+                                 <div ng-hide="day!='this week'" ng-show="day=='this week'"class="col-md-4 col-xs-12 col-sm-5 thirddiv" style="padding-left:11%">
+                                 <span><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;{{SdateMonth}},{{SdateDay}}&nbsp;-&nbsp;&nbsp;
+                                  {{DurationTitle}}&nbsp;&nbsp;</span>
+                                 </div>
+                             </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="well"  style="padding-bottom: 5%;">
+                                    <div class="row">
+                                        <div class="col-md-12 col-xs-12 col-sm-12 ">
+                                            <p class="w3-jumbo "style="padding-left: 5%; font-size: 59px;">
+                                              <i class="fa fa-user" style="font-size:80px"></i>{{NumberOfVisitor}}</p>
+                                        </div>
+                                     </div>
+                                      <div class="row">
+                                        
+                                        <div class="col-md-12 col-xs-12 col-sm-12" id="text">
+                                        <div class="unit"style="padding-left: 4%;padding-top: 0px;padding-bottom: 4%;"> Total Visits <i class="fa fa-info-circle" aria-hidden="true"></i></div>
+                                    </div>
+                                      </div>
+                                    <div class="progress">
+                                  
+                                           <div class="progress-bar progress-bar-success" role="progressbar" style="width:{{TotalRepeatVisitorPercent}}%">
+                                            {{TotalRepeatVisitorPercent}}%
+                                         </div>
+                                          <div class="progress-bar progress-bar-primary" role="progressbar" style="width:{{TotalNewVisitorPercent}}%">
+                                           {{TotalNewVisitorPercent}}%
+                                         </div>
+                                            
+                                    </div>
+                                    
+                                            <div class="row">
+
+                                        <div class="col-md-6 col-sm-12 " >
+                                            <div  class="pull-left" style="color: #5cb85c;font-size: 20px;padding-left: 2%;font-weight: bold;padding-left: 0;">{{TotalRepeatVisitorCount}}</div>
+                                              </div>
+                                                <div class="col-md-6 col-sm-12 " >
+                                            <div class="pull-right" style="color: #337ab7;font-size: 20px;padding-left: 2%;font-weight: bold;padding-right: 0;">{{TotalNewVisitor}}</div>
+                                              </div>
+
+                                          </div>
+                                     
+                                            <div class="pull-left" class="success"style="color: #5cb85c; font-size: 17px;">Repeat Visitors : {{TotalRepeatVisitorPercent}}%</div>
+                                     
+                                       
+                                           <div  class="pull-right" style="color: #337ab7; font-size: 17px;">New Visitors :{{TotalNewVisitorPercent}}%</div>
+                            </div>
+                             <div id="container" style="height: 270px;"> 
+
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12 col-sm-12">                    
+                        <div class="panel panel-primary">
+                            <div class="panel-heading" id="text">
+                               <div class="row">
+                              <div class="col-md-8 col-xs-12 col-sm-7">
+                                    <span class="pull-left"><i class="fa fa-users" aria-hidden="true"></i>&nbsp;&nbsp;Dwell Time Breakdown</span>
+                            </div>
+
+                                 <div  ng-hide="day=='this week'" ng-show="day!='this week'"class="col-md-4 col-xs-12 col-sm-5 thirddiv" style="padding-left:20%">
+                                 <span><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;{{SdateMonth}},{{SdateDay}}&nbsp;&nbsp;</span>
+                                 </div>
+                                 <div ng-hide="day!='this week'" ng-show="day=='this week'"class="col-md-4 col-xs-12 col-sm-5 thirddiv" style="padding-left:10%">
+                                 <span><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;{{SdateMonth}},{{SdateDay}}&nbsp;-&nbsp;&nbsp;{{DurationTitle}}&nbsp;&nbsp;</span>
+                                 </div>
+                             </div>
+                           </div>
+                            <div class="panel-body">
+                                <div class="well" style="padding-bottom: 5%;">
+                                    <div class="row">
+                                        
+                                        <div class="col-xs-12 col-sm-12 " >
+                                        <p class="w3-jumbo "style="padding-left: 5%; font-size: 59px;"><i class="fa fa-user" style="font-size:80px"></i>{{DwellTimeVisitor}}</p>
+                                        </div>
+                                     </div>
+                                      <div class="row">
+                                        
+                                        <div class="col-md-12 col-xs-12 col-sm-12" id="text">
+                                        <div class="unit" style="padding-left: 5%;border-left-width: 40%; padding-bottom: 4%;">Dwell Time of All Visits 
+                                          <i class="fa fa-info-circle" aria-hidden="true"></i></div>
+                                    </div>
+                                      </div>
+                                   <div class="progress">
+                                   
+                                           <div class="progress-bar progress-bar-success" role="progressbar" style="width:{{RepeatVisitorPercent}}%">
+                                            {{RepeatVisitorPercent}}%
+                                         </div>
+                                          <div class="progress-bar progress-bar-primary" role="progressbar" style="width:{{NewVisitorPercent}}%">
+                                           {{NewVisitorPercent}}%
+                                         </div>
+                                            
+                                    </div>
+                                          <div class="row">
+
+                                        <div class="col-md-6 col-sm-12 " >
+                                            <div  class="pull-left" style="color: #5cb85c;font-size: 20px;padding-left: 2%;font-weight: bold;padding-left: 0;">{{RepeatVisitorCount}}</div>
+                                              </div>
+                                                <div class="col-md-6 col-sm-12 " >
+                                            <div class="pull-right" style="color: #337ab7;font-size: 20px;padding-left: 2%;font-weight: bold;padding-right: 0;">{{NewTotalVisitorDwell}}</div>
+                                              </div>
+
+                                          </div>
+                                     
+                                            <div class="pull-left" class="success"style="color: #5cb85c; font-size: 17px;">Repeat Visitors : {{RepeatVisitorPercent}}%</div>
+                                     
+                                       
+                                           <div  class="pull-right" style="color: #337ab7; font-size: 17px;">New Visitors :{{NewVisitorPercent}}%</div>
+                                    
+                            </div>
+                
+                               <div id="container1" style="height: 270px;"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             <div class="row">
+                    <div class="col-md-6 col-xs-12 col-sm-12">
+                        <div class="panel panel-primary">
+                       
+                            <div class="panel-heading" id="text">
+                                 <div class="row">
+                              <div class="col-md-8 col-xs-12 col-sm-7">
+                                  <span class="pull-left"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;Recommendation for New Product Promotion/Additional Staff </span>
+                                </div>
+                                 <div ng-hide="day=='this week'" ng-show="day!='this week'"class="col-md-4 col-xs-12 col-sm-5 thirddiv" style="padding-left:20%">
+                                 <span><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;{{SdateMonth}},{{SdateDay}}&nbsp;&nbsp;</span>
+                                 </div>
+                                 <div ng-hide="day!='this week'" ng-show="day=='this week'"class="col-md-4 col-xs-12 col-sm-5 thirddiv" style="padding-left:11%">
+                                 <span>&nbsp;&nbsp;{{SdateMonth}},{{SdateDay}}&nbsp;-&nbsp;&nbsp;{{DurationTitle}}&nbsp;&nbsp;<i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                 </div>
+                             </div>
+                            </div>
+                            <div class="panel-body"> 
+                          
+                                    <div class="row">
+                                        
+                                        <div class="col-xs-12 col-sm-12 col-sm-5 " >
+                                   <i style="color:#3b83c0"class="fa fa-info-circle" aria-hidden="true"></i><label  style="font-size:small; color:#3b83c0">&nbsp; Click On the Bubble For drill down   </label>
+                                        </div>
+                                     </div>
+                                     
+                                    
+                                                        
+                             <div id="container2" style="height: 400px;"> 
+
+                             </div>
+                                   
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xs-12 col-sm-12" ng-hide="display1='Hide'" ng-show="display1!='show'">                    
+                        <div class="panel panel-primary">
+                            <div class="panel-heading" id="text">
+                               <div class="row">
+                              <div class="col-md-8 col-xs-12 col-sm-7">
+                                    <span class="pull-left"><i class="fa fa-users" aria-hidden="true"></i>&nbsp;&nbsp;Dwell Time for {{hours}}</span>
+                            </div>
+
+                                 <div  ng-hide="day=='this week'" ng-show="day!='this week'"class="col-md-4 col-xs-12 col-sm-5 thirddiv" style="padding-left:20%">
+                                 <span ><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;{{SdateMonth}},{{SdateDay}}&nbsp;&nbsp;</span>
+                                 </div>
+                                 <div ng-hide="day!='this week'" ng-show="day=='this week'"class="col-md-4 col-xs-12 col-sm-5 thirddiv" style="padding-left:10%">
+                                 <span>&nbsp;&nbsp;{{SdateMonth}},{{SdateDay}}&nbsp;-&nbsp;&nbsp;{{DurationTitle}}&nbsp;&nbsp;<i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                 </div>
+                             </div>
+                           </div>
+                            <div class="panel-body">  
+                                <div class="row">
+                                        
+                                        <div class="col-xs-12 col-sm-12 col-sm-5 " >
+                                        <label  style="font-size:small; color:#3b83c0"> </label>
+                                        </div>
+                                     </div>
+                                                                
+                
+                               <div id="container3" style="height: 417px;"> 
+
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>      
+    </div>

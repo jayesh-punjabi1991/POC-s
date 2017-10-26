@@ -1,0 +1,32 @@
+A {
+	COLOR: dark gray; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #ffccff; TEXT-DECORATION: none
+}
+UL.navigation {
+	LIST-STYLE-TYPE: none; FONT: 0.75em/1.5em normal Tahoma, Verdana, Geneva, sans-serif; LIST-STYLE-IMAGE: none
+}
+UL.navigation LI {
+	PADDING-BOTTOM: 5px; MARGIN: 1px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; DISPLAY: block; BACKGROUND: #3A73B8; FLOAT: left; PADDING-TOP: 5px
+}
+UL.navigation LI.highlight {
+	BACKGROUND: #666
+}
+UL.navigation LI.highlight A {
+	COLOR: #f5f5f5; CURSOR: default
+}
+
+a#fav{
+ background: url('../images/addFavorit.png');
+ display: block;
+ width: 48px;
+ height: 48px;
+
+}
+
+a#fav.active{
+ background: url('../images/addFavorit_hover.png');
+}
+
+ 
